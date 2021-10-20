@@ -1,0 +1,17 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Notch graphic test"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  .bg-blue.py4
+    .grid-container
+      .grid-x
+        .cell
+          img.object-fit-cover(src="images/notch-tall.png")
+        .cell.bg-white.p2
+          h2.text-black Content
+        .cell(style=" transform: rotate(180deg);")
+          img.object-fit-cover(src="images/notch-tall.png")

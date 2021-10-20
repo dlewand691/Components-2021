@@ -1,0 +1,133 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Blog"
+
+block content
+    h1!= pageTitle
+
+    mixin blog-snippet
+        .grid-x.grid-padding-x.bd-b1.py2.bg-white
+            .small-12.cell.shrink.mb-half
+                small
+                    strong.text-gray-light November 13, 2019
+
+            .small-12.cell.shrink.mb-half
+                small
+                    strong.text-gray-light 10000 Views
+
+            .small-12.cell.mb1
+                h5.mb-half
+                    a(href='#') Lorem ipsum sit purus vehicula ipsum euismod magna quam mollis pharetra condimentum
+
+                p.mb-half Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dicta nam repudiandae rem odio, eius, consequuntur assumenda quisquam quos incidunt nisi harum odit pariatur vero velit sint, labore ea dolore.
+
+            .small-12.cell.shrink
+                .grid-x.grid-padding-x.align-middle.collapse
+                    .small-12.cell.shrink
+                        img.rounded.mr-half(src="https://via.placehold.it/40x40")
+                        img.rounded.mr-half(src="https://via.placehold.it/40x40")
+                        img.rounded.mr-half(src="https://via.placehold.it/40x40")
+                        img.rounded.mr-half(src="https://via.placehold.it/40x40")
+                    .small-12.cell.shrink
+                        small.text-gray-dark By Firstname Lastname, Firstname Lastname, Firstname Lastname & Firstname Lastname
+
+
+    .grid-container
+        +blog-snippet
+        +blog-snippet
+        +blog-snippet
+
+    hr
+    h3 Blog snippet with background image
+
+    .grid-container
+        .py3(style="background: url(https://source.unsplash.com/daily)")
+            .mb1
+                +blog-snippet
+            .mb1
+                +blog-snippet
+            .mb1
+                +blog-snippet
+
+    h3 Blog
+
+    .grid-container
+        .grid-x.grid-padding-x.bd-b1.pb2.mb2
+            .cell.text-right
+                h6
+                    a(href="#")
+                        i.filter.fw600
+                    | FILTER
+        .grid-x.grid-padding-x.bd-b1.pb2.mb2
+            .small-12.medium-4.cell
+                img(src="http://placehold.it/400x400")
+            .small-12.medium-8.cell
+                p
+                    i.calendar.mr-half
+                    | 7 September 2016
+                h4.text-bold.text-blue Ullamco magna deserunt sit irure enim in magna voluptate ad laboris ut nulla eu cillum labore in.
+                p By
+                    a(href="#") Kyla Medina
+                hr.gradient
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perferendis autem fuga non soluta, provident est mollitia! Voluptates doloremque id accusamus est facere sed? Quos eaque autem, perferendis repudiandae quidem?
+        .grid-x.grid-padding-x.bd-b1.pb2.mb2
+            .small-12.medium-4.cell
+                img(src="http://placehold.it/400x400")
+            .small-12.medium-8.cell
+                p
+                    i.calendar.mr-half
+                    | 7 September 2016
+                h4.text-bold.text-blue Ullamco magna deserunt sit irure enim in magna voluptate ad laboris ut nulla eu cillum labore in.
+                p By
+                    a(href="#") Kyla Medina
+                hr.gradient
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perferendis autem fuga non soluta, provident est mollitia! V.mb2oluptates doloremque id accusamus est facere sed? Quos eaque autem, perferendis repudiandae quidem?
+        .grid-x.grid-padding-x.bd-b1.pb2.mb2
+            .small-12.medium-4.cell
+                img(src="http://placehold.it/400x400")
+            .small-12.medium-8.cell
+                p
+                    i.calendar.mr-half
+                    | 7 September 2016
+                h4.text-bold.text-blue Ullamco magna deserunt sit irure enim in magna voluptate ad laboris ut nulla eu cillum labore in.
+                p By
+                    a(href="#") Kyla Medina
+                hr.gradient
+
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis perferendis autem fuga non soluta, provident est mollitia! Voluptates doloremque id accusamus est facere sed? Quos eaque autem, perferendis repudiandae quidem?
+
+    hr
+
+    h3 MISC Magazine Blog
+    .grid-container
+        .grid-x.grid-padding-x.bd-b1.py1
+            .small-12.medium-4.cell
+                img.w100.mb1.medium-mb0(src="images/blog/misc/rawpixel-550991-unsplash-768x512.jpg")
+            .small-12.medium-8.cell
+                p.text-gray-light.mb-half
+                    span.pr1 Dr. Ted Witek
+                    span.pr1 June 1st, 2018
+                a(href="#")
+                    h5 Observations from research-based pharma
+                p I am fortunate to feel passionate about each aspect of my professional life, which has helped me understand how having a sense of purpose is key…
+                a(href="#") Read More
+
+        .grid-x.grid-padding-x.bd-b1.py1
+            .small-12.medium-4.cell
+                img.w100.mb1.medium-mb0(src="images/blog/misc/mitch-rosen-203803-unsplash-768x512.jpg")
+            .small-12.medium-8.cell
+                p.text-gray-light.mb-half
+                    span.pr1 Katie Hill
+                    span.pr1 May 29, 2018
+                a(href="#")
+                    h5 From Entertainment to Experience
+                p No longer shrouded by the stigma of nerdiness, today’s comic conventions are more than just a place where adults gather to play dress-up or meet their real-life superheroes – they’re…
+                a(href="#") Read More
+
+
+
+
+
+

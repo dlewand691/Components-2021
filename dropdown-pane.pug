@@ -1,0 +1,13 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Dropdown pane"
+
+block content
+    h1!= pageTitle
+
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                button.button(type='button', data-toggle='example-dropdown') Toggle Dropdown
+                #example-dropdown.dropdown-pane(data-dropdown)
+                    p Just some junk that needs to be said. Or not. Your choice.

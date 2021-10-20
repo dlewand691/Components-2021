@@ -1,0 +1,18 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Breadcrumb"
+
+block content
+    h1!= pageTitle
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                ul.breadcrumbs
+                    li
+                        a(href='#0') Home
+                    li
+                        a(href='#0') Features
+                    li.disabled Gene Splicing
+                    li
+                        span.show-for-sr Current: 
+                        |  Cloning

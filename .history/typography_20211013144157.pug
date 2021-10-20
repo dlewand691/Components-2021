@@ -1,0 +1,1457 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Typography"
+
+block content
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/";
+  script(src='js/min/app-min.js')
+  #typography
+  h1 Typography
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h1.specs
+        h2.specs
+        h3.specs
+        h4.specs
+        h5.specs
+        h6.specs
+        p.specs.standard
+        p.specs.small
+        p.specs.tiny
+
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h1 H1 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+      h2 H2 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+      h3 H3 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+      h4 H4 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+      h5 H5 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+      h6 H6 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+      p Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.™®©
+      p.small Small lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.™®©
+      p.tiny Tiny lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.™®©
+
+      ul
+        li Unordered list item
+        li Unordered list item
+        li Unordered list item
+
+      ol
+        li Ordered list item
+        li Ordered list item
+        li Ordered list item
+
+      blockquote
+        em Block quote In Condimentum Facilisis Porta. Sed Nec Diam Eu Diam Mattis Viverra. Nulla Fringilla, Orci Ac Euismod Semper, Magna Diam
+        cite John Wu
+
+      h4 1234567890!@#$%^&*()-=_+[]\{}|;':",./<>?'
+
+  <table border=3 cellpadding=3 cellspacing=5>
+  <tr><th>HTML Code</th><th>Character</th><th>HTML Code</th><th>Character</th><th>HTML Code</th><th>Character</th><th>HTML Code</th><th>Character</th></tr>
+
+  <tr><td>&amp;#33</td><td>&#33</td><td>&amp;#89</td><td>&#89</td><td>&amp;#145</td><td>&#145</td><td>&amp;#201</td><td>&#201</td></tr>
+  <tr><td>&amp;#34</td><td>&#34</td><td>&amp;#90</td><td>&#90</td><td>&amp;#146</td><td>&#146</td><td>&amp;#202</td><td>&#202</td></tr>
+  <tr><td>&amp;#35</td><td>&#35</td><td>&amp;#91</td><td>&#91</td><td>&amp;#147</td><td>&#147</td><td>&amp;#203</td><td>&#203</td></tr>
+  <tr><td>&amp;#36</td><td>&#36</td><td>&amp;#92</td><td>&#92</td><td>&amp;#148</td><td>&#148</td><td>&amp;#204</td><td>&#204</td></tr>
+  <tr><td>&amp;#37</td><td>&#37</td><td>&amp;#93</td><td>&#93</td><td>&amp;#149</td><td>&#149</td><td>&amp;#205</td><td>&#205</td></tr>
+  <tr><td>&amp;#38</td><td>&#38</td><td>&amp;#94</td><td>&#94</td><td>&amp;#150</td><td>&#150</td><td>&amp;#206</td><td>&#206</td></tr>
+  <tr><td>&amp;#39</td><td>&#39</td><td>&amp;#95</td><td>&#95</td><td>&amp;#151</td><td>&#151</td><td>&amp;#207</td><td>&#207</td></tr>
+  <tr><td>&amp;#40</td><td>&#40</td><td>&amp;#96</td><td>&#96</td><td>&amp;#152</td><td>&#152</td><td>&amp;#208</td><td>&#208</td></tr>
+  <tr><td>&amp;#41</td><td>&#41</td><td>&amp;#97</td><td>&#97</td><td>&amp;#153</td><td>&#153</td><td>&amp;#209</td><td>&#209</td></tr>
+  <tr><td>&amp;#42</td><td>&#42</td><td>&amp;#98</td><td>&#98</td><td>&amp;#154</td><td>&#154</td><td>&amp;#210</td><td>&#210</td></tr>
+  <tr><td>&amp;#43</td><td>&#43</td><td>&amp;#99</td><td>&#99</td><td>&amp;#155</td><td>&#155</td><td>&amp;#211</td><td>&#211</td></tr>
+  <tr><td>&amp;#44</td><td>&#44</td><td>&amp;#100</td><td>&#100</td><td>&amp;#156</td><td>&#156</td><td>&amp;#212</td><td>&#212</td></tr>
+  <tr><td>&amp;#45</td><td>&#45</td><td>&amp;#101</td><td>&#101</td><td>&amp;#157</td><td>&#157</td><td>&amp;#213</td><td>&#213</td></tr>
+  <tr><td>&amp;#46</td><td>&#46</td><td>&amp;#102</td><td>&#102</td><td>&amp;#158</td><td>&#158</td><td>&amp;#214</td><td>&#214</td></tr>
+  <tr><td>&amp;#47</td><td>&#47</td><td>&amp;#103</td><td>&#103</td><td>&amp;#159</td><td>&#159</td><td>&amp;#215</td><td>&#215</td></tr>
+  <tr><td>&amp;#48</td><td>&#48</td><td>&amp;#104</td><td>&#104</td><td>&amp;#160</td><td>&#160</td><td>&amp;#216</td><td>&#216</td></tr>
+  <tr><td>&amp;#49</td><td>&#49</td><td>&amp;#105</td><td>&#105</td><td>&amp;#161</td><td>&#161</td><td>&amp;#217</td><td>&#217</td></tr>
+  <tr><td>&amp;#50</td><td>&#50</td><td>&amp;#106</td><td>&#106</td><td>&amp;#162</td><td>&#162</td><td>&amp;#218</td><td>&#218</td></tr>
+  <tr><td>&amp;#51</td><td>&#51</td><td>&amp;#107</td><td>&#107</td><td>&amp;#163</td><td>&#163</td><td>&amp;#219</td><td>&#219</td></tr>
+  <tr><td>&amp;#52</td><td>&#52</td><td>&amp;#108</td><td>&#108</td><td>&amp;#164</td><td>&#164</td><td>&amp;#220</td><td>&#220</td></tr>
+  <tr><td>&amp;#53</td><td>&#53</td><td>&amp;#109</td><td>&#109</td><td>&amp;#165</td><td>&#165</td><td>&amp;#221</td><td>&#221</td></tr>
+  <tr><td>&amp;#54</td><td>&#54</td><td>&amp;#110</td><td>&#110</td><td>&amp;#166</td><td>&#166</td><td>&amp;#222</td><td>&#222</td></tr>
+  <tr><td>&amp;#55</td><td>&#55</td><td>&amp;#111</td><td>&#111</td><td>&amp;#167</td><td>&#167</td><td>&amp;#223</td><td>&#223</td></tr>
+  <tr><td>&amp;#56</td><td>&#56</td><td>&amp;#112</td><td>&#112</td><td>&amp;#168</td><td>&#168</td><td>&amp;#224</td><td>&#224</td></tr>
+  <tr><td>&amp;#57</td><td>&#57</td><td>&amp;#113</td><td>&#113</td><td>&amp;#169</td><td>&#169</td><td>&amp;#225</td><td>&#225</td></tr>
+  <tr><td>&amp;#58</td><td>&#58</td><td>&amp;#114</td><td>&#114</td><td>&amp;#170</td><td>&#170</td><td>&amp;#226</td><td>&#226</td></tr>
+  <tr><td>&amp;#59</td><td>&#59</td><td>&amp;#115</td><td>&#115</td><td>&amp;#171</td><td>&#171</td><td>&amp;#227</td><td>&#227</td></tr>
+  <tr><td>&amp;#60</td><td>&#60</td><td>&amp;#116</td><td>&#116</td><td>&amp;#172</td><td>&#172</td><td>&amp;#228</td><td>&#228</td></tr>
+  <tr><td>&amp;#61</td><td>&#61</td><td>&amp;#117</td><td>&#117</td><td>&amp;#173</td><td>&#173</td><td>&amp;#229</td><td>&#229</td></tr>
+  <tr><td>&amp;#62</td><td>&#62</td><td>&amp;#118</td><td>&#118</td><td>&amp;#174</td><td>&#174</td><td>&amp;#230</td><td>&#230</td></tr>
+  <tr><td>&amp;#63</td><td>&#63</td><td>&amp;#119</td><td>&#119</td><td>&amp;#175</td><td>&#175</td><td>&amp;#231</td><td>&#231</td></tr>
+  <tr><td>&amp;#64</td><td>&#64</td><td>&amp;#120</td><td>&#120</td><td>&amp;#176</td><td>&#176</td><td>&amp;#232</td><td>&#232</td></tr>
+  <tr><td>&amp;#65</td><td>&#65</td><td>&amp;#121</td><td>&#121</td><td>&amp;#177</td><td>&#177</td><td>&amp;#233</td><td>&#233</td></tr>
+  <tr><td>&amp;#66</td><td>&#66</td><td>&amp;#122</td><td>&#122</td><td>&amp;#178</td><td>&#178</td><td>&amp;#234</td><td>&#234</td></tr>
+  <tr><td>&amp;#67</td><td>&#67</td><td>&amp;#123</td><td>&#123</td><td>&amp;#179</td><td>&#179</td><td>&amp;#235</td><td>&#235</td></tr>
+  <tr><td>&amp;#68</td><td>&#68</td><td>&amp;#124</td><td>&#124</td><td>&amp;#180</td><td>&#180</td><td>&amp;#236</td><td>&#236</td></tr>
+  <tr><td>&amp;#69</td><td>&#69</td><td>&amp;#125</td><td>&#125</td><td>&amp;#181</td><td>&#181</td><td>&amp;#237</td><td>&#237</td></tr>
+  <tr><td>&amp;#70</td><td>&#70</td><td>&amp;#126</td><td>&#126</td><td>&amp;#182</td><td>&#182</td><td>&amp;#238</td><td>&#238</td></tr>
+  <tr><td>&amp;#71</td><td>&#71</td><td>&amp;#127</td><td>&#127</td><td>&amp;#183</td><td>&#183</td><td>&amp;#239</td><td>&#239</td></tr>
+  <tr><td>&amp;#72</td><td>&#72</td><td>&amp;#128</td><td>&#128</td><td>&amp;#184</td><td>&#184</td><td>&amp;#240</td><td>&#240</td></tr>
+  <tr><td>&amp;#73</td><td>&#73</td><td>&amp;#129</td><td>&#129</td><td>&amp;#185</td><td>&#185</td><td>&amp;#241</td><td>&#241</td></tr>
+  <tr><td>&amp;#74</td><td>&#74</td><td>&amp;#130</td><td>&#130</td><td>&amp;#186</td><td>&#186</td><td>&amp;#242</td><td>&#242</td></tr>
+  <tr><td>&amp;#75</td><td>&#75</td><td>&amp;#131</td><td>&#131</td><td>&amp;#187</td><td>&#187</td><td>&amp;#243</td><td>&#243</td></tr>
+  <tr><td>&amp;#76</td><td>&#76</td><td>&amp;#132</td><td>&#132</td><td>&amp;#188</td><td>&#188</td><td>&amp;#244</td><td>&#244</td></tr>
+  <tr><td>&amp;#77</td><td>&#77</td><td>&amp;#133</td><td>&#133</td><td>&amp;#189</td><td>&#189</td><td>&amp;#245</td><td>&#245</td></tr>
+  <tr><td>&amp;#78</td><td>&#78</td><td>&amp;#134</td><td>&#134</td><td>&amp;#190</td><td>&#190</td><td>&amp;#246</td><td>&#246</td></tr>
+  <tr><td>&amp;#79</td><td>&#79</td><td>&amp;#135</td><td>&#135</td><td>&amp;#191</td><td>&#191</td><td>&amp;#247</td><td>&#247</td></tr>
+  <tr><td>&amp;#80</td><td>&#80</td><td>&amp;#136</td><td>&#136</td><td>&amp;#192</td><td>&#192</td><td>&amp;#248</td><td>&#248</td></tr>
+  <tr><td>&amp;#81</td><td>&#81</td><td>&amp;#137</td><td>&#137</td><td>&amp;#193</td><td>&#193</td><td>&amp;#249</td><td>&#249</td></tr>
+  <tr><td>&amp;#82</td><td>&#82</td><td>&amp;#138</td><td>&#138</td><td>&amp;#194</td><td>&#194</td><td>&amp;#250</td><td>&#250</td></tr>
+  <tr><td>&amp;#83</td><td>&#83</td><td>&amp;#139</td><td>&#139</td><td>&amp;#195</td><td>&#195</td><td>&amp;#251</td><td>&#251</td></tr>
+  <tr><td>&amp;#84</td><td>&#84</td><td>&amp;#140</td><td>&#140</td><td>&amp;#196</td><td>&#196</td><td>&amp;#252</td><td>&#252</td></tr>
+  <tr><td>&amp;#85</td><td>&#85</td><td>&amp;#141</td><td>&#141</td><td>&amp;#197</td><td>&#197</td><td>&amp;#253</td><td>&#253</td></tr>
+  <tr><td>&amp;#86</td><td>&#86</td><td>&amp;#142</td><td>&#142</td><td>&amp;#198</td><td>&#198</td><td>&amp;#254</td><td>&#254</td></tr>
+  <tr><td>&amp;#87</td><td>&#87</td><td>&amp;#143</td><td>&#143</td><td>&amp;#199</td><td>&#199</td><td>&amp;#255</td><td>&#255</td></tr>
+  <tr><td>&amp;#88</td><td>&#88</td><td>&amp;#144</td><td>&#144</td><td>&amp;#200</td><td>&#200</td><td>&amp;#&nbsp</td><td>&nbsp</td></tr>
+
+  </table>
+
+  hr
+  #buttons
+  h1 Buttons and Links
+    //- span.h5 (⟵ Scroll ⟶)
+  .grid-container(style="overflow-y: ;")
+    .grid-x.grid-padding-x(style="width: 180w;")
+      .cell.auto
+        //- h4 Color option 1
+        p.m0
+            a#button-tiny.tiny.button Tiny button
+            br
+            a#button-small.small.button Small button
+            br
+            a#button-default.button Default button
+            br
+            a#button-large.large.button Large button
+        p
+          a.button-tiny-arrow.tiny.button.arrow
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-1 Gradient button theme 1
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-2 Gradient button theme 2
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-3 Gradient button theme 3
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
+
+        p
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+
+        p
+          a.button.arrow Arrow
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.launch Launch
+          br
+          a.button.radius Radius
+
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr.my1
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr.my1
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+      .cell.auto.bg-blue
+        //- h4 Color option 1
+        p.m0
+            a#button-tiny.tiny.button Tiny button
+            br
+            a#button-small.small.button Small button
+            br
+            a#button-default.button Default button
+            br
+            a#button-large.large.button Large button
+        p
+          a.button-tiny-arrow.tiny.button.arrow
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-1 Gradient button theme 1
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-2 Gradient button theme 2
+        p.m0
+          a#button-default.button.arrow.bg-grd-theme-3 Gradient button theme 3
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
+        p.m0
+          a#button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
+
+        p
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+
+        p
+          a.button.arrow Arrow
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.launch Launch
+          br
+          a.button.radius Radius
+
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr.my1
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr.my1
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+
+      //- .cell.auto.buttonV2
+        h4 Color option 2
+        p
+          a.button-tiny-arrow.tiny.button.arrow
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+      //- .cell.auto.buttonV3
+        h4 Color option 3
+        p
+          a.button-tiny-arrow.tiny.button.arrow
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+      //- .cell.auto.buttonV4
+        h4 Color option 4
+        p
+          a.button-tiny-arrow.tiny.button.arrow.buttonV4
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+      //- .cell.auto.buttonV5
+        h4 Color option 5
+        p
+          a.button-tiny-arrow.tiny.button.arrow.buttonV5
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+      //- .cell.auto.buttonV6
+        h4 Color option 6
+        p
+          a.button-tiny-arrow.tiny.button.arrow.buttonV5
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+      //- .cell.auto.buttonV7
+        h4 Color option 6
+        p
+          a.button-tiny-arrow.tiny.button.arrow.buttonV5
+          br
+          a.button-small-arrow.small.button.arrow
+          br
+          a.button-default-arrow.button.arrow
+          br
+          a.button-large-arrow.large.button.arrow
+          br
+          a.button-tiny-arrow.tiny.button.arrow.hollow
+          br
+          a.button-small-arrow.small.button.arrow.hollow
+          br
+          a.button-default-arrow.button.arrow.hollow
+          br
+          a.button-large-arrow.large.button.arrow.hollow
+          br
+          .button-group
+            a.button Multi
+            a.button Button
+            a.button Group
+
+        p
+          a.button.arrow.arrow-down Arrow, down
+          br
+          a.button.arrow.arrow-tail Arrow, tail
+          br
+          a.button.arrow.arrow-solid Arrow, solid
+          br
+          a.button.download Download
+          br
+          a.button.back Back
+          br
+          a.button.video Video
+          br
+          a.button.radius Radius 1
+          br
+          a.button.radius-x2 Radius 2
+          br
+          a.button.rounded Rounded
+
+
+
+
+
+
+
+
+    //- hr
+    //- .grid-x.grid-padding-x
+      .cell.auto.linkV1
+        h4 Color option 1
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+
+      .cell.auto.linkV2
+        h4 Color option 2
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+
+      .cell.auto.linkV3
+        h4 Color option 3
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+
+      .cell.auto.linkV4
+        h4 Color option 4
+        p
+          a.tiny(href="") Tiny link
+          br
+          a.small(href="") Small link
+          br
+          a(href="") Standard link
+          br
+          a.large(href="") Large link
+          hr
+          a.tiny.arrow(href="") Tiny link with arrow
+          br
+          a.small.arrow(href="") Small link with arrow
+          br
+          a.arrow(href="") Standard link with arrow
+          br
+          a.large.arrow(href="") Large link with arrow
+          hr
+          a.tiny.arrow.arrow-tail(href="") Tiny link with tail arrow
+          br
+          a.small.arrow.arrow-tail(href="") Small link with tail arrow
+          br
+          a.arrow.arrow-tail(href="") Standard link with tail arrow
+          br
+          a.large.arrow.arrow-tail(href="") Large link with tail arrow
+
+
+
+
+
+  hr
+  #colors
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Background Colors
+      .cell.p1.auto.bg-blue
+        p.m0
+          strong Blue or Black
+          br
+          | #0033A0
+          br
+          | $blue or $black
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.auto.bd1.bg-white
+        p.m0
+          strong White
+          br
+          | #FFFFFF
+          br
+          | $white
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+    .grid-x.large-up-3
+      .cell.p1.bg-blue-dark
+        p.m0
+          strong Blue, Dark
+          br
+          | #000063
+          br
+          | $blue-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-blue-medium
+        p.m0
+          strong Blue, Medium
+          br
+          | #2D67FF
+          br
+          | $blue-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-blue-light
+        p.m0
+          strong Blue, Light
+          br
+          | #328DFF
+          br
+          | $blue-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-plum-dark
+        p.m0
+          strong plum, Dark
+          br
+          | #000063
+          br
+          | $plum-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-plum-medium
+        p.m0
+          strong plum, Medium
+          br
+          | #2D67FF
+          br
+          | $plum-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-plum-light
+        p.m0
+          strong plum, Light
+          br
+          | #328DFF
+          br
+          | $plum-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-teal-dark
+        p.m0
+          strong Teal, Dark
+          br
+          | #000063
+          br
+          | $blue-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-teal-medium
+        p.m0
+          strong Teal, Medium
+          br
+          | #2D67FF
+          br
+          | $blue-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.bg-teal-light
+        p.m0
+          strong Teal, Light
+          br
+          | #328DFF
+          br
+          | $blue-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+    .grid-x
+      //- .cell.p1.auto.bg-black
+        p.m0
+          strong Black
+          br
+          | #000000
+          br
+          | $black
+        p.m0: small: em (Default text color)
+      .cell.p1.auto.bg-gray-dark
+        p.m0
+          strong Gray, dark
+          br
+          | #666666
+          br
+          | $gray
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.auto.bg-gray-medium
+        p.m0
+          strong Gray, medium
+          br
+          | #666666
+          br
+          | $gray
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.auto.bg-gray-light
+        p.m0
+          strong Gray, light
+          br
+          | #666666
+          br
+          | $gray
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.auto.bg-gray-lighter
+        p.m0
+          strong Gray, lighter
+          br
+          | #666666
+          br
+          | $gray
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p1.auto.bg-gray-lightest
+        p.m0
+          strong Gray, lightest
+          br
+          | #666666
+          br
+          | $gray
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.px3.bg-grd-rl-dark-blue-medium.text-white
+        p.m0
+          strong Medium Blue to Blue Gradient
+        p.m0: small: em (Default gradient style)
+
+  //- .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Secondary/Alternates
+      .cell.p2.auto.bg-green
+        p.m0
+          strong Green (Default)
+          br
+          | #00B140
+          br
+          | $green
+        p.m0: small: em (Used only for linked elements, ie buttons and links)
+      .cell.p2.auto.bg-green-light
+        p.m0
+          strong Green, Light
+          br
+          | #00E452
+          br
+          | $green-light
+        p.m0: small: em (Used on colored backgrounds where more visual contrast is needed for readability)
+      .cell.p2.auto.bg-green-dark
+        p.m0
+          strong Green, Dark
+          br
+          | #007E2E
+          br
+          | $green-dark
+    .grid-x
+      .cell.p2.auto.bg-gray-dark
+        p.m0
+          strong Gray, Dark
+          br
+          | #333333
+          br
+          | $gray-dark
+      .cell.p2.auto.bg-gray-medium
+        p.m0
+          strong Gray, Medium
+          br
+          | #B3B3B3
+          br
+          | $gray-medium
+        p.m0: small: em (Default for borders)
+      .cell.p2.auto.bg-gray-light
+        p.m0
+          strong Gray, Light
+          br
+          | #D9D9D9
+          br
+          | $gray-light
+      .cell.p2.auto.bg-gray-lighter
+        p.m0
+          strong Gray, Lighter
+          br
+          | #E6E6E6
+          br
+          | $gray-lighter
+      .cell.p2.auto.bg-gray-lightest
+        p.m0
+          strong Gray, Lightest
+          br
+          | #F2F2F2
+          br
+          | $gray-lightest
+    .grid-x
+      .cell.p2.auto.bg-blue-bright
+        p.m0
+          strong Blue, Bright
+          br
+          | #6DCCFF
+          br
+          | $blue-bright
+        p.m0: small: em (Used for new battleground sites, ie AI)
+
+  //- .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Gray progression
+          p: em (for reference)
+      .cell.p2.auto.bg-black
+        p.m0.small Black
+      .cell.p2.auto.bg-gray-dark
+        p.m0.small Gray, Dark
+      .cell.p2.auto.bg-gray
+        p.m0.small Gray
+      .cell.p2.auto.bg-gray-medium
+        p.m0.small Gray, Medium
+      .cell.p2.auto.bg-gray-light
+        p.m0.small Gray, Light
+      .cell.p2.auto.bg-gray-lighter
+        p.m0.small Gray, Lighter
+      .cell.p2.auto.bg-gray-lightest
+        p.m0.small Gray, Lightest
+      .cell.p2.auto.bg-white.bd1
+        p.m0.small White
+
+  //- .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Background options
+    .grid-x.medium-up-3
+      .cell.p2.bg-blue
+        p.m0
+          strong Blue
+          br
+          | $bg-blue
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-white
+        p.m0
+          strong White
+          br
+          | $bg-white
+          br
+          small: em (Text defaults to black)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-black
+        p.m0
+          strong Black
+          br
+          | $bg-black
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-blue-dark
+        p.m0
+          strong Blue, dark
+          br
+          | $bg-blue-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-blue-medium
+        p.m0
+          strong Blue, medium
+          br
+          | $bg-blue-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-blue-light
+        p.m0
+          strong Blue, light
+          br
+          | $bg-blue-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-plum-dark
+        p.m0
+          strong plum, dark
+          br
+          | $bg-plum-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-plum-medium
+        p.m0
+          strong plum, medium
+          br
+          | $bg-plum-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-plum-light
+        p.m0
+          strong plum, light
+          br
+          | $bg-plum-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-teal-dark
+        p.m0
+          strong teal, dark
+          br
+          | $bg-teal-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-teal-medium
+        p.m0
+          strong teal, medium
+          br
+          | $bg-teal-medium
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-teal-light
+        p.m0
+          strong teal, light
+          br
+          | $bg-teal-light
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-gray-dark
+        p.m0
+          strong Gray, dark
+          br
+          | $bg-gray-dark
+          br
+          small: em (Text defaults to white)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-gray-medium
+        p.m0
+          strong Gray, medium
+          br
+          | $bg-gray-medium
+          br
+          small: em (Text defaults to black)
+        a.m0.small(href): em (Links default to complimenting color)
+      .cell.p2.bg-gray-light
+        p.m0
+          strong Gray, light
+          br
+          | $bg-gray-light
+          br
+          small: em (Text defaults to black)
+        a.m0.small(href): em (Links default to complimenting color)
+
+  // ======================================================================
+  // Background options, gradient
+  // ======================================================================
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Background options, gradient
+    .grid-x.grid-margin-x.grid-margin-y.medium-up-4.text-white(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
+      .cell.p2.bg-grd-blue-radial
+        p.m0
+          strong Blue Radial
+          br
+          | $bg-grd-blue-radial
+      .cell.p2.bg-grd-blue-radial-top
+        p.m0
+          strong Blue Radial, top
+          br
+          | $bg-grd-blue-radial-top
+      .cell.p2.bg-grd-blue-radial-bottom
+        p.m0
+          strong Blue Radial, bottom
+          br
+          | $bg-grd-blue-radial-bottom
+      .cell.p2.bg-grd-dark-blue-dark
+        p.m0
+          strong Blue Linear, dark to blue dark
+          br
+          | $bg-grd-dark-blue-dark
+      .cell.p2.bg-grd-tb-dark-blue-medium
+        p.m0
+          strong Blue Linear, top to bottom, dark blue to medium blue
+          br
+          | $bg-grd-tb-dark-blue-medium
+      .cell.p2.bg-grd-bt-dark-blue-medium
+        p.m0
+          strong Blue Linear, bottom to top, dark blue to medium blue
+          br
+          | $bg-grd-bt-dark-blue-medium
+      .cell.p2.bg-grd-lr-dark-blue-medium
+        p.m0
+          strong Blue Linear, left to right, dark blue to medium blue
+          br
+          | $bg-grd-lr-dark-blue-medium
+      .cell.p2.bg-grd-rl-dark-blue-medium
+        p.m0
+          strong Blue Linear, right to left, dark blue to medium blue
+          br
+          | $bg-grd-rl-dark-blue-medium
+      .cell.p2.bg-grd-tb-dark-blue
+        p.m0
+          strong Blue Linear, top to bottom, dark blue to blue
+          br
+          | $bg-grd-tb-dark-blue
+      .cell.p2.bg-grd-lr-dark-blue
+        p.m0
+          strong Blue Linear, left to right, dark blue to blue
+          br
+          | $bg-grd-lr-dark-blue
+
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Text color options
+    .grid-x.medium-up-6
+      .cell.p1.column-block
+        p.m0.text-black
+          strong Black
+          br
+          | $text-black
+      .cell.p1.column-block.bg-blue
+        p.m0.text-white
+          strong White
+          br
+          | $text-white
+      .cell.p1.column-block
+        p.m0.text-blue
+          strong Blue
+          br
+          | $text-blue
+      .cell.p1.column-block
+        p.m0.text-blue-dark
+          strong Blue-dark
+          br
+          | $text-blue-dark
+      .cell.p1.column-block
+        p.m0.text-blue-medium
+          strong Blue-medium
+          br
+          | $text-blue-medium
+      .cell.p1.column-block
+        p.m0.text-blue-light
+          strong Blue-light
+          br
+          | $text-blue-light
+      .cell.p1.column-block
+        p.m0.text-plum-dark
+          strong plum-dark
+          br
+          | $text-plum-dark
+      .cell.p1.column-block
+        p.m0.text-plum-medium
+          strong plum-medium
+          br
+          | $text-plum-medium
+      .cell.p1.column-block
+        p.m0.text-plum-light
+          strong plum-light
+          br
+          | $text-plum-light
+      .cell.p1.column-block
+        p.m0.text-teal-dark
+          strong teal-dark
+          br
+          | $text-teal-dark
+      .cell.p1.column-block
+        p.m0.text-teal-medium
+          strong teal-medium
+          br
+          | $text-teal-medium
+      .cell.p1.column-block
+        p.m0.text-teal-light
+          strong teal-light
+          br
+          | $text-teal-light
+      .cell.p1.column-block
+        p.m0.text-gray-dark
+          strong gray-dark
+          br
+          | $text-gray-dark
+      .cell.p1.column-block
+        p.m0.text-gray-medium
+          strong gray-medium
+          br
+          | $text-gray-medium
+      .cell.p1.column-block
+        p.m0.text-gray-light
+          strong gray-light
+          br
+          | $text-gray-light
+
+
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Border color options
+        h5 Widths 1px-4px
+    .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch
+      .cell.column-block.bg-black.p-half
+        p.m0.p1.bd-white-4
+          strong White
+          br
+          | $bd-white
+      .cell.column-block.p-half
+        p.m0.p1.bd-blue-4
+          strong Blue
+          br
+          | $bd-blue
+    .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch
+      .cell.column-block.p-half
+        p.m0.p1.bd-blue-dark-4
+          strong Blue, dark
+          br
+          | $bd-blue-dark
+      .cell.column-block.p-half
+        p.m0.p1.bd-blue-medium-4
+          strong Blue, medium
+          br
+          | $bd-blue-medium
+      .cell.column-block.p-half
+        p.m0.p1.bd-blue-light-4
+          strong Blue, light
+          br
+          | $bd-blue-light
+      .cell.column-block.p-half
+        p.m0.p1.bd-plum-dark-4
+          strong plum, dark
+          br
+          | $bd-plum-dark
+      .cell.column-block.p-half
+        p.m0.p1.bd-plum-medium-4
+          strong plum, medium
+          br
+          | $bd-plum-medium
+      .cell.column-block.p-half
+        p.m0.p1.bd-plum-light-4
+          strong plum, light
+          br
+          | $bd-plum-light
+      .cell.column-block.p-half
+        p.m0.p1.bd-teal-dark-4
+          strong teal, dark
+          br
+          | $bd-teal-dark
+      .cell.column-block.p-half
+        p.m0.p1.bd-teal-medium-4
+          strong teal, medium
+          br
+          | $bd-teal-medium
+      .cell.column-block.p-half
+        p.m0.p1.bd-teal-light-4
+          strong teal, light
+          br
+          | $bd-teal-light
+      .cell.column-block.p-half
+        p.m0.p1.bd-gray-dark-4
+          strong Gray, dark
+          br
+          | $bd-gray
+      .cell.column-block.p-half
+        p.m0.p1.bd-gray-medium-4
+          strong Gray, medium
+          br
+          | $bd-gray-medium
+      .cell.column-block.p-half
+        p.m0.p1.bd-gray-light-4
+          strong Gray, light
+          br
+          | $bd-gray-light
+
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Image overlay SOLID color options
+    .grid-x.grid-margin-x.medium-up-5.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
+      .cell.column-block.bgOverlay-blue
+        p.m0.p2.bgOverlay-blue
+          strong Blue
+          br
+          | $bgOverlay-blue
+      .cell.column-block
+        p.m0.p2.bgOverlay-blue-light
+          strong Blue, light
+          br
+          | $bgOverlay-blue-light
+      .cell.column-block
+        p.m0.p2.bgOverlay-blue-dark
+          strong Blue, dark
+          br
+          | $bgOverlay-blue-dark
+      .cell.column-block
+        p.m0.p2.bgOverlay-white
+          strong White
+          br
+          | $bgOverlay-white
+      .cell.column-block
+        p.m0.p2.bgOverlay-black
+          strong Black
+          br
+          | $bgOverlay-black
+
+  .grid-container.mb2
+    .grid-x
+      .cell
+        h2 Image overlay GRADIENT color options
+    .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
+      .cell.column-block.gradient-overlay-blue
+        .relative.z1
+          p.m0.p2
+            strong Blue
+            br
+            | $gradient-overlay-blue
+      .cell.column-block.gradient-overlay-blue-full
+        .relative.z1
+          p.m0.p2
+            strong Blue, full
+            br
+            | $gradient-overlay-blue-full
+      .cell.column-block.gradient-overlay-blue-angled
+        .relative.z1
+          p.m0.p2
+            strong Blue, angled
+            br
+            | $gradient-overlay-blue-angled
+      .cell.column-block.gradient-overlay-blue-dark
+        .relative.z1
+          p.m0.p2
+            strong Blue, dark
+            br
+            | $gradient-overlay-blue-dark
+      .cell.column-block.gradient-overlay-blue-dark-full
+        .relative.z1
+          p.m0.p2
+            strong Blue, dark full
+            br
+            | $gradient-overlay-blue-dark-full
+      .cell.column-block.gradient-overlay-blue-dark-angled
+        .relative.z1
+          p.m0.p2
+            strong Blue, dark angled
+            br
+            | $gradient-overlay-blue-dark-angled
+      .cell.column-block.gradient-overlay-white
+        .relative.z1
+          p.m0.p2
+            strong White
+            br
+            | $gradient-overlay-white
+      .cell.column-block.gradient-overlay-white-full
+        .relative.z1
+          p.m0.p2
+            strong White, full
+            br
+            | $gradient-overlay-white-full
+      .cell.column-block.gradient-overlay-white-angled
+        .relative.z1
+          p.m0.p2
+            strong White, angled
+            br
+            | $gradient-overlay-white-angled
+      .cell.column-block.gradient-overlay-black
+        .relative.z1
+          p.m0.p2
+            strong Black
+            br
+            | $gradient-overlay-black
+      .cell.column-block.gradient-overlay-black-full
+        .relative.z1
+          p.m0.p2
+            strong Black, full
+            br
+            | $gradient-overlay-black-full
+      .cell.column-block.gradient-overlay-black-angled
+        .relative.z1
+          p.m0.p2
+            strong Black, angled
+            br
+            | $gradient-overlay-black-angled
+
+  script.
+    $(document).ready(function(){
+      $('h1.specs').text('H1:' + $('h1.specs').css('fontSize') + '\/' + $('h1.specs').css('lineHeight'));
+      $('h2.specs').text('H2:' + $('h2.specs').css('fontSize') + '\/' + $('h2.specs').css('lineHeight'));
+      $('h3.specs').text('H3:' + $('h3.specs').css('fontSize') + '\/' + $('h3.specs').css('lineHeight'));
+      $('h4.specs').text('H4:' + $('h4.specs').css('fontSize') + '\/' + $('h4.specs').css('lineHeight'));
+      $('h5.specs').text('H5:' + $('h5.specs').css('fontSize') + '\/' + $('h5.specs').css('lineHeight'));
+      $('h6.specs').text('H6:' + $('h6.specs').css('fontSize') + '\/' + $('h6.specs').css('lineHeight'));
+      $('p.specs.small').text('Small paragraph:' + $('p.specs.small').css('font-size') + '\/' + $('p.specs.small').css('lineHeight'));
+      $('p.specs.tiny').text('Tiny paragraph:' + $('p.specs.tiny').css('font-size') + '\/' + $('p.specs.tiny').css('lineHeight'));
+      $('p.specs.standard').text('Standard paragraph: ' + $('p.specs.standard').css('fontSize') + '\/' + $('p.specs.standard').css('lineHeight'));
+      $('.button-tiny').text('Tiny Button: ' + $('.button-tiny').css('fontSize'));
+      $('.button-small').text('Small Button: ' + $('.button-small').css('fontSize'));
+      $('.button-default').text('Default Button: ' + $('.button-default').css('fontSize'));
+      $('.button-large').text('Large Button: ' + $('.button-large').css('fontSize'));
+      $('.button-tiny-arrow').text('Tiny Button: ' + $('.button-tiny-arrow').css('fontSize'));
+      $('.button-small-arrow').text('Small Button: ' + $('.button-small-arrow').css('fontSize'));
+      $('.button-default-arrow').text('Default Button: ' + $('.button-default-arrow').css('fontSize'));
+      $('.button-large-arrow').text('Large Button: ' + $('.button-large-arrow').css('fontSize'));
+      $('.button-tiny-arrow-lessPadding').text('Tiny Button: ' + $('.button-tiny-arrow-lessPadding').css('fontSize'));
+      $('.button-small-arrow-lessPadding').text('Small Button: ' + $('.button-small-arrow-lessPadding').css('fontSize'));
+      $('.button-default-arrow-lessPadding').text('Default Button: ' + $('.button-default-arrow-lessPadding').css('fontSize'));
+      $('.button-large-arrow-lessPadding').text('Large Button: ' + $('.button-large-arrow-lessPadding').css('fontSize'));
+
+      $(window).resize(function(){
+        $('h1.specs').text('H1:' + $('h1.specs').css('fontSize') + '\/' + $('h1').css('lineHeight'));
+        $('h2.specs').text('H2:' + $('h2.specs').css('fontSize') + '\/' + $('h2').css('lineHeight'));
+        $('h3.specs').text('H3:' + $('h3.specs').css('fontSize') + '\/' + $('h3').css('lineHeight'));
+        $('h4.specs').text('H4:' + $('h4.specs').css('fontSize') + '\/' + $('h4').css('lineHeight'));
+        $('h5.specs').text('H5:' + $('h5.specs').css('fontSize') + '\/' + $('h5').css('lineHeight'));
+        $('h6.specs').text('H6:' + $('h6.specs').css('fontSize') + '\/' + $('h6').css('lineHeight'));
+        $('p.specs.small').text('Small paragraph:' + $('p.specs.small').css('font-size') + '\/' + $('p.small').css('lineHeight'));
+        $('p.specs.tiny').text('Tiny paragraph:' + $('p.specs.tiny').css('font-size') + '\/' + $('p.tiny').css('lineHeight'));
+        $('p.specs.standard').text('Standard paragraph:' + $('p.specs.standard').css('fontSize') + '\/' + $('p.standard').css('lineHeight'));
+        $('#button-tiny').text('Tiny Button: ' + $('#button-tiny').css('fontSize'));
+        $('#button-small').text('Small Button: ' + $('#button-small').css('fontSize'));
+        $('#button-default').text('Default Button: ' + $('#button-default').css('fontSize'));
+        $('#button-large').text('Large Button: ' + $('#button-large').css('fontSize'));
+        $('#button-tiny-arrow').text('Tiny Button: ' + $('#button-tiny-arrow').css('fontSize'));
+        $('#button-small-arrow').text('Small Button: ' + $('#button-small-arrow').css('fontSize'));
+        $('#button-default-arrow').text('Default Button: ' + $('#button-default-arrow').css('fontSize'));
+        $('#button-large-arrow').text('Large Button: ' + $('#button-large-arrow').css('fontSize'));
+        $('#button-tiny-arrow-lessPadding').text('Tiny Button: ' + $('#button-tiny-arrow-lessPadding').css('fontSize'));
+        $('#button-small-arrow-lessPadding').text('Small Button: ' + $('#button-small-arrow-lessPadding').css('fontSize'));
+        $('#button-default-arrow-lessPadding').text('Default Button: ' + $('#button-default-arrow-lessPadding').css('fontSize'));
+        $('#button-large-arrow-lessPadding').text('Large Button: ' + $('#button-large-arrow-lessPadding').css('fontSize'));
+      });
+    });
+
+

@@ -1,0 +1,180 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="587"
+  height="440"
+  viewBox="0 0 587 440"
+  preserveAspectRatio="none"
+><defs><rect id="a" width="587" height="440" x="0" y="0" /><linearGradient
+      id="b"
+      x1="36.163%"
+      x2="18.863%"
+      y1="28.5%"
+      y2="65.895%"
+    ><stop offset="0%" stop-color="#2C3097" stop-opacity=".96" /><stop
+        offset="24.5%"
+        stop-color="#24268C"
+        stop-opacity=".65"
+      /><stop offset="50.694%" stop-color="#1D1D81" /><stop
+        offset="100%"
+        stop-color="#05005E"
+      /></linearGradient><filter
+      id="c"
+      width="140%"
+      height="155.3%"
+      x="-20%"
+      y="-27.6%"
+      filterUnits="objectBoundingBox"
+    ><feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="39"
+      /></filter><linearGradient
+      id="e"
+      x1="90.453%"
+      x2="64.022%"
+      y1="29.332%"
+      y2="53.5%"
+    ><stop offset="0%" stop-color="#174B96" /><stop
+        offset="100%"
+        stop-color="#0074C9"
+      /></linearGradient><filter
+      id="f"
+      width="157.3%"
+      height="173.3%"
+      x="-28.7%"
+      y="-36.7%"
+      filterUnits="objectBoundingBox"
+    ><feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="46"
+      /></filter><radialGradient
+      id="g"
+      cx="54.023%"
+      cy="47.084%"
+      r="77.49%"
+      fx="54.023%"
+      fy="47.084%"
+      gradientTransform="matrix(-.25515 .9525 -1.18999 -.4542 1.238 .17)"
+    ><stop offset="0%" stop-color="#EDEDEE" /><stop
+        offset="39.816%"
+        stop-color="#DEDFE0"
+        stop-opacity=".52"
+      /><stop
+        offset="100%"
+        stop-color="#D6D7D8"
+        stop-opacity=".3"
+      /></radialGradient><filter
+      id="h"
+      width="150.9%"
+      height="160.7%"
+      x="-25.4%"
+      y="-30.4%"
+      filterUnits="objectBoundingBox"
+    ><feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="37"
+      /></filter><radialGradient
+      id="i"
+      cx="82.515%"
+      cy="88.828%"
+      r="130.857%"
+      fx="82.515%"
+      fy="88.828%"
+      gradientTransform="matrix(-.63057 -.65463 .54606 -.75595 .86 2.1)"
+    ><stop offset="0%" stop-color="#00FDF1" /><stop
+        offset="38.512%"
+        stop-color="#00FEF6"
+        stop-opacity=".687"
+      /><stop offset="82.74%" stop-color="#00FFF8" stop-opacity=".17" /><stop
+        offset="100%"
+        stop-color="#00FFF9"
+        stop-opacity=".37"
+      /></radialGradient><filter
+      id="j"
+      width="164.4%"
+      height="177.2%"
+      x="-32.2%"
+      y="-38.6%"
+      filterUnits="objectBoundingBox"
+    ><feGaussianBlur
+        in="SourceGraphic"
+        stdDeviation="50"
+      /></filter><radialGradient
+      id="k"
+      cx="50%"
+      cy="50%"
+      r="50%"
+      fx="50%"
+      fy="50%"
+      gradientTransform="matrix(0 1 -.86385 0 .932 0)"
+    ><stop offset="0%" stop-color="#F1F4E5" /><stop
+        offset="5.011%"
+        stop-color="#F1F4E5"
+        stop-opacity=".969"
+      /><stop offset="9.475%" stop-color="#F1F4E5" stop-opacity=".914" /><stop
+        offset="13.612%"
+        stop-color="#F1F4E5"
+        stop-opacity=".843"
+      /><stop offset="17.638%" stop-color="#F1F4E5" stop-opacity=".757" /><stop
+        offset="21.775%"
+        stop-color="#F1F4E5"
+        stop-opacity=".663"
+      /><stop offset="26.239%" stop-color="#F1F4E5" stop-opacity=".565" /><stop
+        offset="31.25%"
+        stop-color="#F1F4E5"
+        stop-opacity=".463"
+      /><stop offset="37.026%" stop-color="#F1F4E5" stop-opacity=".361" /><stop
+        offset="43.786%"
+        stop-color="#F1F4E5"
+        stop-opacity=".267"
+      /><stop offset="51.749%" stop-color="#F1F4E5" stop-opacity=".18" /><stop
+        offset="61.133%"
+        stop-color="#F1F4E5"
+        stop-opacity=".106"
+      /><stop offset="72.157%" stop-color="#F1F4E5" stop-opacity=".051" /><stop
+        offset="85.04%"
+        stop-color="#F1F4E5"
+        stop-opacity=".012"
+      /><stop
+        offset="100%"
+        stop-color="#F1F4E5"
+        stop-opacity="0"
+      /></radialGradient></defs><g fill="none" fill-rule="evenodd"><rect
+      width="587"
+      height="440"
+      fill="#000048"
+    /><mask id="d" fill="white"><use xlink:href="#a" /></mask><use
+      fill="#F0D7D6"
+      xlink:href="#a"
+    /><path
+      fill="url(#b)"
+      stroke="#FF0000"
+      d="M-26.3193957,472 C-125.755364,392 -128.414905,-13 8.43652222,137 C145.287949,287 211.541417,-94 371.965574,212.791364 C532.38973,519.582727 512.152011,373.766871 406.180394,440 C300.208777,506.233129 73.1165723,552 -26.3193957,472 Z"
+      filter="url(#c)"
+      mask="url(#d)"
+    /><path
+      fill="url(#e)"
+      stroke="#FF0000"
+      d="M589,-18 C686.183603,59.8806681 642.787513,244.823039 589,293.522672 C535.212487,342.222306 469.196775,274.924497 410,249 C350.803225,223.075503 358.189195,179.996885 320,111 C281.810805,42.0031148 82.2739031,33.6730015 200.265587,-18 C318.257272,-69.6730015 491.816397,-95.8806681 589,-18 Z"
+      filter="url(#f)"
+      mask="url(#d)"
+    /><path
+      fill="url(#g)"
+      stroke="#FF0000"
+      d="M65,44 C97,-25 -4,-78 272,-78 C548,-78 504.920484,228.48838 436,279 C367.079516,329.51162 334,177 186,207 C38,237 33,113 65,44 Z"
+      filter="url(#h)"
+      mask="url(#d)"
+    /><path
+      fill="url(#i)"
+      stroke="#FF0000"
+      d="M596.513192,452.7055 C721.221219,423.386273 661,326.574121 661,182 C661,109.325498 594.511453,210.342993 517,187 C473.710314,173.963077 367.503906,89.7536867 324.422952,89.7536867 C310.143992,89.7536867 280.045829,100.817658 255.155883,122.698515 C225.163974,149.064528 202.734285,191.13643 224.65653,248.481917 C241.66217,292.966262 288.144253,355.648748 217.854274,429.45232 C147.564296,503.255892 471.805165,482.024727 596.513192,452.7055 Z"
+      filter="url(#j)"
+      mask="url(#d)"
+    /><ellipse
+      cx="171.5"
+      cy="7.5"
+      fill="url(#k)"
+      mask="url(#d)"
+      rx="345.5"
+      ry="281.5"
+    /></g></svg>

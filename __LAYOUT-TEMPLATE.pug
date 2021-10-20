@@ -1,0 +1,21 @@
+block vars
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="robots" content="noindex, follow")
+    title!= 'Cognizant | ' + pageTitle
+    link(rel='stylesheet', href='css/app.css')
+
+    block extraStyles
+
+  body
+
+    block content
+
+    a#scrollUp(href="#", title="Back to top")
+    script(src='js/min/app-min.js')
+
+    block extraScripts

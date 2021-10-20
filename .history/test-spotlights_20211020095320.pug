@@ -1,0 +1,36 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Spotlight Test"
+
+block content
+    h1!= pageTitle
+
+    .row.small-up-1.medium-up-2
+        .column.column-block
+            .card.h100.small-bd1.relative
+                img.object-fit-cover(src="https://www.cognizant.com/content/dam/Field_Marketing/future-of-industries-energy-and-utilities/Energie_article1.jpg")
+                .card-section
+                    .label.text-bold.small-mb-half ARTICLE
+                    h5 Energy &amp; Utilities reinvented
+                    p.small-m0 The energy industry faces game-changing trends and technologies. With global warming and extreme climate conditions becoming the new normal, a collective awareness has emerged worldwide that things need to change quickly. The pace of the transition globally is too slow. The solution lies not only in embracing the power of new technologies but also in changing our economic models.
+                .card-divider.pt0
+                    a.link-coverAll.button.small(href="https://cogniz.at/2GpZ1Vl", title="READ THE ARTICLE", target="_blank")
+                        | READ THE ARTICLE
+                        i.arrow-right
+        .column.column-block
+            .card.h100.small-bd1.relative
+                .video.white-controls.inside-controls
+                    .video-wrapper.relative.flex-container.align-center-middle
+                        img.object-fit-cover(src="https://www.cognizant.com/content/dam/Field_Marketing/future-of-industries-energy-and-utilities/Energie_article1.jpg")
+                        h1.small-m0.text-white.absolute
+                            a.text-white
+                                i.play-button
+                .card-section
+                    .label.text-bold.small-mb-half VIDEO
+                    h5 What the next generation has to say?
+                    p.small-m0 We have started the conversation with the next generations, how they view the future and how they think your organization will stay relevant in their lives.
+                .card-divider.pt0
+                    a.link-coverAll.button.small(href="https://youtu.be/u7ehCEU6cxQ", title="WATCH THE VIDEO", target="_blank")
+                        | WATCH THE VIDEO
+                        i.arrow-right
+

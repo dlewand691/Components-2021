@@ -1,0 +1,2104 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Kitchen Sink"
+
+block content
+
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/";
+
+  div.m0(data-sticky-container)
+    .sticky(data-sticky data-margin-top="0")
+      ul.dropdown.menu(data-dropdown-menu)
+        li.bg-white-85
+          a(href="#") Menu
+          ul.menu(data-smooth-scroll style="max-height: 80vh; overflow-y: auto;")
+            li
+              a(href="#grid") Grid
+            li
+              a(href="#spacings") Spacings
+            li
+              a(href="#typography") Typography
+            li
+              a(href="#buttons") Buttons and Links
+            li
+              a(href="#colors") Colors
+            li
+              a(href="#accordions") Accordions
+            li
+              a(href="#badge") Badge
+            li
+              a(href="#breadcrumb") Breadcrumb
+            li
+              a(href="#callout") Callout
+            li
+              a(href="#close") Close Button
+            li
+              a(href="#drilldown") Drilldown menu
+            li
+              a(href="#dropdown") Dropdown menu
+            li
+              a(href="#dropdownpane") Dropdown pane
+            li
+              a(href="#equalizer") Dropdown pane
+            li
+              a(href="#responsiveembed") Responsive embed
+            li
+              a(href="#floats") Floats
+            li
+              a(href="#forms") Forms
+            li
+              a(href="#labels") Labels
+            li
+              a(href="#magellan") Magellan
+            li
+              a(href="#mediaobject") Media object
+            li
+              a(href="#menu") Menu
+            li
+              a(href="#offccanvas") Off-canvas
+            li
+              a(href="#pagination") Pagination
+            li
+              a(href="#reveal") Reveal
+            li
+              a(href="#sticky") Sticky
+            li
+              a(href="#table") Table
+            li
+              a(href="#tabs") Tabs
+            li
+              a(href="#toggler") Toggler
+            li
+              a(href="#tooltip") Tooltip
+            li
+              a(href="#visibility") Visibility
+
+
+  // ======================================================================
+  //  ██████  ██████  ██ ██████
+  // ██       ██   ██ ██ ██   ██
+  // ██   ███ ██████  ██ ██   ██
+  // ██    ██ ██   ██ ██ ██   ██
+  //  ██████  ██   ██ ██ ██████
+  // ======================================================================
+  //- #grid
+  //- h1 Grid
+  //- h3 No margin or padding
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+
+  //- hr
+  //- h3 Padding-x
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x.grid-padding-x
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+
+  //- hr
+  //- h3 Margin-x
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x.grid-margin-x.grid-padding-x
+      .small-1.cell
+        p 1
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+      .small-1.cell
+
+  //- hr
+  //- h3 Nested Grid, no margin or padding
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x
+      .small-6.cell.align-middle.text-center 6 columns
+        .grid-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+        .grid-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+
+  //- hr
+  //- h3 Nested Grid, padding-x
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x.grid-padding-x
+      .small-6.cell.align-middle.text-center 6 columns
+        .grid-x.grid-padding-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+        .grid-x.grid-padding-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+
+  //- hr
+  //- h3 Nested Grid, margin-x
+  //- .grid-container.gridDemo(style="outline: 1px solid red")
+    .grid-x.grid-margin-x
+      .small-6.cell.align-middle.text-center 6 columns
+        .grid-x.grid-margin-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+        .grid-x.grid-margin-x
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+          .small-1.cell
+      .small-3.cell.align-middle.text-center 3 columns
+
+  // ======================================================================
+  // ███████ ██████   █████   ██████ ██ ███    ██  ██████  ███████
+  // ██      ██   ██ ██   ██ ██      ██ ████   ██ ██       ██
+  // ███████ ██████  ███████ ██      ██ ██ ██  ██ ██   ███ ███████
+  //      ██ ██      ██   ██ ██      ██ ██  ██ ██ ██    ██      ██
+  // ███████ ██      ██   ██  ██████ ██ ██   ████  ██████  ███████
+  // ======================================================================
+  //- #spacings
+  //- hr
+  //- h1 Spacings
+  //- .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        p Default size: 20px = 1rem
+        p Available margin and padding range: 0rem-10rem
+      .cell.auto
+        p.text-bold Available breakpoints:
+        ul.collapse
+          li none
+          li small
+          li small-xl
+          li medium
+          li medium-xl
+          li medium-xx
+          li large
+          li xlarge
+          li xxlarge
+      .cell.auto
+        p.text-bold Available sides:
+        ul.collapse
+          li All
+          li Top (t)
+          li Right (r)
+          li Bottom (b)
+          li Left (l)
+          li X (x) (Left and Right)
+          li Y (y) (Top and Bottom)
+    .grid-container
+      .grid-x
+        .cell
+          h2 Margins
+      .grid-x.grid-margin-x.grid-margin-y
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m0 Margin 0
+            p.m0 .m0
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m-qtr Margin 0.25
+            p.m0 .m-qtr
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m-half Margin 0.5
+            p.m0 .m-half
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m1  Margin 1
+            p.m0 .m1
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m2 Margin 2
+            p.m0 .m2
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m3 Margin 3
+            p.m0 .m3
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m4 Margin 4
+            p.m0 .m4
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m5 Margin 5
+            p.m0 .m5
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m6 Margin 6
+            p.m0 .m6
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m7 Margin 7
+            p.m0 .m7
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m8 Margin 8
+            p.m0 .m8
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m9 Margin 9
+            p.m0 .m9
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.m10 Margin 10
+            p.m0 .m10
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.mx5 Margin X 5
+            p.m0 .mx5 (0-10 available)
+        .cell.bd1
+          h5.bg-gray-lighter.p-half.my5 Margin Y 5
+            p.m0 .my5 (0-10 available)
+
+      hr
+
+      .grid-x
+        .cell
+          h2 Paddings
+      .grid-x.grid-margin-x.grid-margin-y
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p0 Padding 0
+            p.m0 .p0
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p-qtr Padding 0.25
+            p.m0 .p-qtr
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p-half Padding 0.5
+            p.m0 .p-half
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p1  Padding 1
+            p.m0 .p1
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p2 Padding 2
+            p.m0 .p2
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p3 Padding 3
+            p.m0 .p3
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p4 Padding 4
+            p.m0 .p4
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p5 Padding 5
+            p.m0 .p5
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p6 Padding 6
+            p.m0 .p6
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p7 Padding 7
+            p.m0 .p7
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p8 Padding 8
+            p.m0 .p8
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p9 Padding 9
+            p.m0 .p9
+        .cell.bd1
+          h5.m0.bg-gray-lighter.p10 Padding 10
+            p.m0 .p10
+        .cell.bd1
+          h5.m0.bg-gray-lighter.px5 Padding X 5
+            p.m0 .px5 (0-10 available)
+        .cell.bd1
+          h5.m0.bg-gray-lighter.py5 Padding Y 5
+            p.m0 .py5 (0-10 available)
+
+  // -----  End of SPACINGS  ----------
+
+  // ======================================================================
+  // ████████ ██    ██ ██████  ███████
+  //    ██     ██  ██  ██   ██ ██
+  //    ██      ████   ██████  █████
+  //    ██       ██    ██      ██
+  //    ██       ██    ██      ███████
+  // ======================================================================
+
+
+
+  // ======================================================================
+  //  █████   ██████  ██████  ██████  ██████  ██████  ██  ██████  ███    ██
+  // ██   ██ ██      ██      ██    ██ ██   ██ ██   ██ ██ ██    ██ ████   ██
+  // ███████ ██      ██      ██    ██ ██████  ██   ██ ██ ██    ██ ██ ██  ██
+  // ██   ██ ██      ██      ██    ██ ██   ██ ██   ██ ██ ██    ██ ██  ██ ██
+  // ██   ██  ██████  ██████  ██████  ██   ██ ██████  ██  ██████  ██   ████
+  // ======================================================================
+  hr
+  #accordions
+  h1 Accordions
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        ul.accordion.accordion-gradient.accordion-arrow(data-accordion data-allow-all-closed="true")
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 01
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 02
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 03
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 03
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 03
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 03
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#") Accordion 03
+            .accordion-content(data-tab-content)
+              .grid-x.grid-padding-x
+                .medium-3.cell
+                  h4.m0 September
+                  h1.text-bold 16
+                    sup.text-normal th
+                .medium-9.cell
+                  .grid-x.grid-padding-x
+                    .medium-2.cell
+                      h4 9:00
+                        sup.text-normal am
+                    .medium-10.cell
+                      a(href="#")
+                        h5 Event title Lorem ipsum dolor sit amet.
+
+                      strong Speaker name
+                      p.small
+                        em Professional Title from Speaker
+                      p Event body description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam accusamus, temporibus, cum quas consequuntur debitis illo dolor sint nobis porro! Necessitatibus blanditiis libero qui, ducimus sapiente sint quos ea exercitationem.
+
+  hr
+  h3 Accordion menu
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        ul.vertical.menu(data-accordion-menu)
+          li
+            a(href="#0") Item 1
+            ul.menu.vertical.nested.is-active
+              li
+                a(href="#0") Item 1A
+                ul.menu.vertical.nested
+                  li
+                    a(href="#0") Item 1Ai
+                  li
+                    a(href="#0") Item 1Aii
+                  li
+                    a(href="#0") Item 1Aiii
+              li
+                a(href="#0") Item 1B
+              li
+                a(href="#0") Item 1C
+          li
+            a(href="#0") Item 2
+            ul.menu.vertical.nested
+              li
+                a(href="#0") Item 2A
+              li
+                a(href="#0") Item 2B
+          li
+            a(href="#0") Item 3
+
+  //- -----  End of ACCORDIONS  ---------------------------------------------
+
+  // ======================================================================
+  // ██████   █████  ██████   ██████  ███████
+  // ██   ██ ██   ██ ██   ██ ██       ██
+  // ██████  ███████ ██   ██ ██   ███ █████
+  // ██   ██ ██   ██ ██   ██ ██    ██ ██
+  // ██████  ██   ██ ██████   ██████  ███████
+  // ======================================================================
+  hr
+  #badge
+  h1 Badge
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        span.primary.badge 1
+        span.secondary.badge 2
+        span.success.badge 3
+        span.alert.badge A
+        span.warning.badge B
+
+  // ======================================================================
+  // ██████  ██████  ███████  █████  ██████   ██████ ██████  ██    ██ ███    ███ ██████
+  // ██   ██ ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ ██    ██ ████  ████ ██   ██
+  // ██████  ██████  █████   ███████ ██   ██ ██      ██████  ██    ██ ██ ████ ██ ██████
+  // ██   ██ ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ ██    ██ ██  ██  ██ ██   ██
+  // ██████  ██   ██ ███████ ██   ██ ██████   ██████ ██   ██  ██████  ██      ██ ██████
+  // ======================================================================
+  hr
+  #breadcrumb
+  h1 Breadcrumb
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        ul.breadcrumbs
+          li
+            a(href="#0") Home
+          li
+            a(href="#0") Features
+          li.disabled Gene Splicing
+          li
+            span.show-for-sr Current:
+            |
+            | Cloning
+
+  // ======================================================================
+  //  ██████  █████  ██      ██       ██████  ██    ██ ████████
+  // ██      ██   ██ ██      ██      ██    ██ ██    ██    ██
+  // ██      ███████ ██      ██      ██    ██ ██    ██    ██
+  // ██      ██   ██ ██      ██      ██    ██ ██    ██    ██
+  //  ██████ ██   ██ ███████ ███████  ██████   ██████     ██
+  // ======================================================================
+  hr
+  #callout
+  h1 Callout
+  h3 Default callout
+  .grid-container
+    .grid-x.grid-x-padding
+      .cell
+        .callout
+          h5 This is a callout.
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+        .callout.primary
+          h5 This is a primary callout.
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+        .callout.secondary
+          h5 This is a secondary callout
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+        .callout.success
+          h5 This is a success callout
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+        .callout.warning
+          h5 This is a warning callout
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+        .callout.alert
+          h5 This is an alert callout
+          p It has an easy to override visual style, and is appropriately subdued.
+          a(href="#0") It's dangerous to go alone, take this.
+
+  h3 Callout-1-Column
+  .py1.flex-container.align-middle.bg-primary.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .cell.text-center
+          h3.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+  hr
+  h3 Callout-2-Column
+  .py1.flex-container.align-middle.bg-black.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .small-11.medium-5.cell.text-center.medium-text-right
+          h1.text-bold.text-accent2-light.m0 70%+
+        .small-11.medium-5.cell
+          p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+
+  hr
+  h3 Callout-2-Column-v2
+  .py1.flex-container.align-middle.bg-primary.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .small-11.medium-5.cell.text-center.medium-text-left
+          p.text-bold.text-caps.small.m0 Vivamus Hendrerit Arcu Sed Erat
+          h4.m0 Quisque Eget Odio Ac Lectus
+        .small-11.medium-5.cell
+          p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+
+  hr
+  h3 Callout-2-Column-v2-with-buttons
+  .py1.flex-container.align-middle.bg-primary.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x
+        .small-11.medium-5.cell.text-center.medium-text-left
+          p.text-bold.text-caps.small.m0 healthcare
+          h4.m0 Designing patient-centric health services and technologies
+        .small-11.medium-5.cell
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+          a.button.small.arrow.mb0(href="#") Read more
+          a.button.small.arrow.mb0(href="#") Read more
+
+  hr
+  h3 Callout-2-Column-v2-with-header-buttons
+  .py1.bg-primary.text-white(style="min-height: 400px")
+    .py1.text-center.text-caps
+      h3 industry spotlight
+    .grid-container
+      .grid-x.grid-padding-x
+        .small-11.medium-5.cell.text-center.medium-text-left
+          p.text-bold.text-caps.small.m0 healthcare
+          h4.m0 Designing patient-centric health services and technologies
+        .small-11.medium-5.cell
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+          a.button.small.arrow(href="#") Read more
+          a.button.small.arrow(href="#") Read more
+
+  hr
+  h3 Callout-1/3-2/3-Column-TEXT
+  .py1.flex-container.align-middle.bg-primary.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .small-11.medium-4.cell.text-center.medium-text-left
+          h4.text-caps.m0 Quisque Eget Odio Ac Lectus
+        .small-11.medium-6.cell
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+          a.button.small.arrow(href="#") Read more
+
+  hr
+  h3 Callout-1/3-2/3-Column-IMAGE
+  .py1.flex-container.align-middle.bg-primary.text-white(style="min-height: 400px")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .small-11.medium-4.cell.text-center
+          img.mb1.medium-mb0(src="https://unsplash.it/300/350?image=901")
+        .small-11.medium-6.cell
+          h4.text-caps Nulla At Nulla Justo, Eget
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
+          a.button.small.arrow.mb0(href="#") Read more
+
+  hr
+  h3 2 Column alternating side to side
+  .align-middle.py4.bg-primary.text-white
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .cell.large-auto.text-caps
+          h3 Financial Services
+          p.medium-m0 Investment Banking, Asset Management, Lending, Retail Banking
+
+        .cell.large-auto
+          ul.mb0
+            li
+              span.strong 11,500
+              | Associates Worldwide
+            li
+              span.strong $1.3 Trillion
+              | Assets Services – 950 Funds
+            li.m0
+              span.strong 33%
+              | of All US Properties
+
+  .align-middle.bg-accent2-dark.text-white.py4
+    .grid-container
+      .grid-x.grid-padding-x.align-middle
+        .cell.large-auto
+          ul.mb0
+            li
+              span.strong 7,000
+              | Associates in
+              span.strong 10
+              | Worldwide Centers
+            li
+              span.strong 30 million
+              | customer claims processes annually
+            li
+              span.strong 7x Conversion gains,
+              | with
+              span.strong $900 million
+              | leads generated
+            li
+              span.strong 99% Service levels
+              | upheld for all clients and processes
+            li.m0
+              span.strong 30% Reduction
+              | in call volume due to self-services
+
+        .cell.large-auto.text-caps
+          h3 Insurance Services
+          p.medium-m0 Life & Annuities, Property & Casualty, Retirement
+
+  // ======================================================================
+  //  ██████ ██       ██████  ███████ ███████
+  // ██      ██      ██    ██ ██      ██
+  // ██      ██      ██    ██ ███████ █████
+  // ██      ██      ██    ██      ██ ██
+  //  ██████ ███████  ██████  ███████ ███████
+  // ======================================================================
+  hr
+  #close
+  h1 Close Button
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        .callout(data-closable)
+          button.close-button(aria-label="Close alert", type="button", data-close)
+            span(aria-hidden="true") ×
+          p This is a close button example.
+
+  // ======================================================================
+  // ██████  ██████  ██ ██      ██      ██████   ██████  ██     ██ ███    ██
+  // ██   ██ ██   ██ ██ ██      ██      ██   ██ ██    ██ ██     ██ ████   ██
+  // ██   ██ ██████  ██ ██      ██      ██   ██ ██    ██ ██  █  ██ ██ ██  ██
+  // ██   ██ ██   ██ ██ ██      ██      ██   ██ ██    ██ ██ ███ ██ ██  ██ ██
+  // ██████  ██   ██ ██ ███████ ███████ ██████   ██████   ███ ███  ██   ████
+  // ======================================================================
+  hr
+  #drilldown
+  h1 Drilldown menu
+  .grid-container
+    .grid-x.grid-x-padding
+      .cell
+        ul#m1.vertical.menu(data-drilldown, style="width: 200px")
+          li
+            a(href="#0") Item 1
+            ul#m2.vertical.menu
+              li
+                a(href="#0") Item 1A
+                ul#m3.vertical.menu
+                  li
+                    a(href="#0") Item 1Aa
+                  li
+                    a(href="#0") Item 1Ba
+                  li
+                    a(href="#0") Item 1Ca
+                  li
+                    a(href="#0") Item 1Da
+                  li
+                    a(href="#0") Item 1Ea
+              li
+                a(href="#0") Item 1B
+              li
+                a(href="#0") Item 1C
+              li
+                a(href="#0") Item 1D
+              li
+                a(href="#0") Item 1E
+          li
+            a(href="#0") Item 2
+            ul.vertical.menu
+              li
+                a(href="#0") Item 2A
+              li
+                a(href="#0") Item 2B
+              li
+                a(href="#0") Item 2C
+              li
+                a(href="#0") Item 2D
+              li
+                a(href="#0") Item 2E
+          li
+            a(href="#0") Item 3
+            ul.vertical.menu
+              li
+                a(href="#0") Item 3A
+              li
+                a(href="#0") Item 3B
+              li
+                a(href="#0") Item 3C
+              li
+                a(href="#0") Item 3D
+              li
+                a(href="#0") Item 3E
+          li
+            a(href="#0") Item 4
+
+  // ======================================================================
+  // ██████  ██████   ██████  ██████  ██████   ██████  ██     ██ ███    ██
+  // ██   ██ ██   ██ ██    ██ ██   ██ ██   ██ ██    ██ ██     ██ ████   ██
+  // ██   ██ ██████  ██    ██ ██████  ██   ██ ██    ██ ██  █  ██ ██ ██  ██
+  // ██   ██ ██   ██ ██    ██ ██      ██   ██ ██    ██ ██ ███ ██ ██  ██ ██
+  // ██████  ██   ██  ██████  ██      ██████   ██████   ███ ███  ██   ████
+  // ======================================================================
+  hr
+  #dropdown
+  h1 Dropdown menu
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell.auto
+        ul.dropdown.menu(data-dropdown-menu)
+          li
+            a Item 1
+            ul.menu
+              li
+                a(href="#0") Item 1A Loooong
+              li
+                a(href="#0") Item 1 sub
+                ul.menu
+                  li
+                    a(href="#0") Item 1 subA
+                  li
+                    a(href="#0") Item 1 subB
+                  li
+                    a(href="#0") Item 1 sub
+                    ul.menu
+                      li
+                        a(href="#0") Item 1 subA
+                      li
+                        a(href="#0") Item 1 subB
+                  li
+                    a(href="#0") Item 1 sub
+                    ul.menu
+                      li
+                        a(href="#0") Item 1 subA
+              li
+                a(href="#0") Item 1B
+          li
+            a(href="#0") Item 2
+            ul.menu
+              li
+                a(href="#0") Item 2A
+              li
+                a(href="#0") Item 2B
+          li
+            a(href="#0") Item 3
+          li
+            a(href="#0") Item 4
+      .cell.auto.bg-primary
+        ul.dropdown.menu(data-dropdown-menu)
+          li
+            a Item 1
+            ul.menu
+              li
+                a(href="#0") Item 1A Loooong
+              li
+                a(href="#0") Item 1 sub
+                ul.menu
+                  li
+                    a(href="#0") Item 1 subA
+                  li
+                    a(href="#0") Item 1 subB
+                  li
+                    a(href="#0") Item 1 sub
+                    ul.menu
+                      li
+                        a(href="#0") Item 1 subA
+                      li
+                        a(href="#0") Item 1 subB
+                  li
+                    a(href="#0") Item 1 sub
+                    ul.menu
+                      li
+                        a(href="#0") Item 1 subA
+              li
+                a(href="#0") Item 1B
+          li
+            a(href="#0") Item 2
+            ul.menu
+              li
+                a(href="#0") Item 2A
+              li
+                a(href="#0") Item 2B
+          li
+            a(href="#0") Item 3
+          li
+            a(href="#0") Item 4
+
+  hr
+  #dropdownpane
+  h1 Dropdown pane
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        button.button(type="button", data-toggle="example-dropdown") Toggle Dropdown
+        #example-dropdown.dropdown-pane(data-dropdown)
+          p Just some junk that needs to be said. Or not. Your choice.
+
+  // ======================================================================
+  // ███████  ██████  ██    ██  █████  ██      ██ ███████ ███████ ██████
+  // ██      ██    ██ ██    ██ ██   ██ ██      ██    ███  ██      ██   ██
+  // █████   ██    ██ ██    ██ ███████ ██      ██   ███   █████   ██████
+  // ██      ██ ▄▄ ██ ██    ██ ██   ██ ██      ██  ███    ██      ██   ██
+  // ███████  ██████   ██████  ██   ██ ███████ ██ ███████ ███████ ██   ██
+  //             ▀▀
+  // ======================================================================
+  hr
+  #equalizer
+  h1 Equalizer
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        #test-eq.grid-x.grid-margin-x(data-equalizer, data-equalize-on="medium")
+          .cell.medium-4
+            .callout(data-equalizer-watch)
+              img(src="https://www.placehold.it/300x200", alt)
+          .cell.medium-4
+            .callout(data-equalizer-watch)
+              p Pellentesque habitant morbi tristique senectus et netus et, ante.
+          .cell.medium-4
+            .callout(data-equalizer-watch)
+              img(src="https://www.placehold.it/300x200", alt)
+
+  // ======================================================================
+  // ███████ ███    ███ ██████  ███████ ██████
+  // ██      ████  ████ ██   ██ ██      ██   ██
+  // █████   ██ ████ ██ ██████  █████   ██   ██
+  // ██      ██  ██  ██ ██   ██ ██      ██   ██
+  // ███████ ██      ██ ██████  ███████ ██████
+  // ======================================================================
+  hr
+  #responsiveembed
+  h1 Responsive Embed
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        .responsive-embed.widescreen
+          iframe(
+            width="420",
+            height="315",
+            src="http://www.youtube.com/embed/mM5_T-F1Yn4",
+            frameborder="0",
+            allowfullscreen
+          )
+
+  // ======================================================================
+  // ███████ ██       ██████   █████  ████████ ███████
+  // ██      ██      ██    ██ ██   ██    ██    ██
+  // █████   ██      ██    ██ ███████    ██    ███████
+  // ██      ██      ██    ██ ██   ██    ██         ██
+  // ██      ███████  ██████  ██   ██    ██    ███████
+  // ======================================================================
+  hr
+  #floats
+  h1 Floats
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        .callout.clearfix
+          a.button.float-left Left
+          a.button.float-right Right
+
+  // ======================================================================
+  // ███████  ██████  ██████  ███    ███ ███████
+  // ██      ██    ██ ██   ██ ████  ████ ██
+  // █████   ██    ██ ██████  ██ ████ ██ ███████
+  // ██      ██    ██ ██   ██ ██  ██  ██      ██
+  // ██       ██████  ██   ██ ██      ██ ███████
+  // ======================================================================
+  hr
+  #forms
+  h1 Forms
+  .grid-container
+    .grid-x.grid-padding-x
+      .small-12.cell
+        form(data-abide novalidate)
+          .alert.callout.small(data-abide-error, style="display: none;")
+            p
+              i.report-problem-triangle
+              |  There are some errors in your form.
+          .grid-x.grid-padding-x.align-center.expanded
+            .small-12.cell
+              label
+                | Number Required
+                input(type="text", placeholder="1234", aria-describedby="exampleHelpText", required, pattern="number")
+                span.form-error Yo, you had better fill this out, it's required.
+              p#exampleHelpText.help-text Here's how you use this input field!
+            .small-12.cell
+              label
+                | Nothing Required!
+                input(type="text", placeholder="Use me, or don't", aria-describedby="exampleHelpTex", data-abide-ignore="")
+              p#exampleHelpTex.help-text This input is ignored by Abide using &grave;data-abide-ignore&grave;
+            .small-12.cell
+              label
+                | Password Required
+                input#password(type="password", placeholder="yeti4preZ", aria-describedby="exampleHelpText", required)
+                span.form-error I'm required!
+              p#exampleHelpText.help-text Enter a password please.
+            .small-12.cell
+              label
+                | Re-enter Password
+                input(type="password", placeholder="yeti4preZ", aria-describedby="exampleHelpText2", required, pattern="alpha_numeric", data-equalto="password")
+                span.form-error Hey, passwords are supposed to match!
+              p#exampleHelpText2.help-text
+                | This field is using the &grave;data-equalto=&quot;password&quot;&grave; attribute, causing it to match the password field above.
+          .grid-x.grid-padding-x.align-center.expanded
+            .medium-4.cell
+              label
+                | URL Pattern
+                input(type="text", placeholder="http://foundation.zurb.com", pattern="url")
+            .medium-4.cell
+              label
+                | Standard Dropdown
+                select#select(data-placeholder="Select", required)
+                  option(value="volvo") Volvo
+                  option(value="saab") Saab
+                  option(value="mercedes") Mercedes
+                  option(value="audi") Audi
+            .medium-4.cell
+              label
+                | Select2 Dropdown
+                select#select.select2(data-placeholder="Select", required)
+                  option(value="volvo") Volvo
+                  option(value="saab") Saab
+                  option(value="mercedes") Mercedes
+                  option(value="audi") Audi
+          .grid-x.grid-padding-x.align-center.expanded.medium-up-3
+            .cell.cell-block
+              h6.m0 Radios that are required
+              label(for="validationRadio01")
+                input#validationRadio01.radio(type="radio", name="pokemon", value="Red")
+                | Red
+              label(for="validationRadio02")
+                input#validationRadio02.radio(type="radio", name="pokemon", value="Blue", required)
+                | Blue
+              label(for="validationRadio03")
+                input#validationRadio03.radio(type="radio", name="pokemon", value="Yellow")
+                | Yellow
+            .cell.cell-block
+              h6.m0 Radios that are not required
+              label(for="validationRadio04")
+                input#validationRadio04.radio(type="radio", name="pockets", value="Red")
+                | Red
+              label(for="validationRadio05")
+                input#validationRadio05.radio(type="radio", name="pockets", value="Blue")
+                | Blue
+              label(for="validationRadio06")
+                input#validationRadio06.radio(type="radio", name="pockets", value="Yellow")
+                | Yellow
+            .cell.cell-block
+              h6.m0 Checkboxes that are not required
+              label(for="validationRadio07")
+                input#validationRadio07.checkbox(type="checkbox")
+                | Checkbox 1
+              label(for="validationRadio08")
+                input#validationRadio08.checkbox(type="checkbox")
+                | Checkbox 2
+              label(for="validationRadio09")
+                input#validationRadio09.checkbox(type="checkbox")
+                | Checkbox 3
+            .cell.cell-block
+              h6 Switch, default
+              .switch.tiny
+                input#exampleSwitch01.switch-input(type="checkbox", name="exampleSwitch01")
+                label.switch-paddle(for="exampleSwitch01")
+                  span.show-for-sr Switch
+              .switch.small
+                input#exampleSwitch02.switch-input(type="checkbox", name="exampleSwitch02")
+                label.switch-paddle(for="exampleSwitch02")
+                  span.show-for-sr Switch
+              .switch
+                input#exampleSwitch03.switch-input(type="checkbox", name="exampleSwitch03")
+                label.switch-paddle(for="exampleSwitch03")
+                  span.show-for-sr Switch
+              .switch.large
+                input#exampleSwitch04.switch-input(type="checkbox", name="exampleSwitch04")
+                label.switch-paddle(for="exampleSwitch04")
+                  span.show-for-sr Switch
+            .cell.cell-block
+              h6 Switch, round
+              .flex-container.align-middle
+                .switch.rounded.tiny.mr-half
+                  input#exampleSwitch05.switch-input(type="checkbox", name="exampleSwitch05")
+                  label.switch-paddle(for="exampleSwitch05")
+                    span.show-for-sr Switch
+                p Switch
+              .flex-container.align-middle
+                .switch.rounded.small.mr-half
+                  input#exampleSwitch06.switch-input(type="checkbox", name="exampleSwitch06")
+                  label.switch-paddle(for="exampleSwitch06")
+                    span.show-for-sr Switch
+                p Switch
+              .flex-container.align-middle
+                .switch.rounded.mr-half
+                  input#exampleSwitch07.switch-input(type="checkbox", name="exampleSwitch07")
+                  label.switch-paddle(for="exampleSwitch07")
+                    span.show-for-sr Switch
+                p Switch
+              .flex-container.align-middle
+                .switch.rounded.large.mr-half
+                  input#exampleSwitch08.switch-input(type="checkbox", name="exampleSwitch08")
+                  label.switch-paddle(for="exampleSwitch08")
+                    span.show-for-sr Switch
+                p Switch
+
+          .grid-x.grid-padding-x.align-center.expanded.pt4
+            button.button.large.px4(type="submit", value="Submit") Submit
+          .grid-x.grid-padding-x.align-center.expanded
+            button.button.small(type="reset", value="Reset") Reset
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h3 Float Label Form, Dark Background
+
+  .py3(data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;")
+    .grid-container
+      form(data-abide novalidate).white
+        .grid-x.grid-padding-x
+          .cell.text-white.text-center
+            h3.text-white CONTINUE THE CONVERSATION
+            p Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office:
+              a.text-white(href="javascript:void(0)") cognizant_community@info-event.jp
+        .grid-x.grid-padding-x.cell
+          .alert.callout.small(data-abide-error, style="display: none;")
+            p
+              i.report-problem-triangle
+              |  There are some errors in your form.
+        .grid-x.grid-padding-x.small-up-1.medium-up-2
+          .cell.pb1
+            label.has-float-label
+              input(type="text" placeholder="John Smith" required)
+              span Full Name
+              span.form-error
+                | Field error
+
+          .cell.pb1
+            label.has-float-label
+              input(type="email" placeholder="email@example.com" required)
+              span Email
+              span.form-error
+                | Field error
+
+          .cell.pb1
+            label.has-float-label
+              input(type="text" placeholder="Your Company")
+              span Organziation
+
+          .cell.pb1
+            label.has-float-label
+              input(type="tel" placeholder="1-800-123-4567" pattern="number" required)
+              span Contact Number
+              span.form-error
+                | Field error
+
+          .cell.pb1
+            label.has-float-label
+              select(type="text" placeholder="Where are you located?" required)
+                option Location 01
+                option Location 02
+                option Location 03
+                option Location 04
+              span Region
+              span.form-error
+                | Field error
+
+          .cell.pb1
+            label.has-float-label
+              select(type="text" placeholder="How can we help you?" required)
+                option Inquiry Type 01
+                option Inquiry Type 02
+                option Inquiry Type 03
+                option Inquiry Type 04
+              span Inquiry Type
+              span.form-error
+                | Field error
+
+          .cell.pb1
+            label.has-float-label
+              select(type="text" placeholder="How can we help you?" required)
+                option Sub-Inquiry Type 01
+                option Sub-Inquiry Type 02
+                option Sub-Inquiry Type 03
+                option Sub-Inquiry Type 04
+              span Sub-Inquiry Type
+              span.form-error
+                | Field error
+
+        .grid-x.grid-padding-x
+          .cell.text-white
+            label.has-float-label
+              textarea(rows="3", cols="15" placeholder="Your message…" required)
+              span Message
+              span.form-error
+                | Field error
+        .text-center
+          button.button.arrow(type="submit" value="Submit") SUBMIT
+
+  hr
+  .grid-x.grid-padding-x
+    .cell
+      h3 Float Label Form, Light Background
+  .grid-container
+    form(data-abide novalidate).py3
+      .grid-x.grid-padding-x
+        .cell.text-center
+          h3 CONTINUE THE CONVERSATION
+          p Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office:
+            a(href="javascript:void(0)") cognizant_community@info-event.jp
+      .grid-x.grid-padding-x.cell
+        .alert.callout.small(data-abide-error, style="display: none;")
+          p
+            i.report-problem-triangle
+            |  There are some errors in your form.
+      .grid-x.grid-padding-x.small-up-1.medium-up-2
+        .cell.pb1
+          label.has-float-label
+            input(type="text" placeholder="John Smith" required)
+            span Full Name
+            span.form-error
+              | Field error
+
+        .cell.pb1
+          label.has-float-label
+            input(type="email" placeholder="johnsmith@example.com" required)
+            span Email
+            span.form-error
+              | Field error
+
+        .cell.pb1
+          label.has-float-label
+            input(type="text" placeholder="Abc Company")
+            span Organziation
+
+        .cell.pb1
+          label.has-float-label
+            input(type="text" placeholder="Abc Title")
+            span Title
+
+        .cell.pb1
+          label.has-float-label
+            input(type="text" placeholder="Abc Department")
+            span Department
+
+        .cell.pb1
+          label.has-float-label
+            input(type="tel" placeholder="8888 8888" pattern="dashes_only" required)
+            span Contact Number
+            span.form-error
+              | Field error
+
+        .cell.pb1
+          label.has-float-label
+            select(type="text" placeholder="Where are you located?" required)
+              option Location 01
+              option Location 02
+              option Location 03
+              option Location 04
+            span Region
+            span.form-error
+              | Field error
+
+        .cell.pb1
+          label.has-float-label
+            select(type="text" placeholder="How can we help you?" required)
+              option Inquiry Type 01
+              option Inquiry Type 02
+              option Inquiry Type 03
+              option Inquiry Type 04
+            span Inquiry Type
+            span.form-error
+              | Field error
+
+        .cell.pb1
+          label.has-float-label
+            select(type="text" placeholder="How can we help you?")
+              option Sub-Inquiry Type 01
+              option Sub-Inquiry Type 02
+              option Sub-Inquiry Type 03
+              option Sub-Inquiry Type 04
+            span Sub-Inquiry Type
+
+      .grid-x.grid-padding-x
+        .cell
+          label.has-float-label
+            textarea(rows="3", cols="15" placeholder="How can we help you?" required)
+            span How can we help you?
+            span.form-error
+              | Field error
+      .text-center
+        button.button.arrow(type="submit" value="Submit") SUBMIT
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h3 2 column Float Label Form, Light Background
+  .py3
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.text-center
+          h3 CONTACT COGNIZANT
+    .grid-container
+      .grid-x.grid-padding-x
+        .small-12.medium-6.cell
+          h5.text-primary SEND A MESSAGE
+          form(data-abide novalidate)
+            .alert.callout.small(data-abide-error, style="display: none;")
+              p
+                i.report-problem-triangle
+                |  There are some errors in your form.
+            label.has-float-label
+              input(type="text" placeholder="John Smith" required)
+              span Name
+              span.form-error
+                | Field error
+
+            label.has-float-label
+              input(type="email" placeholder="johnsmith@example.com" required)
+              span Email
+              span.form-error
+                | Field error
+
+            label.has-float-label
+              input(type="text" placeholder="Abc Company")
+              span Organziation
+
+            label.has-float-label
+              input(type="text" placeholder="Abc Title")
+              span Title
+
+            label.has-float-label
+              input(type="text" placeholder="Abc Department")
+              span Department
+
+            label.has-float-label
+              input(type="tel" placeholder="8888 8888" pattern="dashes_only" required)
+              span Contact Number
+              span.form-error
+                | Field error
+
+            label.has-float-label
+              select(type="text" placeholder="Where are you located?" required)
+                option Select a country
+                option Location 02
+                option Location 03
+                option Location 04
+              span.form-error
+                | Field error
+
+            label.has-float-label
+              textarea(rows="3", cols="15" placeholder="How can we help you?" required)
+              span How can we help you?
+              span.form-error
+                | Field error
+            .text-center
+              button.button.arrow(type="submit" value="Submit") SUBMIT
+        .small-12.medium-6.cell
+          h5.text-primary CONTACT COGNIZANT CAREERS
+          p If you are interested in an opportunity with Cognizant, please visit our #[a(href="#") Careers] page or visit the Cognizant Careers #[a(href="#") FAQs].
+
+  // ======================================================================
+  // ██       █████  ██████  ███████ ██      ███████
+  // ██      ██   ██ ██   ██ ██      ██      ██
+  // ██      ███████ ██████  █████   ██      ███████
+  // ██      ██   ██ ██   ██ ██      ██           ██
+  // ███████ ██   ██ ██████  ███████ ███████ ███████
+  // ======================================================================
+  hr
+  #labels
+  h1 Labels
+  .grid-container
+    .grid-x.grid-padding-x
+      span.primary.label Primary Label
+      span.secondary.label Secondary Label
+      span.success.label Success Label
+      span.alert.label Alert Label
+      span.warning.label Warning Label
+
+  // ======================================================================
+  // ███    ███  █████   ██████  ███████ ██      ██       █████  ███    ██
+  // ████  ████ ██   ██ ██       ██      ██      ██      ██   ██ ████   ██
+  // ██ ████ ██ ███████ ██   ███ █████   ██      ██      ███████ ██ ██  ██
+  // ██  ██  ██ ██   ██ ██    ██ ██      ██      ██      ██   ██ ██  ██ ██
+  // ██      ██ ██   ██  ██████  ███████ ███████ ███████ ██   ██ ██   ████
+  // ======================================================================
+  hr
+  #magellan
+  h1 Magellan
+  .grid-container
+    .grid-x.grid-padding-x
+      ul.horizontal.menu(data-magellan)
+        li
+          a(href="#magellan-first") First Arrival
+        li
+          a(href="#magellan-second") Second Arrival
+        li
+          a(href="#magellan-third") Third Arrival
+        .sections
+          section#magellan-first(data-magellan-target="magellan-first")
+            h4 First section
+            p Duis scelerisque ligula ut metus rhoncus scelerisque. Integer ut egestas metus. Nulla facilisi. Aenean luctus magna lobortis ligula rhoncus, sit amet lacinia lorem sagittis. Sed ultrices at metus id aliquet. Vestibulum in condimentum quam, id ornare erat. Vivamus nec justo quis ex fringilla condimentum ac non quam.
+          section#magellan-second(data-magellan-target="magellan-second")
+            h4 Second section
+            p Sed vulputate, felis interdum molestie viverra, neque urna placerat dui, ac efficitur est magna eu tellus. Nunc sodales consequat eros at bibendum. Vestibulum hendrerit gravida elit non eleifend. Nunc at vehicula ipsum. Vestibulum eu suscipit felis. Proin ipsum felis, consequat congue quam ac, efficitur tincidunt ex. Morbi accumsan sem iaculis nunc malesuada tincidunt.
+          section#magellan-third(data-magellan-target="magellan-third")
+            h4 Third section
+            p Aliquam orci orci, maximus a pulvinar id, tincidunt a neque. Suspendisse eros diam, finibus et faucibus ac, suscipit feugiat orci. Morbi scelerisque sem id blandit malesuada. Donec suscipit tincidunt dolor in blandit. Nam rhoncus risus vitae lacinia dictum. Cras lobortis, nulla non faucibus mattis, tellus nibh condimentum eros, posuere volutpat arcu risus vel ante. In ut ullamcorper eros, et vestibulum risus. Fusce auctor risus vitae diam viverra tincidunt.
+
+  // ======================================================================
+  // ███    ███ ███████ ██████  ██  █████       ██████  ██████       ██ ███████  ██████ ████████
+  // ████  ████ ██      ██   ██ ██ ██   ██     ██    ██ ██   ██      ██ ██      ██         ██
+  // ██ ████ ██ █████   ██   ██ ██ ███████     ██    ██ ██████       ██ █████   ██         ██
+  // ██  ██  ██ ██      ██   ██ ██ ██   ██     ██    ██ ██   ██ ██   ██ ██      ██         ██
+  // ██      ██ ███████ ██████  ██ ██   ██      ██████  ██████   █████  ███████  ██████    ██
+  // ======================================================================
+  hr
+  #mediaobject
+  h1 Media Object
+  .grid-container
+    .grid-x.grid-padding-x
+      .media-object
+        .media-object-section
+          img(src="http://www.placehold.it/200x200", alt)
+        .media-object-section
+          h4 Dreams feel real while we're in them.
+          p I'm going to improvise. Listen, there's something you should know about me... about inception. An idea is like a virus, resilient, highly contagious. The smallest seed of an idea can grow. It can grow to define or destroy you.
+
+  // ======================================================================
+  // ███    ███ ███████ ███    ██ ██    ██
+  // ████  ████ ██      ████   ██ ██    ██
+  // ██ ████ ██ █████   ██ ██  ██ ██    ██
+  // ██  ██  ██ ██      ██  ██ ██ ██    ██
+  // ██      ██ ███████ ██   ████  ██████
+  // ======================================================================
+  hr
+  #menu
+  h1 Menu
+  .grid-container
+    .grid-x.grid-padding-x
+      ul.menu
+        li
+          a(href="#0")
+            i.fi-list
+            span One
+        li
+          a(href="#0")
+            i.fi-list
+            span Two
+        li
+          a(href="#0")
+            i.fi-list
+            span Three
+        li
+          a(href="#0")
+            i.fi-list
+            span Four
+
+  // ======================================================================
+  //  ██████  ███████ ███████      ██████  █████  ███    ██ ██    ██  █████  ███████
+  // ██    ██ ██      ██          ██      ██   ██ ████   ██ ██    ██ ██   ██ ██
+  // ██    ██ █████   █████ █████ ██      ███████ ██ ██  ██ ██    ██ ███████ ███████
+  // ██    ██ ██      ██          ██      ██   ██ ██  ██ ██  ██  ██  ██   ██      ██
+  //  ██████  ██      ██           ██████ ██   ██ ██   ████   ████   ██   ██ ███████
+  // ======================================================================
+  hr
+  #offccanvas
+  h1 Off-canvas
+  .grid-container
+    .grid-x.grid-padding-x
+      .off-canvas-wrapper
+        .off-canvas-wrapper-inner(data-off-canvas-wrapper)
+          #offCanvasLeft.off-canvas.position-left(data-off-canvas)
+            // left off-canvas markup
+          #offCanvasRight.off-canvas.position-right(
+            data-off-canvas,
+            data-position="right"
+          )
+            // right off-canvas markup
+          .off-canvas-content(data-off-canvas-content)
+            // page content
+            // Fire Off-canvas
+            button.button(type="button", data-toggle="offCanvasLeft") Open Menu
+
+  // ======================================================================
+  // ██████   █████   ██████  ██ ███    ██  █████  ████████ ██  ██████  ███    ██
+  // ██   ██ ██   ██ ██       ██ ████   ██ ██   ██    ██    ██ ██    ██ ████   ██
+  // ██████  ███████ ██   ███ ██ ██ ██  ██ ███████    ██    ██ ██    ██ ██ ██  ██
+  // ██      ██   ██ ██    ██ ██ ██  ██ ██ ██   ██    ██    ██ ██    ██ ██  ██ ██
+  // ██      ██   ██  ██████  ██ ██   ████ ██   ██    ██    ██  ██████  ██   ████
+  // ======================================================================
+  hr
+  #pagination
+  h1 Pagination
+  .grid-container
+    .grid-x.grid-padding-x
+      ul.pagination(role="navigation", aria-label="Pagination")
+        li.disabled Previous
+          span.show-for-sr page
+        li
+          span.show-for-sr You're on page 1
+          a.current(href="#0", aria-label="Page 1") 1
+        li
+          a(href="#0", aria-label="Page 2") 2
+        li
+          a(href="#0", aria-label="Page 3") 3
+        li
+          a(href="#0", aria-label="Page 4") 4
+        li.ellipsis(aria-hidden="true")
+        li
+          a(href="#0", aria-label="Page 12") 12
+        li
+          a(href="#0", aria-label="Page 13") 13
+        li
+          a(href="#0", aria-label="Next page") Next
+            span.show-for-sr page
+
+  // ======================================================================
+  // ██████  ███████ ██    ██ ███████  █████  ██
+  // ██   ██ ██      ██    ██ ██      ██   ██ ██
+  // ██████  █████   ██    ██ █████   ███████ ██
+  // ██   ██ ██       ██  ██  ██      ██   ██ ██
+  // ██   ██ ███████   ████   ███████ ██   ██ ███████
+  // ======================================================================
+  hr
+  #reveal
+  h1 Reveal Modal
+  .grid-container
+    .grid-x.grid-padding-x
+      p
+        a(data-open="exampleModal1") Click me for a modal
+      #exampleModal1.reveal(data-reveal)
+        h1 Awesome. I Have It.
+        p.lead Your couch. It is mine.
+        p I'm a cool paragraph that lives inside of an even cooler modal. Wins!
+        button.close-button(data-close, aria-label="Close reveal", type="button")
+          span(aria-hidden="true") ×
+
+  // ======================================================================
+  // ███████ ████████ ██  ██████ ██   ██ ██    ██
+  // ██         ██    ██ ██      ██  ██   ██  ██
+  // ███████    ██    ██ ██      █████     ████
+  //      ██    ██    ██ ██      ██  ██     ██
+  // ███████    ██    ██  ██████ ██   ██    ██
+  // ======================================================================
+  hr
+  #sticky
+  h1 Sticky
+  .grid-container
+    .grid-x.grid-padding-x
+      #example1.cell.small-6(data-something)
+        p#doodle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      .cell.small-6.right(data-sticky-container)
+        .sticky(data-sticky, data-margin-top="6", data-anchor="example1")
+          img.thumbnail(src="http://www.placehold.it/300x200", alt)
+
+  // ======================================================================
+  // ████████  █████  ██████  ██      ███████
+  //    ██    ██   ██ ██   ██ ██      ██
+  //    ██    ███████ ██████  ██      █████
+  //    ██    ██   ██ ██   ██ ██      ██
+  //    ██    ██   ██ ██████  ███████ ███████
+  // ======================================================================
+  hr
+  #table
+  h1 Table
+  .grid-container
+    .grid-x.grid-padding-x
+      table
+        thead
+          tr
+            th Table Header
+            th Table Header
+            th Table Header
+            th Table Header
+        tbody
+          tr
+            td Content Goes Here
+            td This is longer content Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+          tr
+            td Content Goes Here
+            td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+            td Content Goes Here
+            td Content Goes Here
+
+  // ======================================================================
+  // ████████  █████  ██████  ███████
+  //    ██    ██   ██ ██   ██ ██
+  //    ██    ███████ ██████  ███████
+  //    ██    ██   ██ ██   ██      ██
+  //    ██    ██   ██ ██████  ███████
+  // ======================================================================
+  hr
+  #tabs
+  h1 Tabs
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Standard Tabs: Horizontal
+
+    .grid-x.grid-padding-x
+      .small-12.cell
+        ul#standard-tabs-horizontal.accordion.accordion-arrow.accordion-gradient.flex-container-large(data-responsive-accordion-tabs="accordion medium-accordion large-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+          li.accordion-item.is-active(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal1") Image with Text
+            #standardPanelHorizontal1.accordion-content.is-acitve(data-tab-content)
+              .grid-x.grid-padding-x
+                .small-12.cell.medium-shrink
+                  img.w100.mb1(src=siteURL+'images/PDF-thumbnail.jpg')
+
+                .cell.auto
+                  p.small APPLICATION SERVICES
+                  h4.text-primary When Transformation Moves from Hyper-Digital to Ubiquitous
+                  p In the past, monumental projects took decades to complete. Today our monumental project is to build the digital world in a much more compressed timeframe. Digital leaders will be those organizations that use business analytics to offer deep insights into customer behaviors, wants and needs, develop new products and services and ultimately innovate and exploit new business opportunities.
+                  a.button.arrow(href="#") Button 1 Normal Tab
+                  a.button.bg-green.arrow(href="#") Button 2 Open in new tab
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal2") Video with text and share
+            #standardPanelHorizontal2.accordion-content(data-tab-content)
+              .grid-x.grid-padding-x.medium-unstack
+                .cell.auto
+                  .flex-container.align-middle.align-center.mb1.relative
+                    a.text-white.m0.absolute(data-open='overview-video')
+                      h1.m0.lh0
+                        i.play-button
+                    img.w100(src="https://source.unsplash.com/fPkvU7RDmCo/400x225")
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4.text-primary Build applications that deliver the digital experiences customers want
+                  hr.gradient
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal3") Two Sided Text
+            #standardPanelHorizontal3.accordion-content(data-tab-content)
+              .grid-x.grid-padding-x.medium-unstack
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4.text-primary The Challenge
+                  p A loyal customer is worth his or her weight in gold. One leading U.S. luxury retailer knew this well—as the top 10% of its customers represented 80% of its revenue. The company hoped to engage these individuals even further by using digital channels.
+
+                  p The retailer approached us to create a strategy for a new, personalized shopping experience for these shoppers.
+
+                  a.button.arrow(href="#") Button in Same Tab
+
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4.text-primary Our Approach
+                  p In addition to research and analysis into the latest trends in personalization, we provided strategy, product management and business process definition. We called for the use of global trends and behaviors of other similar users along with user data to drive a new, hyperpersonalized web experience.
+
+                  a.button.arrow(href="#") Button in New Tab
+
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal4") Single Sided Text
+            #standardPanelHorizontal4.accordion-content(data-tab-content)
+              p.tiny SECURITY AND COMPLIANCE SERVICES
+              h3 Build applications that deliver the digital experiences customers want
+              a.button.arrow(href="#") Button
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Standard Tabs: Vertical
+
+    .grid-x
+      .small-12.medium-4.cell
+        ul#standard-tabs-vertical.tabs.vertical.flex-container-medium.flex-dir-column(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+          li.tabs-title.is-active
+            a(href="#standardPanelVertical1", aria-selected="true") Image with Text
+          li.tabs-title
+            a(href="#standardPanelVertical2") Video with text and share
+          li.tabs-title
+            a(href="#standardPanelVertical3") Two Sided Text
+          li.tabs-title
+            a(href="#standardPanelVertical4") Single Sided Text
+
+      .small-12.medium-8.cell
+        .tabs-content.vertical(data-tabs-content="standard-tabs-vertical")
+          #standardPanelVertical1.tabs-panel.is-active
+            .grid-x.grid-padding-x.large-unstack
+              .cell.shrink
+                img.w100.mb1(src=siteURL+'images/PDF-thumbnail.jpg')
+
+              .cell.auto
+                p.small APPLICATION SERVICES
+                h4.text-primary When Transformation Moves from Hyper-Digital to Ubiquitous
+                p In the past, monumental projects took decades to complete. Today our monumental project is to build the digital world in a much more compressed timeframe. Digital leaders will be those organizations that use business analytics to offer deep insights into customer behaviors, wants and needs, develop new products and services and ultimately innovate and exploit new business opportunities.
+                a.button.arrow(href="#") Button 1 Normal Tab
+                a.button.bg-green.arrow(href="#") Button 2 Open in new tab
+          #standardPanelVertical2.tabs-panel
+            .grid-x.grid-padding-x.large-unstack
+              .cell.auto
+                .flex-container.align-middle.align-center.mb1.relative
+                  a.text-white.m0.absolute(data-open='overview-video')
+                    h1.m0.lh0
+                      i.play-button
+                  img.w100(src="https://source.unsplash.com/fPkvU7RDmCo/400x225")
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4.text-primary Build applications that deliver the digital experiences customers want
+                hr.gradient
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+          #standardPanelVertical3.tabs-panel
+            .grid-x.grid-padding-x.large-unstack
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4.text-primary The Challenge
+                p A loyal customer is worth his or her weight in gold. One leading U.S. luxury retailer knew this well—as the top 10% of its customers represented 80% of its revenue. The company hoped to engage these individuals even further by using digital channels.
+
+                p The retailer approached us to create a strategy for a new, personalized shopping experience for these shoppers.
+
+                a.button.arrow(href="#") Button in Same Tab
+
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4.text-primary Our Approach
+                p In addition to research and analysis into the latest trends in personalization, we provided strategy, product management and business process definition. We called for the use of global trends and behaviors of other similar users along with user data to drive a new, hyperpersonalized web experience.
+
+                a.button.arrow(href="#") Button in New Tab
+          #standardPanelVertical4.tabs-panel
+            p.tiny SECURITY AND COMPLIANCE SERVICES
+            h3 Build applications that deliver the digital experiences customers want
+            a.button.arrow(href="#") Button
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h3 Vertical Tabs: Change on Hover
+        p
+          strong Tab Variations:
+        ul
+          li
+            p Rich text editor
+          li
+            p PDF Article
+          li
+            p Video with modal overlay
+
+  .bg-primary.py4
+    .grid-container
+      h3.text-white.text-center WHAT WE DO
+      .grid-x.grid-padding-x.text-white.align-center
+        .cell.medium-5
+          h5 BUILD A DIGITAL-READY IT BACKBONE
+        .cell.medium-7
+          p Going digital? You’ll need a simple, modern and secure infrastructure backbone. Work with our experts to transform your enterprise and future-proof your infrastructure to reduce costs, increase agility and protect your assets.
+      .grid-x.medium-px-half
+        .small-12.medium-4.cell
+          ul#hover-tabs.vertical.tabs.hover-tabs.bd0.flex-container-medium.flex-dir-column(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+            li.tabs-title.is-active.hover-grow
+              a(href="#panel1v1", aria-selected="true") TRANSFORM YOUR IT STRATEGY
+            li.tabs-title.hover-grow
+              a(href="#panel2v1") MODERNIZE YOUR CORE
+            li.tabs-title.hover-grow
+              a(href="#panel3v1") EVOLVE YOUR APPROACH TO CLOUD
+            li.tabs-title.hover-grow
+              a(href="#panel4v1") SECURE YOUR ENTERPRISE
+            li.tabs-title.hover-grow
+              a(href="#panel5v1") ENGINEER YOUR DIGITAL FUTURE
+        .small-12.medium-8.cell
+          .tabs-content.vertical.bd0.bg-transparent(data-tabs-content="hover-tabs")
+            #panel1v1.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg01.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                h4 Manage heritage debt and run better on a more efficient, simplified IT backbone.
+                h5 How? Through:
+                ul
+                  li
+                    p
+                      a(href="#") Smart Operations
+                  li
+                    p Integrated Debt Framework solutions
+                  li
+                    p EnGage
+                  li
+                    p Application Portfolio Transformation
+                  li
+                    p Data Center Migration strategies
+            #panel2v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg02.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                h4 Extend legacy IT to be nimble and agile and make the digital shift seamless.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p Cognitive Automation solutions
+                  li
+                    p Intelligent Process Analytics
+                  li
+                    p Robotic Process Automation
+                  li
+                    p Enterprise Application Automation
+            #panel3v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg03.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                h4 Shift to the most efficient, effective cloud solutions to meet your enterprise needs.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p APR enabled Cloud Steps solutions
+                  li
+                    p SAP on Cloud
+                  li
+                    p Guidewire on Cloud
+                  li
+                    p Trizetto on Cloud
+                  li
+                    p DevOps on Cloud
+                  li
+                    p Agile Engineering Environments
+                  li
+                    p Enterprise Apps on Cloud
+            #panel4v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg04.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                h4 Create resiliency, manage risk and protect your data against cyber attack.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p Cyber security through Data protection, Infrastructure and Applications security solutions
+                  li
+                    p Next Gen Cloud Security, IoT, Analytics
+                  li
+                    p Governance Risk and Compliance solutions
+                  li
+                    p Identity Access Management
+            #panel5v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg05.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                h4 Connect your CX and next-gen processes with a transformed IT landscape to achieve greater market success.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p SimpliFIT
+                  li
+                    p Nexgen Process Definition & Architecture solutions
+                  li
+                    p Customer Experience transformation
+                  li
+                    p IT Landscape transformation
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Vertical Tabs: Change on click, version 3, blue background, gradient steps
+  .bg-primary
+    .grid-container
+      .grid-x.medium-px-half.mb5
+        .small-12.medium-4.cell
+          ul#vertical-tabs3.vertical.tabs.bg-steps-primary.bd0.flex-container.flex-dir-column.shrink(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+            li.tabs-title.bd0.is-active.hover-grow
+              a.text-white(href="#panel1v3", aria-selected="true") Application Services
+            li.tabs-title.bd0.hover-grow
+              a.text-white(href="#panel2v3") Infrastructure Services Tab Title Here 2 Tab Title Here Tab Title Here Tab Title Here Tab Title HereTab Title Here
+            li.tabs-title.bd0.hover-grow
+              a.text-white(href="#panel3v3") Enterprise Application Services
+            li.tabs-title.bd0.hover-grow
+              a.text-white(href="#panel4v3") Quality Engineering & Assurance Services
+            li.tabs-title.bd0.hover-grow
+              a.text-white(href="#panel5v3") Security and Compliance Services
+        .small-12.medium-8.cell
+          .tabs-content.vertical.bd0.bg-transparent(data-tabs-content="vertical-tabs3")
+            #panel1v3.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg01.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Application Services
+                  h3 Build applications that deliver the digital experiences customers want.
+                  a.button.arrow.bg-green(href="#") More
+            #panel2v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg02.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Infrastructure Services
+                  h3 Transform your IT backbone to create an always-on business.
+                  a.button.arrow.bg-green(href="#") More
+            #panel3v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg03.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Enterprise Application Services
+                  h3 Streamline your back office and improve operational agility and employee connections.
+                  a.button.arrow.bg-green(href="#") More
+            #panel4v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg04.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Quality Engineering & Assurance Services
+                  h3 Employ an end-to-end approach where high quality meets high speed
+                  a.button.arrow.bg-green(href="#") More
+            #panel5v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg05.jpg) no-repeat; background-size: cover; background-position: center;")
+              .text-white.p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Security and Compliance Services
+                  h3 Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure
+                  a.button.arrow.bg-green(href="#") More
+
+  // ======================================================================
+  // ████████  ██████   ██████   ██████  ██      ███████ ██████
+  //    ██    ██    ██ ██       ██       ██      ██      ██   ██
+  //    ██    ██    ██ ██   ███ ██   ███ ██      █████   ██████
+  //    ██    ██    ██ ██    ██ ██    ██ ██      ██      ██   ██
+  //    ██     ██████   ██████   ██████  ███████ ███████ ██   ██
+  // ======================================================================
+  hr
+  #toggler
+  h1 Toggler
+  .grid-container
+    .grid-x.grid-padding-x
+      p
+        a(data-toggle="menuBarToggler") Expand!
+
+    .grid-x
+      ul#menuBarToggler.menu.w100(data-toggler=".expanded")
+        li
+          | One
+        li
+          | Two
+        li
+          | Three
+        li
+          | Four
+
+  // ======================================================================
+  // ████████  ██████   ██████  ██   ████████ ██ ██████
+  //    ██    ██    ██ ██    ██ ██      ██    ██ ██   ██
+  //    ██    ██    ██ ██    ██ ██      ██    ██ ██████
+  //    ██    ██    ██ ██    ██ ██      ██    ██ ██
+  //    ██     ██████   ██████  ███████ ██    ██ ██
+  // ======================================================================
+  hr
+  #tooltip
+  h1 Tooltip
+  .grid-container
+    .grid-x.grid-padding-x
+      p
+        | The
+        span.has-tip(
+          data-tooltip,
+          aria-haspopup="true",
+          data-disable-hover="false",
+          tabindex="1",
+          title="Fancy word for a beetle."
+        ) scarabaeus
+        |
+        | hung quite clear of any branches, and, if allowed to fall, would have fallen at our feet. Legrand immediately took the scythe, and cleared with it a circular space, three or four yards in diameter, just beneath the insect, and, having accomplished this, ordered Jupiter to let go the string and come down from the tree.
+
+  // ======================================================================
+  // ██    ██ ██ ███████ ██ ██████  ██ ██      ██ ████████ ██    ██
+  // ██    ██ ██ ██      ██ ██   ██ ██ ██      ██    ██     ██  ██
+  // ██    ██ ██ ███████ ██ ██████  ██ ██      ██    ██      ████
+  //  ██  ██  ██      ██ ██ ██   ██ ██ ██      ██    ██       ██
+  //   ████   ██ ███████ ██ ██████  ██ ███████ ██    ██       ██
+  // ======================================================================
+  hr
+  #visibility
+  h1 Visibility
+  .grid-container
+    .grid-x.grid-padding-x
+      p You are on a small screen or larger.
+      p.show-for-medium You are on a medium screen or larger.
+      p.show-for-large You are on a large screen or larger.
+      p.show-for-small-only
+        | You are
+        em definitely
+        |
+        | on a small screen.
+      p.show-for-medium-only
+        | You are
+        em definitely
+        |
+        | on a medium screen.
+      p.show-for-large-only
+        | You are
+        em definitely
+        |
+        | on a large screen.
+      p.hide-for-medium
+        | You are
+        em not
+        |
+        | on a medium screen or larger.
+      p.hide-for-large
+        | You are
+        em not
+        |
+        | on a large screen or larger.
+      p.hide-for-small-only
+        | You are
+        em definitely not
+        |
+        | on a small screen.
+      p.hide-for-medium-only
+        | You are
+        em definitely not
+        |
+        | on a medium screen.
+      p.hide-for-large-only
+        | You are
+        em definitely not
+        |
+        | on a large screen.
+      p.hide Can't touch this.
+      p.invisible Can sort of touch this.
+      p.show-for-landscape You are in landscape orientation.
+      p.show-for-portrait You are in portrait orientation.
+      p.show-for-sr This text can only be read by a screen reader.
+      p There's a line of text above this one, you just can't see it.
+      p(aria-hidden="true") This text can be seen, but won't be read by a screen reader.
+
+  hr
+  h1
+  .grid-container
+    .grid-x.grid-padding-x

@@ -1,0 +1,38 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Maps"
+
+block content
+
+    h1!= pageTitle
+    .grid-x.grid-padding-x.expanded
+        .small-12.cell
+            .responsive-embed.widescreen
+                iframe(src="//mapkit.io/embed/J9zoek" frameborder="0" height="315" width="560")
+
+    .grid-x.grid-padding-x
+        .cell
+            h4.text-blue Cognizant Technology Solutions
+            p.strong 
+                | 500 Frank W Burr Blvd
+                br
+                | Teaneck, NJ 07666
+            hr
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate iste cum praesentium quo libero, dolores blanditiis a autem totam quaerat ipsam quibusdam tenetur assumenda eaque veritatis fugit asperiores tempore deleniti.
+
+            p.small * Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus vitae sint quidem cumque aperiam quisquam sit molestiae, atque, voluptatem dolor, saepe reprehenderit rerum consequatur adipisci, laudantium commodi. Vel provident, magnam.
+
+    .grid-x.grid-padding-x.align-justify.collapse
+        .cell
+            h5.anim-icon
+                a.text-normal(href="#")
+                    i.share.fw600
+                    .anim-text Share
+        .cell.text-right
+            h5.anim-icon
+                a.text-normal(href="#")
+                    i.launch.fw600
+                    .anim-text Visit
+
+
+

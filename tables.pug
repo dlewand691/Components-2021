@@ -1,0 +1,53 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Tables"
+
+block content
+
+    h1!= pageTitle
+
+    .grid-x.grid-padding-x
+        .cell
+            h3 Table: Basic (with .hover and .stack)
+            :markdown-it
+                Also add these styles to change interaction
+                + .hover
+                + .stack (to stack on mobile)
+                + .unstriped
+                + .scrolling
+
+                [https://foundation.zurb.com/sites/docs/table.html](https://foundation.zurb.com/sites/docs/table.html) for more.
+
+    .grid-x.grid-padding-x
+        .cell
+            table.hover.stack
+                thead
+                    tr
+                        th Table Header
+                        th Table Header
+                        th Table Header
+                        th Table Header
+                tbody
+                    tr
+                        td(style="width: 20%") Content Goes Here
+                        td This is longer content Donec id elit non mi porta gravida at eget metus.
+                        td Content Goes Here
+                        td Content Goes Here
+                    tr
+                        td Content Goes Here in this area and others and others
+                        td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+                        td Content Goes Here
+                        td Content Goes Here
+                    tr
+                        td Content Goes Here
+                        td This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.
+                        td Content Goes Here
+                        td Content Goes Here
+                    tfoot
+                        tr
+                            th Table Footer
+                            th Table Footer
+                            th Table Footer
+                            th Table Footer
+
+

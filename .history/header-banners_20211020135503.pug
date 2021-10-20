@@ -1,0 +1,702 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Header Banners"
+
+block content
+
+  .bg-gray-light3.p2
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell.auto.relative.flex-container.align-middle
+          .relative.z1
+            h1 LEFT
+            //- p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facere aliquam adipisci officiis voluptatum necessitatibus, ducimus pariatur nihil minus explicabo delectus, quia possimus odio nobis fuga? Possimus ullam dolorum animi consequuntur magnam iure voluptatum ut voluptatibus porro. Numquam illum, vitae rem atque, culpa voluptatibus, sequi aliquid explicabo quibusdam sed magni.
+          img.absolute.object-fit-cover.top.show-for-large(src="images/homepage-davos2020-desktop.jpg", alt="")
+        .cell.auto.bg-accent2-dark
+          h1 right
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex facere aliquam adipisci officiis voluptatum necessitatibus, ducimus pariatur nihil minus explicabo delectus, quia possimus odio nobis fuga? Possimus ullam dolorum animi consequuntur magnam iure voluptatum ut voluptatibus porro. Numquam illum, vitae rem atque, culpa voluptatibus, sequi aliquid explicabo quibusdam sed magni.
+  #dynamic-media-test
+  .grid-x.grid-padding-x.mt2
+    .cell
+      h3 Dynamic Media Test
+  .relative
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.p3.relative.z1
+        .cell.small-12.medium-6.large-6
+          img#d.mb1(contenteditable="true" src="images/logo-world-economic-forum.svg", alt="")
+          h4(contenteditable="true") CLICK ME AND EDIT ME
+          p(contenteditable="true") CLICK ME AND EDIT ME
+          a.button.small.arrow(contenteditable="true") CLICK ME AND EDIT ME
+    img.absolute.object-fit-cover.pos-top.show-for-large(src="images/homepage-davos2020-desktop.jpg", alt="")
+    img.absolute.object-fit-cover.pos-top.show-for-medium-only(src="images/homepage-davos2020-tablet.jpg", alt="")
+    img.absolute.object-fit-cover.pos-top.show-for-small-only(src="images/homepage-davos2020-mobile.jpg", alt="")
+
+  #header-banner-text-right-with-eyebrow-logo-lockup
+  hr
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text right, with eyebrow, logo lockup
+
+  .banner-header.text-white(data-interchange="[images/header-banners/logo-lockups/bg-header-ai-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-ai-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-ai-desktop.jpg, large]")
+    .grid-container
+      .grid-x.grid-padding-x.align-justify.py2.medium-py4.large-py7
+        .cell.small-4.medium-4.large-6
+          img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDST-logo-lockup-legacy-transformation.svg")
+        .cell.small-8.medium-8.large-6
+          h6.label.text-wrap.hide-for-small-only(contenteditable="true") Empowering Business With Actionable Insights
+          h3(contenteditable="true") SUPERCHARGE YOUR DIGITAL OPERATIONS WITH THE POWER OF ANALYTICS
+
+  hr
+  #header-banner-text-right-with-eyebrow-logo-lockup-video-background-play-button
+  .grid-x.grid-padding-x
+    .cell
+      h3(contenteditable="true") Header Banner, text right, with eyebrow, logo lockup, video background/play button
+
+  .banner-header.text-white(data-interchange="[images/header-banners/logo-lockups/bg-header-ai-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-ai-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-ai-desktop.jpg, large]")
+    .grid-container
+      .grid-x.grid-padding-x.align-justify.py2.medium-py4.large-py7
+        .cell.small-4.medium-4.large-6
+          img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDST-logo-lockup-legacy-transformation.svg")
+        .cell.small-8.medium-8.large-6
+          h6.label.text-wrap.hide-for-small-only(contenteditable="true") Empowering Business With Actionable Insights
+          h3(contenteditable="true") SUPERCHARGE YOUR DIGITAL OPERATIONS WITH THE POWER OF ANALYTICS
+          a.button.arrow(data-open="video-modal-ai") play video
+        .reveal#video-modal-ai.p3(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/905523703&color=%230033a0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          //- .responsive-embed.widescreen
+            iframe(width="560", height="315", src="https://www.youtube-nocookie.com/embed/xgtdBJuaY-Y", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen="")
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+  hr
+  #header-banner-text-right-with-eyebrow-right
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text right, with eyebrow, RIGHT
+
+  .text-white(data-interchange="[images/header-banners/logo-lockups/bg-header-ai-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-ai-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-ai-desktop.jpg, large]" style="background-size: cover; background-position: center center;")
+    .grid-x.grid-padding-x.align-middle.align-right(style="min-height: 500px")
+      .cell.medium-6
+        h6.label(contenteditable="true") Empowering Business With Actionable Insights
+        h3(contenteditable="true") SUPERCHARGE YOUR DIGITAL OPERATIONS WITH THE POWER OF ANALYTICS
+        p.m0(contenteditable="true") With digital analytics at the core of your operations, learn and adapt to customer preferences and needs to propel next-level outcomes.
+
+  hr
+  #header-banner-text-right-with-eyebrow-left
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text right, with eyebrow, LEFT
+
+  .text-white(data-interchange="[./images/header-banners/bg-cloudMigrate-mobile.jpg, small],[./images/header-banners/bg-cloudMigrate-tablet.jpg, medium],[./images/header-banners/bg-cloudMigrate-desktop.jpg, large]" style="background-size: cover; background-position: center center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.medium-6
+          h6.label(contenteditable="true") A Risk-Free Approach
+          h3(contenteditable="true") Accelerate your cloud adoption journey
+          //- p.m0 With digital analytics at the core of your operations, learn and adapt to customer preferences and needs to propel next-level outcomes.
+
+  hr
+  #header-banner-text-left
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text left
+
+  .text-white(data-interchange="[images/header-banners/digital-engineering/CDB-digital-engineering-640.jpg, small],[images/header-banners/digital-engineering/CDB-digital-engineering-1025.jpg, medium],[images/header-banners/digital-engineering/CDB-digital-engineering.jpg, large]" style="background-size: cover; background-position: center center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.medium-6
+          h3(contenteditable="true") GAIN
+            strong INSIGHT
+            | FIRST—THEN
+            strong CODE
+            | SOLUTIONS THAT INSPIRE CUSTOMERS
+          p.m0(contenteditable="true") Uncovering what your customers truly need means delivering production-ready digital apps developed at record speed.
+
+  hr
+  #header-banner-carousel-text-left
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner Carousel, text left
+  //- .inside-dots.inside-arrows.white-pagination.white-arrows.square-pagination
+  .text-white.swiper
+    .swiper-wrapper
+      .swiper-slide
+        .py2.medium-py3(data-interchange="[images/header-banners/digital-engineering/CDB-digital-engineering-640.jpg, small],[images/header-banners/digital-engineering/CDB-digital-engineering-1025.jpg, medium],[images/header-banners/digital-engineering/CDB-digital-engineering.jpg, large]" style="background-size: cover; background-position: center center;")
+          .grid-container
+            .grid-x.grid-padding-x.align-middle.small-align-center.medium-align-left(style="min-height: 500px;")
+              .small-10.medium-6.cell.medium-offset-1.xxlarge-offset-0
+                h3(contenteditable="true") GAIN
+                  strong INSIGHT
+                  | FIRST—THEN
+                  strong CODE
+                  | SOLUTIONS THAT INSPIRE CUSTOMERS OLUTIONS THAT INSPIRE CUSTOMERS OLUTIONS THAT INSPIRE CUSTOMERS
+                p.m0(contenteditable="true") Uncovering what your customers truly need means delivering production-ready digital apps developed at record speed.
+      .swiper-slide
+        .py2.medium-py3(data-interchange="[images/header-banners/digital-engineering/CDB-digital-engineering-640.jpg, small],[images/header-banners/digital-engineering/CDB-digital-engineering-1025.jpg, medium],[images/header-banners/digital-engineering/CDB-digital-engineering.jpg, large]" style="background-size: cover; background-position: center center;")
+          .grid-container
+            .grid-x.grid-padding-x.align-middle.small-align-center.medium-align-left(style="min-height: 500px;")
+              .small-10.medium-6.cell.medium-offset-1.xxlarge-offset-0
+                h3(contenteditable="true") SLIDE 2 LOREM IPSUM DOLOR SIT
+                p.m0(contenteditable="true") Uncovering what your customers truly need means delivering production-ready digital apps developed at record speed.
+      .swiper-slide
+        .py2.medium-py3(data-interchange="[images/header-banners/digital-engineering/CDB-digital-engineering-640.jpg, small],[images/header-banners/digital-engineering/CDB-digital-engineering-1025.jpg, medium],[images/header-banners/digital-engineering/CDB-digital-engineering.jpg, large]" style="background-size: cover; background-position: center center;")
+          .grid-container
+            .grid-x.grid-padding-x.align-middle.small-align-center.medium-align-left(style="min-height: 500px;")
+              .small-10.medium-6.cell.medium-offset-1.xxlarge-offset-0
+                h3(contenteditable="true") SLIDE 3 LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING
+                p.m0(contenteditable="true") Uncovering what your customers truly need means delivering production-ready digital apps developed at record speed.
+    .swiper-pagination
+    .swiper-button-prev
+    .swiper-button-next
+
+
+  hr
+  #header-banner-text-right-video-background
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text right, video background
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/BG_insightToCode.jpg, small],[images/header-banners/video-background/BG_insightToCode.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/BG_insightToCode.jpg")
+      source(src="images/video-backgrounds/davos2020.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/BG_insightToCode.webm" type="video/webm")
+      source(src="images/header-banners/video-background/BG_insightToCode.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.align-right(style="min-height: 500px")
+        .cell.small-12.medium-6.large-6
+          //-   h6.label A Risk-Free Approach
+          h3(contenteditable="true") Leadership, Belonging & Stewardship to Advance the Fourth Industrial Revolution
+          p(contenteditable="true") Takeaways from the World Economic Forum annual meeting
+          h6.m0(contenteditable="true") 21–24 January 2020, Davos-Klosters, Switzerland
+
+
+  hr
+  #header-banner-text-left-video-background
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text left, video background
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/BG_insightToCode.jpg, small],[images/header-banners/video-background/BG_insightToCode.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/BG_insightToCode.jpg")
+      source(src="images/video-backgrounds/davos2020.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/BG_insightToCode.webm" type="video/webm")
+      source(src="images/header-banners/video-background/BG_insightToCode.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.medium-6
+          h3(contenteditable="true") Leadership, Belonging & Stewardship to Advance the Fourth Industrial Revolution
+          p(contenteditable="true") Takeaways from the World Economic Forum annual meeting
+          h6.m0(contenteditable="true") 21–24 January 2020, Davos-Klosters, Switzerland
+
+  hr
+  #header-banner-text-left-eyebrow-logo-video-background
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text left, eyebrow, logo, video background
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/BG_insightToCode.jpg, small],[images/header-banners/video-background/BG_insightToCode.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/BG_insightToCode.jpg")
+      source(src="images/video-backgrounds/FOW.mp4" type="video/mp4")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.medium-6
+          img.block(src="./images/cfow.svg")
+          //- h6.label A Risk-Free Approach
+          h3.pt1(contenteditable="true") IMAGINE THE WORK OF THE FUTURE
+          p(contenteditable="true") Work that we don't fully understand yet…that is weird, strange, unsettling, trivial and extremely stretching…that is not fit for our parents and will seem ridiculous to our kids.
+          a.button.small.arrow ACCESS THE FUTURE AT THE CFOW
+
+
+  hr
+  #header-banner-text-center
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text center
+
+  .text-white(style="background-size: cover; background-position: center center; background-image: url('images/header-banners/digital-engineering/618025082.jpg');")
+    .grid-x.grid-padding-x.align-middle.align-center.text-center(style="min-height: 500px")
+      .cell.medium-10
+        h3 gain
+          strong insight
+          | first­—then
+          strong code
+          | solutions that inspire customers
+        p.m0 Uncovering what your customers truly need means delivering production-ready digital apps developed at record speed.
+
+  hr
+  #header-banner-text-center-video-background-tall-version-500px-with-play-button
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text center, video background, TALL version (500px) with play button
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/collaboratoryBanner.jpg, small],[images/header-banners/video-background/collaboratoryBanner.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/collaboratoryBanner.jpg")
+      source(src="images/header-banners/video-background/collaboratoryBanner.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/collaboratoryBanner.webm" type="video/webm")
+      source(src="images/header-banners/video-background/collaboratoryBanner.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.align-center.text-center
+        .cell.medium-10
+          h6.label.bg-primary Think Differently
+          h3 Connect collaborate and craft your digital solutions
+          p At the Cognizant Collaboratory, you can turn insights into business opportunities, reimagine your future and build the new digital economy.
+          a.button.arrow(data-open="video-modal-ai") PLAY VIDEO
+        .reveal#video-modal-ai(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          .responsive-embed.widescreen
+            iframe(width="560", height="315", src="https://www.youtube-nocookie.com/embed/xgtdBJuaY-Y", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen="")
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+  hr
+  #header-banner-text-center-video-background-tall-version-500px
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text center, video background, TALL version (500px)
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/collaboratoryBanner.jpg, small],[images/header-banners/video-background/collaboratoryBanner.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/collaboratoryBanner.jpg")
+      source(src="images/header-banners/video-background/collaboratoryBanner.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/collaboratoryBanner.webm" type="video/webm")
+      source(src="images/header-banners/video-background/collaboratoryBanner.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.align-center.text-center
+        .cell.medium-10
+          h6.label.bg-primary Think Differently
+          h3 Connect collaborate and craft your digital solutions
+          p.m0 At the Cognizant Collaboratory, you can turn insights into business opportunities, reimagine your future and build the new digital economy.
+
+  hr
+  #header-banner-text-center-video-background-short-version-300px
+  .grid-x.grid-padding-x
+    .cell
+      h3 Header Banner, text center, video background, SHORT version (300px)
+
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.video-background.h300px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/collaboratoryBanner.jpg, small],[images/header-banners/video-background/collaboratoryBanner.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/collaboratoryBanner.jpg")
+      source(src="images/header-banners/video-background/collaboratoryBanner-300px.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/collaboratoryBanner-300px.webm" type="video/webm")
+      source(src="images/header-banners/video-background/collaboratoryBanner-300px.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.align-center.text-center
+        .cell.medium-10
+          h6.label.bg-primary Think Differently
+          h3 Connect collaborate and craft your digital solutions
+          p.m0 At the Cognizant Collaboratory, you can turn insights into business opportunities, reimagine your future and build the new digital economy.
+
+
+  hr
+  #future-of-money-2-column
+  .grid-x.grid-padding-x
+    .cell
+      h3 Future of Money, 2 column
+
+  div(style="background: linear-gradient(to right, #4298B5 50%, #CCE7B8 50%);")
+    .grid-x.grid-padding-x
+      //- LEFT COLUMN
+      .small-12.medium-6.large-5.cell.p1.large-p2.bg-grd-lr-blue-green
+        .grid-x.grid-padding-x.h100
+          .cell.align-self-middle
+            h2 Money 2020 Conference
+            h5 October 22-25
+              br
+              | Las Vegas, Nevada
+            a.button.small.arrow.mb0(href="#") LEARN MORE
+            a.button.small.arrow.mb0(href="#") REGISTER
+
+      //- RIGHT COLUMN
+      .small-12.medium-6.large-7.cell.p1.large-p2-dark-tint5
+        .grid-x.grid-padding-x.text-center.mb1
+          .cell
+            img(src="images/header-banners/caricature-philippe-dintrans.png")
+            hr.gradient.my0
+            small
+              span.text-bold.text-blue Philippe Dintrans
+              br
+              | SVP & Chief Digital Officer, Cognizant
+          .cell
+            img(src="images/header-banners/caricature-christian-madsbjerg.png")
+            hr.gradient.my0
+            small
+              span.text-bold.text-blue Christian Madsbjerg
+              br
+              | Founder & Senior Partner, ReD Associates
+        .grid-x.grid-padding-x
+          .cell
+            h6.text-blue humanizing banking: how customers feel about money & serving them better with Digital
+            p.m0 In this keynote presentation, Philippe Dintrans and Christian Madsbjerg will share the latest findings from their “Future of Money” study.
+
+
+
+  hr
+  #digital-transformation-header-banner-text-left
+  .grid-x.grid-padding-x
+    .cell
+      h3 Digital Transformation Header Banner, text left
+
+  .text-white.mb2(data-interchange="[images/header-banners/digital-transformation/digital-transformation-640.jpg, small],[images/header-banners/digital-transformation/digital-transformation-1025.jpg, medium],[images/header-banners/digital-transformation/digital-transformation.jpg, large]" style="background-size: cover; background-position: center center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.medium-6
+          h3 Cognizant Named a Leader in Digital Transformation
+          p.m0 The IDC MarketScape recognizes our capabilities in planning, design, execution and management of digital transformation services for our customers.
+
+  hr
+  #video-plus-image-background-homepage
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video plus image background (Homepage)
+
+  .text-white.video-background
+    video.object-fit-cover(playsinline autoplay loop muted poster="images/header-banners/video-background/Home-BG-video-banking.jpg")
+      source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/webm")
+      source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.expanded.align-middle.align-center.text-center.py2.medium-py4.large-py5
+        .cell.small-12.medium-8.large-8
+          h2 6 ways to be digitally Cognizant and create new levels of value
+          p Watch our videos to learn more about industry-specific solutions woven deeply across the enterprise.
+          a.button.arrow.m0(href="#") PLAY VIDEO:
+            span.text-normal  DIGITALLY COGNIZANT
+
+
+
+
+  hr
+
+  #video1-a-play-in-modal
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video1-A (Play in modal)
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a(href="#")
+        h6.m0 Cognizant Digital Works™
+        h2 Approach
+        h1.m0
+          a(data-open="video-modal")
+            i.play-button
+        .reveal#video-modal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          .responsive-embed.widescreen
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/ocbcAR3jnIU?list=PL-OkbzovwrrzyBfHJ6aFpVSNJ_bvYFKMl" frameborder="0" allowfullscreen)
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+  hr
+  #video1-a2
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video1-A2, left aligned, no RFS (Play in modal)
+  .text-white.flex-container.align-middle(style="min-height: 500px; background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.py2.medium-py5
+        .small-12.medium-7.large-5.cell.disable-responsive-font-size
+          h3.disable-responsive-font-size Industry 4.0 is revolutizing manufacturing. Are you ready?
+          //- h3 FROM HUMAN INSIGHT TO INNOVATION AT RECORD SPEED
+          p.medium-m0 Insight to Code combines a proven understanding of customer needs with a lean and agile software development process.
+        .small-12.medium-1.cell.text-center.medium-text-left
+          h1.m0.disable-responsive-font-size
+            a(data-open="video-modal")
+              i.play-button
+          .reveal#video-modal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+            .responsive-embed.widescreen
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/ocbcAR3jnIU?list=PL-OkbzovwrrzyBfHJ6aFpVSNJ_bvYFKMl" frameborder="0" allowfullscreen)
+            button.close-button(data-close aria-label="Close modal" type="button")
+              span(aria-hidden="true") &times;
+
+  hr
+  #video1-a2rfs
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video1-A2, left aligned, with RFS (Play in modal)
+  .text-white.flex-container.align-middle(style="min-height: 500px; background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.py2.medium-py5
+        .small-12.medium-6.large-5.cell
+          h3 Industry 4.0 is revolutizing manufacturing. Are you ready?
+          //- h3 FROM HUMAN INSIGHT TO INNOVATION AT RECORD SPEED
+          p.medium-m0 Insight to Code combines a proven understanding of customer needs with a lean and agile software development process.
+        .small-12.medium-1.cell.text-center.medium-text-left
+          h1.m0.disable-responsive-font-size
+            a(data-open="video-modal")
+              i.play-button
+          .reveal#video-modal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+            .responsive-embed.widescreen
+              iframe(width="560" height="315" src="https://www.youtube.com/embed/ocbcAR3jnIU?list=PL-OkbzovwrrzyBfHJ6aFpVSNJ_bvYFKMl" frameborder="0" allowfullscreen)
+            button.close-button(data-close aria-label="Close modal" type="button")
+              span(aria-hidden="true") &times;
+  hr
+  #video1-b-play-in-modal-plyr-plugin
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video1-B (Play in modal, Plyr plugin)
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a(href="#")
+        h6.m0 Cognizant Digital Works™
+        h2 Approach
+        h1.m0
+          a(data-open="video-modal-plyr")
+            i.play-button
+        .reveal#video-modal-plyr(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          .plyr(data-type="youtube" data-video-id="ocbcAR3jnIU")
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+  hr
+  #video1-c-play-in-place
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video1-C (Play in place)
+  .text-white.grid-x.grid-padding-x.expanded.collapse.align-middle.align-center.text-center#video-modal-in-place-row(data-toggler=".gradient-overlay-black-full" style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center; min-height:400px;")
+    .cell.py5.show#video-modal-in-place-1(data-toggler=".hide")
+      a(href="#")
+        h6.m0 Cognizant Digital Works™
+        h2 Approach
+        h1.m0
+          a(data-toggle="video-modal-in-place-1 video-modal-in-place-2 video-modal-in-place-row")
+            i.play-button
+    .cell.p0.z1.hide#video-modal-in-place-2(data-toggler=".hide" style="height: inherit;")
+      h3.m0.text-right.absolute.z3(style="right: 0")
+        a.m0.align-right(data-toggle="video-modal-in-place-1 video-modal-in-place-2 video-modal-in-place-row") &times;
+      iframe.video(src="https://www.youtube.com/embed/ocbcAR3jnIU?list=PL-OkbzovwrrzyBfHJ6aFpVSNJ_bvYFKMl" frameborder="0" allowfullscreen)
+
+  hr
+  #video2
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video2
+  .text-white.grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a(href="#")
+        h1.m0 Cognizant
+        br
+        h4.text-normal Global innovation ecosystem
+        h1.m0
+          i.play-button
+
+  hr
+  #video3
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video3
+  .grid-container.bg-gray-dark
+    .grid-x.grid-padding-x.expanded.align-middle.py-half.medium-py3
+      .small-12.medium-7.cell.relative.mb1.medium-mb0
+        a.m0.absolute(href="#" style="top: calc(50% - 42px); left: calc(50% - 42px);")
+          h1
+            i.play-button
+        img.w100(src="images/background.jpg/800x400")
+      .small-12.medium-5.cell
+        h5 Donec Congue Lacinia Dui, A Porttitor Lectus Condimentum Laoreet
+        hr.gradient
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+        .grid-x.grid-padding-x.align-justify.collapse
+          .cell
+            h5.anim-icon
+              a.text-normal(href="#")
+                i.share.fw600
+                .anim-text Share
+          .cell.text-right
+            h5.anim-icon
+              a.text-normal(href="#")
+                i.arrow-right.fw600
+                .anim-text View
+
+  hr
+  #video4
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video4
+  .text-white(style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center;")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.py5
+        .small-12.medium-6.medium-offset-1.cell
+          h4 New technologies make healthcare more personal
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis excepturi libero at, possimus, alias animi nesciunt obcaecati commodi nobis doloribus molestias et ipsam expedita labore eius porro, aperiam officiis!
+          a.button(href="#")
+            i.play-button.text-bold.mr-half
+            | Play video
+
+  hr
+  #video5
+  .grid-x.grid-padding-x
+    .cell
+      h3 Video5
+  .swiper.inside-dots.inside-arrows.square-pagination
+    .swiper-wrapper
+      .swiper-slide.py2.medium-py3(style="background: url(images/background.jpg) no-repeat; background-size: cover; background-position: center center;")
+        .grid-container.text-white
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping insurance companies
+              h3.medium-m0 Focus on prevention
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=902) no-repeat; background-size: cover; background-position: center center;")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping leading banks
+              h3.medium-m0 Make better lending decisions
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=903) no-repeat; background-size: cover; background-position: center center;")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping media companies
+              h3.medium-m0 Create more immersive experiences
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=904) no-repeat; background-size: cover; background-position: center center;")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping life sciences companies
+              h3.medium-m0 Personalize health living subscriptions
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=905) no-repeat; background-size: cover; background-position: center center;")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping leading manufacturers
+              h3.medium-m0 Make things that automatically think and do
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=906) no-repeat; background-size: cover; background-position: top center;")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle.py2.medium-py3.text-center.medium-text-left
+            .small-12.medium-4.medium-offset-1.cell
+              h6 Helping doctors, insurers and patients
+              h3.medium-m0 Unite on a collaborative care platform
+            .cell.shrink
+              a(href="#")
+                h1.m0
+                  i.play-button
+    .swiper-pagination
+    .swiper-button-prev
+    .swiper-button-next
+  hr
+  .bg-primary
+    .grid-x.grid-padding-x
+      .large-8.medium-6.small-12.cell
+        h1.m0.medium-my2.large-my4 Hi everybody
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quibusdam saepe, veniam libero. Similique optio autem officiis minus veniam accusantium consequuntur deserunt cupiditate modi assumenda. Libero a praesentium error vitae.
+        a.button.arrow.large yeehaw
+
+
+  //- hr
+  //- #video-background-layered-text
+  //- mixin video-background-layered-text-slide(layeredText, logoLockup, link, linkText)
+    .swiper-slide.py2.medium-py3.text-center
+      .grid-container
+        .grid-x.grid-padding-x.align-middle.expanded
+          .small-12.cell.p0
+            img.pb2(src=layeredText)
+            .grid-x.grid-padding-x.medium-align-center.align-middle.expanded.p2(style="background: rgba(0,51,160,0.75);")
+              .cell.large-6.small-12.text-left.medium-text-right
+                img(src=logoLockup)
+              .cell.large-6.small-12.text-left
+                a.button.arrow.small.m0(href=link)!= linkText
+  //- .grid-x.grid-padding-x
+    .cell
+      h3 Video Background with layered text
+  //- .video-background.bg-black-opacity-50
+    video.object-fit-cover(playsinline autoplay loop muted poster="images/header-banners/video-background/Home-BG-video-banking.jpg")
+      source(src="./images/video-backgrounds/cognizant_angled_1.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/webm")
+      source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/ogg")
+    .swiper.inside-dots.inside-arrows.white-pagination.white-arrows.square-pagination.m0
+      .swiper-wrapper
+        +video-background-layered-text-slide("./images/layered-text/ai-and-analytics-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/core-modernization-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/digital-engineering-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/digital-engineering-softvision-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/industry-and-platform-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/intelligent-process-automation-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+        +video-background-layered-text-slide("./images/layered-text/interactive-desktop.svg", "https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/logo-lockup-ai-analytics-mobile.svg", "#", "LEARN MORE")
+
+
+
+  script.
+    $(document).ready(function() {
+      var handleDrag = function(e) {
+        //kill any default behavior
+        e.stopPropagation();
+        e.preventDefault();
+      };
+      var handleDrop = function(e) {
+        //kill any default behavior
+        e.stopPropagation();
+        e.preventDefault();
+        //console.log(e);
+        //get x and y coordinates of the dropped item
+        x = e.clientX;
+        y = e.clientY;
+        //drops are treated as multiple files. Only dealing with single files right now, so assume its the first object you're interested in
+        var file = e.dataTransfer.files[0];
+        //don't try to mess with non-image files
+        if (file.type.match('image.*')) {
+          //then we have an image,
+
+          //we have a file handle, need to read it with file reader!
+          var reader = new FileReader();
+
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            //get the data uri
+            var dataURI = theFile.target.result;
+            //make a new image element with the dataURI as the source
+            var img = document.createElement("img");
+            img.src = dataURI;
+
+            //Insert the image at the carat
+
+            // Try the standards-based way first. This works in FF
+            if (document.caretPositionFromPoint) {
+              var pos = document.caretPositionFromPoint(x, y);
+              range = document.createRange();
+              range.setStart(pos.offsetNode, pos.offset);
+              range.collapse();
+              range.insertNode(img);
+            }
+            // Next, the WebKit way. This works in Chrome.
+            else if (document.caretRangeFromPoint) {
+              range = document.caretRangeFromPoint(x, y);
+              range.insertNode(img);
+            }
+            else
+            {
+              //not supporting IE right now.
+              console.log('could not find carat');
+            }
+
+
+          });
+          //this reads in the file, and the onload event triggers, which adds the image to the div at the carat
+          reader.readAsDataURL(file);
+        }
+      };
+
+      var dropZone = document.getElementById('d');
+      dropZone.addEventListener('dragover', handleDrag, false);
+      dropZone.addEventListener('drop', handleDrop, false);
+    });

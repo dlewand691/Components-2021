@@ -1,0 +1,161 @@
+@include anim-chevrons($color: $white);
+
+.swiperHomeBanner {
+  // ARROWS ENABLED WHILE KEYBOARD NAVIGATION
+  .swiper-button-next,
+  .swiper-button-prev {
+    &.show-on-focus:focus {
+      position: absolute !important;
+    }
+  }
+
+  &.swiper-container {
+    .swiper-slide:not(.swiper-slide-active) {
+      z-index: -1;
+    }
+
+    .swiper-slide.swiper-slide-active {
+      z-index: 1;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+    min-height: 50vh;
+  }
+
+  .img-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 0) 90%
+      );
+    }
+
+    &.blur img {
+      transition: all 0.5s ease-in-out;
+      filter: blur(10px);
+      transform: scale(1);
+
+      &.animating {
+        filter: blur(0);
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  // CUSTOM PAGINATION TITLE APPEARS FOR DESKTOP ALONE
+  .pagination {
+    .swiper-pagination-bullet {
+      background: $white;
+
+      &.title {
+        width: auto;
+        height: auto;
+        border-radius: 0;
+        opacity: 1;
+        background: none;
+        position: relative;
+        padding: 1em 0;
+
+        // WE GET THE TITLE ATTRIBUTE VALUE FROM PAGINATION BULLET
+        &::before {
+          content: attr(title);
+          height: 2px;
+          padding: 1em 2em;
+          font-weight: 600;
+        }
+
+        &::after {
+          content: "";
+          transform: scaleX(0);
+          transition: 0.5s;
+          transform-origin: 50%;
+        }
+
+        &:hover,
+        &.swiper-pagination-bullet-active {
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 2px;
+            left: 0;
+            transform: scaleX(1);
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        &.swiper-pagination-bullet-active {
+          backdrop-filter: blur(4px);
+
+          &::before {
+            background: rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  .slide-title {
+    display: none;
+    font-weight: 600;
+  }
+
+  .chevron {
+    &::before,
+    &::after {
+      background-color: $white;
+    }
+  }
+}
+
+@include breakpoint(large down) {
+  .swiperHomeBanner {
+    // RESET PAGINATION FOR RANGES LARGE AND DOWN
+    .pagination {
+      text-align: center;
+
+      .swiper-pagination-bullet {
+        &.title {
+          width: 24px;
+          height: 6px;
+          border-radius: 2px;
+          padding: 0;
+          opacity: 0.5;
+          background: $white;
+
+          &::before,
+          &::after {
+            display: none;
+          }
+        }
+
+        &:hover,
+        &.swiper-pagination-bullet-active {
+          opacity: 1;
+        }
+      }
+    }
+
+    // PAGINATION TITLE ENABLED
+    .slide-title {
+      display: inline-block;
+    }
+  }
+}

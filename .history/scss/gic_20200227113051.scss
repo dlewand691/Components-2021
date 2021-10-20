@@ -1,0 +1,95 @@
+.gic-accordion:last-of-type {
+    border-bottom: 0;
+}
+
+.gic-accordion {
+    border-bottom: 1px solid $light-gray;
+
+    &.bg-default {
+        background: $white;
+        transition: all 0.5s ease;
+    }
+
+    &.bg-active {
+        background: $light-gray;
+        transition: all 0.5s ease;
+    }
+
+    @include breakpoint(small) {
+        .img-default {
+            @include grid-column(6);
+            transition      : width 0.5s ease;
+            transform-origin: top left;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img-scaled {
+            @include grid-column(10);
+            transition: width 0.5s ease;
+        }
+    };
+
+    @include breakpoint(medium) {
+        .img-default {
+            // @include grid-column(2);
+            width           : 12.666667%;
+            transition      : width 0.5s ease;
+            transform-origin: top left;
+            margin-right    : 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .img-scaled {
+            @include grid-column(3);
+            transition: width 0.5s ease;
+        }
+    };
+
+    .arrow-down {
+        transform       : rotate(0deg);
+        transition      : all 0.5s ease;
+        transform-origin: center center;
+    }
+
+    .arrow-down-spun {
+        transform       : rotate(180deg);
+        transition      : all 0.5s ease;
+        transform-origin: center center;
+    }
+
+    .content-hide {
+        height          : 0;
+        transition      : all 0.5s ease;
+        transform-origin: top center;
+        opacity         : 0;
+        display         : block;
+    }
+
+    .content-show {
+        transition : all 0.5s ease;
+        opacity    : 1;
+        padding-top: 1rem;
+        margin-top : 1rem;
+        height     : auto;
+    }
+
+    .hr-hide {
+        // opacity   : 0;
+        transition: all 0.5s ease;
+        margin    : 0;
+        width     : 0;
+    }
+
+    .hr-show {
+        // opacity   : 1;
+        transition: all 0.5s ease;
+        margin    : 1rem 0;
+        width     : 100%;
+    }
+}

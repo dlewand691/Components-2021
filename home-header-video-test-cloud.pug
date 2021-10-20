@@ -1,0 +1,89 @@
+extend __LAYOUT-TEMPLATE.pug
+include ../../_COG-Framework-2020/pug/_navigation.pug
+include ../../_COG-Framework-2020/pug/_footer.pug
+
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block extraStyles
+  style.
+    @media screen and (min-width: 0em) and (orientation:portrait) {
+      iframe#youtube-video {
+        width: calc(100vw - 2rem); 
+        height: 25vh;
+      }
+    }
+    @media screen and (min-width: 40em) and (orientation:portrait) {
+      iframe#youtube-video {
+        width: calc(100vw - 2rem); 
+        height: 40vh;
+      }
+    }
+    @media screen and (min-width: 64em) {
+      iframe#youtube-video {
+        width: calc(75vh * 1.77); 
+        height: 82.5vh;
+      }
+    }
+
+
+block content
+  +subnav(class="theme-default")
+  +primaryNav(class="theme-default")
+  
+  a.button.arrow(href="#") CHANGE_ME
+  a.small.button.arrow(href="#") CHANGE_ME
+
+  .card
+    .card-section
+      img(src="CHANGE_ME")
+    .card-section
+      h5 CHANGE_ME
+      p CHANGE_ME
+      #Button
+  
+  .align-middle.text-center.medium-text-left.video-background.bg-pos-center-center(data-interchange="[images/video-backgrounds/ie-bg.jpg, small],[../images/transparent.gif, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/video-backgrounds/ie-bg.jpg")
+      source(src="images/video-backgrounds/ie-cloud.mp4" type="video/mp4")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.py5.medium-py0.px1.xlarge-px0.medium-min-h80vh
+        .cell.medium-auto.text-white
+          h1.lh1.mb2.text-light.extra-large Cloud: your foundation for innovation
+          h5.text-normal(style="max-width: 50ch;") Spark the creativity that cloud makes possible—with anywhere access to data and apps—and lead your business into a future built to take on any challenge.
+        .cell.medium-3.flex-container.flex-dir-column.align-center.large-align-left.text-center
+          //- a.open-button-trigger.text-white.text-center.link-coverAll.mb1.blue-bright-hover(data-open="ie-videoReveal")
+            i.play-button.super-size
+            .text-bold.mt1 WATCH NOW
+          //- p.text-italic.text-white.sidelines.white or
+          //- a.arrow.white.link-white.text-white.hollow.blue-bright-hover.block.z2(href="#") EXPERIENCE MORE
+
+  #ie-videoReveal.reveal.full.text-center.align-middle(data-close-on-esc="false" data-reveal data-animation-in="slide-in-up" data-animation-out="slide-out-down")
+    .flex-container.flex-dir-column.align-center.h100
+      iframe#youtube-video.mb1.wh100(src="" autoplay="1" frameborder="0" allowfullscreen )
+      .grid-container.grid-x.grid-padding-x.align-center-middle
+        .cell.large-shrink.small-order-2.large-order-1.large-mt0.large-mr1
+          a.close-button-trigger.small(data-close) CLOSE
+        .cell.large-shrink.small-order-1.large-order-2
+          a.button.small.arrow.m0(href="#") EXPERIENCE MORE
+    button.close-button.close-button-trigger(data-close aria-label="Close modal" type="button")
+      span(aria-hidden="true") &times;
+  .mb10
+
+  block extraScripts
+    script.
+      var youtubeUrl = 'https://www.youtube.com/embed/496vDXsr9fw'
+      var youtubeAutoplay = youtubeUrl + '?enablejsapi=1&showinfo=0&modestbranding=1&wmode=transparent&controls=1&autohide=1&rel=0&autoplay=1&autoplay=1'
+      var youtubeNoAutoplay = youtubeUrl + '?enablejsapi=1&showinfo=0&modestbranding=1&wmode=transparent&controls=1&autohide=1&rel=0'
+
+      var srcReplace = function (youtubePlay){
+        $('#youtube-video').attr('src', youtubePlay)
+      }
+
+      $('.open-button-trigger').click(function(){
+        srcReplace(youtubeAutoplay)
+      });
+
+      $('.close-button-trigger').click(function(){
+        srcReplace(youtubeNoAutoplay)
+      });

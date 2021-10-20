@@ -1,0 +1,1505 @@
+.atom-anim,
+.filler {
+    background-color: gray;
+    background-image: repeating-linear-gradient(45deg,transparent,transparent 35px,hsla(0,0%,100%,.5) 0,hsla(0,0%,100%,.5) 70px);
+}
+
+#sphere-scenes {
+    position  : relative;
+    /*overflow: hidden;*/
+    overflow  : visible;
+    background: #00236d;
+    width     : 100%;
+    /* max-width: 1200px;
+    margin: 0 auto*/
+}
+
+#sphere-scenes canvas {
+    width   : 100%;
+    position: absolute;
+}
+
+#sphere-scenes .scene-container {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    right   : 0;
+    bottom  : 0;
+}
+
+#sphere-scenes .progress-dots {
+    position         : absolute;
+    top              : 50%;
+    right            : 2%;
+    width            : 5%;
+    -webkit-transform: translateY(-50%);
+    transform        : translateY(-50%);
+    z-index          : 4;
+}
+
+#sphere-scenes .progress-dots a {
+    display       : block;
+    width         : 100%;
+    padding-bottom: 20%;
+    margin-bottom : 0;
+    text-align    : right;
+}
+
+#sphere-scenes .progress-dots a:before {
+    content           : "";
+    border-radius     : 50%;
+    background        : #fff;
+    display           : inline-block;
+    width             : 20%;
+    padding-bottom    : 20%;
+    -webkit-transition: background 1s ease;
+    transition        : background 1s ease;
+}
+
+#sphere-scenes .progress-dots a.active:before {
+    background: #00b140;
+}
+
+#sphere-scenes .skip {
+    position  : absolute;
+    bottom    : 3%;
+    right     : 1%;
+    width     : 5%;
+    text-align: right;
+    z-index   : 4;
+}
+
+#sphere-scenes .skip a {
+    color         : #fff;
+    font-size     : 1.5vw;
+    line-height   : 2vw;
+    font-weight   : 400;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    opacity       : 0.5;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .skip a {
+        color         : #fff;
+        font-size     : 18px;
+        line-height   : 24px;
+        font-weight   : 400;
+        font-style    : normal;
+        font-family   : proxima-nova;
+        text-transform: none;
+        letter-spacing: normal;
+    }
+}
+
+#sphere-scenes .nucleus {
+    position          : absolute;
+    top               : 39%;
+    left              : 43.5%;
+    opacity           : 0;
+    -webkit-transition: all 1.2s ease-in-out;
+    transition        : all 1.2s ease-in-out;
+    width             : 13%;
+}
+
+#sphere-scenes .nucleus img {
+    width: 100%;
+}
+
+#sphere-scenes .nucleus.show {
+    opacity: 1;
+}
+
+#sphere-scenes .nucleus.move-scene2 {
+    -webkit-transition: all 1.2s ease-in-out;
+    transition        : all 1.2s ease-in-out;
+}
+
+#sphere-scenes .nucleus.move-scene2.move1 {
+    top  : 28%;
+    left : 6%;
+    width: 24%;
+}
+
+#sphere-scenes .nucleus.move-scene3 {
+    -webkit-transition: all 1s linear;
+    transition        : all 1s linear;
+}
+
+#sphere-scenes .nucleus.move-scene3.move2 {
+
+    /*left: -2%;*/
+
+    /*top: 40%;        
+    left:4.5%;           
+    width: 13%;*/
+    top  : 37.6%;
+    left : 3%;
+    width: 13%;
+
+}
+
+#sphere-scenes .nucleus.move-scene7 {
+    -webkit-transition: all 1s linear;
+    transition        : all 1s linear;
+}
+
+#sphere-scenes .nucleus.move-scene7.move7 {
+    /*top: 78.5%;*/
+    /*top:74%;  */
+    top  : 77.1%;
+    left : 46%;
+    width: 9.7%;
+}
+
+#sphere-scenes .nucleus.move-scene8 {
+    -webkit-transition: all 1s linear;
+    transition        : all 1s linear;
+}
+
+#sphere-scenes .nucleus.move-scene8.move8 {
+    /*top: 82.5%;*/
+    /*top:79.5%; */
+    top  : 82.3%;
+    left : 47%;
+    width: 8%;
+}
+
+#sphere-scenes .nucleus.move-scene9 {
+    -webkit-transition: all 1.1s ease-out;
+    transition        : all 1.1s ease-out;
+}
+
+#sphere-scenes .nucleus.move-scene9.move9 {
+    /*top: 13.5%;*/
+    top  : 12.4%;
+    left : 47%;
+    width: 8%;
+}
+
+#sphere-scenes .nucleus .text {
+    color             : #fff;
+    font-size         : 1.5vw !important;
+    line-height       : 2vw;
+    font-weight       : 400;
+    font-style        : normal;
+    font-family       : proxima-nova;
+    text-transform    : uppercase;
+    letter-spacing    : normal;
+    position          : absolute;
+    top               : 50%;
+    left              : 50%;
+    -webkit-transform : translate(-50%,-50%);
+    transform         : translate(-50%,-50%);
+    text-align        : center;
+    opacity           : 0;
+    -webkit-transition: all 1s ease;
+    transition        : all 1s ease;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .nucleus .text {
+        color         : #fff;
+        font-size     : 18px !important;
+        line-height   : 24px;
+        font-weight   : 400;
+        font-style    : normal;
+        font-family   : proxima-nova;
+        text-transform: uppercase;
+        letter-spacing: normal;
+    }
+}
+
+#sphere-scenes .nucleus .text.show {
+    opacity: 1;
+}
+
+#sphere-scenes .ring {
+    position      : absolute;
+    /*top: 3%;
+    left: -36%;
+    width: 94%;
+    height: 94%;*/
+    top           : 1%;
+    left          : -37%;
+    width         : 93%;
+    height        : 100%;
+    pointer-events: none;
+}
+
+#sphere-scenes .ring .ring1,
+#sphere-scenes .ring .ring2,
+#sphere-scenes .ring .ring3,
+#sphere-scenes .ring .ring4 {
+    background-position: 50%;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    -webkit-transition : opacity 1s ease;
+    transition         : opacity 1s ease;
+    opacity            : 0;
+    position           : absolute;
+    top                : 0;
+    bottom             : 0;
+    left               : 0;
+    right              : 0;
+}
+
+#sphere-scenes .ring .ring1 {
+    background-image: url("/content/dam/cognizant_foundation/images/atom_animation/ring.1.png");
+    z-index         : 1;
+}
+
+#sphere-scenes .ring .ring2 {
+    background-image : url("/content/dam/cognizant_foundation/images/atom_animation/ring.2.png");
+    -webkit-transform: rotate(115.5deg);
+    transform        : rotate(115.5deg);
+    z-index          : 2;
+}
+
+#sphere-scenes .ring .ring2.prep-transition {
+    -webkit-transition: -webkit-transform 2s ease;
+    transition        : -webkit-transform 2s ease;
+    transition        : transform 2s ease;
+    transition        : transform 2s ease,-webkit-transform 2s ease;
+}
+
+#sphere-scenes .ring .ring2.rotate {
+    -webkit-transform: rotate(0);
+    transform        : rotate(0);
+}
+
+#sphere-scenes .ring .ring3 {
+    background-image : url("/content/dam/cognizant_foundation/images/atom_animation/ring.3.png");
+    -webkit-transform: rotate(118deg);
+    transform        : rotate(118deg);
+    z-index          : 3;
+}
+
+#sphere-scenes .ring .ring3.prep-transition {
+    -webkit-transition: -webkit-transform 2s ease;
+    transition        : -webkit-transform 2s ease;
+    transition        : transform 2s ease;
+    transition        : transform 2s ease, -webkit-transform 2s ease;
+}
+
+#sphere-scenes .ring .ring3.rotate {
+    -webkit-transform: rotate(0);
+    transform        : rotate(0);
+}
+
+#sphere-scenes .ring .ring4 {
+    background-image: url("/content/dam/cognizant_foundation/images/atom_animation/ring.4.png");
+    z-index         : 4;
+}
+
+#sphere-scenes .ring.scene4 .ring1 {
+    opacity: 1;
+}
+
+#sphere-scenes .ring.scene5 .ring1 {
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+    opacity           : 0;
+}
+
+#sphere-scenes .ring.scene5 .ring2 {
+    opacity: 1;
+}
+
+#sphere-scenes .ring.scene6 .ring2 {
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+    opacity           : 0;
+}
+
+#sphere-scenes .ring.scene6 .ring3 {
+    opacity: 1;
+}
+
+#sphere-scenes .ring.scene7 {
+    -webkit-transition: all 0.95s linear;
+    transition        : all 0.95s linear;
+}
+
+#sphere-scenes .ring.scene7.move {
+    top   : 50.5%;
+    left  : 21%;
+    width : 60%;
+    height: 73%;
+}
+
+#sphere-scenes .ring.scene8 .ring3 {
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+    opacity           : 0;
+}
+
+#sphere-scenes .ring.scene8 .ring4 {
+    opacity: 1;
+}
+
+#sphere-scenes .ring.scene8.move {
+    top   : 59%;
+    left  : 21%;
+    width : 60%;
+    height: 63%;
+}
+
+#sphere-scenes .ring.scene9 {
+    -webkit-transition: all 1.1s ease-out;
+    transition        : all 1.1s ease-out;
+}
+
+#sphere-scenes .ring.scene9.move {
+    top   : 9.4%;
+    left  : 45%;
+    width : 12%;
+    height: 22%;
+}
+
+#sphere-scenes .outer-ring {
+    position           : absolute;
+    top                : 50.7%;
+    left               : 14.8%;
+    width              : 72%;
+    height             : 72%;
+    background-position: 50%;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    background-image   : url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.1.png");
+    z-index            : 2;
+    -webkit-transition : all 1.1s ease-out;
+    transition         : all 1.1s ease-out;
+    opacity            : 0;
+    pointer-events     : none;
+}
+
+#sphere-scenes .outer-ring:after {
+    content         : "";
+    background-image: url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.4.png");
+    position        : absolute;
+    visibility      : hidden;
+}
+
+#sphere-scenes .outer-ring.scene7 {
+    opacity: 1;
+    /*top: 49.7%;
+    left: 14.8%;
+    width: 72%;
+    height: 75%;*/
+    top    : 50.5%;
+    left   : 20.9%;
+    width  : 60%;
+    height : 73%;
+
+}
+
+#sphere-scenes .outer-ring.scene8 {
+    width : 63%;
+    height: 63%;
+    top   : 59%;
+    left  : 19.5%;
+}
+
+#sphere-scenes .outer-ring.scene8.rotate {
+    -webkit-animation-name           : rotate-ccw;
+    animation-name                   : rotate-ccw;
+    -webkit-animation-duration       : 20s;
+    animation-duration               : 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function        : linear;
+}
+
+#sphere-scenes .outer-ring.scene9 {
+    background-image: url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.4.png");
+    width           : 12%;
+    height          : 22%;
+    top             : 9.35%;
+    left            : 45%;
+}
+
+#sphere-scenes .second-outer-ring {
+    position           : absolute;
+    top                : 52.4%;
+    left               : 17.5%;
+    width              : 67%;
+    height             : 76%;
+    background-position: 50%;
+    background-size    : contain;
+    background-repeat  : no-repeat;
+    /*background-image: url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.2.png");*/
+    /*background-image: url("/content/dam/cognizant_foundation/images/outer-ring-new.png");*/
+    background-image   : url("/content/dam/cognizant_foundation/images/outer-ring.2.png");
+    -webkit-transition : all 1.1s ease-out;
+    transition         : all 1.1s ease-out;
+    opacity            : 0;
+    pointer-events     : none;
+}
+
+#sphere-scenes .second-outer-ring:after {
+    content         : "";
+    background-image: url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.3.png");
+    position        : absolute;
+    visibility      : hidden;
+}
+
+#sphere-scenes .second-outer-ring.scene8 {
+    opacity: 1;
+}
+
+#sphere-scenes .second-outer-ring.scene8.rotate {
+    -webkit-animation-name           : rotate;
+    animation-name                   : rotate;
+    -webkit-animation-duration       : 20s;
+    animation-duration               : 20s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count        : infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function        : linear;
+}
+
+#sphere-scenes .second-outer-ring.scene9 {
+    opacity         : 1;
+    /*background-image: url("/content/dam/cognizant_foundation/images/atom_animation/outer-ring.3.png");*/
+    background-image: url("/content/dam/cognizant_foundation/images/outer-ring.3.png");
+    top             : 7.3%;
+    left            : 17.5%;
+    width           : 67%;
+    height          : 26%;
+}
+
+@-webkit-keyframes rotate-ccw {
+    0% {
+        -webkit-transform: rotate(1turn);
+        transform        : rotate(1turn);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+}
+
+@keyframes rotate-ccw {
+    0% {
+        -webkit-transform: rotate(1turn);
+        transform        : rotate(1turn);
+    }
+
+    to {
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform        : rotate(1turn);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform        : rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(1turn);
+        transform        : rotate(1turn);
+    }
+}
+
+#sphere-scenes .dot-ring {
+    /*position: absolute;
+    top: 48%;
+    left: 28.8%;
+    width: 44%;
+    height: 0;
+    padding-bottom: 44%;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    border: 1px dotted #c3c7d8;
+    opacity: 1;
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;*/
+    position      : absolute;
+    top           : 48%;
+    left          : 31.9%;
+    width         : 38%;
+    height        : 0;
+    padding-bottom: 38%;
+    transition    : all 1s ease;
+    border        : 1px dashed rgba(255,255,255,0.5);
+    opacity       : 1;
+    border-radius : 50%;
+    opacity       : 0;
+    pointer-events: none;
+
+}
+
+#sphere-scenes .dot-ring.scene7 {
+    opacity       : 1;
+    /*top:45%;
+    padding-bottom:40%;*/
+    top           : 48%;
+    padding-bottom: 38%;
+    left          : 31.9%;
+    width         : 38%;
+    transition    : all 1s ease;
+
+}
+
+#sphere-scenes .dot-ring.scene8 {
+    /*top: 50%;
+    left: 28.2%;
+    width: 45.6%;*/
+    height        : 0;
+    /*-webkit-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+    top:47%;
+    padding-bottom:42%;
+    left:29.5%;
+    width:43.1%;*/
+    top           : 50%;
+    padding-bottom: 39.5%;
+    left          : 31.3%;
+    width         : 39.5%;
+    transition    : all 1.1s ease-out;
+
+}
+
+#sphere-scenes .dot-ring.scene9 {
+    /*opacity: 0;
+    top: 7%;
+    left: 43.5%;
+    width: 15%;
+    padding-bottom: 15%*/
+    opacity       : 0;
+    top           : 7.1%;
+    left          : 44.6%;
+    width         : 12.8%;
+    padding-bottom: 12.7%;
+
+}
+
+#sphere-scenes .scene-content {
+    position          : absolute;
+    left              : 0;
+    right             : 0;
+    top               : 50%;
+    -webkit-transition: all 1s ease;
+    transition        : all 1s ease;
+    -webkit-transform : translateY(-50%);
+    transform         : translateY(-50%);
+    z-index           : -1;
+}
+
+#sphere-scenes .scene-content.curr {
+    z-index: 3;
+}
+
+#sphere-scenes .scene-content.scene1 {
+    padding-left: 10%;
+    opacity     : 1;
+}
+
+#sphere-scenes .scene-content.scene1 .eyebrow {
+    color         : #fff;
+    font-size     : 0.83vw !important;
+    line-height   : 1;
+    font-weight   : 400;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    border-bottom : 1px solid #fff;
+    display       : inline-block;
+    margin-bottom : 3vw;
+    padding-bottom: 1vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 .eyebrow {
+        font-size     : 15px !important;
+        margin-bottom : 36px;
+        padding-bottom: 12px;
+    }
+}
+
+#sphere-scenes .scene-content.scene1 .impact-line {
+    position     : relative;
+    display      : inline-block;
+    margin-bottom: 4vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 .impact-line {
+        margin-bottom: 48px;
+    }
+}
+
+#sphere-scenes .scene-content.scene1 .impact-line .how {
+    color         : #fff;
+    font-size     : 1.6vw !important;
+    line-height   : 1;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    position      : absolute;
+    left          : 3.5vw;
+    top           : 1.3vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 .impact-line .how {
+        font-size: 20px !important;
+        left     : 42px;
+        top      : 16px;
+    }
+}
+
+#sphere-scenes .scene-content.scene1 .impact-line .impact {
+    color         : #00ba51;
+    font-size     : 10vw !important;
+    line-height   : 1;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 .impact-line .impact {
+        font-size: 123px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene1 .impact-line .clients {
+    color         : #fff;
+    font-size     : 2.9vw !important;
+    line-height   : 1;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    position      : absolute;
+    top           : 8.5vw;
+    right         : 0;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 .impact-line .clients {
+        font-size: 35px !important;
+        top      : 102px;
+    }
+}
+
+#sphere-scenes .scene-content.scene1 p {
+    color         : #fff;
+    font-size     : 1.5vw !important;
+    line-height   : 1.2;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    max-width     : 41%;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene1 p {
+        font-size: 18px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene1.out {
+    opacity: 0;
+}
+
+#sphere-scenes .scene-content.scene3 {
+    text-align: right;
+}
+
+#sphere-scenes .scene-content.scene3 .block {
+    width             : 40%;
+    display           : inline-block;
+    text-align        : left;
+    padding-right     : 8%;
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+    opacity           : 0;
+    color             : #fff;
+    -webkit-transform : translateZ(0);
+    transform         : translateZ(0);
+}
+
+#sphere-scenes .scene-content.scene3 .block1 {
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+    color             : #fff;
+    font-size         : 4vw !important;
+    line-height       : 1;
+    font-weight       : 300;
+    font-style        : normal;
+    font-family       : proxima-nova;
+    text-transform    : none;
+    letter-spacing    : normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block1 {
+        font-size: 48px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene3 .block1 strong {
+    color         : #00ba51;
+    font-size     : 4vw !important;
+    line-height   : 1;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block1 strong {}
+}
+
+#sphere-scenes .scene-content.scene3 .block1v2 {
+    padding-right : 24%;
+    margin-bottom : 4.7vw;
+    color         : #fff;
+    font-size     : 2vw;
+    line-height   : 1;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block1v2 {
+        font-size    : 24px !important;
+        margin-bottom: 56px;
+    }
+}
+
+#sphere-scenes .scene-content.scene3 .block1v2 strong {
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block1v2 strong {
+        font-size: 24px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene3 .block2 {
+    color         : #fff;
+    font-size     : 1.75vw !important;
+    line-height   : 1;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block2 {
+        font-size: 18px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene3 .block2 strong {
+    color         : #fff;
+    font-size     : 1.75vw !important;
+    line-height   : 1;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block2 strong {
+        font-size: 21px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene3 .block3 strong {
+    color         : #00ba51;
+    font-size     : 3.2vw !important;
+    line-height   : 1;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3 .block3 strong {
+        font-size: 38px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene3.phase1 .block1 {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene3.phase2 .block1 {
+    opacity: 0;
+}
+
+#sphere-scenes .scene-content.scene3.phase2 .block1v2,
+#sphere-scenes .scene-content.scene3.phase2 .block2,
+#sphere-scenes .scene-content.scene3.phase3 {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene3.phase3 .block2 {
+    margin-bottom: 4.7vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene3.phase3 .block2 {
+        margin-bottom: 56px;
+    }
+}
+
+#sphere-scenes .scene-content.scene3.phase3 .block3 {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene3.end .block {
+    opacity: 0;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow,
+#sphere-scenes .scene-content.scene4 .content,
+#sphere-scenes .scene-content.scene4 .number,
+#sphere-scenes .scene-content.scene5 .arrow,
+#sphere-scenes .scene-content.scene5 .content,
+#sphere-scenes .scene-content.scene5 .number,
+#sphere-scenes .scene-content.scene6 .arrow,
+#sphere-scenes .scene-content.scene6 .content,
+#sphere-scenes .scene-content.scene6 .number {
+    position          : absolute;
+    top               : 50%;
+    -webkit-transform : translate3d(0,-50%,0);
+    transform         : translate3d(0,-50%,0);
+    opacity           : 0;
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow.show,
+#sphere-scenes .scene-content.scene4 .content.show,
+#sphere-scenes .scene-content.scene4 .number.show,
+#sphere-scenes .scene-content.scene5 .arrow.show,
+#sphere-scenes .scene-content.scene5 .content.show,
+#sphere-scenes .scene-content.scene5 .number.show,
+#sphere-scenes .scene-content.scene6 .arrow.show,
+#sphere-scenes .scene-content.scene6 .content.show,
+#sphere-scenes .scene-content.scene6 .number.show {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow h3,
+#sphere-scenes .scene-content.scene4 .content h3,
+#sphere-scenes .scene-content.scene4 .number h3,
+#sphere-scenes .scene-content.scene5 .arrow h3,
+#sphere-scenes .scene-content.scene5 .content h3,
+#sphere-scenes .scene-content.scene5 .number h3,
+#sphere-scenes .scene-content.scene6 .arrow h3,
+#sphere-scenes .scene-content.scene6 .content h3,
+#sphere-scenes .scene-content.scene6 .number h3 {
+    color         : #fff;
+    font-size     : 3vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom : 4vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene4 .arrow h3,
+    #sphere-scenes .scene-content.scene4 .content h3,
+    #sphere-scenes .scene-content.scene4 .number h3,
+    #sphere-scenes .scene-content.scene5 .arrow h3,
+    #sphere-scenes .scene-content.scene5 .content h3,
+    #sphere-scenes .scene-content.scene5 .number h3,
+    #sphere-scenes .scene-content.scene6 .arrow h3,
+    #sphere-scenes .scene-content.scene6 .content h3,
+    #sphere-scenes .scene-content.scene6 .number h3 {
+        font-size    : 36px !important;
+        margin-bottom: 48px;
+    }
+}
+
+#sphere-scenes .scene-content.scene4 .arrow h3 strong,
+#sphere-scenes .scene-content.scene4 .content h3 strong,
+#sphere-scenes .scene-content.scene4 .number h3 strong,
+#sphere-scenes .scene-content.scene5 .arrow h3 strong,
+#sphere-scenes .scene-content.scene5 .content h3 strong,
+#sphere-scenes .scene-content.scene5 .number h3 strong,
+#sphere-scenes .scene-content.scene6 .arrow h3 strong,
+#sphere-scenes .scene-content.scene6 .content h3 strong,
+#sphere-scenes .scene-content.scene6 .number h3 strong {
+    color         : #fff;
+    font-size     : 3vw !important;
+    line-height   : 1.3;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene4 .arrow h3 strong,
+    #sphere-scenes .scene-content.scene4 .content h3 strong,
+    #sphere-scenes .scene-content.scene4 .number h3 strong,
+    #sphere-scenes .scene-content.scene5 .arrow h3 strong,
+    #sphere-scenes .scene-content.scene5 .content h3 strong,
+    #sphere-scenes .scene-content.scene5 .number h3 strong,
+    #sphere-scenes .scene-content.scene6 .arrow h3 strong,
+    #sphere-scenes .scene-content.scene6 .content h3 strong,
+    #sphere-scenes .scene-content.scene6 .number h3 strong {
+        font-size: 36px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene4 .arrow h3 strong.blue,
+#sphere-scenes .scene-content.scene4 .content h3 strong.blue,
+#sphere-scenes .scene-content.scene4 .number h3 strong.blue,
+#sphere-scenes .scene-content.scene5 .arrow h3 strong.blue,
+#sphere-scenes .scene-content.scene5 .content h3 strong.blue,
+#sphere-scenes .scene-content.scene5 .number h3 strong.blue,
+#sphere-scenes .scene-content.scene6 .arrow h3 strong.blue,
+#sphere-scenes .scene-content.scene6 .content h3 strong.blue,
+#sphere-scenes .scene-content.scene6 .number h3 strong.blue {
+    color: #0057ff;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow h3 strong.orange,
+#sphere-scenes .scene-content.scene4 .content h3 strong.orange,
+#sphere-scenes .scene-content.scene4 .number h3 strong.orange,
+#sphere-scenes .scene-content.scene5 .arrow h3 strong.orange,
+#sphere-scenes .scene-content.scene5 .content h3 strong.orange,
+#sphere-scenes .scene-content.scene5 .number h3 strong.orange,
+#sphere-scenes .scene-content.scene6 .arrow h3 strong.orange,
+#sphere-scenes .scene-content.scene6 .content h3 strong.orange,
+#sphere-scenes .scene-content.scene6 .number h3 strong.orange {
+    color: #f95e3f;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow h3 strong.green,
+#sphere-scenes .scene-content.scene4 .content h3 strong.green,
+#sphere-scenes .scene-content.scene4 .number h3 strong.green,
+#sphere-scenes .scene-content.scene5 .arrow h3 strong.green,
+#sphere-scenes .scene-content.scene5 .content h3 strong.green,
+#sphere-scenes .scene-content.scene5 .number h3 strong.green,
+#sphere-scenes .scene-content.scene6 .arrow h3 strong.green,
+#sphere-scenes .scene-content.scene6 .content h3 strong.green,
+#sphere-scenes .scene-content.scene6 .number h3 strong.green {
+    color: #00ba51;
+}
+
+#sphere-scenes .scene-content.scene4 .arrow p,
+#sphere-scenes .scene-content.scene4 .content p,
+#sphere-scenes .scene-content.scene4 .number p,
+#sphere-scenes .scene-content.scene5 .arrow p,
+#sphere-scenes .scene-content.scene5 .content p,
+#sphere-scenes .scene-content.scene5 .number p,
+#sphere-scenes .scene-content.scene6 .arrow p,
+#sphere-scenes .scene-content.scene6 .content p,
+#sphere-scenes .scene-content.scene6 .number p {
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene4 .arrow p,
+    #sphere-scenes .scene-content.scene4 .content p,
+    #sphere-scenes .scene-content.scene4 .number p,
+    #sphere-scenes .scene-content.scene5 .arrow p,
+    #sphere-scenes .scene-content.scene5 .content p,
+    #sphere-scenes .scene-content.scene5 .number p,
+    #sphere-scenes .scene-content.scene6 .arrow p,
+    #sphere-scenes .scene-content.scene6 .content p,
+    #sphere-scenes .scene-content.scene6 .number p {
+        font-size: 24px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene4 .arrow p strong,
+#sphere-scenes .scene-content.scene4 .content p strong,
+#sphere-scenes .scene-content.scene4 .number p strong,
+#sphere-scenes .scene-content.scene5 .arrow p strong,
+#sphere-scenes .scene-content.scene5 .content p strong,
+#sphere-scenes .scene-content.scene5 .number p strong,
+#sphere-scenes .scene-content.scene6 .arrow p strong,
+#sphere-scenes .scene-content.scene6 .content p strong,
+#sphere-scenes .scene-content.scene6 .number p strong {
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1.3;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene4 .arrow p strong,
+    #sphere-scenes .scene-content.scene4 .content p strong,
+    #sphere-scenes .scene-content.scene4 .number p strong,
+    #sphere-scenes .scene-content.scene5 .arrow p strong,
+    #sphere-scenes .scene-content.scene5 .content p strong,
+    #sphere-scenes .scene-content.scene5 .number p strong,
+    #sphere-scenes .scene-content.scene6 .arrow p strong,
+    #sphere-scenes .scene-content.scene6 .content p strong,
+    #sphere-scenes .scene-content.scene6 .number p strong {
+        font-size: 24px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene4 .arrow,
+#sphere-scenes .scene-content.scene5 .arrow,
+#sphere-scenes .scene-content.scene6 .arrow {
+    left : 30%;
+    width: 1.5%;
+}
+
+#sphere-scenes .scene-content.scene4 .number,
+#sphere-scenes .scene-content.scene5 .number,
+#sphere-scenes .scene-content.scene6 .number {
+    left          : 35%;
+    color         : #0057ff;
+    font-size     : 8vw !important;
+    line-height   : 1;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene4 .number,
+    #sphere-scenes .scene-content.scene5 .number,
+    #sphere-scenes .scene-content.scene6 .number {
+        font-size: 96px;
+    }
+}
+
+#sphere-scenes .scene-content.scene4 .content,
+#sphere-scenes .scene-content.scene5 .content,
+#sphere-scenes .scene-content.scene6 .content {
+    left : 48%;
+    width: 36%;
+}
+
+#sphere-scenes .scene-content.scene5 .number {
+    color: #f95e3f;
+}
+
+#sphere-scenes .scene-content.scene6 .number {
+    color: #00ba51;
+}
+
+#sphere-scenes .scene-content.scene7,
+#sphere-scenes .scene-content.scene8 {
+    top              : 0;
+    -webkit-transform: translateZ(0);
+    transform        : translateZ(0);
+}
+
+#sphere-scenes .scene-content.scene7 .content,
+#sphere-scenes .scene-content.scene8 .content {
+    text-align        : center;
+    width             : 50%;
+    margin            : 9% auto 0;
+    opacity           : 0;
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+}
+
+#sphere-scenes .scene-content.scene7 .content.show,
+#sphere-scenes .scene-content.scene8 .content.show {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene7 .content h3,
+#sphere-scenes .scene-content.scene8 .content h3 {
+    color         : #fff;
+    font-size     : 3vw !important;
+    line-height   : 1.3;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom : 1.5vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene7 .content h3,
+    #sphere-scenes .scene-content.scene8 .content h3 {
+        font-size    : 36px !important;
+        margin-bottom: 18px;
+    }
+}
+
+#sphere-scenes .scene-content.scene7 .content p,
+#sphere-scenes .scene-content.scene8 .content p {
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene7 .content p,
+    #sphere-scenes .scene-content.scene8 .content p {
+        font-size: 24px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene7 .content img,
+#sphere-scenes .scene-content.scene8 .content img {
+    width      : 4%;
+    margin-top : 2%;
+    margin-left: 3%;
+}
+
+#sphere-scenes .scene-content.scene7 .content,
+#sphere-scenes .scene-content.scene8 .content {
+    width: 60%;
+}
+
+#sphere-scenes .scene-content.scene7 .content,
+#sphere-scenes .scene-content.scene8 .content {
+    top   : 0;
+    margin: 4% auto 0;
+}
+
+#sphere-scenes .scene-content.scene9 {
+    top              : 0;
+    -webkit-transform: translateZ(0);
+    transform        : translateZ(0);
+}
+
+#sphere-scenes .scene-content.scene9 .content {
+    text-align        : center;
+    width             : 82%;
+    margin            : 20% auto 0;
+    opacity           : 0;
+    -webkit-transition: opacity 1s ease;
+    transition        : opacity 1s ease;
+}
+
+#sphere-scenes .scene-content.scene9 .content.show {
+    opacity: 1;
+}
+
+#sphere-scenes .scene-content.scene9 .content h3 {
+    color         : #fff;
+    font-size     : 3vw !important;
+    line-height   : 1.3;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom : 1.5vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content h3 {
+        font-size    : 36px !important;
+        margin-bottom: 18px;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content p {
+    margin        : 0 auto 2.5vw;
+    max-width     : 80%;
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content p {
+        font-size: 24px !important;
+        margin   : 0 auto 30px;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns {
+    overflow  : hidden;
+    *zoom     : 1;
+    background: #091963;
+    padding   : 2.5vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content .columns {
+        padding: 30px;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column {
+    float     : left;
+    width     : 33%;
+    text-align: left;
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column h3 {
+    color         : #fff;
+    font-size     : 2vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    margin-bottom : 1.3vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content .columns .column h3 {
+        font-size    : 24px !important;
+        margin-bottom: 16px;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column h3.blue {
+    color: #0057ff;
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column h3.orange {
+    color: #f95e3f;
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column h3.green {
+    color: #00ba51;
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column h3 strong {
+    font-weight: 700;
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column p {
+    color         : #fff;
+    font-size     : 1.3vw !important;
+    line-height   : 1.3;
+    font-weight   : 300;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+    margin        : 0 0 2vw;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content .columns .column p {
+        margin   : 0 0 24px;
+        font-size: 16px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column p strong {
+    color         : #fff;
+    font-size     : 1.3vw !important;
+    line-height   : 1.3;
+    font-weight   : 700;
+    font-style    : normal;
+    font-family   : proxima-nova;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content .columns .column p strong {
+        font-size: 16px !important;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content .columns .column .green-btn {
+    position: relative;
+    top     : auto;
+    left    : auto;
+    bottom  : auto;
+    right   : auto;
+}
+
+#sphere-scenes .scene-content.scene9 .content img {
+    /*width: 8%;*/
+    width     : 9%;
+    margin-top: 0;
+}
+
+#sphere-scenes .green-btn {
+    position       : absolute;
+    bottom         : -5.3vw;
+    display        : inline-block;
+    color          : #fff;
+    font-size      : 1.2vw;
+    line-height    : 1;
+    font-weight    : 700;
+    font-style     : normal;
+    font-family    : proxima-nova;
+    text-transform : uppercase;
+    letter-spacing : normal;
+    padding        : 1vw 2.2vw 1vw 1vw;
+    background     : #00ba51;
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    #sphere-scenes .green-btn {
+        font-size: 15px;
+        bottom   : -63px;
+        /*padding: 12px 26px 12px 12px;*/
+        padding  : 12px 28px 12px 12px;
+    }
+
+}
+
+#sphere-scenes .green-btn:hover {
+    text-decoration: none;
+}
+
+#sphere-scenes .green-btn img {
+    position: absolute;
+    /*right: 8%;
+    top: 30%;
+	top: 32%;
+    width: 7%;*/
+    right   : 6%;
+    top     : 30%;
+    width   : 10%;
+}
+
+#sphere-scenes.no-transition * {
+    -webkit-transition: none!important;
+    transition        : none!important;
+}
+/*Atom IE and Button Fix */
+/*#sphere-scenes .scene-content.scene7 .content, #sphere-scenes .scene-content.scene8 .content.show{
+   margin:4% auto 0;     
+}*/
+#sphere-scenes .dot-ring {
+    top  : 47%;
+    left : 30.2%;
+    width: 41%;
+}
+@media (min-width: 1200px) {
+    #sphere-scenes .scene-content.scene9 .content .columns {
+        padding: 20px;
+    }
+}
+
+#sphere-scenes .scene-content.scene9 .content {
+    margin: 18% auto 0;
+}
+/*Nucleus Repositioning*/
+#sphere-scenes .outer-ring.scene8.scene7 {
+    width : 63%;
+    height: 63%;
+    top   : 59%;
+    left  : 19.45%;
+}
+
+#sphere-scenes .outer-ring.scene9.scene7 {
+    width : 12%;
+    height: 22%;
+    top   : 9.35%;
+    left  : 45%;
+}
+@media (min-width: 1023px) and (max-width: 1025px) {
+    #sphere-scenes .scene-content.scene9 .content {
+        width: 89%;
+    }
+}
+@media (max-width: 1025px) {
+    #sphere-scenes .scene-content.scene9 .content {
+        margin: 16% auto 0;
+        width : 92%;
+    }
+
+    #sphere-scenes .scene-content.scene9 .content .columns .column:last-child {
+        width: 40% !important;
+    }
+}
+@media (max-width: 415px) {
+    #sphere-scenes .scene-content.scene7 .content p,
+    #sphere-scenes .scene-content.scene8 .content p {
+        margin-bottom: 0;
+    }
+
+    #sphere-scenes .progress-dots a {
+        padding-bottom: 0;
+        margin-bottom : -3px;
+    }
+
+    #sphere-scenes .skip {
+        bottom: 0;
+    }
+}
+@media (min-width: 1500px) {
+    #sphere-scenes .scene-content.scene7 .content,
+    #sphere-scenes .scene-content.scene8 .content {
+        margin: 7% auto 0;
+    }
+}

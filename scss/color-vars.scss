@@ -1,0 +1,296 @@
+// $button-var1: (
+//   primary: $blue-01a-400,
+//   secondary: $gray-medium,
+//   success: $green,
+//   warning: $yellow-400,
+//   alert: $red,
+// );
+
+// $button-background: $blue-bright;
+// $anchor-color: $blue-bright;
+
+// $button-palette: $button-var1;
+$global-radius: 4px;
+
+.buttonV1,
+.linkV1 {
+  $button-color: $white;
+  $button-background: $blue;
+  $button-background-hover: scale-color($button-background, $lightness: -20%);
+  $anchor-color: $blue;
+  $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background-color: $button-background;
+
+    &:hover {
+      background-color: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV2,
+.linkV2 {
+  $button-color: $white;
+  $button-background: $blue-01a-300;
+  $button-background-hover: scale-color($button-background, $lightness: -20%);
+  $anchor-color: $blue-01a-300;
+  $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background-color: $button-background;
+
+    &:hover {
+      background-color: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV3,
+.linkV3 {
+  $button-color: $white;
+  $button-background: $blue-03-400;
+  $button-background-hover: scale-color($button-background, $lightness: -20%);
+  $anchor-color: $blue-03-400;
+  $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background-color: $button-background;
+
+    &:hover {
+      background-color: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV4,
+.linkV4 {
+  $button-color: $white;
+  $button-background: $blue-01b-400;
+  $button-background-hover: scale-color($button-background, $lightness: -20%);
+  $anchor-color: $blue-01b-400;
+  $anchor-color-hover: scale-color($anchor-color, $lightness: -20%);
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background-color: $button-background;
+
+    &:hover {
+      background-color: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV5,
+.buttonV6,
+.buttonV7 {
+  .button {
+    // border-width: 0px;
+  }
+}
+
+.buttonV5,
+.linkV5 {
+  $button-color: $white;
+  $button-background: $bg-grd-theme-1;
+  $button-background-hover: $bg-grd-theme-1;
+  $anchor-color: $bg-grd-theme-1;
+  $anchor-color-hover: $bg-grd-theme-1;
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background: $button-background;
+    border-width: 0px;
+
+    &:hover {
+      background: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-image-source: $bg-grd-theme-1;
+    border-image-slice: 1;
+    // border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV6,
+.linkV6 {
+  $button-color: $white;
+  $button-background: $bg-grd-theme-2;
+  $button-background-hover: $bg-grd-theme-2;
+  $anchor-color: $bg-grd-theme-2;
+  $anchor-color-hover: $bg-grd-theme-2;
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background: $button-background;
+    border-width: 0px;
+
+    &:hover {
+      background: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-image-source: $bg-grd-theme-2;
+    border-image-slice: 1;
+    // border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}
+
+.buttonV7,
+.linkV7 {
+  $button-color: $blue;
+  $button-background: $bg-grd-theme-3;
+  $button-background-hover: $bg-grd-theme-3;
+  $anchor-color: $bg-grd-theme-3;
+  $anchor-color-hover: $bg-grd-theme-3;
+
+  .radius {
+    border-radius: $global-radius;
+  }
+  .radius-x2 {
+    border-radius: calc(#{$global-radius} * 2);
+  }
+  a {
+    color: $anchor-color;
+    &:hover {
+      color: $anchor-color-hover;
+    }
+  }
+  .button:not(.hollow) {
+    color: $button-color;
+    background: $button-background;
+    border-width: 0px;
+
+    &:hover {
+      background: $button-background-hover;
+    }
+  }
+  .hollow {
+    color: $button-background;
+    border-image-source: $bg-grd-theme-3;
+    border-image-slice: 1;
+    // border-color: $button-background;
+    &:hover {
+      color: $button-background-hover;
+      border-color: $button-background-hover;
+    }
+  }
+}

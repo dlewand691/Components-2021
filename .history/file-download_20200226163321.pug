@@ -1,0 +1,134 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "File download"
+
+block content
+
+    h1!= pageTitle
+
+    hr
+
+    h4.text-center SELECT YOUR ITEMS TO DOWNLOAD:
+
+
+    .grid-x.grid-padding-x.small-up-1.medium-up-2
+
+        .cell.cell-block.flex-container
+            label.flex-container.flex-grow.align-stretch.callout.small(for="checkbox1")
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        input.small-m0.checkbox(type="checkbox" name="checkbox1")
+                    .cell.shrink
+                        img.bd1(src="images/file-download/doc1.jpg" width="100")
+                    .cell.flex-container
+                        .grid-x.grid-padding-x
+                            .small-12.cell
+                                h6 Title of File to Download Lorem ipsum dolor sit amet.
+                                p Brief description of file Lorem ipsum dolor sit amet.
+                            .small-12.cell.align-self-bottom
+                                strong.text-gray-light
+                                    i.file-acrobat
+                                    |  PDF, 1,000k
+
+        .cell.cell-block.flex-container
+            label.flex-container.flex-grow.align-stretch.callout.small(for="checkbox2")
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        input.small-m0.checkbox(type="checkbox" name="checkbox2")
+                    .cell.shrink
+                        img.bd1(src="images/file-download/doc2.jpg" width="100")
+                    .cell.flex-container
+                        .grid-x.grid-padding-x
+                            .small-12.cell
+                                h6 Title of File to Download
+                                p Brief description of file  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores minus autem, omnis eos quas voluptates esse repudiandae explicabo, facilis cupiditate assumenda temporibus rem molestiae delectus sint! Odio, eaque odit.
+                            .small-12.cell.align-self-bottom
+                                strong.text-gray-light
+                                    i.projector-screen
+                                    |  Microsoft PowerPoint, 2.8mb
+
+        .cell.cell-block.flex-container
+            label.flex-container.flex-grow.align-stretch.callout.small(for="checkbox13")
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        input.small-m0.checkbox(type="checkbox" name="checkbox3")
+                    .cell.shrink
+                        img.bd1(src="images/file-download/doc3.jpg" width="100")
+                    .cell.flex-container
+                        .grid-x.grid-padding-x
+                            .small-12.cell
+                                h6 Title of File to Download
+                                p Brief description of file  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem distinctio sit sunt autem.
+                            .small-12.cell.align-self-bottom
+                                strong.text-gray-light
+                                    i.file-word
+                                    |  Microsoft Word, 2.8mb
+
+        .cell.cell-block.flex-container
+            label.flex-container.flex-grow.align-stretch.callout.small(for="checkbox4")
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        input.small-m0.checkbox(type="checkbox" name="checkbox4")
+                    .cell.shrink
+                        img.bd1(src="images/file-download/doc4.jpg" width="100")
+                    .cell.flex-container
+                        .grid-x.grid-padding-x
+                            .small-12.cell
+                                h6 Title of File to Download Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, dolores a esse repellat corporis vero?
+                                p Brief description of file Lorem ipsum dolor sit amet.
+                            .small-12.cell.align-self-bottom
+                                strong.text-gray-light
+                                    i.play-button
+                                    |  Video, 125.88mb
+
+
+
+    .grid-x.grid-padding-x.align-center.small-mt2
+        .small-12.medium-8.large-8.cell
+            h6.text-center Please provide your email and company name to download your selections
+            form#formDownload(data-abide novalidate)
+                .grid-x.grid-padding-x.small-up-1.medium-up-2
+                    .cell
+                        label First Name
+                        input(type="text" name="firstName" placeholder="John" required data-live-validate="true")
+                        span.form-error Please enter a valid email address
+                    .cell
+                        label Last Name
+                        input(type="text" name="lastName" placeholder="Doe" required data-live-validate="true")
+                        span.form-error Please enter a valid email address
+
+                label Email Address
+                input(type="email" name="email" placeholder="email@example.com" required pattern="email" data-live-validate="true")
+                span.form-error Please enter a valid email address
+
+                label Organization
+                input(type="text" name="business" placeholder="Your Company" required pattern="alpha" data-live-validate="true")
+                span.form-error Please enter the name of your company
+
+                button.button.expanded.disabled#submitButton(type="submit" value="submit") download selected items
+                    i.download.fw600.small-ml-half
+
+    script.
+        $("input[type=checkbox]").change(function(){
+            $(this).closest('label').toggleClass("primary");
+        });
+        $("#formDownload").on("invalid.zf.abide", function(ev,elem) {
+            //- alert("Valid");
+            //- console.log("Field name "+elem.attr('name')+" is invalid");
+            $('#submitButton').addClass('disabled');
+        });
+        $("#formDownload").on("valid.zf.abide", function(ev,elem) {
+            //- alert("Valid");
+            //- console.log("Field name "+elem.attr('name')+" is valid");
+            $('#submitButton').removeClass('disabled');
+        });
+
+        //- $('button').attr('disabled','disabled');
+        //-     $('input[type="text"]').keyup(function() {
+        //-         if($(this).val() != '') {
+        //-             $('button').removeAttr('disabled');
+        //-         }
+        //-         else {
+        //-             $("button").removeAttr("disabled");
+        //-         }
+        //- });

@@ -1,0 +1,34 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "WEBP test"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+  //- picture
+  //-   // load webp images if supported
+  //-   source(type="image/webp", 
+  //-   srcset="images/300x300.webp 300w, images/600x600.webp 600w, images/800x800.webp 800w", 
+  //-   sizes="(max-width: 599px) 300px, (min-width: 600px) 600px, (min-width: 800px) 800px")
+  //-   // load traditional supported image format
+  //-   img(srcset="images/300x300.jpg 300w, images/600x600.jpg 600w, images/800x800.jpg 800w", src="images/300x300.jpg", alt="Buildings of Paris", loading="lazy", decoding="async", width="100%")
+
+  picture
+    source(type="image/webp" media="(max-width: 599px)" srcset="images/300x300.webp") 
+    source(type="image/webp" media="(max-width: 799px)" srcset="images/600x600.webp") 
+    source(type="image/webp" media="(min-width: 800px)" srcset="images/800x800.webp") 
+    img(src="images/300x300.jpg", alt="Alt", loading="lazy", decoding="async", width="100%")
+
+  //- picture
+  //-   source(type="image/webp" 
+  //-   sizes="(max-width: 608px) 100vw, 608px"
+  //-   srcset="images/800x800.webp 800w, images/600x600.webp 600w, images/300x300.webp 300w", )
+  //- 
+  //-   source(type="image/jpeg"
+  //-   sizes="(max-width: 608px) 100vw, 608px"
+  //-   srcset="images/800x800.jpg 800w, images/600x600.jpg 600w, images/300x300.jpg 300w")
+  //-   img(src="images/300x300.jpg", alt="Buildings of Paris", loading="lazy", decoding="async", width="100%")

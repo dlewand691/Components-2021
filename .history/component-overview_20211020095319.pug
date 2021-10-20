@@ -1,0 +1,30 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Overview"
+
+block content
+    h1!= pageTitle
+
+    .row.pt2.px2.pb0
+        .small-12.medium-12.large-12.column
+            h3.small-my1.small-mb2.text-center L&Ouml;SNINGAR
+    .row.large-unstack
+        .column
+            h4 INTERAKTIVITET SOM STIMULERAR OCH INSPIRERAR GÖR MARKNADSFÖRINGSTEKNIKEN MER EFFEKTIV
+        .column
+            p Vi kombinerar fem viktiga egenskaper f&ouml;r att tillhandah&aring;lla en svit av l&ouml;sningar s&aring;som strategi och design, inneh&aring;ll, marknadsf&ouml;ring, sociala medier, plattformar och teknik.
+    .row
+        .small-12.large-6.column
+            hr.small-mt1
+            // Interactive-icons start
+            h5.small-m0
+                a.text-gray-light1.small-mr1(href="javascript:void(0)", title="Email", tabindex="0", onclick="sharing_url('email','/cognizant-digital-business/interactive-services','Interaktiv')")
+                    i.email.fw600.small-ml0
+                a.text-gray-light1.small-mr1(href="javascript:void(0)", title="Twitter", tabindex="0", onclick="sharing_url('twitter','/cognizant-digital-business/interactive-services','Interaktiv')")
+                    i.logo-twitter-bird.small-ml0
+                a.text-gray-light1.small-mr1(href="javascript:void(0)", title="Facebook", tabindex="0", onclick="sharing_url('facebook','/cognizant-digital-business/interactive-services','Interaktiv')")
+                    i.logo-facebook.small-ml0
+                a.text-gray-light1.small-mr1(href="javascript:void(0)", title="LinkedIn", tabindex="0", onclick="sharing_url('linkedin','/cognizant-digital-business/interactive-services','Interaktiv')")
+                    i.logo-linkedin.small-ml0
+            // Interactive-icons end
+

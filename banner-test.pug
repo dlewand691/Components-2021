@@ -1,0 +1,27 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Banner Test"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+  - var imageDesktop = "https://cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banner-hp-pga-lpga-desktop.jpg"
+  - var imageTablet = "https://cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banner-hp-pga-lpga-desktop.jpg"
+  - var imageMobile = "https://cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banner-hp-pga-lpga-desktop.jpg"
+
+block content
+  .swiper-container.inside-dots.inside-arrows.green-dots.green-arrows.square-pagination(style="height: 500px;")
+    .swiper-wrapper
+      .swiper-slide(data-interchange="[" + imageMobile + ", small],[" + imageTablet + ", medium],[" + imageDesktop + ", large]" style="background-size: cover; background-position: center center;")
+        .flex-container.flex-dir-column
+          .row.flex-container.align-middle.align-left.py2.w100.randamize-count(style="min-height:500px;")
+            .columns.medium-10.large-6.z1.medium-pl3.px2
+              h1.h2.text-blue(contenteditable="true") Cognizant tees up global golf partnerships
+              p(contenteditable="true") Cognizant is proud to sponsor two of the most prestigious golf events, the PGA TOUR’s President’s Cup and the LPGA Tour’s Founders Cup.
+              a(contenteditable="true" rel="noopener noreferrer" href="https://www.cognizant.com" target="_blank" title="FIND OUT MORE" data-attribute="homeBanner" class="button small hollow success" tabindex="0") 
+                | FIND OUT MORE
+                i.arrow-right
+      .swiper-slide
+        h2 Slide 2
+      .swiper-slide
+        h2 Slide 3
+    .swiper-pagination
+    .swiper-button-prev
+    .swiper-button-next

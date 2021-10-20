@@ -1,0 +1,348 @@
+// @import "scss/base/colors";
+// $anchor-color: $primary;
+// $anchor-color-light: $primary-light;
+// $anchor-color-dark: $primary-dark;
+// @import "../node_modules/slick-carousel/slick/slick-theme.scss";
+// @import "../node_modules/slick-carousel/slick/slick.scss";
+
+@import "scss/cognizant-framework-2021";
+@import "scss/homepage-carousel";
+// @import "gic.scss";
+
+// @import "color-vars.scss";
+
+.gridDemo {
+  .cell {
+    background: rgba($primary, 0.4);
+    min-height: 2rem;
+
+    &:nth-child(odd) {
+      background: rgba($primary, 0.2);
+      min-height: 2rem;
+    }
+  }
+}
+
+.button i {
+  font-weight: 700;
+  margin-left: 0.5rem;
+}
+
+.debug-border * {
+  border: 1px solid $red !important;
+}
+
+.pardotResponsiveModal {
+  @include breakpoint(small) {
+    // All CSS in here goes inside the media query
+    height: 540px;
+  }
+  @include breakpoint(medium) {
+    // All CSS in here goes inside the media query
+    // height: 750px;
+  }
+}
+
+#pardotModal {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  position: fixed;
+
+  iframe {
+    min-height: 500px;
+    display: block;
+    width: 100%;
+  }
+
+  @include breakpoint(medium) {
+    -webkit-overflow-scrolling: unset;
+    overflow-y: unset;
+    position: relative;
+    border: 2px solid $accent3-medium;
+
+    iframe {
+      min-height: 540px;
+    }
+  }
+  @include breakpoint(landscape) {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    position: relative;
+    border: 2px solid $red;
+  }
+  @include breakpoint(large) {
+    -webkit-overflow-scrolling: unset;
+    overflow-y: unset;
+    position: relative;
+    border: 2px solid $primary;
+  }
+}
+
+.media-query-test {
+  color: $white !important;
+  @include breakpoint(small) {
+    background: $primary;
+
+    h5 span:after {
+      content: "small";
+    }
+  }
+  @include breakpoint(medium) {
+    background: $accent3-medium;
+
+    h5 span:after {
+      content: "medium";
+    }
+  }
+  @include breakpoint(large) {
+    background: $red;
+
+    h5 span:after {
+      content: "large";
+    }
+  }
+  @include breakpoint(xlarge) {
+    background: $primary;
+
+    h5 span:after {
+      content: "xlarge";
+    }
+  }
+}
+// @each $color-name, $color in $colors-secondary {
+//     .bg-#{$color-name} {
+//         background-color: $color !important;
+//     }
+// }
+//
+// @each $color-name, $color in $colors-secondary {
+//     .text-#{$color-name} {
+//         color: $color !important;
+//     }
+// }
+
+// =============================================================================================
+// ██████   █████  ██████   █████  ██      ██       █████  ██   ██
+// ██   ██ ██   ██ ██   ██ ██   ██ ██      ██      ██   ██  ██ ██
+// ██████  ███████ ██████  ███████ ██      ██      ███████   ███
+// ██      ██   ██ ██   ██ ██   ██ ██      ██      ██   ██  ██ ██
+// ██      ██   ██ ██   ██ ██   ██ ███████ ███████ ██   ██ ██   ██
+// =============================================================================================
+// .parallax {
+//     perspective         : 300px;
+//     perspective-origin-x: 100%;
+//     height              : 100vh;
+//     overflow-x          : hidden;
+//     overflow-y          : auto;
+// }
+//
+// .parallax__layer {
+//     position          : absolute;
+//     transform-origin-x: 100%;
+//     top               : 0;
+//     right             : 0;
+//     bottom            : 0;
+//     left              : 0;
+// }
+//
+// .parallax__layer--base {
+//     transform: translateZ(0);
+// }
+//
+// .parallax__layer--back {
+//     transform: translateZ(-1px);
+// }
+//
+// .parallax__layer--deep {
+//     transform: translateZ(-2px) scale(3);
+// }
+//
+// .parallax__group {
+//     position       : relative;
+//     height         : 100vh;
+//     transform-style: preserve-3d;
+//
+//     // ==========  FOR DEBUGGING, TURN THIS ON  ==========
+//     // transform      : translate3d(700px, 0, -800px) rotateY(30deg);
+// }
+// -----  End of PARALLAX  ---------------------------------------------
+
+/* parallax */
+
+// .slide {
+//     position: relative;
+//     padding : 8% 0;
+//     height  : 100vh;
+// }
+//
+// .slide__content {
+//     max-width: 1200px;
+//     margin   : auto;
+// }
+//
+// .slide__bg {
+//     position: absolute;
+//     top     : 0;
+//     left    : 0;
+//     right   : 0;
+//     bottom  : 0;
+//     z-index : -1;
+// }
+//
+// .slides {
+//     position   : absolute;
+//     width      : 100%;
+//     height     : 100%;
+//     overflow-x : hidden;
+//     overflow-y : auto;
+//     perspective: 300px;
+// }
+//
+// .slide,
+// .slide__content {
+//     transform-style: preserve-3d;
+// }
+//
+// .slide__text {
+//     transform       : translateZ(60px) scale(.8);
+//     transform-origin: 100% 50%;
+// }
+//
+// .slide .slide__image {
+//     transform       : translateZ(60px) scale(.67);
+//     transform-origin: 100% 50%;
+//     background      : url("./images/industries-revamp/bg-segements-we-serve.jpg") no-repeat;
+// }
+
+// ===================================================================================
+//  ██████  ██  ██████
+// ██       ██ ██
+// ██   ███ ██ ██
+// ██    ██ ██ ██
+//  ██████  ██  ██████
+// ===================================================================================
+
+.gic-accordion:last-of-type {
+  border-bottom: 0;
+}
+
+.gic-accordion {
+  border-bottom: 1px solid $gray-light;
+
+  &.bg-default {
+    background: $white;
+    transition: all 0.5s ease;
+  }
+
+  &.bg-active {
+    background: $gray-light;
+    transition: all 0.5s ease;
+  }
+
+  @include breakpoint(small) {
+    .img-default {
+      @include grid-column(6);
+      transition: width 0.5s ease;
+      transform-origin: top left;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .img-scaled {
+      @include grid-column(10);
+      transition: width 0.5s ease;
+    }
+  }
+
+  @include breakpoint(medium) {
+    .img-default {
+      // @include grid-column(2);
+      width: 12.666667%;
+      transition: width 0.5s ease;
+      transform-origin: top left;
+      margin-right: 1rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .img-scaled {
+      @include grid-column(3);
+      transition: width 0.5s ease;
+    }
+  }
+
+  .arrow-down {
+    transform: rotate(0deg);
+    transition: all 0.5s ease;
+    transform-origin: center center;
+  }
+
+  .arrow-down-spun {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+    transform-origin: center center;
+  }
+
+  .content-hide {
+    height: 0;
+    transition: all 0.5s ease;
+    transform-origin: top center;
+    opacity: 0;
+    display: block;
+  }
+
+  .content-show {
+    transition: all 0.5s ease;
+    opacity: 1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    height: auto;
+  }
+
+  .hr-hide {
+    // opacity   : 0;
+    transition: all 0.5s ease;
+    margin: 0;
+    width: 0;
+  }
+
+  .hr-show {
+    // opacity   : 1;
+    transition: all 0.5s ease;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+// -----  End of GIC  -----------------------------------
+
+.mega-menu {
+  .dropdown-pane {
+    width: 100vw;
+    max-width: 100%;
+    margin: 0 auto !important;
+    left: 0% !important;
+    right: 0% !important;
+  }
+
+  .menu {
+    background: none;
+  }
+
+  > a::after {
+    display: block;
+    width: 0;
+    height: 0;
+    border: inset 6px;
+    content: "";
+    border-bottom-width: 0;
+    border-top-style: solid;
+    border-color: #1779ba transparent transparent;
+    margin-left: 10px;
+    margin-top: 11%;
+  }
+}

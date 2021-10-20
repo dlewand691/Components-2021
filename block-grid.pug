@@ -1,0 +1,69 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Latest Thinking Block Grid"
+
+block content
+
+    h1!= pageTitle
+
+    .bg-gray-dark.text-white.py3
+        .grid-x.grid-padding-x
+            .cell.text-center
+                h4 READ. WATCH. LISTEN. LEARN.
+                p Everyone processes information differently. That’s why we deliver our insights across a range of media types and styles to accommodate nearly every preference. Learn more to optimize your learning experience.
+
+        .grid-x.grid-padding-x.small-up-1.medium-up-2
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img.fill-green(src="images/icons/blue-light/File-Acrobat.svg")
+                    .cell
+                        h6.m0 WHITEPAPERS
+                        p Deep-dive thinking that addresses emerging business-technology trends, delivering practical advice for getting ahead in today’s dynamic digital economy.
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src="images/icons/blue-light/Graph-Bar-2.svg")
+                    .cell
+                        h6.m0 PERSPECTIVES
+                        p Short-form, transmedia content that details our best and brightest insights. Access Perspectives online or through our app (available on #[a(href="#") Apple Store] and #[a(href="#") Google Play]).
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src='images/icons/blue-light/Chat-Double-Bubble-2.svg')
+                    .cell
+                        h6.m0 DIGITALLY COGNIZANT
+                        p Points of View penned by our senior leaders that share personal and pragmatic advice for making sense of all things digital.
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src='images/icons/blue-light/Notebook.svg')
+                    .cell
+                        h6.m0 COGNIZANTI
+                        p An award-winning, flagship thought leadership publication that reveals our best and brightest views on the latest developments in digital business, operations, and systems and technology. Download the #[a(href="#") current issue].
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src='images/icons/blue-light/Headphone-1.svg')
+                    .cell
+                        h6.m0 COGNIZANT PODCASTS
+                        p Individual commentary and group discussions on today’s key digital challenges and opportunities.
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src='images/icons/blue-light/Video-Clip-2.svg')
+                    .cell
+                        h6.m0 VIDEOS
+                        p A picture tells a thousand words. Keep your digital strategy on track with our colorful and compelling videos that cover a wide array of digital topics.
+            .cell.cell-block
+                .grid-x.grid-padding-x
+                    .cell.shrink
+                        img(src='images/icons/blue-light/File-Graph-Pie.svg')
+                    .cell
+                        h6.m0 INFORMATION GRAPHICS
+                        p Stories told with facts and figures to provide you with the right information quickly when you are short on time.
+
+
+
+
+

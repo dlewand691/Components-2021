@@ -1,0 +1,14 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Floats"
+
+block content
+    h1!= pageTitle
+
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                .callout.clearfix
+                    a.button.float-left Left
+                    a.button.float-right Right
+                    

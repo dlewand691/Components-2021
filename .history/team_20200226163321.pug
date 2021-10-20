@@ -1,0 +1,336 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Teams"
+
+block content
+
+    h1!= pageTitle
+    //- .grid-x.grid-padding-x.cell
+        h3 Board of Directors Headshots
+        img(src="images/board-of-directors/Betsy-S-Atkins-bw.jpg")
+        img(src="images/board-of-directors/John-E-Klein-bw.jpg")
+        img(src="images/board-of-directors/John-M-Dineen-bw.jpg")
+        img(src="images/board-of-directors/John-N-Fox-Jr-bw.jpg")
+        img(src="images/board-of-directors/Jonathan-Chadwick-bw.jpg")
+        img(src="images/board-of-directors/Leo-S-Mackay-Jr-bw.jpg")
+        img(src="images/board-of-directors/Maureen-Breakiron-Evans-bw.jpg")
+        img(src="images/board-of-directors/Michael-Patsalos-Fox-bw.jpg")
+        img(src="images/board-of-directors/Robert-E-Weissman-bw.jpg")
+        img(src="images/board-of-directors/Zein-Abdalla-bw.jpg")
+
+        hr
+
+        img(src="images/board-of-directors/Betsy-S-Atkins.jpg")
+        img(src="images/board-of-directors/John-E-Klein.jpg")
+        img(src="images/board-of-directors/John-M-Dineen.jpg")
+        img(src="images/board-of-directors/John-N-Fox-Jr.jpg")
+        img(src="images/board-of-directors/Jonathan-Chadwick.jpg")
+        img(src="images/board-of-directors/Leo-S-Mackay-Jr.jpg")
+        img(src="images/board-of-directors/Maureen-Breakiron-Evans.jpg")
+        img(src="images/board-of-directors/Michael-Patsalos-Fox.jpg")
+        img(src="images/board-of-directors/Robert-E-Weissman.jpg")
+        img(src="images/board-of-directors/Zein-Abdalla.jpg")
+
+
+        hr
+
+
+    //- .grid-x.grid-padding-x.cell
+        h3 Executive Leadership Headshots
+        img(src="images/leadership-team/Francisco-DSouza-bw.jpg")
+        img(src="images/leadership-team/Raj-Mehta-bw.jpg")
+        img(src="images/leadership-team/Karen-McLoughlin-bw.jpg")
+        img(src="images/leadership-team/Malcolm-Frank-bw.jpg")
+        img(src="images/leadership-team/Ramakrishnan-Chandrasekaran-bw.jpg")
+        img(src="images/leadership-team/Srinivasan-Veeraraghavachary-bw.jpg")
+        img(src="images/leadership-team/Debashis-Chatterjee-bw.jpg")
+        img(src="images/leadership-team/Prasad-Chintamaneni-bw.jpg")
+        img(src="images/leadership-team/Matthew-Friedrich-bw.jpg")
+        img(src="images/leadership-team/Sumithra-Gomatam-bw.jpg")
+        img(src="images/leadership-team/Gajen-Kandiah-bw.jpg")
+        img(src="images/leadership-team/Venkat-Krishnaswamy-bw.jpg")
+        img(src="images/leadership-team/James-Lennox-bw.jpg")
+        img(src="images/leadership-team/Sean-Middleton-bw.jpg")
+        img(src="images/leadership-team/Allen-Shaheen-bw.jpg")
+        img(src="images/leadership-team/Dharmendra-Kumar-Sinha-bw.jpg")
+        img(src="images/leadership-team/Robert-Telesmanic-bw.jpg")
+        img(src="images/leadership-team/Santosh-Thomas-bw.jpg")
+
+        hr
+        img(src="images/leadership-team/Francisco-DSouza.jpg")
+        img(src="images/leadership-team/Raj-Mehta.jpg")
+        img(src="images/leadership-team/Karen-McLoughlin.jpg")
+        img(src="images/leadership-team/Malcolm-Frank.jpg")
+        img(src="images/leadership-team/Ramakrishnan-Chandrasekaran.jpg")
+        img(src="images/leadership-team/Srinivasan-Veeraraghavachary.jpg")
+        img(src="images/leadership-team/Debashis-Chatterjee.jpg")
+        img(src="images/leadership-team/Prasad-Chintamaneni.jpg")
+        img(src="images/leadership-team/Matthew-Friedrich.jpg")
+        img(src="images/leadership-team/Sumithra-Gomatam.jpg")
+        img(src="images/leadership-team/Gajen-Kandiah.jpg")
+        img(src="images/leadership-team/Venkat-Krishnaswamy.jpg")
+        img(src="images/leadership-team/James-Lennox.jpg")
+        img(src="images/leadership-team/Sean-Middleton.jpg")
+        img(src="images/leadership-team/Allen-Shaheen.jpg")
+        img(src="images/leadership-team/Dharmendra-Kumar-Sinha.jpg")
+        img(src="images/leadership-team/Robert-Telesmanic.jpg")
+        img(src="images/leadership-team/Santosh-Thomas.jpg")    
+
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 Team
+
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3(data-equalizer data-equalize-by-row="true")
+
+        mixin teamMember(image, name, title, blurb)
+            .cell.small-mb2
+                .relative.small-mb1
+                    .flex-container.flex-wrap.absolute.align-bottom.align-right.w100.h100.hover-show.gradient-overlay-blue-angled
+                        a.absolute.w100.h100.z1(data-open="exampleModal")
+                        .button-group.small-m0.z1.flex-container.flex-wrap.align-right
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.twitter.com")
+                                    i.email
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.twitter.com")
+                                    i.logo-twitter-bird
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.facebook.com")
+                                    i.logo-facebook
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.linkedin.com")
+                                    i.logo-linkedin
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.linkedin.com")
+                                    i.logo-youtube-clip
+                            h5.small-m0
+                                a.button.small-m0.bg-transparent.text-white.small-p-half.hover-green(href="http://www.linkedin.com")
+                                    i.logo-slide-share
+
+                    img.w100(src="images/leadership-team/" + image)
+
+                div(data-equalizer-watch)
+                    h5.small-m0
+                        a(data-open="exampleModal")!= name
+                hr.small-my1
+                p
+                    strong!= title
+                    br
+                    if blurb==""
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    else
+                        !=blurb
+
+        +teamMember(
+            "Francisco-DSouza-bw.jpg",
+            "Francisco D’Souza",
+            "Chief Executive Officer",
+            ""
+            )
+
+        +teamMember(
+            "Raj-Mehta-bw.jpg",
+            "Rajeev Mehta",
+            "President",
+            ""
+            )
+        +teamMember(
+            "Karen-McLoughlin-bw.jpg",
+            "Karen McLoughlin",
+            "Chief Financial Officer",
+            ""
+        )
+        +teamMember(
+            "Malcolm-Frank-bw.jpg",
+            "Malcolm Frank",
+            "Executive Vice President, Strategy & Marketing",
+            ""
+        )
+        +teamMember(
+            "Ramakrishnan-Chandrasekaran-bw.jpg",
+            "Ramakrishnan Chandrasekaran",
+            "Executive Vice Chairman, Cognizant India",
+            ""
+        )
+        +teamMember(
+            "Srinivasan-Veeraraghavachary-bw.jpg",
+            "Srinivasan Veeraraghavachary",
+            "Chief Operating Officer",
+            ""
+        )
+        +teamMember(
+            "Debashis-Chatterjee-bw.jpg",
+            "Debashis Chatterjee",
+            "Executive Vice President and President, Global Delivery",
+            ""
+        )
+        +teamMember(
+            "Prasad-Chintamaneni-bw.jpg",
+            "Ramakrishna Prasad Chintamaneni",
+            "Executive Vice President and President, Global Industries and Consulting",
+            ""
+        )
+        +teamMember(
+            "Matthew-Friedrich-bw.jpg",
+            "Matthew Friedrich",
+            "Executive Vice President, General Counsel, Chief Corporate Affairs Officer and Secretary",
+            ""
+        )
+        +teamMember(
+            "Sumithra-Gomatam-bw.jpg",
+            "Sumithra Gomatam",
+            "Executive Vice President and President, Digital Operations",
+            ""
+        )
+        +teamMember(
+            "Gajen-Kandiah-bw.jpg",
+            "Gajen Kandiah",
+            "Executive Vice President and President, Digital Business",
+            ""
+        )
+        +teamMember(
+            "Venkat-Krishnaswamy-bw.jpg",
+            "Venkat Krishnaswamy",
+            "Vice Chairman, Healthcare and Life Sciences",
+            ""
+        )
+        +teamMember(
+            "James-Lennox-bw.jpg",
+            "James Lennox",
+            "Executive Vice President, Chief People Officer",
+            ""
+        )
+        +teamMember(
+            "Sean-Middleton-bw.jpg",
+            "Sean Middleton",
+            "Senior Vice President and President, Cognizant Accelerator",
+            ""
+        )
+        +teamMember(
+            "Allen-Shaheen-bw.jpg",
+            "Allen Shaheen",
+            "Executive Vice President, Corporate Development",
+            ""
+        )
+        +teamMember(
+            "Dharmendra-Kumar-Sinha-bw.jpg",
+            "Dharmendra Kumar Sinha",
+            "Executive Vice President and President, Global Client Services",
+            ""
+        )
+        +teamMember(
+            "Robert-Telesmanic-bw.jpg",
+            "Robert Telesmanic",
+            "Senior Vice President, Controller and Chief Accounting Officer",
+            ""
+        )
+        +teamMember(
+            "Santosh-Thomas-bw.jpg",
+            "Santosh Thomas",
+            "Executive Vice President and President, Global Growth Markets",
+            ""
+        )
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 2 column variation (small 1 column, medium 1 column, large 2 column)
+
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-2
+        .cell
+            .grid-x.grid-padding-x.small-up-1.medium-up-1.large-up-2
+                +teamMember(
+                    "Santosh-Thomas-bw.jpg",
+                    "Santosh Thomas",
+                    "Executive Vice President and President, Global Growth Markets",
+                    ""
+                )
+                +teamMember(
+                    "Santosh-Thomas-bw.jpg",
+                    "Santosh Thomas",
+                    "Executive Vice President and President, Global Growth Markets",
+                    ""
+                )
+        .cell
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 2 column variation #2 (small 1 column, medium 2 column, large 2 column)
+
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-2
+        .cell
+            .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-2
+                +teamMember(
+                    "Santosh-Thomas-bw.jpg",
+                    "Santosh Thomas",
+                    "Executive Vice President and President, Global Growth Markets",
+                    ""
+                )
+                +teamMember(
+                    "Santosh-Thomas-bw.jpg",
+                    "Santosh Thomas",
+                    "Executive Vice President and President, Global Growth Markets",
+                    ""
+                )
+        .cell
+            :markdown-it
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ad similique reprehenderit qui, velit consectetur. Consequuntur reprehenderit natus similique nisi sit ut quidem praesentium esse! Molestiae sed, ipsum officiis iusto!
+
+
+
+    .reveal.small-px-half#exampleModal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+        .grid-x.grid-padding-x
+            .small-12.large-5.cell.small-mb2.large-mb0
+                img.w100.small-mb1(src="images/leadership-team/Francisco-DSouza.jpg")
+                .grid-x.grid-padding-x
+                    .cell.shrink.text-blue-light
+                        h6.small-mb-half DIRECTOR
+                        h6.small-mb-half AGE
+                        h6.small-mb-half BIRTH PLACE
+                        h6.small-mb-half COMMITTEES
+                    .cell.text-white
+                        p.small-mb-half Since 2007
+                        p.small-mb-half 49
+                        p.small-mb-half Kenya
+                        p.small-mb-half Compensation
+                        p.small-mb-half Financial Policy
+                        p.small-mb-half Nominating and Governance (Chair)
+                        p.small-mb-half Compensation
+
+
+            .cell.text-white
+                h3-light.small-m0 Francisco D’Souza
+                h6 Chief Executive Officer
+                hr.gradient.small-my1
+                :markdown-it
+                    Francisco D’Souza is the Chief Executive Officer of Cognizant and a member of its Board of Directors. Cognizant is a leading professional services company whose mission is to help clients around the world transform their business, operating and technology models in tandem to achieve the promise of digital technology at scale.
+
+                    In his role as CEO, Francisco sets the strategic direction, promotes Cognizant’s values and client-first culture and focuses on ensuring the company’s sustainable growth and driving long-term stockholder value. He co-founded Cognizant in 1994 and has served as the company’s CEO since 2007, leading its revenue growth from $2.1 billion that year to $13.5 billion in 2016. Cognizant is ranked 205 on the Fortune 500 and consistently listed among the most admired companies in the world.
+
+                    Francisco serves on GE’s Board of Directors, where he is a member of the Technology & Industrial Risk Committee. He also serves on the Board of Trustees of Carnegie Mellon University, on the Board of Directors of the U.S.-India Business Council and as Co-Chairman of the Board of Trustees of The New York Hall of Science, a center for interactive science that serves half a million students and teachers each year. He is a member of the World Economic Forum and a member of the Science Visiting Council for the science program NOVA.
+
+                    Born in Kenya and the son of an Indian diplomat, Francisco is a global citizen who has lived in nine countries and traveled extensively to many more. He holds a Bachelor's in Business Administration from the University of Macau and an MBA from Carnegie Mellon University.
+
+                .button-group.small-m0
+                    a.button.bg-transparent.small-m0.small-p-half.text-white(href="http://www.twitter.com")
+                        h5.small-m0.lh0.small-py1.small-px-half
+                            i.logo-twitter-bird
+                    a.button.bg-transparent.small-m0.small-p-half.text-white(href="http://www.facebook.com")
+                        h5.small-m0.lh0.small-py1.small-px-half
+                            i.logo-facebook
+                    a.button.bg-transparent.small-m0.small-p-half.text-white(href="http://www.linkedin.com")
+                        h5.small-m0.lh0.small-py1.small-px-half
+                            i.logo-linkedin
+
+        button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+

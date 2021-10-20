@@ -1,0 +1,303 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Tabs"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+
+  h1!= pageTitle
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Standard Tabs: Horizontal
+
+    .grid-x.grid-padding-x
+      .small-12.cell
+        ul#standard-tabs-horizontal.accordion.accordion-arrow.accordion-gradient.flex-container-large(data-responsive-accordion-tabs="accordion medium-accordion large-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+          li.accordion-item.is-active(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal1") Image with Text
+            #standardPanelHorizontal1.accordion-content.is-acitve(data-tab-content)
+              .grid-x.grid-padding-x
+                .small-12.cell.medium-shrink
+                  img.w100.small-mb1(src=siteURL+'images/PDF-thumbnail.jpg')
+
+                .cell.auto
+                  p.small APPLICATION SERVICES
+                  h4 When Transformation Moves from Hyper-Digital to Ubiquitous
+                  p In the past, monumental projects took decades to complete. Today our monumental project is to build the digital world in a much more compressed timeframe. Digital leaders will be those organizations that use business analytics to offer deep insights into customer behaviors, wants and needs, develop new products and services and ultimately innovate and exploit new business opportunities.
+                  a.button.arrow(href="#") Button 1 Normal Tab
+                  a.button.bg-green.arrow(href="#") Button 2 Open in new tab
+
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal2") Video with text and share
+            #standardPanelHorizontal2.accordion-content(data-tab-content)
+              .grid-x.grid-padding-x.medium-unstack
+                .cell.auto
+                  .flex-container.align-middle.align-center.small-mb1.relative
+                    a.small-m0.absolute(data-open='overview-video')
+                      i.h1.play-button.text-white
+                    img.w100(src="https://source.unsplash.com/fPkvU7RDmCo/400x225")
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4 Build applications that deliver the digital experiences customers want
+                  hr.gradient
+                  p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal3") Two Sided Text
+            #standardPanelHorizontal3.accordion-content(data-tab-content)
+              .grid-x.grid-padding-x.medium-unstack
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4 The Challenge
+                  p A loyal customer is worth his or her weight in gold. One leading U.S. luxury retailer knew this well—as the top 10% of its customers represented 80% of its revenue. The company hoped to engage these individuals even further by using digital channels.
+
+                  p The retailer approached us to create a strategy for a new, personalized shopping experience for these shoppers.
+
+                  a.button.arrow(href="#") Button in Same Tab
+
+                .cell.auto
+                  p.tiny INFRASTRUCTURE SERVICES
+                  h4 Our Approach
+                  p In addition to research and analysis into the latest trends in personalization, we provided strategy, product management and business process definition. We called for the use of global trends and behaviors of other similar users along with user data to drive a new, hyperpersonalized web experience.
+
+                  a.button.arrow(href="#") Button in New Tab
+
+          li.accordion-item(data-accordion-item)
+            a.accordion-title(href="#standardPanelHorizontal4") Single Sided Text
+            #standardPanelHorizontal4.accordion-content(data-tab-content)
+              p.tiny SECURITY AND COMPLIANCE SERVICES
+              h3 Build applications that deliver the digital experiences customers want
+              a.button.arrow(href="#") Button
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Standard Tabs: Vertical
+
+    .grid-x
+      .small-12.medium-4.cell
+        ul#standard-tabs-vertical.tabs.vertical.flex-container-medium.flex-dir-column(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+          li.tabs-title.is-active
+            a(href="#standardPanelVertical1", aria-selected="true") Image with Text
+          li.tabs-title
+            a(href="#standardPanelVertical2") Video with text and share
+          li.tabs-title
+            a(href="#standardPanelVertical3") Two Sided Text
+          li.tabs-title
+            a(href="#standardPanelVertical4") Single Sided Text
+
+      .small-12.medium-8.cell
+        .tabs-content.vertical(data-tabs-content="standard-tabs-vertical")
+          #standardPanelVertical1.tabs-panel.is-active
+            .grid-x.grid-padding-x.large-unstack
+              .cell.shrink
+                img.w100.small-mb1(src=siteURL+'images/PDF-thumbnail.jpg')
+
+              .cell.auto
+                p.small APPLICATION SERVICES
+                h4 When Transformation Moves from Hyper-Digital to Ubiquitous
+                p In the past, monumental projects took decades to complete. Today our monumental project is to build the digital world in a much more compressed timeframe. Digital leaders will be those organizations that use business analytics to offer deep insights into customer behaviors, wants and needs, develop new products and services and ultimately innovate and exploit new business opportunities.
+                a.button.arrow(href="#") Button 1 Normal Tab
+                a.button.bg-green.arrow(href="#") Button 2 Open in new tab
+          #standardPanelVertical2.tabs-panel
+            .grid-x.grid-padding-x.large-unstack
+              .cell.auto
+                .flex-container.align-middle.align-center.small-mb1.relative
+                  a.small-m0.absolute(data-open='overview-video')
+                    i.h1.play-button.text-white
+                  img.w100(src="https://source.unsplash.com/fPkvU7RDmCo/400x225")
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4 Build applications that deliver the digital experiences customers want
+                hr.gradient
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+          #standardPanelVertical3.tabs-panel
+            .grid-x.grid-padding-x.large-unstack
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4 The Challenge
+                p A loyal customer is worth his or her weight in gold. One leading U.S. luxury retailer knew this well—as the top 10% of its customers represented 80% of its revenue. The company hoped to engage these individuals even further by using digital channels.
+
+                p The retailer approached us to create a strategy for a new, personalized shopping experience for these shoppers.
+
+                a.button.arrow(href="#") Button in Same Tab
+
+              .cell.auto
+                p.tiny INFRASTRUCTURE SERVICES
+                h4 Our Approach
+                p In addition to research and analysis into the latest trends in personalization, we provided strategy, product management and business process definition. We called for the use of global trends and behaviors of other similar users along with user data to drive a new, hyperpersonalized web experience.
+
+                a.button.arrow(href="#") Button in New Tab
+          #standardPanelVertical4.tabs-panel
+            p.tiny SECURITY AND COMPLIANCE SERVICES
+            h3 Build applications that deliver the digital experiences customers want
+            a.button.arrow(href="#") Button
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h3 Vertical Tabs: Change on Hover
+        p
+          strong Tab Variations:
+        ul
+          li
+            p Rich text editor
+          li
+            p PDF Article
+          li
+            p Video with modal overlay
+
+  .bg-blue.small-py4
+    .grid-container
+      h3.text-white.text-center WHAT WE DO
+      .grid-x.grid-padding-x.text-white.align-center
+        .cell.medium-5
+          h5 BUILD A DIGITAL-READY IT BACKBONE
+        .cell.medium-7
+          p Going digital? You’ll need a simple, modern and secure infrastructure backbone. Work with our experts to transform your enterprise and future-proof your infrastructure to reduce costs, increase agility and protect your assets.
+      .grid-x.medium-px-half
+        .small-12.medium-4.cell
+          ul#hover-tabs.vertical.tabs.hover-tabs.small-bd0.flex-container-medium.flex-dir-column(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+            li.tabs-title.is-active.hover-grow
+              a(href="#panel1v1", aria-selected="true") TRANSFORM YOUR IT STRATEGY 
+            li.tabs-title.hover-grow
+              a(href="#panel2v1") MODERNIZE YOUR CORE
+            li.tabs-title.hover-grow
+              a(href="#panel3v1") EVOLVE YOUR APPROACH TO CLOUD 
+            li.tabs-title.hover-grow
+              a(href="#panel4v1") SECURE YOUR ENTERPRISE 
+            li.tabs-title.hover-grow
+              a(href="#panel5v1") ENGINEER YOUR DIGITAL FUTURE 
+        .small-12.medium-8.cell
+          .tabs-content.vertical.small-bd0.bg-transparent(data-tabs-content="hover-tabs")
+            #panel1v1.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg01.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                h4 Manage heritage debt and run better on a more efficient, simplified IT backbone.
+                h5 How? Through:
+                ul
+                  li
+                    p
+                      a(href="#") Smart Operations
+                  li
+                    p Integrated Debt Framework solutions
+                  li
+                    p EnGage
+                  li
+                    p Application Portfolio Transformation
+                  li
+                    p Data Center Migration strategies
+            #panel2v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg02.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                h4 Extend legacy IT to be nimble and agile and make the digital shift seamless.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p Cognitive Automation solutions
+                  li
+                    p Intelligent Process Analytics
+                  li
+                    p Robotic Process Automation
+                  li
+                    p Enterprise Application Automation
+            #panel3v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg03.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                h4 Shift to the most efficient, effective cloud solutions to meet your enterprise needs.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p APR enabled Cloud Steps solutions
+                  li
+                    p SAP on Cloud
+                  li
+                    p Guidewire on Cloud
+                  li
+                    p Trizetto on Cloud
+                  li
+                    p DevOps on Cloud
+                  li
+                    p Agile Engineering Environments
+                  li
+                    p Enterprise Apps on Cloud
+            #panel4v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg04.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                h4 Create resiliency, manage risk and protect your data against cyber attack.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p Cyber security through Data protection, Infrastructure and Applications security solutions
+                  li
+                    p Next Gen Cloud Security, IoT, Analytics
+                  li
+                    p Governance Risk and Compliance solutions
+                  li
+                    p Identity Access Management
+            #panel5v1.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('images/tabs/DST-enterpriseCapabilities-bg05.jpg') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                h4 Connect your CX and next-gen processes with a transformed IT landscape to achieve greater market success.
+                h5
+                  em How? Through:
+                ul
+                  li
+                    p SimpliFIT
+                  li
+                    p Nexgen Process Definition & Architecture solutions
+                  li
+                    p Customer Experience transformation
+                  li
+                    p IT Landscape transformation
+
+  hr
+  .grid-container
+    .grid-x.grid-padding-x.cell
+      h3 Vertical Tabs: Change on click, version 3, blue background, gradient steps
+  .bg-blue
+    .grid-container
+      .grid-x.medium-px-half.small-mb5
+        .small-12.medium-4.cell
+          ul#vertical-tabs3.vertical.tabs.bg-steps-blue.small-bd0.flex-container.flex-dir-column.shrink(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
+            li.tabs-title.small-bd0.is-active.hover-grow
+              a(href="#panel1v3", aria-selected="true") Application Services
+            li.tabs-title.small-bd0.hover-grow
+              a(href="#panel2v3") Infrastructure Services Tab Title Here 2 Tab Title Here Tab Title Here Tab Title Here Tab Title HereTab Title Here
+            li.tabs-title.small-bd0.hover-grow
+              a(href="#panel3v3") Enterprise Application Services
+            li.tabs-title.small-bd0.hover-grow
+              a(href="#panel4v3") Quality Engineering & Assurance Services
+            li.tabs-title.small-bd0.hover-grow
+              a(href="#panel5v3") Security and Compliance Services
+        .small-12.medium-8.cell
+          .tabs-content.vertical.small-bd0.bg-transparent(data-tabs-content="vertical-tabs3")
+            #panel1v3.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('https://source.unsplash.com/Nl79ckrM_1Q/600x400') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Application Services
+                  h3 Build applications that deliver the digital experiences customers want.
+                  a.button.arrow.bg-green(href="#") More
+            #panel2v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('https://source.unsplash.com/fPkvU7RDmCo/600x400') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Infrastructure Services
+                  h3 Transform your IT backbone to create an always-on business.
+                  a.button.arrow.bg-green(href="#") More
+            #panel3v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('https://source.unsplash.com/2wFRkQFDxS0/600x400') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Enterprise Application Services
+                  h3 Streamline your back office and improve operational agility and employee connections.
+                  a.button.arrow.bg-green(href="#") More
+            #panel4v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('https://source.unsplash.com/xrVDYZRGdw4/600x400') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Quality Engineering & Assurance Services
+                  h3 Employ an end-to-end approach where high quality meets high speed
+                  a.button.arrow.bg-green(href="#") More
+            #panel5v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url('https://source.unsplash.com/wkO0q0UTqc8/600x400') no-repeat; background-size: cover; background-position: center;")
+              .text-white.small-p1.medium-p2
+                .align-self-middle
+                  h6.tiny.text-caps Security and Compliance Services
+                  h3 Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure
+                  a.button.arrow.bg-green(href="#") More

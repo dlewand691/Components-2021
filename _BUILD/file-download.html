@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognizant | File download</title>
+    <link rel="stylesheet" href="css/app.css?ckcachebust=9EE303A62AC5235C953AC703F471C1D3">
+  </head>
+  <body>
+    <h1>File download</h1>
+    <hr>
+    <h4 class="text-center">SELECT YOUR ITEMS TO DOWNLOAD:</h4>
+    <div class="grid-x grid-padding-x small-up-1 medium-up-2">
+      <div class="cell cell-block flex-container">
+        <label class="flex-container flex-grow align-stretch callout small" for="checkbox1">
+          <div class="grid-x grid-padding-x">
+            <div class="cell shrink">
+              <input class="small-m0 checkbox" type="checkbox" name="checkbox1">
+            </div>
+            <div class="cell shrink"><img class="bd1" src="images/file-download/doc1.jpg" width="100"></div>
+            <div class="cell flex-container">
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                  <h6>Title of File to Download Lorem ipsum dolor sit amet.</h6>
+                  <p>Brief description of file Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="small-12 cell align-self-bottom"><strong class="text-gray-light"><i class="file-acrobat"></i> PDF, 1,000k</strong></div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="cell cell-block flex-container">
+        <label class="flex-container flex-grow align-stretch callout small" for="checkbox2">
+          <div class="grid-x grid-padding-x">
+            <div class="cell shrink">
+              <input class="small-m0 checkbox" type="checkbox" name="checkbox2">
+            </div>
+            <div class="cell shrink"><img class="bd1" src="images/file-download/doc2.jpg" width="100"></div>
+            <div class="cell flex-container">
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                  <h6>Title of File to Download</h6>
+                  <p>Brief description of file  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores minus autem, omnis eos quas voluptates esse repudiandae explicabo, facilis cupiditate assumenda temporibus rem molestiae delectus sint! Odio, eaque odit.</p>
+                </div>
+                <div class="small-12 cell align-self-bottom"><strong class="text-gray-light"><i class="projector-screen"></i> Microsoft PowerPoint, 2.8mb</strong></div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="cell cell-block flex-container">
+        <label class="flex-container flex-grow align-stretch callout small" for="checkbox13">
+          <div class="grid-x grid-padding-x">
+            <div class="cell shrink">
+              <input class="small-m0 checkbox" type="checkbox" name="checkbox3">
+            </div>
+            <div class="cell shrink"><img class="bd1" src="images/file-download/doc3.jpg" width="100"></div>
+            <div class="cell flex-container">
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                  <h6>Title of File to Download</h6>
+                  <p>Brief description of file  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit voluptatem distinctio sit sunt autem.</p>
+                </div>
+                <div class="small-12 cell align-self-bottom"><strong class="text-gray-light"><i class="file-word"></i> Microsoft Word, 2.8mb</strong></div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div class="cell cell-block flex-container">
+        <label class="flex-container flex-grow align-stretch callout small" for="checkbox4">
+          <div class="grid-x grid-padding-x">
+            <div class="cell shrink">
+              <input class="small-m0 checkbox" type="checkbox" name="checkbox4">
+            </div>
+            <div class="cell shrink"><img class="bd1" src="images/file-download/doc4.jpg" width="100"></div>
+            <div class="cell flex-container">
+              <div class="grid-x grid-padding-x">
+                <div class="small-12 cell">
+                  <h6>Title of File to Download Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, dolores a esse repellat corporis vero?</h6>
+                  <p>Brief description of file Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="small-12 cell align-self-bottom"><strong class="text-gray-light"><i class="play-button"></i> Video, 125.88mb</strong></div>
+              </div>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+    <div class="grid-x grid-padding-x align-center small-mt2">
+      <div class="small-12 medium-8 large-8 cell">
+        <h6 class="text-center">Please provide your email and company name to download your selections</h6>
+        <form id="formDownload" data-abide novalidate>
+          <div class="grid-x grid-padding-x small-up-1 medium-up-2">
+            <div class="cell">
+              <label>First Name</label>
+              <input type="text" name="firstName" placeholder="John" required data-live-validate="true"><span class="form-error">Please enter a valid email address</span>
+            </div>
+            <div class="cell">
+              <label>Last Name</label>
+              <input type="text" name="lastName" placeholder="Doe" required data-live-validate="true"><span class="form-error">Please enter a valid email address</span>
+            </div>
+          </div>
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="email@example.com" required pattern="email" data-live-validate="true"><span class="form-error">Please enter a valid email address</span>
+          <label>Organization</label>
+          <input type="text" name="business" placeholder="Your Company" required pattern="alpha" data-live-validate="true"><span class="form-error">Please enter the name of your company</span>
+          <button class="button expanded disabled" id="submitButton" type="submit" value="submit">download selected items<i class="download fw600 small-ml-half"></i></button>
+        </form>
+      </div>
+    </div>
+    <script>
+      $("input[type=checkbox]").change(function(){
+          $(this).closest('label').toggleClass("primary");
+      });
+      $("#formDownload").on("invalid.zf.abide", function(ev,elem) {
+          //- alert("Valid");
+          //- console.log("Field name "+elem.attr('name')+" is invalid");
+          $('#submitButton').addClass('disabled');
+      });
+      $("#formDownload").on("valid.zf.abide", function(ev,elem) {
+          //- alert("Valid");
+          //- console.log("Field name "+elem.attr('name')+" is valid");
+          $('#submitButton').removeClass('disabled');
+      });
+      
+      //- $('button').attr('disabled','disabled');
+      //-     $('input[type="text"]').keyup(function() {
+      //-         if($(this).val() != '') {
+      //-             $('button').removeAttr('disabled');
+      //-         }
+      //-         else {
+      //-             $("button").removeAttr("disabled");
+      //-         }
+      //- });
+    </script><a id="scrollUp" href="#" title="Back to top"></a>
+    <script src="js/min/app-min.js?ckcachebust=91B45E854D768AC6E7C61E5CB26DA236"></script>
+  </body>
+</html>

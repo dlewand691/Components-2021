@@ -1,0 +1,138 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Spacings"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        p Default size: 20px = 1rem
+        p Available margin and padding range: 0rem-10rem
+      .cell.auto
+        p.text-bold Available breakpoints: 
+        ul.collapse
+          li none
+          li small
+          li small-xl
+          li medium
+          li medium-xl
+          li medium-xx
+          li large
+          li xlarge
+          li xxlarge
+      .cell.auto  
+        p.text-bold Available sides: 
+        ul.collapse
+          li All
+          li Top (t)
+          li Right (r)
+          li Bottom (b)
+          li Left (l)     
+          li X (x) (Left and Right)
+          li Y (y) (Top and Bottom)
+
+
+  .grid-container
+    .grid-x
+      .cell 
+        h2 Margins
+    .grid-x.grid-margin-x.grid-margin-y
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m0 Margin 0
+          p.m0 .m0
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m-qtr Margin 0.25
+          p.m0 .m-qtr
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m-half Margin 0.5
+          p.m0 .m-half
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m1  Margin 1
+          p.m0 .m1
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m2 Margin 2
+          p.m0 .m2
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m3 Margin 3
+          p.m0 .m3
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m4 Margin 4
+          p.m0 .m4
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m5 Margin 5
+          p.m0 .m5
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m6 Margin 6
+          p.m0 .m6
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m7 Margin 7
+          p.m0 .m7
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m8 Margin 8
+          p.m0 .m8
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m9 Margin 9
+          p.m0 .m9
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.m10 Margin 10
+          p.m0 .m10
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.mx5 Margin X 5
+          p.m0 .mx5 (0-10 available)
+      .cell.bd1
+        h5.bg-gray-lighter.p-half.my5 Margin Y 5
+          p.m0 .my5 (0-10 available)
+
+    hr
+
+    .grid-x
+      .cell 
+        h2 Paddings
+    .grid-x.grid-margin-x.grid-margin-y
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p0 Padding 0
+          p.m0 .p0
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p-qtr Padding 0.25
+          p.m0 .p-qtr
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p-half Padding 0.5
+          p.m0 .p-half
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p1  Padding 1
+          p.m0 .p1
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p2 Padding 2
+          p.m0 .p2
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p3 Padding 3
+          p.m0 .p3
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p4 Padding 4
+          p.m0 .p4
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p5 Padding 5
+          p.m0 .p5
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p6 Padding 6
+          p.m0 .p6
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p7 Padding 7
+          p.m0 .p7
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p8 Padding 8
+          p.m0 .p8
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p9 Padding 9
+          p.m0 .p9
+      .cell.bd1
+        h5.m0.bg-gray-lighter.p10 Padding 10
+          p.m0 .p10
+      .cell.bd1
+        h5.m0.bg-gray-lighter.px5 Padding X 5
+          p.m0 .px5 (0-10 available)
+      .cell.bd1
+        h5.m0.bg-gray-lighter.py5 Padding Y 5
+          p.m0 .py5 (0-10 available)

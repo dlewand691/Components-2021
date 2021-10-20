@@ -1,0 +1,44 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell.large-8.medium-7(data-aos="fade-right", data-attribute="ebook")
+        .card.bd0.flex-container.h100
+          .relative.py4.medium-py5.overflow-hidden
+            picture.absolute.pos-top.object-fit-cover
+              source(media="(max-width: 599px)", data-srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg", type="image/webp", srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg")
+              source(media="(min-width: 600px) and (max-width: 1023px)", data-srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg", type="image/webp", srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg")
+              source(data-srcset="images/case-study-insurance-desktop.webp", type="image/webp", srcset="images/case-study-insurance-desktop.webp")
+              source(data-srcset="images/case-study-insurance-desktop.jpg", type="image/jpg", srcset="images/case-study-insurance-desktop.jpg")
+              img.wh100.lazyload.object-fit-cover(width="780", height="185", data-src="images/case-study-insurance-desktop.jpg", alt="From Data to ROI ebook", title="From Data to ROI ebook", src="images/case-study-insurance-desktop.jpg")
+          .flex-container.align-middle.px1.pt1.pb-half
+            img.mr-half.lazyload(data-src="images/icon-insurance.svg", width="24", height="24", alt="From Data to ROI ebook", title="From Data to ROI ebook")
+            p.text-gray.small.mb0.text-bold FROM DATA TO ROI EBOOK
+          .card-section
+            h5 How to generate ROI from AI-powered data
+            p
+              | Learn where to invest, how much to spend and what returns you can expect. This report explores what 1,200 businesses are doing to make better, faster decisions with AI-powered data to accelerate their business outcomes.
+          .card-divider
+            a.button.blue-medium.arrow(title="Read the E-book", target="_blank", href="https://www.cognizant.com/whitepapers/ai-from-data-to-roi-codex5984.pdf") READ THE E-BOOK
+      .cell.large-4.medium-5(data-aos="fade-left", data-attribute="caseStudy")
+        .card.bd0.flex-container.h100
+          .relative.py4.medium-py5.overflow-hidden
+            picture.absolute.pos-top.object-fit-cover
+              source(media="(max-width: 599px)", data-srcset="images/case-study-tile-tgs.webp, images/case-study-tile-tgs.jpg", type="image/webp", srcset="images/case-study-tile-tgs.webp, images/case-study-tile-tgs.jpg")
+              source(media="(min-width: 600px) and (max-width: 1023px)", data-srcset="images/case-study-tile-tgs.webp, images/case-study-tile-tgs.jpg", type="image/webp", srcset="images/case-study-tile-tgs.webp, images/case-study-tile-tgs.jpg")
+              source(data-srcset="images/case-study-tile-tgs.webp", type="image/webp", srcset="images/case-study-tile-tgs.webp")
+              source(data-srcset="images/case-study-tile-tgs.jpg", type="image/jpg", srcset="images/case-study-tile-tgs.jpg")
+              img.wh100.lazyload.object-fit-cover(width="380", height="185", data-src="images/case-study-tile-tgs.jpg", alt="Oil & Gas", title="Oil & Gas", src="images/case-study-tile-tgs.jpg")
+          .flex-container.align-middle.px1.pt1.pb-half
+            img.mr-half.lazyload(data-src="images/icon-gas.svg", width="24", height="24", alt="Oil & Gas", title="Oil & Gas")
+            p.text-gray.small.mb0.text-bold TGS CASE STUDY
+          .card-section
+            h5 TGS makes a seismic transformation to faster, better insights
+            p
+              | TGS, a leading provider of sub-surface oil and gas data, uses Cognizant&apos;s Big Decisions platform to provide its energy clients with crucial drilling insights in hours instead of days or weeks.
+          .card-divider
+            a.button.blue-medium.arrow(data-open="TGSVideo", title="WATCH NOW", aria-controls="TGSVideo", aria-haspopup="true", tabindex="0")  WATCH NOW

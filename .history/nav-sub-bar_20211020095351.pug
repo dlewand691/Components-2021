@@ -1,0 +1,502 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Nav sub bar"
+
+block content
+
+  h1!= pageTitle
+  .bg-white.p1
+    .grid-x.grid-padding-x.align-middle
+      .cell
+        img(src="./images/COG-Logo.svg")
+      .cell
+        ul.menu.align-right
+          li
+            a.text-normal.text-black(href="#") Industries
+              i.arrow-down.ml-half.text-green.fw600
+          li
+            a.text-normal.text-black(href="#") Services
+              i.arrow-down.ml-half.text-green.fw600
+          li
+            a.text-normal.text-black(href="#") Latest Thinking
+              i.arrow-down.ml-half.text-green.fw600
+          li
+            a.text-normal.text-black(href="#") About
+              i.arrow-down.ml-half.text-green.fw600
+        //- h6.m0 PRIMARY NAVIGATION HERE
+        //- p Gray bar sticky function requires ID on content below it.
+  #navSubBar(data-sticky-container)
+    .sticky.w100(data-sticky data-margin-top="0" data-top-anchor="navSubBar:bottom" data-btm-anchor="body:bottom")
+      .bg-blue
+        .grid-x.grid-padding-x.align-middle.align-justify
+          .cell
+            ul.breadcrumbs.mb0.px-half.pt-half.text-white
+              li.m0
+                a.text-white(href="#") Find Solutions
+              li.m0
+                a.text-white(href="#") Services
+              li.m0
+                | Cognizant Digital Business
+            ul.vertical.medium-horizontal.dropdown.menu(data-dropdown-menu)
+              li.m0
+                a.w100(href="#")
+                  //- img(src="./images/COG-Logo-Digital-Business.svg" style="height: 70px;")
+                  h6.text-normal.m0.text-white ANALYSEN UND INFORMATIONSMANAGEMENT
+                ul.menu.p1.relative.medium-absolute
+                  li
+                    a(href="#")
+                      //- img(src="./images/COG-Logo-Digital-Business.svg" style="height: 70px;")
+                      //- img(src="./images/COG-Logo-Digital-Operations.svg" style="height: 70px;")
+                      img(src="./images/COG-Logo-Digital-Systems-Technologies.svg" style="height: 70px;")
+                      //- SERVICES
+                  li
+                    hr.my1
+                    .mb-half.small.text-caps optional section divider goes here in this area
+                  li
+                    a(href="#") Analytics And Information Management
+                  li
+                    a(href="#") Insight, Strategy and Design
+                  li
+                    a(href="#") Intelligent Products and Services
+                  li
+                    hr.my1
+                    .mb-half.small.text-caps optional section divider goes here in this area
+                  li
+                    a(href="#") Interactive
+                  li
+                    a(href="#") Internet of Things
+          .cell.shrink.hide-for-small-only
+            button.button.m0.small(data-open="contact-widget")
+              i.bubble-chat-typing.p0.mr-half.fw600
+              | CONTACT
+
+
+  .small.reveal.bg-white#contact-widget(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+    form.p1(data-abide novalidate data-validate-on-blur="true")
+      .alert.callout.p1(style="display: none;" data-abide-error)
+        strong.text-red
+          i.report-problem-triangle
+          | There are some errors in your form.
+      h5.text-normal CONTACT US
+      .grid-x.grid-padding-x.small-up-1.medium-up-2
+        .cell
+          label.has-float-label.white
+            input#firstname(type="text", placeholder="John Smith", required)
+            span Name*
+            span.form-error.small
+              .alert.callout.p-half.text-red Please provide your name.
+        .cell
+          label.has-float-label
+            input#emailid(type="email", placeholder="email@example.com", required)
+            span Email*
+            span.form-error.small
+              .alert.callout.p-half.text-red Please provide a valid email address.
+        .cell
+          label.has-float-label
+            input#organisation(type="text", placeholder="Your Company")
+            span Organization
+        .cell
+          label.has-float-label
+            input#phonenum(type="tel" placeholder="1-800-123-4567" pattern="number")
+            span Phone Number
+        .cell
+          label.has-float-label
+            select#region(name="", placeholder="Where are you located?")
+              option —
+              option(value="North America") North America
+              option(value="South America") South America
+              option(value="Europe") Europe
+              option(value="Middle East") Middle East
+              option(value="APAC") APAC
+              option(value="India") India
+            span Select a Region
+        .cell
+          label.has-float-label
+            select#enquiry(name="", placeholder="How can we help you?")
+              option —
+              option(value="North America") Alliances
+              option(value="South America") Alumni
+              option(value="Career Seekers") Career Seekers
+              option(value="Middle East") Investors relations
+              option(value="APAC") Media
+              option(value="India") Request for services
+            span Select a Inquiry Type
+        .cell
+          label.has-float-label
+            select#subenquiry(name="", placeholder="How can we help you?")
+              option —
+              option(value="North America") Alliances
+              option(value="South America") Alumni
+              option(value="Europe") Career Seekers
+              option(value="Middle East") Investors relations
+              option(value="APAC") Media
+              option(value="India") Request for services
+            span Select a Sub-Inquiry Type
+      .grid-x.grid-padding-x
+        .cell
+          label.has-float-label
+            textarea(name="help-message", placeholder="Your message…")
+            span Message
+      .grid-x.grid-padding-x.collapse
+        .cell.flex-container.align-right
+          button.arrow.button.small.m0(type="submit") SUBMIT
+    button.close-button(data-close aria-label="Close modal" type="button")
+      span(aria-hidden="true") &times;
+
+  #thankYouOverlay.reveal.bg-white.p0(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+    .p2.medium-p4.h100.flex-container.align-self-middle(style='background: url("images/form-thankYouMesh.jpg") right top / cover no-repeat;' data-interchange="[images/form-thankYouMesh-small.jpg, small], [images/form-thankYouMesh.jpg, medium]")
+      .grid-x.grid-padding-x.align-middle
+        .small-12.medium-6.large-8.cell
+          h3.text-caps Thank you for your interest in Cognizant.
+          h5.m0 We’ll be in touch soon.
+      button.close-button(data-close aria-label="Close modal" type="button")
+        span.text-blue(aria-hidden="true" title="Close") &times;
+
+  .py2.bg-blue-dark
+    .grid-x.grid-padding-x.align-middle(style="height:400px")
+      .cell.text-white
+        h2.text-bold The Future of Wearables is now
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        a.small.button(href="#") Read More
+        br
+        a.small.button.m0(href="#") Download PDF
+
+
+
+  #navBarInPage(data-sticky-container)
+    .sticky.w100(data-sticky data-top-anchor="navBarInPage:bottom" data-btm-anchor="body:bottom")
+      .bg-blue.show-for-medium
+        .grid-x.grid-padding-x
+          .cell
+            #magellan.small.navBarInPage.flex-container.align-middle(data-magellan data-bar-offset="125" data-threshold="100")
+              a.p-half(href="#overview") Overview
+              a.p-half(href="#digital-in-action") Featured Work
+              a.p-half(href="#solutions") Solutions
+              a.p-half(href="#latest-thinking") Latest Thinking
+              a.p-half(href="#industry-spotlight") Industry Spotlight With a Really Really Loooooooooong Link Title
+              a.p-half(href="#news-events") News/Events
+              a.p-half(href="#contact-us") Contact Us
+
+  .grid-x.grid-padding-x
+    .cell
+      #overview(data-magellan-target="overview")
+        h4 Overview
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      #digital-in-action(data-magellan-target="digital-in-action")
+        h4 Digital in Action
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      ul.accordion(data-accordion data-multi-expand="true" data-allow-all-closed="true" data-mutate)
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#")
+            .tiny.text-white.text-caps.block.mb-half
+              i.calendar.fw600.mr-half
+              | September 14, 2016
+            | Accordion 01
+          .accordion-content(data-tab-content)
+            h4.text-bold.text-blue Human-Centric Design: How Design Thinking Can Power Creative Problem-solving, Drive Change and Deliver value
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#")
+            .tiny.text-white.text-caps.block.mb-half
+              i.calendar.fw600.mr-half
+              | September 14, 2016
+            | Accordion 01
+          .accordion-content(data-tab-content)
+            h4.text-bold.text-blue Human-Centric Design: How Design Thinking Can Power Creative Problem-solving, Drive Change and Deliver value
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#")
+            .tiny.text-white.text-caps.block.mb-half
+              i.calendar.fw600.mr-half
+              | September 14, 2016
+            | Accordion 01
+          .accordion-content(data-tab-content)
+            h4.text-bold.text-blue Human-Centric Design: How Design Thinking Can Power Creative Problem-solving, Drive Change and Deliver value
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#")
+            .tiny.text-white.text-caps.block.mb-half
+              i.calendar.fw600.mr-half
+              | September 14, 2016
+            | Accordion 01
+          .accordion-content(data-tab-content)
+            h4.text-bold.text-blue Human-Centric Design: How Design Thinking Can Power Creative Problem-solving, Drive Change and Deliver value
+        li.accordion-item(data-accordion-item)
+          a.accordion-title(href="#")
+            .tiny.text-white.text-caps.block.mb-half
+              i.calendar.fw600.mr-half
+              | September 14, 2016
+            | Accordion 01
+          .accordion-content(data-tab-content)
+            h4.text-bold.text-blue Human-Centric Design: How Design Thinking Can Power Creative Problem-solving, Drive Change and Deliver value
+
+      #solutions(data-magellan-target="solutions")
+        h4 Solutions
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      #latest-thinking(data-magellan-target="latest-thinking")
+        h4 Latest Thinking
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      #industry-spotlight(data-magellan-target="industry-spotlight")
+        h4 Industry Spotlight
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      #news-events(data-magellan-target="news-events")
+        h4 News and Events
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+      #contact-us(data-magellan-target="contact-us")
+        h4 Contact Us
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ut, optio eius quia odio temporibus, deleniti at unde quas possimus quae delectus itaque inventore. Quis enim quasi adipisci cumque vel sequi deleniti quo alias nobis soluta, veniam laborum nulla eius tenetur dolores delectus similique, dicta, ipsam odit debitis in officiis provident inventore quam consequatur. Voluptatum velit, porro praesentium atque magnam enim sint ad. Adipisci, ullam! Qui, distinctio veniam, laborum asperiores unde, cupiditate aliquam maiores blanditiis nostrum culpa aut quas praesentium. Corporis alias deserunt voluptate commodi, eaque earum recusandae praesentium, reprehenderit laborum tempore molestias. Dolores velit autem explicabo iusto. Vero illo, quia deserunt cum odio labore ullam inventore provident quasi repudiandae iure itaque neque officiis a totam quae dolore, assumenda voluptates ea! Accusantium obcaecati quos soluta quam voluptas beatae, cupiditate dolore quae ratione, odio repellendus, eum inventore maiores, reprehenderit eligendi corrupti eaque. Perferendis, hic, facilis! Praesentium maiores dolores explicabo asperiores officia nostrum quidem suscipit neque vel obcaecati quod ipsam voluptatibus perferendis aspernatur eaque laboriosam maxime ratione, magni repudiandae. Sapiente voluptatem nihil eius quae possimus, enim amet modi quis excepturi hic, sunt labore sed quibusdam distinctio aspernatur! Maxime enim, ullam voluptates! Placeat corrupti accusantium neque, animi reprehenderit aliquam vel id saepe nemo culpa, dolorem error. Excepturi aperiam, incidunt est explicabo facere voluptates, obcaecati molestias, totam quibusdam ab laboriosam minima eaque. Ducimus quos ut ipsam blanditiis a unde. Laudantium pariatur rerum, recusandae dolorem debitis ipsa autem quos, ullam consequuntur illo, modi, distinctio ea tenetur quo id atque! Totam ut modi nam perspiciatis suscipit temporibus tempora recusandae magnam, necessitatibus nulla autem quis, veniam molestiae obcaecati porro repellat aut quod quia cum saepe quas magni placeat velit! Corporis blanditiis voluptas dignissimos unde perferendis quasi voluptatibus magni sit, natus excepturi sed molestiae incidunt quidem, tenetur optio obcaecati sequi. Explicabo, dicta odio aut numquam tempora cumque corrupti magni. Doloribus numquam aliquid officia quisquam, non vitae inventore! Doloribus itaque quod dolore sit sed, eum nulla, magni autem distinctio pariatur ducimus. Asperiores molestias totam id culpa, impedit vitae facere rerum officiis hic dolores facilis maiores cupiditate earum dolor a quo eaque architecto illum distinctio, officia fuga quod! Ipsa quia itaque in minima voluptates nisi nihil natus? Natus fugiat omnis soluta earum quibusdam quos consequuntur, qui obcaecati voluptatibus similique excepturi voluptatum cumque ratione et eum, explicabo eligendi rerum itaque beatae. Impedit dolor hic non nostrum? Blanditiis laboriosam ex necessitatibus sit impedit aspernatur rerum voluptates tenetur fugit, veritatis esse maxime unde? Ex quis, rem nostrum suscipit. Possimus fugiat voluptates ex non error dicta repellendus ab autem libero voluptatibus sed dolor excepturi quia sint dolore, nulla quas, aliquid vero repudiandae sunt iusto numquam accusamus perferendis. Veritatis veniam corporis alias quo dolore necessitatibus natus id facilis iure temporibus unde aspernatur neque, aliquam consequatur eos nulla, iusto incidunt consectetur velit placeat ipsum inventore quas voluptatibus fugit! Quisquam nam id hic cupiditate pariatur perspiciatis reprehenderit nostrum praesentium ex, aut dignissimos vitae rem enim quam asperiores ipsam mollitia nihil qui illum. Quibusdam nisi eos culpa id, ex aperiam nulla at beatae temporibus, cumque! Veniam iusto, sed.
+
+  //- =============================================================================================
+  //-
+  //- ███████  ██████   ██████  ████████ ███████ ██████      ███████  ██████   ██████ ██  █████  ██
+  //- ██      ██    ██ ██    ██    ██    ██      ██   ██     ██      ██    ██ ██      ██ ██   ██ ██
+  //- █████   ██    ██ ██    ██    ██    █████   ██████      ███████ ██    ██ ██      ██ ███████ ██
+  //- ██      ██    ██ ██    ██    ██    ██      ██   ██          ██ ██    ██ ██      ██ ██   ██ ██
+  //- ██       ██████   ██████     ██    ███████ ██   ██     ███████  ██████   ██████ ██ ██   ██ ███████
+  //-
+  //- =============================================================================================
+  .bg-blue-light.footer-blue-bar
+    .grid-x.grid-padding-x.align-middle.align-justify.text-white
+      .small-12.medium-expand.cell.shrink
+        .button-group.m0.flex-wrap
+          a.button.bg-transparent.p-half(href="#")
+            h5.m0
+              i.logo-linkedin.text-white
+          a.button.bg-transparent.p-half(href="#")
+            h5.m0
+              i.logo-twitter-bird.text-white
+          a.button.bg-transparent.p-half(href="#")
+            h5.m0
+              i.logo-facebook.text-white
+          a.button.bg-transparent.p-half(href="#")
+            h5.m0
+              i.rss-feed-solid.text-white
+
+      .small-12.medium-expand.large-shrink.cell.small
+        ul.menu.vertical.medium-horizontal.align-right.flex-wrap
+          li
+            a.small.text-white(href="#") Sitemap
+
+          li
+            a.small.text-white(href="#") Legal
+
+          li
+            a.small.text-white(href="#") Privacy Policy
+
+          li
+            a.small.text-white(href="#") Cookie Policy
+
+          li
+            .p-half.large-p0 &copy; <script>document.write(new Date().getFullYear())</script> Cognizant, all rights reserved
+
+  //- =============================================================================================
+  //-
+  //- ███████  ██████   ██████  ████████ ███████ ██████
+  //- ██      ██    ██ ██    ██    ██    ██      ██   ██
+  //- █████   ██    ██ ██    ██    ██    █████   ██████
+  //- ██      ██    ██ ██    ██    ██    ██      ██   ██
+  //- ██       ██████   ██████     ██    ███████ ██   ██
+  //-
+  //- =============================================================================================
+  .grid-x.grid-padding-x.footer.pt2(data-attribute="whiteFooterTag")
+    .small-12.medium-9.cell(data-attribute="whiteFooterMenuOneTag")
+      .grid-x.grid-padding-x.small-text-center
+        .cell
+          h6.text-blue INDUSTRIES
+      .grid-x.grid-padding-x.small-up-1.medium-up-3.small-12
+        .cell
+          ul.no-bullet.small
+            li
+              p.text-blue.mb0(title="")
+                strong
+            li
+              a.text-gray-dark(href="/banking-financial-services", title="Banking & Financial Services", target="_blank") Banking &amp; Financial Services
+            li
+              a.text-gray-dark(href="/telecommunications", title="Communications") Communications
+            li
+              a.text-gray-dark(href="/consumer-goods", title="Consumer Goods") Consumer Goods
+            li
+              a.text-gray-dark(href="/education", title="Education") Education
+            li
+              a.text-gray-dark(href="/energy-utility", title="Energy & Utilities") Energy &amp; Utilities
+        .cell
+          ul.no-bullet.small
+            li
+              p.text-blue.mb0(title="")
+                strong
+            li
+              a.text-gray-dark(href="/healthcare", title="Healthcare") Healthcare
+            li
+              a.text-gray-dark(href="/information-services", title="Information Services") Information Services
+            li
+              a.text-gray-dark(href="/insurance", title="Insurance") Insurance
+            li
+              a.text-gray-dark(href="/life-sciences", title="Life Sciences") Life Sciences
+            li
+              a.text-gray-dark(href="/manufacturing", title="Manufacturing") Manufacturing
+        .cell
+          ul.no-bullet.small
+            li
+              p.text-blue.mb0(title="")
+                strong
+            li
+              a.text-gray-dark(href="/information-media-entertainment", title="Media & Entertainment") Media &amp; Entertainment
+            li
+              a.text-gray-dark(href="/retail", title="Retail") Retail
+            li
+              a.text-gray-dark(href="/technology", title="Technology") Technology
+            li
+              a.text-gray-dark(href="/transportation-logistics", title="Transportation & Logistics") Transportation &amp; Logistics
+            li
+              a.text-gray-dark(href="/travel-hospitality", title="Travel & Hospitality") Travel &amp; Hospitality
+      .grid-x.grid-padding-x.small-text-center
+        .cell
+          h6.text-blue SERVICES
+      .grid-x.grid-padding-x.small-up-1.medium-up-3.small-12
+        .cell
+          ul.no-bullet.small
+            li
+              a.text-blue(href="/cognizant-digital-business", title="Cognizant Digital Business")
+                strong Cognizant Digital Business
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/applied-ai-analytics", title="AI & Analytics") AI &amp; Analytics
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/digital-engineering-services", title="Digital Engineering") Digital Engineering
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/digital-strategy", title="Digital Strategy") Digital Strategy
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/enterprise-iot-solutions", title="Intelligent Products & Solutions") Intelligent Products &amp; Solutions
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/interactive-services", title="Interactive") Interactive
+        .cell
+          ul.no-bullet.small
+            li
+              a.text-blue(href="/cognizant-digital-operations", title="Cognizant Digital Operations")
+                strong Cognizant Digital Operations
+            li
+              a.text-gray-dark(href="/cognizant-digital-operations/enterprise-services", title="Enterprise Services") Enterprise Services
+            li
+              a.text-gray-dark(href="/cognizant-digital-operations/industry-platform-solutions", title="Industry & Platform Solutions") Industry &amp; Platform Solutions
+            li
+              a.text-gray-dark(href="/cognizant-digital-operations/intelligent-process-automation", title="Intelligent Process Automation") Intelligent Process Automation
+        .cell
+          ul.no-bullet.small
+            li
+              a.text-blue(href="/cognizant-digital-systems-technology", title="Cognizant Digital Systems & Technology")
+                strong Cognizant Digital Systems &amp; Technology
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/application-development-services", title="Application Services") Application Services
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/cloud-enablement-services", title="Cloud Enablement") Cloud Enablement
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/infrastructure-services", title="Cognizant Infrastructure Services") Cognizant Infrastructure Services
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/cybersecurity-services", title="Cognizant Security") Cognizant Security
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/core-application-modernization", title="Core Modernization") Core Modernization
+            li
+              a.text-gray-dark(href="/cognizant-digital-business/digital-engineering-services", title="Digital Engineering") Digital Engineering
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/enterprise-application-services", title="Enterprise Application Services") Enterprise Application Services
+            li
+              a.text-gray-dark(href="/cognizant-digital-systems-technology/enterprise-quality-engineering-assurance", title="Quality Engineering & Assurance") Quality Engineering &amp; Assurance
+      .grid-x.grid-padding-x.small-text-center
+        .cell
+          a.text-blue(href="/consulting", title="COGNIZANT CONSULTING")
+            h6 COGNIZANT CONSULTING
+      .grid-x.grid-padding-x.small-up-1.medium-up-3.small-12
+      .grid-x.grid-padding-x.small-text-center
+        .cell
+          h6.text-blue LATEST THINKING
+      .grid-x.grid-padding-x.small-up-1.medium-up-3.small-12
+        .cell
+          ul.no-bullet.small
+            li
+              p.text-blue.small.mb0(title="Our Media & Publications")
+                strong Our Media &amp; Publications
+            li
+              a.text-gray-dark(href="/latest-thinking", title="All Latest Thinking") All Latest Thinking
+            li
+              a.text-gray-dark(href="/perspectives", title="Perspectives") Perspectives
+            li
+              a.text-gray-dark(href="/cognizanti", title="Cognizanti Journal") Cognizanti Journal
+            li
+              a.text-gray-dark(href="https://digitally.cognizant.com/", title=" Digitally Cognizant Blog", target="_blank")  Digitally Cognizant Blog
+            li
+              a.text-gray-dark(href="https://soundcloud.com/cognizant-worldwide/", title="Cognizant Podcasts", target="_blank") Cognizant Podcasts
+            li
+              a.text-gray-dark(href="/case-studies", title="Browse Case Studies") Browse Case Studies
+        .cell
+          ul.no-bullet.small
+            li
+              p.text-blue.small.mb0(title="Key Themes")
+                strong Key Themes
+            li
+              a.text-gray-dark(href="/blockchain", title="Blockchain") Blockchain
+            li
+              a.text-gray-dark(href="/artificial-intelligence", title="Artificial Intelligence") Artificial Intelligence
+            li
+              a.text-gray-dark(href="/when-machines-do-everything", title="When Machines Do Everything") When Machines Do Everything
+            li
+              a.text-gray-dark(href="/world-economic-forum-highlights-2018", title="World Economic Forum 2018—Davos") World Economic Forum 2018&mdash;Davos
+            li
+              a.text-gray-dark(href="/code-halos", title="Code Halos") Code Halos
+        .cell
+          ul.no-bullet.small
+            li
+              a.text-blue(href="/futureofwork", title="Center for the Future of Work")
+                strong Center for the Future of Work
+            li
+              a.text-gray-dark(href="/future-of-work", title="Explore the Future of Work") Explore the Future of Work
+            li
+              a.text-gray-dark(href="/digital-workforce-of-the-future", title="Digital Workforce of the Future") Digital Workforce of the Future
+            li
+              a.text-gray-dark(href="/the-work-ahead", title="The Work Ahead") The Work Ahead
+            li
+              a.text-gray-dark(href="/business-value-of-trust", title="Business Value of Trust") Business Value of Trust
+            li
+              a.text-gray-dark(href="http://www.futureofwork.com/whitepaper/21-jobs-of-the-future-a-guide-to-getting-and-staying-employed-over-the-next-10-years", title="21 Jobs of the Future", target="_blank") 21 Jobs of the Future
+    .small-12.medium-3.cell(data-attribute="whiteFooterMenuTwoTag")
+      a.text-blue(href="/about-cognizant", title="ABOUT COGNIZANT")
+        h6 ABOUT COGNIZANT
+      ul.no-bullet.small
+        li
+          a.text-gray-dark(href="/about-cognizant/board-of-directors", title="Board of Directors") Board of Directors
+        li
+          a.text-gray-dark(href="/events", title="Cognizant Events") Cognizant Events
+        li
+          a.text-gray-dark(href="/contactus", title="Contact Us") Contact Us
+        li
+          a.text-gray-dark(href="/about-cognizant/corporate-governance", title="Corporate Governance") Corporate Governance
+        li
+          a.text-gray-dark(href="/about-cognizant/corporate-integrity", title="Corporate Integrity") Corporate Integrity
+        li
+          a.text-gray-dark(href="/about-cognizant/core-values", title="Culture & Values") Culture &amp; Values
+        li
+          a.text-gray-dark(href="/about-cognizant/executive-leadership", title="Executive Leadership") Executive Leadership
+        li
+          a.text-gray-dark(href="http://news.cognizant.com/", title="News & Press Releases") News &amp; Press Releases
+        li
+          a.text-gray-dark(href="/partners", title="Partnerships") Partnerships
+        li
+          a.text-gray-dark(href="/about-cognizant/sustainability", title="Sustainability") Sustainability
+        li
+          a.text-gray-dark(href="/about-cognizant/talent-worldwide", title="Talent Worldwide") Talent Worldwide
+        li
+          a.text-gray-dark(href="/about-cognizant/the-cognizant-growth-story", title="The Cognizant Growth Story") The Cognizant Growth Story
+        li
+          a.text-gray-dark(href="/women-empowered", title="Women Empowered") Women Empowered
+      h6.text-blue INFORMATION FOR SUPPLIERS
+      ul.no-bullet.small
+        li
+          a.text-gray-dark(href="/Procure-to-pay", title="Procure-to-Pay") Procure-to-Pay
+      .cell
+        .hex-link
+          #teconsent(consent="0,1,2")
+            //- script(src="//consent.truste.com/notice?domain=cognizant.com&c=teconsent&js=bb&noticeType=bb&cookieLink=https://www.cognizant.com/cookiepolicy", id="truste_0.8992182165621561")
+            //- a#icon-id043853575194498373(tabindex="0", role="button", lang="en")
+              img(src="https://consent.trustarc.com/get?name=trustarc_cookiepreferences.png", alt="Cookie Preference", style="border: none; cursor: pointer;")
+

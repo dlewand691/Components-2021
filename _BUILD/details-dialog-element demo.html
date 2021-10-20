@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://github.github.io/details-dialog-element/example/index.html -->
+<html lang="en"><script>
+        (function() {
+            // If GPC on, set DOM property to true if not already true
+            if (true) {
+                if (navigator.globalPrivacyControl) return
+                Object.defineProperty(navigator, 'globalPrivacyControl', {
+                    value: true,
+                    enumerable: true
+                })
+            } else {
+                // If GPC off, set DOM property prototype to false so it may be overwritten
+                // with a true value by user agent or other extensions
+                if (typeof navigator.globalPrivacyControl !== "undefined") return
+                Object.defineProperty(Object.getPrototypeOf(navigator), 'globalPrivacyControl', {
+                    value: false,
+                    enumerable: true
+                })
+            }
+            // Remove script tag after execution
+            document.currentScript.parentElement.removeChild(document.currentScript)
+        })()
+        </script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script><script src="./details-dialog-element demo_files/shadow-demo.js"></script>
+  <!-- <script type="module" src="../dist/index.js"></script> -->
+  <script type="module" src="./details-dialog-element demo_files/details-dialog-element@latest"></script>
+  <script type="module" src="./details-dialog-element demo_files/include-fragment-element@latest"></script>
+  <title>details-dialog-element demo</title>
+  <link href="./details-dialog-element demo_files/index.css" rel="stylesheet">
+  <link href="./details-dialog-element demo_files/build.css" rel="stylesheet">
+  <style>
+    .details-with-dialog[open] > summary {
+      cursor: default;
+    }
+
+    .details-with-dialog[open] > summary:before {
+      content: " ";
+      background: rgba(0, 0, 0, 0.3);
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    .mh-80 {
+      max-height: 80vh;
+    }
+
+    .narrow {
+      width: 400px;
+    }
+
+    .wide {
+      width: 640px;
+    }
+  </style>
+</head>
+<body class="p-4" data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+  <details class="details-with-dialog">
+    <summary role="button">Bare</summary>
+    <details-dialog aria-label="Dialog with no CSS" role="dialog" aria-modal="true">
+      <p class="mr-6 pr-3">But you can click anywhere to dismiss without JS.</p>
+      <button data-close-dialog="" type="button" autofocus="">Close button only works with JS</button>
+    </details-dialog>
+  </details>
+
+  <details class="details-reset details-with-dialog mt-4">
+    <summary class="btn" role="button">Dialog</summary>
+    <details-dialog class="details-dialog anim-fade-in fast wide" aria-label="Dialog" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="Box d-flex flex-column">
+        <div class="Box-header">
+          Title
+        </div>
+        <div class="Box-body overflow-auto">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="Box-footer">
+          <button type="button" class="btn btn-block" data-close-dialog="">Close</button>
+        </div>
+      </div>
+    </details-dialog>
+  </details>
+
+  <details class="details-reset details-with-dialog mt-4">
+    <summary class="btn" role="button">Dialog with &lt;include-fragment&gt;</summary>
+    <details-dialog class="Box details-dialog anim-fade-in fast narrow" src="./content.html" aria-label="Dialog with include-fragment" role="dialog" aria-modal="true" tabindex="-1">
+      <div class="Box-body"><a href="https://github.github.io/details-dialog-element/example/content.html">content.html</a>
+</div>
+    </details-dialog>
+  </details>
+
+  <details class="details-reset details-with-dialog mt-4">
+    <summary class="btn" role="button">Dialog with autofocus</summary>
+    <details-dialog class="details-dialog anim-fade-in fast narrow" aria-label="Dialog with autofocus" role="dialog" aria-modal="true">
+      <div class="Box d-flex flex-column">
+        <div class="Box-header">
+          Title
+        </div>
+        <div class="Box-body overflow-auto">
+          <form>
+            <label>
+              This input gets reset on close.
+              <input type="text" autofocus="">
+            </label>
+          </form>
+          Lorem ipsum dolor sit amet, <a href="https://github.github.io/details-dialog-element/example/index.html#url">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<form>
+        </form></div>
+        <div class="Box-footer">
+          <button type="button" class="btn btn-block" autofocus="" data-close-dialog="">Close</button>
+        </div>
+      </div>
+    </details-dialog>
+  </details>
+
+  <button type="button" class="btn mt-4" onclick="document.querySelector(&#39;details&#39;).open = true">JS trigger: focus should return here</button>
+
+  <shadow-dialog></shadow-dialog>
+
+
+</body><div id="__genieContainer" style="all: initial;"></div></html>

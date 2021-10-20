@@ -1,0 +1,19 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Captcha"
+
+block content
+
+    h1!= pageTitle
+
+    .grid-x.grid-padding-x
+        .cell.medium-p2.py2.bg-primary
+            form(action="?", method="POST")
+                .grid-x.grid-padding-x.align-middle.align-center
+                    .cell.shrink
+                        .g-recaptcha.mb1.medium-mb0(data-sitekey="6Lf5OS4UAAAAACACVf6KaS5qXoPkhL1SAGKSCBzX" data-theme="dark" data-size="normal")
+                    .cell.shrink
+                        button.button.arrow.white.m0(type="submit", value="Submit") Submit
+
+
+

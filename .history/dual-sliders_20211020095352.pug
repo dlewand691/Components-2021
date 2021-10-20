@@ -1,0 +1,52 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Dual Sliders"
+
+block content
+
+    h1!= pageTitle
+
+    .grid-x.grid-padding-x.align-center
+        .small-10.medium-12.cell
+            .slick-carousel.slick-carousel-thumbnails.green-arrows.green-dots.mb2.text-center(data-slick='{"dots": false, "autoplay": false, "arrows": true, "slidesToShow": 5, "adaptiveHeight": true, "asNavFor": ".slick-carousel-mainContent", "focusOnSelect": true, "centerMode": false}')
+                .slide
+                    img(src="http://via.placeholder.com/300x300?text=01 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/200x200?text=02 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/100x100?text=03 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/300x300?text=04 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/200x200?text=05 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/100x100?text=06 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/300x300?text=07 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/200x200?text=08 Thumbnail")
+                .slide
+                    img(src="http://via.placeholder.com/100x100?text=09 Thumbnail")
+
+            .slick-carousel.slick-carousel-mainContent.green-arrows.green-dots.square-dots.text-center(data-slick='{"dots": true, "autoplay": false, "arrows": false, "slidesToShow": 1, "asNavFor": ".slick-carousel-thumbnails", "focusOnSelect": true}')
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=01 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=02 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=03 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=04 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=05 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=06 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=07 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=08 Large")
+                .slide
+                    img(src="http://via.placeholder.com/800x800?text=09 Large")
+
+
+

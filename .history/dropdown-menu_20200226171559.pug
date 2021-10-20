@@ -1,0 +1,48 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Dropdown menu"
+
+block content
+    h1!= pageTitle
+
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                ul.dropdown.menu(data-dropdown-menu)
+                    li
+                        a Item 1
+                        ul.menu
+                            li
+                                a(href='#0') Item 1A Loooong
+                            li
+                                a(href='#0')  Item 1 sub
+                                ul.menu
+                                    li
+                                        a(href='#0') Item 1 subA
+                                    li
+                                        a(href='#0') Item 1 subB
+                                    li
+                                        a(href='#0')  Item 1 sub
+                                        ul.menu
+                                            li
+                                                a(href='#0') Item 1 subA
+                                            li
+                                                a(href='#0') Item 1 subB
+                                    li
+                                        a(href='#0')  Item 1 sub
+                                        ul.menu
+                                            li
+                                                a(href='#0') Item 1 subA
+                            li
+                                a(href='#0') Item 1B
+                    li
+                        a(href='#0') Item 2
+                        ul.menu
+                            li
+                                a(href='#0') Item 2A
+                            li
+                                a(href='#0') Item 2B
+                    li
+                        a(href='#0') Item 3
+                    li
+                        a(href='#0') Item 4

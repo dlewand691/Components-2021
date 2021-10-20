@@ -1,0 +1,13 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Close button"
+
+block content
+    h1!= pageTitle
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                .callout(data-closable)
+                    button.close-button(aria-label='Close alert', type='button', data-close)
+                        span(aria-hidden='true') ×
+                    p This is a close button example.

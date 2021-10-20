@@ -1,0 +1,15 @@
+extend __LAYOUT-TEMPLATE.pug
+include ../../_COG-Framework-2020/pug/_navigation.pug
+include ../../_COG-Framework-2020/pug/_footer.pug
+block vars
+  - var pageTitle = "Navigation"
+
+block content
+
+  +subnav(class="theme-default")
+  +primaryNav(class="theme-default")
+
+  .h100vh
+
+  +footer(class="theme-default")
+  //- include footer2021.pug

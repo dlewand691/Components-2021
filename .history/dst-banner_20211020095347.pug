@@ -1,0 +1,43 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "DST Banner"
+
+block content
+
+    h1!= pageTitle
+
+    .video-background(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/PA-Landing-Banner-DST-640.jpg, small],[images/header-banners/video-background/PA-Landing-Banner-DST-1024.jpg, medium],[../images-global/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/PA-Landing-Banner-DST.jpg")
+            source(src="images/header-banners/video-background/dst-video-header.mp4" type="video/mp4")
+            source(src="images/header-banners/video-background/dst-video-header.webm" type="video/webm")
+            source(src="images/header-banners/video-background/dst-video-header.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle.align-right(style="height: 500px; min-height: 500px")
+            .cell.medium-6.large-4
+                img.mb1(src="../images-global/COG-Logo-Digital-Systems-Technologies.svg" style="height: 71px")
+                h6.label.bg-green Transform Your Technology Models
+                h5 ACHIEVE THE
+                    span.text-green NEXT LEVEL
+                    | OF DIGITAL
+                p.m0 Future-proof your IT landscape by implementing a simple, modern and secure technology backbone.
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 Alternate Version
+
+    .video-background(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/PA-Landing-Banner-DST-alt.jpg, small],[images/header-banners/video-background/PA-Landing-Banner-DST-alt.jpg, medium],[../images-global/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/PA-Landing-Banner-DST-alt.jpg")
+            source(src="images/header-banners/video-background/dst-video-header-alternate.mp4" type="video/mp4")
+            source(src="images/header-banners/video-background/dst-video-header-alternate.webm" type="video/webm")
+            source(src="images/header-banners/video-background/dst-video-header-alternate.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle.align-right(style="height: 500px; min-height: 500px")
+            .cell.medium-6.large-4
+                img.mb1(src="../images-global/COG-Logo-Digital-Systems-Technologies.svg" style="height: 71px")
+                h6.label.bg-green Transform Your Technology Models
+                h5
+                    span.text-green NAVIGATE
+                    | THE
+                    span.text-green SHIFT
+                    | TO DIGITAL
+                p.m0 Future-proof your IT landscape by implementing a simple, modern and secure technology backbone.
+

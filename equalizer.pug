@@ -1,0 +1,20 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Equalizer"
+
+block content
+    h1!= pageTitle
+
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell
+                #test-eq.grid-x.grid-margin-x(data-equalizer, data-equalize-on='medium')
+                    .cell.medium-4
+                        .callout(data-equalizer-watch)
+                            img(src='http://www.placekitten.com/300/200', alt)
+                    .cell.medium-4
+                        .callout(data-equalizer-watch)
+                            p Pellentesque habitant morbi tristique senectus et netus et, ante.
+                    .cell.medium-4
+                        .callout(data-equalizer-watch)
+                            img(src='http://www.placekitten.com/300/200', alt)

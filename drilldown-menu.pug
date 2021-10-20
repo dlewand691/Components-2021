@@ -1,0 +1,63 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Drilldown menu"
+
+block content
+    h1!= pageTitle
+
+    .grid-container
+        .grid-x.grid-x-padding
+            .cell
+                ul#m1.vertical.menu(data-drilldown, style='width: 200px')
+                    li
+                        a(href='#0') Item 1
+                        ul#m2.vertical.menu
+                            li
+                                a(href='#0') Item 1A
+                                ul#m3.vertical.menu
+                                    li
+                                        a(href='#0') Item 1Aa
+                                    li
+                                        a(href='#0') Item 1Ba
+                                    li
+                                        a(href='#0') Item 1Ca
+                                    li
+                                        a(href='#0') Item 1Da
+                                    li
+                                        a(href='#0') Item 1Ea
+                            li
+                                a(href='#0') Item 1B
+                            li
+                                a(href='#0') Item 1C
+                            li
+                                a(href='#0') Item 1D
+                            li
+                                a(href='#0') Item 1E
+                    li
+                        a(href='#0') Item 2
+                        ul.vertical.menu
+                            li
+                                a(href='#0') Item 2A
+                            li
+                                a(href='#0') Item 2B
+                            li
+                                a(href='#0') Item 2C
+                            li
+                                a(href='#0') Item 2D
+                            li
+                                a(href='#0') Item 2E
+                    li
+                        a(href='#0') Item 3
+                        ul.vertical.menu
+                            li
+                                a(href='#0') Item 3A
+                            li
+                                a(href='#0') Item 3B
+                            li
+                                a(href='#0') Item 3C
+                            li
+                                a(href='#0') Item 3D
+                            li
+                                a(href='#0') Item 3E
+                    li
+                        a(href='#0')  Item 4

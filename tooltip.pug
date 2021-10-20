@@ -1,0 +1,14 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Tooltip"
+
+block content
+
+    h1!= pageTitle
+    p Tooltip on the 
+        span.top(data-tooltip tabindex="1" title="Here's a tooltip") top
+    p Tooltip on the 
+        span.left(data-tooltip tabindex="1" title="Here's another tooltip") left
+    p Tooltip on the 
+        span.right(data-tooltip tabindex="1" title="Here's another tooltip again") right
+

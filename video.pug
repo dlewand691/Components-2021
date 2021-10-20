@@ -1,0 +1,168 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Video"
+
+block content
+  //- iframe(width="560" height="349" src="https://www.youtube-nocookie.com/embed/9h1swNWgP8Q?theme=dark&color=white" frameborder="0" allowfullscreen)
+  h1!= pageTitle
+  h3 Video1-A (Play in modal)
+  .grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a.text-white(href="#")
+        h6.text-white cognizant digital works™
+        h2.text-white.text-caps approach
+        h1.m0
+          a.text-white(data-open="video-modal")
+            i.play-button
+        .reveal#video-modal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          .responsive-embed.widescreen
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/ocbcAR3jnIU?list=PL-OkbzovwrrzyBfHJ6aFpVSNJ_bvYFKMl" frameborder="0" allowfullscreen)
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+  hr
+  h3 Video1-B (Play in modal, Plyr plugin)
+  .grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a.text-white(href="#")
+        h6.text-white cognizant digital works™
+        h2.text-white.text-caps approach
+        h1.m0
+          a.text-white(data-open="video-modal-plyr")
+            i.play-button
+        .reveal#video-modal-plyr(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+          .plyr(data-type="youtube" data-video-id="ocbcAR3jnIU")
+          button.close-button(data-close aria-label="Close modal" type="button")
+            span(aria-hidden="true") &times;
+
+  hr
+  h3 Video1-C (Play in place)
+  .grid-x.grid-padding-x.expanded.collapse.align-middle.align-center.text-center#video-modal-in-place-row(data-toggler=".gradient-overlay-black-full" style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center; min-height:400px;")
+    .cell.py5.show#video-modal-in-place-1(data-toggler=".hide")
+      a.text-white(href="#")
+        h6.text-white cognizant digital works™
+        h2.text-white.text-caps approach
+        h1.m0
+          a.text-white(data-toggle="video-modal-in-place-1 video-modal-in-place-2 video-modal-in-place-row")
+            i.play-button
+    .cell.p0.z1.hide#video-modal-in-place-2(data-toggler=".hide" style="height: inherit;")
+      h3.m0.text-right.absolute.z3(style="right: 0")
+        a.text-white.m0.align-right(data-toggle="video-modal-in-place-1 video-modal-in-place-2 video-modal-in-place-row") &times;
+      iframe.video(src="//www.youtube.com/embed/9KunP3sZyI0" frameborder="0" allowfullscreen)
+
+  hr
+  h3 Video2
+  .grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center;")
+    .cell
+      a.text-white(href="#")
+        h1 cognizant
+        br
+        h4.text-normal.text-caps global innovation ecosystem
+        h1.m0
+          i.play-button
+
+  hr
+  h3 Video3
+  .grid-x.grid-padding-x.expanded.align-middle.bg-gray-dark.py-half.py3
+    .medium-7.cell.relative.mb1.medium-mb0
+      a.text-white.m0.absolute(href="#" style="top: calc(50% - 42px); left: calc(50% - 42px);")
+        h1
+          i.play-button
+      img.w100(src="https://source.unsplash.com/R3pUGn5YiTg/800x400")
+    .medium-5.cell.text-white
+      h5 Donec Congue Lacinia Dui, A Porttitor Lectus Condimentum Laoreet
+      hr.gradient
+      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident sed corporis non enim, nihil vel facere illo autem, quis nisi officia aut voluptatem earum? Nesciunt non, blanditiis iusto natus.
+      .grid-x.grid-padding-x.align-justify.collapse
+        .cell
+          h5.anim-icon
+            a.text-normal.text-white(href="#")
+              i.share.fw600
+              .anim-text Share
+        .cell.text-right
+          h5.anim-icon
+            a.text-normal.text-white(href="#")
+              i.arrow-right.fw600
+              .anim-text View
+
+  hr
+  h3 Video4
+  div(style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center;")
+    .grid-x.grid-padding-x.align-middle.py5.text-white
+      .medium-6.medium-offset-1.cell
+        h4 New technologies make healthcare more personal
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis excepturi libero at, possimus, alias animi nesciunt obcaecati commodi nobis doloribus molestias et ipsam expedita labore eius porro, aperiam officiis!
+        a.button(href="#")
+          i.play-button.text-bold.mr-half 
+          | Play video
+
+  #video5
+  hr
+  h3 Video5
+  .swiper-container
+    .swiper-wrapper
+      .swiper-slide
+        .py6(style="background: url(https://source.unsplash.com/R3pUGn5YiTg) no-repeat; background-size: cover; background-position: center center;")
+          .grid-x.align-middle.text-white
+            .cell.small-10.medium-4.small-offset-1.text-center.medium-text-left
+              h6 HELPING INSURANCE COMPANIES
+              h3.text-blue-light FOCUS ON PREVENTION
+              p Cognizant's Conversational AI Leader, Matt Smith talks with William Welser at the 2018 AI Summit in San Francisco about new interfaces and applications of voice interaction.
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide
+        .py6(style="background: url(https://unsplash.it/800/800?image=902) no-repeat; background-size: cover; background-position: center center;")
+          .grid-x.align-middle.text-white
+            .small-10.medium-4.small-offset-1.cell.text-center.medium-text-left
+              h6 HELPING LEADING BANKS
+              h3.text-blue-light MAKE BETTER LENDING DECISIONS
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide
+        .py6(style="background: url(https://unsplash.it/800/800?image=903) no-repeat; background-size: cover; background-position: center center;")
+          .grid-x.align-middle.text-white
+            .small-10.medium-4.small-offset-1.cell.text-center.medium-text-left
+              h6 HELPING MEDIA COMPANIES
+              h3.text-blue-light CREATE MORE IMMERSIVE EXPERIENCES
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide
+        .py6(style="background: url(https://unsplash.it/800/800?image=904) no-repeat; background-size: cover; background-position: center center;")
+          .grid-x.align-middle.text-white
+            .small-10.medium-4.small-offset-1.cell.text-center.medium-text-left
+              h6 HELPING LIFE SCIENCES COMPANIES
+              h3.text-blue-light PERSONALIZE HEALTH LIVING SUBSCRIPTIONS
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide
+        .py6(style="background: url(https://unsplash.it/800/800?image=905) no-repeat; background-size: cover; background-position: center center;")
+          .grid-x.align-middle.text-white
+            .small-10.medium-4.small-offset-1.cell.text-center.medium-text-left
+              h6 HELPING LEADING MANUFACTURERS
+              h3.text-blue-light MAKE THINGS THAT AUTOMATICALLY THINK AND DO
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+      .swiper-slide
+        .py6(style="background: url(https://unsplash.it/800/800?image=906) no-repeat; background-size: cover; background-position: top center;")
+          .grid-x.align-middle.text-white
+            .small-10.medium-4.small-offset-1.cell.text-center.medium-text-left
+              h6 HELPING DOCTORS, INSURERS AND PATIENTS
+              h3.text-blue-light UNITE ON A COLLABORATIVE CARE PLATFORM
+            .cell.medium-2.text-center
+              a.text-white(href="#")
+                h1.m0
+                  i.play-button
+    .swiper-pagination
+    .swiper-button-prev
+    .swiper-button-next
+
+  .mt5

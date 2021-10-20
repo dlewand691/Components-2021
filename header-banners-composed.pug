@@ -1,0 +1,35 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Header banners composed"
+
+block content
+
+    h1!= pageTitle
+
+
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Ai & Analytics
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-ai-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-ai-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-ai-desktop.jpg, large]")
+        .banner-mesh(style="background-image: url(images/header-banners/mesh.png);")
+            .grid-x.grid-padding-x.align-justify.pt2.medium-pt4.large-pt7
+                .cell.small-4.medium-4.large-6
+                    img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-ai-analytics.svg")
+                .cell.small-8.medium-8.large-6.text-white
+                    h6.label.text-wrap.hide-for-small-only Empowering Business With Actionable Insights
+                    h3 SUPERCHARGE YOUR DIGITAL OPERATIONS WITH THE POWER OF ANALYTICS
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Interactive
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-interactive-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-interactive-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-interactive-desktop.jpg, large]")
+        .banner-mesh(style="background-image: url(images/header-banners/mesh.png);")
+            .grid-x.grid-padding-x.align-justify.pt2.medium-pt4.large-pt7
+                .cell.small-4.medium-4.large-6
+                    img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-interactive.svg")
+                .cell.small-8.medium-8.large-6.text-white
+                    h6.label.text-wrap.hide-for-small-only Create Experiences That Matter
+                    h3 DEFINING THE FUTURE OF EXPERIENCE
+
+

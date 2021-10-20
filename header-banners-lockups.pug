@@ -1,0 +1,190 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Header banners lockups"
+
+block content
+
+    h1!= pageTitle
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Ai & Analytics
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-ai-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-ai-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-ai-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-ai-analytics.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Rehumanizing AI Journey
+                h3 CUSTOMER-CENTRIC AI SOLUTIONS AT SCALE
+
+    hr#cdb-ai-analytics-video-background
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Ai & Analytics, Video background
+
+    .grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/bg-header-video-ai-analytics.jpg, small],[images/header-banners/video-background/bg-header-video-ai-analytics.jpg, medium],[../images/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/bg-header-video-ai-analytics.jpg")
+            source(src="images/header-banners/video-background/bg-header-video-ai-analytics.mp4" type="video/mp4")
+            source(src="images/header-banners/video-background/bg-header-video-ai-analytics.webm" type="video/webm")
+            source(src="images/header-banners/video-background/bg-header-video-ai-analytics.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-ai-analytics.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only CX-Centric AI at Scale
+                h3 Rehumanizing the AI Journey
+                a.button.arrow(href="#") VIEW VIDEO
+
+    hr
+    .grid-x.grid-padding-x.cell#ai-banner-video
+        h3 CDB: Ai & Analytics, video background/play button
+    .banner-header.video-background(style="background: rgba(2,37,45,.6); background-size: cover; background-position: center center;" data-interchange="[images/header-banners/logo-lockups/bg-video-ai-analytics-mobile.jpg, small],[images/header-banners/logo-lockups/bg-video-ai-analytics-tablet.jpg, medium],[../images/transparent.gif, large]")
+        video.show-for-large(playsinline autoplay loop muted poster="images/header-banners/logo-lockups/bg-video-ai-analytics-desktop.jpg")
+            source(src="images/header-banners/logo-lockups/bg-video-ai-analytics.mp4" type="video/mp4")
+            source(src="images/header-banners/logo-lockups/bg-video-ai-analytics.webm" type="video/webm")
+            source(src="images/header-banners/logo-lockups/bg-video-ai-analytics.ogg" type="video/ogg")
+            .grid-x.grid-padding-x.py2.medium-py4.large-py7
+                .cell.small-12.medium-4.large-6
+                    img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-ai-analytics.svg")
+                .cell.small-12.medium-8.large-6.text-white
+                    h6.label.text-wrap.hide-for-small-only Insights that Inspire Customers
+                    h3 ACCELERATE BUSINESS GROWTH WITH AI
+                    a.button.white.arrow(data-open="video-modal-ai") play video
+                .reveal#video-modal-ai(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+                    .responsive-embed.widescreen
+                        iframe(width="560", height="315", src="https://www.youtube-nocookie.com/embed/xgtdBJuaY-Y", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen="")
+                    button.close-button(data-close aria-label="Close modal" type="button")
+                        span(aria-hidden="true") &times;
+
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Interactive
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-interactive-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-interactive-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-interactive-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-interactive.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Create Experiences That Matter
+                h3 DEFINING THE FUTURE OF EXPERIENCE
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Connected Products
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-connectedProducts-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-connectedProducts-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-connectedProducts-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDB-logo-lockup-connected-products.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Insights to Connectivity to Results
+                h3.text-caps EVOLVE FROM EXPERIMENTS TO CHANGING HOW WE WORK AND LIVE
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDB/CDST: Digital Engineering
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-digitalEngineering-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-digitalEngineering-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-digitalEngineering-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDB-logo-lockup-digital-engineering.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only xxx
+                h3 xxx
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDB: Digital Strategy
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-digitalStrategy-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-digitalStrategy-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-digitalStrategy-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDB-logo-lockup-digital-strategy.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Create Experiences That Matter
+                h3 DEFINING THE FUTURE OF EXPERIENCE
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDO: Industry & Platform Solutions
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-industryPlatformSolutions-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-industryPlatformSolutions-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-industryPlatformSolutions-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDO-logo-lockup-industry-platform-solutions.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Scale seamless delivery and service
+                h3 ELEVATE EXPERIENCES WITH AUTOMATION
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDO: Enterprise Services
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-enterpriseServices-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-enterpriseServices-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-enterpriseServices-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="images/header-banners/logo-lockups/CDO-logo-lockup-enterprise-services.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Unlock Future Growth
+                h3 BUILD DIGITAL SOLUTIONS THAT WORK
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDO: Intelligent Process Automation
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-intelligentProcessAutomation-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-intelligentProcessAutomation-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-intelligentProcessAutomation-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDO-logo-lockup-intelligent-process-automation.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Scale Seamless Delivery and Service
+                h3 ELEVATE EXPERIENCES WITH AUTOMATION
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDST: Cloud Enablement
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-cloudEnablement-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-cloudEnablement-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-cloudEnablement-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDST-logo-lockup-cloud-enablement.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only Agility at Scale
+                h3 ACHIEVE DIGITAL AT GREATER SPEED & LESS RISK
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDST: Core Modernization
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-coreModernization-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-coreModernization-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-coreModernization-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDST-logo-lockup-core-modernization.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only From Planning to Implementation
+                h3 FUTURE-PROOF YOUR CORE APPLICATIONS & INFRASTRUCTURE
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDST: Legacy Transformation
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-legacyTransformation-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-legacyTransformation-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-legacyTransformation-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDST-logo-lockup-legacy-transformation.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only xxx
+                h3 xxx
+
+    hr
+    .grid-x.grid-padding-x.cell
+        h3 CDST: Security
+
+    .banner-header(data-interchange="[images/header-banners/logo-lockups/bg-header-security-mobile.jpg, small],[images/header-banners/logo-lockups/bg-header-security-tablet.jpg, medium],[images/header-banners/logo-lockups/bg-header-security-desktop.jpg, large]")
+        .grid-x.grid-padding-x.py2.medium-py4.large-py7
+            .cell.small-12.medium-4.large-6
+                img.banner-logoLockup.p1.medium-p2.large-p3(src="./images/header-banners/logo-lockups/CDST-logo-lockup-security.svg")
+            .cell.small-12.medium-8.large-6.text-white
+                h6.label.text-wrap.hide-for-small-only xxx
+                h3 xxx
+
+

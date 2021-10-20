@@ -1,0 +1,560 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Layered type replacement"
+
+block content
+
+    h1!= pageTitle
+
+    mixin banner(mdColumns, lgColumns, smImage, mdImage, lgImage, subhead, headline, ads)
+        div(data-interchange="["+smImage+", small] ["+mdImage+", medium] ["+lgImage+", large]" style="background: no-repeat; background-size: cover; background-position: center center")
+            .grid-x.grid-padding-x.align-middle
+                .small-12(class="medium-" + mdColumns class="large-" + lgColumns).cell.py2.large-py4
+                    p.small-text-white.large-text-black!= subhead
+                    h1.small-text-white.large-text-blue.text-normal!= headline
+                +#{ads}
+    mixin 3ads
+        .small-12.cell
+            .grid-x.grid-padding-x.bg-white.opacity-80.small-up-1.medium-up-3.p1
+                .cell(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                    .media-object.medium-m0
+                        .media-object-section.pr-half
+                            i.arrow-right-tail.text-blue
+                        .media-object-section.main-section
+                            h6.small-m0 Headline
+                            | Percentage of top 10 utilities in North America using Cognizant digital solutions.
+                .cell(data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom")
+                    .media-object.medium-m0
+                        .media-object-section.pr-half
+                            i.arrow-right-tail.text-blue
+                        .media-object-section.main-section
+                            h6.small-m0 Headline
+                            | Percentage of top 10 utilities in North America using Cognizant digital solutions.
+                .cell(data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom")
+                    .media-object.medium-m0
+                        .media-object-section.pr-half
+                            i.arrow-right-tail.text-blue
+                        .media-object-section.main-section
+                            h6.small-m0 Headline
+                            | Percentage of top 10 utilities in North America using Cognizant digital solutions.
+
+    mixin 2ads
+        .small-12.cell
+            .grid-x.grid-padding-x.bg-white.opacity-80.p1
+                .small-12.medium-4.cell(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                    .media-object.medium-m0
+                        .media-object-section.pr-half
+                            i.arrow-right-tail.text-blue
+                        .media-object-section.main-section
+                            h6.small-m0 90% reduction in billing leakage
+                .small-12.medium-8.cell(data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom")
+                    | Thanks for real-time reporting in multiple areas, this major U.S. water utility was able to slash costs in a demanding environment.
+
+    mixin noads
+        .small-12.cell
+            .grid-x.grid-padding-x.bg-white.opacity-80.p1
+                .small-12.medium-12.cell(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                    | Thanks for real-time reporting in multiple areas, this major U.S. water utility was able to slash costs in a demanding environment.
+
+
+    body#pjax
+        a.button.tiny.m2(href="index.html") BACK
+
+        h1 Personalization example
+        .small-mb4(data-interchange="[https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner.jpg, small] [https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner.jpg, medium] [https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner.jpg, large]" style="background: no-repeat; background-size: cover; background-position: center center")
+            .grid-x.grid-padding-x.align-middle
+                .small-12.medium-6.large-8.cell.py2.large-py4
+                    p.small-text-white.large-text-black DIGITAL BANKING
+                    h1.small-text-white.large-text-blue.text-normal
+                        | Putting the <strong class="text-blue-medium">focus</strong> on the <strong class="text-blue-medium">customer</strong>
+                .small-12.cell
+                    .grid-x.grid-padding-x.bg-white.opacity-80.p1
+                        .small-12.medium-4.cell.flex-container.medium-pl0
+                            img.object-fit-cover(src="http://www.placehold.it/300x150")
+                        .small-12.medium-8.cell.medium-pr0(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                            h6.small-mb0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia facilis vel sunt, velit veniam laborum quas maiores modi, omnis hic?
+                            p Thanks for real-time reporting in multiple areas, this major U.S. water utility was able to slash costs in a demanding environment.
+                            a.tiny.button.arrow.small-mb0(href="#") READ MORE
+
+        hr
+        h1 Banking
+        h3.small-mt4 Landing
+        +banner(
+            '6', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/banking-industry-hero-banner.jpg',
+            'DIGITAL BANKING',
+            'Putting the <strong class="text-blue-medium">focus</strong> on the <strong class="text-blue-medium">customer</strong>',
+            '3ads'
+        )
+
+        h3.small-mt4 Governance, Risk and Compliance
+        +banner(
+            '6', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/governance-risk-and-compliance-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/governance-risk-and-compliance-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/governance-risk-and-compliance-hero-banner.jpg',
+            '<span class="text-white">ADVICE AND IMPLEMENTATION</span>',
+            '<span class="text-white">Reviewing the <strong class="text-blue-light">realities</strong> of <strong class="text-blue-light">regulations</strong></span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Lending
+        +banner(
+            '6', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/lending-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/lending-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/lending-hero-banner.jpg',
+            '<span class="text-white">DIGITAL LENDING</span>',
+            '<span class="text-white">A <strong class="text-blue-light">loan</strong> with my <strong class="text-blue-light">phone</strong></span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Payments
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-hero-banner.jpg',
+            'DIGITAL PAYMENTS',
+            'Modernize your point of <strong class="text-blue-medium">sale</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Retail and Commercial Banking
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/retail-and-commercial-banking-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/retail-and-commercial-banking-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/retail-and-commercial-banking-hero-banner.jpg',
+            'DIGITAL PERSONAL FINANCIAL SERVICES',
+            'Keep <strong class="text-blue-medium">customers</strong> at the <strong class="text-blue-medium">center</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Application and Infrastructure Support
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/application-infrastructure-support-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/application-infrastructure-support-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/application-infrastructure-support-hero-banner.jpg',
+            'GAIN OPERATIONAL EFFICIENCIES',
+            '<strong class="text-blue-medium">Application</strong> and <strong class="text-blue-medium">Infrastructure</strong> Support',
+            '2ads'
+        )
+
+        h3.small-mt4 CCPA Services
+        +banner(
+            '7', '5',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-ccpa-services-hero-banner-mobile.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-ccpa-services-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-ccpa-services-hero-banner-desktop.jpg',
+            '<span class="text-white">GETTING COMPLIANCE RIGHT</span>',
+            '<span class="text-white">Cognizant <strong class="">CCPA</strong> Services</span>',
+            'noads'
+        )
+
+        h3.small-mt4 Intelligent Mortgage Advisor
+        +banner(
+            '9', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-intelligent-mortgage-automation-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-intelligent-mortgage-automation-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/cognizant-intelligent-mortgage-automation-hero-banner.jpg',
+            'TRANSFORM CX',
+            'Cognizant Intelligent Mortgage <strong class="text-blue-medium">Advisor</strong>',
+            'noads'
+        )
+
+        h3.small-mt4 Customer 360
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/customer360-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/customer360-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/customer360-hero-banner.jpg',
+            'CREATE CONSISTENT EXPERIENCES',
+            'Cognizant Customer <strong class="text-blue-medium">360</strong>',
+            'noads'
+        )
+
+        h3.small-mt4 Next-Gen AML Framework
+        +banner(
+            '9', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/next-gen-aml-framework-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/next-gen-aml-framework-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/next-gen-aml-framework-hero-banner.jpg',
+            '<span class="text-white">AUTOMATE AML ALERTS</span>',
+            '<span class="text-white">Cognizant <strong class="">Next-Gen</strong> AML Framework</span>',
+            'noads'
+        )
+
+        h3.small-mt4 Payments Modernization
+        +banner(
+            '9', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-modernization-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-modernization-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/payments-modernization-hero-banner.jpg',
+            '<span class="text-white">GAIN THE DIGITAL EDGE</span>',
+            '<span class="text-white">Cognizant Payments <strong class="text-blue-light">Modernization</strong></span>',
+            'noads'
+        )
+
+        h3.small-mt4 Real-Time Payments
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/real-time-payments-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/real-time-payments-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/real-time-payments-hero-banner.jpg',
+            'PAYMENTS TRANSFORMATION',
+            'Cognizant <strong class="text-blue-medium">Real-Time</strong> Payments<sup>&trade;</sup>',
+            'noads'
+        )
+
+        h3.small-mt4 Regulatory Synergies Framework
+        +banner(
+            '9', '9',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/regulatory-synergies-framework-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/regulatory-synergies-framework-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/regulatory-synergies-framework-hero-banner.jpg',
+            '<span class="text-white">FAST, EFFICIENT COMPLIANCE</span>',
+            '<span class="text-white">Cognizant <strong class="">Regulatory Synergies</strong> Framework</span>',
+            'noads'
+        )
+
+        h3.small-mt4 Risk and Fraud Solutions
+        +banner(
+            '9', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/risk-and-fraud-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/risk-and-fraud-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/risk-and-fraud-hero-banner.jpg',
+            'MANAGE COMPLEXITY',
+            'Cognizant <strong class="text-blue-medium">Risk</strong> and <strong class="text-blue-medium">Fraud</strong> Solutions',
+            'noads'
+        )
+
+        h3.small-mt4 Robots-as-a-service
+        +banner(
+            '9', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/robots-as-a-service-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/robots-as-a-service-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/robots-as-a-service-hero-banner.jpg',
+            '<span class="text-white">INTELLIGENT AUTOMATION</span>',
+            'Cognizant <strong class="text-blue-medium">Robots-as-a-service</strong>',
+            'noads'
+        )
+
+
+
+
+
+
+
+
+
+
+        hr
+        h1 Capital Markets
+        h3.small-mt4 Landing
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/capital-markets-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/capital-markets-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/capital-markets-hero-banner.jpg',
+            'TAILORED TRANSFORMATION',
+            'Charting your <strong class="text-blue-medium">digital future</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Asset Management
+        +banner(
+            '8', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/asset-management-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/asset-management-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/asset-management-hero-banner.jpg',
+            '<span class="text-white">RETHINK OPS AND IT</span>',
+            '<span class="text-white"><strong class="text-blue-light">Thrive</strong> amid shifting demands</span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Exchanges
+        +banner(
+            '10', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/exchanges-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/exchanges-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/exchanges-hero-banner.jpg',
+            'AUTOMATE TO INNOVATE',
+            'Scale new <strong class="text-blue-medium">services</strong> and <strong class="text-blue-medium">solutions</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Investment Banking
+        +banner(
+            '7', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/investment-banking-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/investment-banking-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/investment-banking-hero-banner.jpg',
+            'SIMPLIFY PROCESSES',
+            '<strong class="text-blue-medium">Step up</strong> to today’s technologies',
+            '2ads'
+        )
+
+        h3.small-mt4 Market Information Providers
+        +banner(
+            '9', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/market-information-providers-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/market-information-providers-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/market-information-providers-hero-banner.jpg',
+            '<span class="text-white">INNOVATION FROM INFORMATION</span>',
+            '<span class="text-white"><strong class="text-blue-light">Monetize</strong> assets, <strong class="text-blue-light">energize</strong> insights</span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Wealth Management
+        +banner(
+            '9', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/wealth-management-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/wealth-management-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/wealth-management-hero-banner.jpg',
+            'THE FUTURE IS HERE',
+            '<span class="text-white"><strong class="text-blue-light">Transform</strong> CX for the digital age</span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Client Onboarding
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/client-onboarding-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/client-onboarding-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/client-onboarding-hero-banner.jpg',
+            'DIGITAL CUSTOMER EXPERIENCE',
+            'Cognizant <strong class="text-blue-medium">Client Onboarding</strong>',
+            'noads'
+        )
+
+        h3.small-mt4 Front-Office Optimization
+        +banner(
+            '8', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/front-office-optimization-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/front-office-optimization-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/front-office-optimization-hero-banner.jpg',
+            'REIMAGINE WEALTH MANAGEMENT’S FRONT LINE',
+            'Cognizant Front-Office <strong class="text-blue-medium">Optimization</strong>',
+            'noads'
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+
+        hr
+        h1 Oil & Gas
+        h3.small-mt4 Landing
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-landing-hero-banner-background-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-landing-hero-banner-background-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-landing-hero-banner-background.jpg',
+            'UPSTREAM, MIDSTREAM, DOWNSTREAM SERVICES',
+            'Digital <strong class="text-blue-medium">delivers</strong> more energy <strong class="text-blue-medium">options</strong>',
+            '3ads'
+        )
+
+        h3.small-mt4 Upstream
+        +banner(
+            '12', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/upstream-oil-gas-banner-mobile.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/upstream-oil-gas-banner-tablet.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/upstream-oil-gas-banner.jpg',
+            'THE NEXT FRONTIER',
+            '<strong class="text-blue-medium">Energize</strong> growth with <strong class="text-blue-medium">digital</strong> platforms',
+            '3ads'
+        )
+
+        h3.small-mt4 Midstream
+        +banner(
+            '7', '9',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-midstream-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-midstream-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-midstream-banner.jpg',
+            'TRANSFORMING THE OIL ECOSYSTEM',
+            'Delivering on a <strong class="text-blue-medium">digital infrastructure</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Downstream
+        +banner(
+            '9', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-downstream-segment-banner_mobile.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-downstream-segment-banner_tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-and-gas-downstream-segment-banner.jpg',
+            'THE DIGITAL DOWNSTREAM',
+            '<strong class="text-blue-medium">Disrupt</strong> complexity in volatile markets',
+            '2ads'
+        )
+
+        h3.small-mt4 Digital Workforce Mobility
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/background-banner-digital-workforce-mobility-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/background-banner-digital-workforce-mobility-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/images/background-banner-digital-workforce-mobility.jpg',
+            'OPTIMIZE FIELD OPERATIONS',
+            'Cognizant Digital <strong class="text-blue-medium">Workforce Mobility</strong><sup>&trade;</sup>',
+            'noads'
+        )
+
+        h3.small-mt4 Operations Intelligence Platform
+        +banner(
+            '9', '9',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-gas-operations-intelligence-platform-hero-banner-mobile.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-gas-operations-intelligence-platform-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/oil-gas-operations-intelligence-platform-hero-banner.jpg',
+            'ACHIEVE OPERATION EXCELLENCE',
+            'Cognizant <strong class="text-blue-medium">Operations Intelligence</strong> Platform',
+            'noads'
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+        hr
+        h1 Utilities
+        h3.small-mt4 Landing
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-landing-hero-banner-mobile.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-landing-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-landing-hero-banner.jpg',
+            'THE DIGITAL UTILITY:',
+            '<span class="text-white">Driving <strong class="">innovation</strong>, <strong class="">growth</strong> and greater <strong class="">efficiency</strong></span>',
+            '3ads'
+        )
+
+        h3.small-mt4 Electricity
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-electricity-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-electricity-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-electricity-banner.jpg',
+            'POWER OF TRANSFORMATION',
+            'Generating <strong class="text-blue-medium">profits</strong> from digital <strong class="text-blue-medium">enhancements</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 Gas
+        +banner(
+            '9', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-gas-hero-banner_mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-gas-hero-banner_tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-gas-hero-banner.jpg',
+            '<span class="text-white">THE DIGITAL UTILITY</span>',
+            '<span class="text-white">Opportunities for <strong class="text-blue-light">growth</strong> in challenging times</span>',
+            '2ads'
+        )
+
+        h3.small-mt4 Water
+        +banner(
+            '9', '9',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-water-segment-banner_mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-water-segment-banner_tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilities-water-segment-banner.jpg',
+            'DIGITAL ON TAP',
+            'Making <strong class="text-blue-medium">waves</strong> with <strong class="text-blue-medium">transformation</strong>',
+            '2ads'
+        )
+
+        h3.small-mt4 UtilityOne Engage
+        +banner(
+            '7', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilityone-engage-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilityone-engage-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/utilityone-engage-banner.jpg',
+            'ANYTIME, ANYWHERE INTERACTIONS',
+            'Cognizant <strong class="text-blue-medium">UtilityOne Engage</strong><sup>&trade;</sup>',
+            'noads'
+        )
+
+        h3.small-mt4 UtilityOne Insights
+        +banner(
+            '7', '6',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/background-banner-utilityone-insights-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/background-banner-utilityone-insights-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/background-banner-utilityone-insights.jpg',
+            'A DIGITAL CRM SOLUTION',
+            'Cognizant <strong class="text-blue-medium">UtilityOne Insights</strong><sup>&trade;</sup>',
+            'noads'
+        )
+
+
+
+
+
+
+
+
+
+
+
+
+        hr
+        h1 Products & Platforms
+        h3.small-mt4 Data Integrity and Control
+        +banner(
+            '7', '9',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-integrity-and-control-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-integrity-and-control-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-integrity-and-control-hero-banner.jpg',
+            '<span class="text-white">TAMING COMPLEXITY</span>',
+            '<span class="text-white">Cognizant <span class="text-bold"><span class="text-blue-light">Data</span> Integrity</span> and <span class="text-blue-light">Control&trade;</span></span>',
+            '3ads'
+        )
+
+        h3.small-mt4 Blockchain-Based Private Equity Platform
+        +banner(
+            '7', '11',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/blockchain-based-private-equity-platform-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/blockchain-based-private-equity-platform-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/blockchain-based-private-equity-platform-hero-banner.jpg',
+            '<span class="text-white">MORE AUTOMATION, LOWER COSTS</span>',
+            '<span class="text-white">Cognizant Blockchain-based <strong class="text-blue-light">Private Equity</strong> Platform</span>',
+            '3ads'
+        )
+
+        h3.small-mt4 Data Strategy Roadmap and Rollout
+        +banner(
+            '7', '8',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-strategy-roadmap-and-rollout-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-strategy-roadmap-and-rollout-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/data-strategy-roadmap-and-rollout-hero-banner.jpg',
+            '<span class="text-white">ENABLE DATA-DRIVEN DECISIONS</span>',
+            '<span class="text-white">Cognizant Data Strategy <strong class="text-blue-light">Roadmap</strong> and <strong class="text-blue-light">Rollout</strong></span>',
+            '3ads'
+        )
+
+        h3.small-mt4 Fees and Billing
+        +banner(
+            '7', '7',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/fees-billing-hero-banner-mob.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/fees-billing-hero-banner-tab.jpg',
+            'https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/fees-billing-hero-banner.jpg',
+            '<span class="text-white">ENABLE DATA-DRIVEN DECISIONS</span>',
+            'Cognizant <strong class="">Fees</strong> <span class="text-white">and <strong class="">Billing</strong>&trade;</span>',
+            '3ads'
+        )
+

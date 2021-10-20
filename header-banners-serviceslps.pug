@@ -1,0 +1,64 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Header banners service landing pages"
+
+block content
+
+    h1!= pageTitle
+
+
+    .grid-x.grid-padding-x.cell
+        h3 Cognizant Digital Business
+
+    .video-background.align-middle(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/practice-area-landing-pages/poster-cdb-mobile.jpg, small],[images/header-banners/video-background/practice-area-landing-pages/poster-cdb-tablet.jpg, medium],[../images/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/practice-area-landing-pages/poster-cdb.jpg")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdb-video-header-072318.mp4" type="video/mp4")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdb-video-header-072318.webm" type="video/webm")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdb-video-header-072318.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle.align-right(style="height: 500px; min-height: 500px")
+            .cell.small-12.medium-6.large-4
+                img.mb1(src="./images/COG-Logo-Digital-Business.svg" style="height: 50px")
+                h6.label Engage Customers To Drive Growth
+                h5 REIMAGINE PRODUCTS AND EXPERIENCES
+                    spa AT SPEED AND SCALE
+                p.m0 We help you reinvent products, experiences and business models to create new value, differentiation and revenue in the digital economy.
+
+
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 Cognizant Digital Operations
+
+    .video-background(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/practice-area-landing-pages/poster-cdo-mobile.jpg, small],[images/header-banners/video-background/practice-area-landing-pages/poster-cdo-tablet.jpg, medium],[../images/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/practice-area-landing-pages/poster-cdo.jpg")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdo-video-header-072618.mp4" type="video/mp4")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdo-video-header-072618.webm" type="video/webm")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/cdo-video-header-072618.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle.align-right(style="height: 500px; min-height: 500px")
+            .cell.small-12.medium-6.large-4
+                img.mb1(src="../images/COG-Logo-Digital-Operations.svg" style="height: 50px")
+                h6.label.bg-orange-dark Unlock the Digital Possibilities
+                h5 #[span.text-orange-dark HARNESS DIGITAL POWER] TO PROPEL EXPERIENCES AND OUTCOMES
+                p.m0 Embrace digital operating models to delight customers and improve performance.
+
+    hr
+
+    .grid-x.grid-padding-x.cell
+        h3 Cognizant Digital Systems & Technology
+
+    .video-background(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/practice-area-landing-pages/poster-dst-mobile.jpg, small],[images/header-banners/video-background/practice-area-landing-pages/poster-dst-tablet.jpg, medium],[../images/transparent.gif, large]")
+        video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/practice-area-landing-pages/poster-dst.jpg")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/dst-video-header-072318.mp4" type="video/mp4")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/dst-video-header-072318.webm" type="video/webm")
+            source(src="./images/header-banners/video-background/practice-area-landing-pages/dst-video-header-072318.ogg" type="video/ogg")
+        .grid-x.grid-padding-x.align-middle.align-right(style="height: 500px; min-height: 500px")
+            .cell.small-12.medium-6.large-4
+                img.mb1(src="../images/COG-Logo-Digital-Systems-Technologies.svg" style="height: 50px")
+                h6.label.bg-green Transform Your Technology Models
+                h5 #[span NAVIGATE] THE #[span SHIFT] TO DIGITAL
+                p.m0 Future-proof your IT landscape by implementing a simple, modern and secure technology backbone.
+
+    hr
+
+

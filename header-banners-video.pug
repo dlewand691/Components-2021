@@ -1,0 +1,17 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Header Banners"
+
+block content
+  .grid-x.grid-padding-x.expanded.align-middle.video-background.h500px(style="background-size: cover; background-position: center center;" data-interchange="[images/header-banners/video-background/BG_insightToCode.jpg, small],[images/header-banners/video-background/BG_insightToCode.jpg, medium],[../images/transparent.gif, large]")
+    video.hide-for-small-only(playsinline autoplay loop muted poster="images/header-banners/video-background/BG_insightToCode.jpg")
+      source(src="images/video-backgrounds/cognizanti-header.mp4" type="video/mp4")
+      source(src="images/header-banners/video-background/BG_insightToCode.webm" type="video/webm")
+      source(src="images/header-banners/video-background/BG_insightToCode.ogg" type="video/ogg")
+    .grid-container
+      .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+        .cell.small-12.medium-9.large-9.py2.large-py4.text-white
+          p.small VOLUME 13, 2021
+          h1.text-bold(contenteditable="true") The resiliency reset
+          //- p(contenteditable="true") Takeaways from the World Economic Forum annual meeting
+          //- h6.m0(contenteditable="true") 21–24 January 2020, Davos-Klosters, Switzerland

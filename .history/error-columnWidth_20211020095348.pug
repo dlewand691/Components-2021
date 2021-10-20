@@ -1,0 +1,42 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Column width bug"
+
+block content
+    h1!= pageTitle
+
+    h3 min-width: initial;
+    .row
+        .column(style="min-width: initial !important;")
+            h3 Flex Grid, no column sizes GÖR MARKNADSFÖRINGSTEKNIKEN MER EFFEKTIV
+        .column(style="min-width: initial !important;")
+            p
+                strong column-width: initial; This column flexes to fit the content as expected.
+            p Vi kombinerar fem viktiga egenskaper f&ouml;r att tillhandah&aring;lla en svit av l&ouml;sningar s&aring;som strategi och design, inneh&aring;ll, marknadsf&ouml;ring, sociala medier, plattformar och teknik.
+    hr.my3
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell.auto(style="min-width: initial !important;")
+                h3 XY Grid, no column sizes GÖR MARKNADSFÖRINGSTEKNIKEN MER EFFEKTIV
+            .cell.auto(style="min-width: initial !important;")
+                p
+                    strong column-width: initial; This column flexes to fit the content as expected.
+                p Vi kombinerar fem viktiga egenskaper f&ouml;r att tillhandah&aring;lla en svit av l&ouml;sningar s&aring;som strategi och design, inneh&aring;ll, marknadsf&ouml;ring, sociala medier, plattformar och teknik.
+    hr.my3
+    h3 min-width: 0;
+    .row.large-unstack
+        .column(style="min-width: 0 !important;")
+            h3 Flex Grid, no column sizes GÖR MARKNADSFÖRINGSTEKNIKEN MER EFFEKTIV
+        .column(style="min-width: 0 !important;")
+            p
+                strong column-width: 0; This column should be flexible to fit the content but the min-width setting doesn't allow it.
+            p Vi kombinerar fem viktiga egenskaper f&ouml;r att tillhandah&aring;lla en svit av l&ouml;sningar s&aring;som strategi och design, inneh&aring;ll, marknadsf&ouml;ring, sociala medier, plattformar och teknik.
+    hr.my3
+    .grid-container
+        .grid-x.grid-padding-x
+            .cell.large-auto(style="min-width: 0 !important;")
+                h3 XY Grid, no column sizes GÖR MARKNADSFÖRINGSTEKNIKEN MER EFFEKTIV
+            .cell.large-auto(style="min-width: 0 !important;")
+                p
+                    strong column-width: 0; This column should be flexible to fit the content but the min-width setting doesn't allow it.
+                p Vi kombinerar fem viktiga egenskaper f&ouml;r att tillhandah&aring;lla en svit av l&ouml;sningar s&aring;som strategi och design, inneh&aring;ll, marknadsf&ouml;ring, sociala medier, plattformar och teknik.

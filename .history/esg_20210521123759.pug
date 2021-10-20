@@ -1,0 +1,28 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "ESG"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  .bg-blue.text-white.py2.medium-py4
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.medium-6
+          h4 Message from our Chief Executive Officer, Brian Humphries
+          p “We recognize that businesses are interdependent with the world’s social and environmental systems. In the medium and long run, social and environmental issues become financial issues. Businesses can thrive only if society prospers and the natural environment is protected.”
+          p
+            a.button.arrow(href="#" data-open="brian-message") READ HIS FULL MESSAGE
+          img(src="images/brian-signature.svg")
+          p Brian Humphries CEO
+
+        .cell.medium-6
+          img(src="images/brian-photo.webp")
+
+  #brian-message.reveal.bg-white.medium-p3(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+    :markdown-it
+      Do fugiat exercitation tempor excepteur quis ipsum ullamco nostrud. Culpa labore velit duis sit aliquip ea eiusmod magna. Laborum qui labore in enim enim cillum elit ea qui aliqua magna laborum voluptate. Nisi tempor id est eiusmod eiusmod ad do occaecat ad do dolor id est. Veniam eiusmod mollit consectetur ea consectetur sint enim ut. Aute aliquip consequat elit velit ad dolore laborum. Occaecat nostrud deserunt ad eiusmod incididunt reprehenderit id qui velit cupidatat elit esse magna proident ipsum dolor anim. Cillum culpa est velit mollit duis sunt nisi laborum excepteur fugiat consequat duis.
+
+    button.close-button(data-close="", aria-label="Close modal", type="button")
+      span(aria-hidden="true") &times;

@@ -1,0 +1,16 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  #exampleModal1.reveal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+    :markdown-it
+      All content here
+    button.close-button(data-close="", aria-label="Close modal", type="button")
+      span(aria-hidden="true") &times;
+
+  p
+    button.button(data-open="exampleModal1") Click me for a modal

@@ -1,0 +1,73 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  style.
+    .grid-x {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* grid-gap: 2rem; */
+      grid-column-gap: 2rem;
+      grid-row-gap: 1rem;
+    }
+
+    .column {
+      /* display: grid;
+      grid-column: span 12; */
+    }
+
+    .large-8 {
+      /* grid-column: span 8;
+      width: unset !important;
+      max-width: unset !important;
+      flex: unset !important; */
+    }
+    .large-4 {
+      /* grid-column: span 4;
+      width: unset !important;
+      max-width: unset !important;
+      flex: unset !important; */
+    }
+    .large-2 {
+      /* grid-column: span 2;
+      width: unset !important;
+      max-width: unset !important;
+      flex: unset !important; */
+    }
+
+  h1!= pageTitle
+
+  .grid-container
+    .row
+      .column.large-8.p2.bg-gray-lighter
+        span Text
+      .column.large-4.p2.bg-gray-lighter
+        span Text
+      .column.p2.bg-gray-lighter
+        span Text
+      .column.large-4.p2.bg-gray-lighter
+        span Text
+      .column.large-4.p2.bg-gray-lighter
+        span Text
+      .column.large-8.p2.bg-gray-lighter
+        span Text
+      .column.large-8.p2.bg-gray-lighter
+        span Text
+      .column.large-2.p2.bg-gray-lighter
+        span Text
+      .column.large-2.p2.bg-gray-lighter
+        span Text
+      .column.large-2.p2.bg-gray-lighter
+        span Text
+      .column.large-4.p2.bg-gray-lighter
+        span Text
+      .column.large-8.p2.bg-gray-lighter
+        span Text
+      .column.large-2.p2.bg-gray-lighter
+        span Text
+      .column.large-4.p2.bg-gray-lighter
+        span Text
+      .column.large-2.p2.bg-gray-lighter
+        span Text

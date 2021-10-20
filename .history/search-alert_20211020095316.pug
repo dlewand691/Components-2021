@@ -1,0 +1,25 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+    - var pageTitle = "Search alert"
+
+block content
+
+    h1!= pageTitle
+
+    .grid-x.grid-padding-x
+        .cell
+            a.button(data-open="searchAlert") OPEN Alert
+
+    #searchAlert.reveal.small.callout.bg-white.fast.ease.p2.bd-red3(data-reveal data-animation-in="slide-in-down" data-animation-out="slide-out-up" data-v-offset="0")
+        .grid-x.grid-padding-x
+            .cell.shrink.p0
+                h6.text-red
+                    i.report-problem-triangle
+            .cell
+                h6.small-m0.text-italic.text-red Sorry, we weren’t able to search for that.
+                p.small-m0 Please try again.
+
+        button.close-button(data-close, aria-label="Close reveal", type="button")
+            span.text-red(aria-hidden="true") &times;
+
+

@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Default Dark+",
+		"editor.fontLigatures": true,
+		"editor.fontSize": 16,
+		"editor.fontFamily": "'OperatorMono-Book','IBM Plex', Menlo, Monaco, 'Courier New', monospace",
+		"editor.renderWhitespace": "all"
+	}
+}

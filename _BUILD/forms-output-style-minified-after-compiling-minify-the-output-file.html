@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cognizant | Forms</title>
+    <link rel="stylesheet" href="css/app.css?ckcachebust=9EE303A62AC5235C953AC703F471C1D3">
+  </head>
+  <body>
+    <h1>Forms</h1>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 cell">
+          <form data-abide novalidate>
+            <div class="alert callout small" data-abide-error style="display: none;">
+              <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+            </div>
+            <div class="grid-x grid-padding-x align-center expanded">
+              <div class="small-12 cell">
+                <label>Number Required
+                  <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number"><span class="form-error">Yo, you had better fill this out, it's required.</span>
+                </label>
+                <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+              </div>
+              <div class="small-12 cell">
+                <label>Nothing Required!
+                  <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore="">
+                </label>
+                <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using &grave;data-abide-ignore&grave;</p>
+              </div>
+              <div class="small-12 cell">
+                <label>Password Required
+                  <input id="password" type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText" required><span class="form-error">I'm required!</span>
+                </label>
+                <p class="help-text" id="exampleHelpText">Enter a password please.</p>
+              </div>
+              <div class="small-12 cell">
+                <label>Re-enter Password
+                  <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password"><span class="form-error">Hey, passwords are supposed to match!</span>
+                </label>
+                <p class="help-text" id="exampleHelpText2">This field is using the &grave;data-equalto=&quot;password&quot;&grave; attribute, causing it to match the password field above.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x align-center expanded">
+              <div class="medium-4 cell">
+                <label>URL Pattern
+                  <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+                </label>
+              </div>
+              <div class="medium-4 cell">
+                <label>Standard Dropdown
+                  <select id="select" data-placeholder="Select" required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+              </div>
+              <div class="medium-4 cell">
+                <label>Select2 Dropdown
+                  <select class="select2" id="select" data-placeholder="Select" required>
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x align-center expanded medium-up-3">
+              <div class="cell cell-block">
+                <h6 class="small-m0">Radios that are required</h6>
+                <label for="validationRadio01">
+                  <input class="radio" id="validationRadio01" type="radio" name="pokemon" value="Red">Red
+                </label>
+                <label for="validationRadio02">
+                  <input class="radio" id="validationRadio02" type="radio" name="pokemon" value="Blue" required>Blue
+                </label>
+                <label for="validationRadio03">
+                  <input class="radio" id="validationRadio03" type="radio" name="pokemon" value="Yellow">Yellow
+                </label>
+              </div>
+              <div class="cell cell-block">
+                <h6 class="small-m0">Radios that are not required</h6>
+                <label for="validationRadio04">
+                  <input class="radio" id="validationRadio04" type="radio" name="pockets" value="Red">Red
+                </label>
+                <label for="validationRadio05">
+                  <input class="radio" id="validationRadio05" type="radio" name="pockets" value="Blue">Blue
+                </label>
+                <label for="validationRadio06">
+                  <input class="radio" id="validationRadio06" type="radio" name="pockets" value="Yellow">Yellow
+                </label>
+              </div>
+              <div class="cell cell-block">
+                <h6 class="small-m0">Checkboxes that are not required</h6>
+                <label for="validationRadio07">
+                  <input class="checkbox" id="validationRadio07" type="checkbox">Checkbox 1
+                </label>
+                <label for="validationRadio08">
+                  <input class="checkbox" id="validationRadio08" type="checkbox">Checkbox 2
+                </label>
+                <label for="validationRadio09">
+                  <input class="checkbox" id="validationRadio09" type="checkbox">Checkbox 3
+                </label>
+              </div>
+              <div class="cell cell-block">
+                <h6>Switch, default</h6>
+                <div class="switch tiny">
+                  <input class="switch-input" id="exampleSwitch01" type="checkbox" name="exampleSwitch01">
+                  <label class="switch-paddle" for="exampleSwitch01"><span class="show-for-sr">Switch</span></label>
+                </div>
+                <div class="switch small">
+                  <input class="switch-input" id="exampleSwitch02" type="checkbox" name="exampleSwitch02">
+                  <label class="switch-paddle" for="exampleSwitch02"><span class="show-for-sr">Switch</span></label>
+                </div>
+                <div class="switch">
+                  <input class="switch-input" id="exampleSwitch03" type="checkbox" name="exampleSwitch03">
+                  <label class="switch-paddle" for="exampleSwitch03"><span class="show-for-sr">Switch</span></label>
+                </div>
+                <div class="switch large">
+                  <input class="switch-input" id="exampleSwitch04" type="checkbox" name="exampleSwitch04">
+                  <label class="switch-paddle" for="exampleSwitch04"><span class="show-for-sr">Switch</span></label>
+                </div>
+              </div>
+              <div class="cell cell-block">
+                <h6>Switch, round</h6>
+                <div class="flex-container align-middle">
+                  <div class="switch rounded tiny small-mr-half">
+                    <input class="switch-input" id="exampleSwitch05" type="checkbox" name="exampleSwitch05">
+                    <label class="switch-paddle" for="exampleSwitch05"><span class="show-for-sr">Switch</span></label>
+                  </div>
+                  <p>Switch</p>
+                </div>
+                <div class="flex-container align-middle">
+                  <div class="switch rounded small small-mr-half">
+                    <input class="switch-input" id="exampleSwitch06" type="checkbox" name="exampleSwitch06">
+                    <label class="switch-paddle" for="exampleSwitch06"><span class="show-for-sr">Switch</span></label>
+                  </div>
+                  <p>Switch</p>
+                </div>
+                <div class="flex-container align-middle">
+                  <div class="switch rounded small-mr-half">
+                    <input class="switch-input" id="exampleSwitch07" type="checkbox" name="exampleSwitch07">
+                    <label class="switch-paddle" for="exampleSwitch07"><span class="show-for-sr">Switch</span></label>
+                  </div>
+                  <p>Switch</p>
+                </div>
+                <div class="flex-container align-middle">
+                  <div class="switch rounded large small-mr-half">
+                    <input class="switch-input" id="exampleSwitch08" type="checkbox" name="exampleSwitch08">
+                    <label class="switch-paddle" for="exampleSwitch08"><span class="show-for-sr">Switch</span></label>
+                  </div>
+                  <p>Switch</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x align-center expanded small-pt4">
+              <button class="button large small-px4" type="submit" value="Submit">Submit</button>
+            </div>
+            <div class="grid-x grid-padding-x align-center expanded">
+              <button class="button small" type="reset" value="Reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <h3>Float Label Form, Dark Background</h3>
+        </div>
+      </div>
+    </div>
+    <div class="small-py3" data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;">
+      <div class="grid-container">
+        <form class="white" data-abide novalidate>
+          <div class="grid-x grid-padding-x">
+            <div class="cell text-white text-center">
+              <h3 class="text-white">CONTINUE THE CONVERSATION</h3>
+              <p>Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office: <a class="text-white" href="javascript:void(0)">cognizant_community@info-event.jp</a></p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x cell">
+            <div class="alert callout small" data-abide-error style="display: none;">
+              <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x small-up-1 medium-up-2">
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <input type="text" placeholder="John Smith" required><span>Full Name</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <input type="email" placeholder="email@example.com" required><span>Email</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <input type="text" placeholder="Your Company"><span>Organziation</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <input type="tel" placeholder="1-800-123-4567" pattern="number" required><span>Contact Number</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <select type="text" placeholder="Where are you located?" required>
+                  <option>Location 01</option>
+                  <option>Location 02</option>
+                  <option>Location 03</option>
+                  <option>Location 04</option>
+                </select><span>Region</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <select type="text" placeholder="How can we help you?" required>
+                  <option>Inquiry Type 01</option>
+                  <option>Inquiry Type 02</option>
+                  <option>Inquiry Type 03</option>
+                  <option>Inquiry Type 04</option>
+                </select><span>Inquiry Type</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+            <div class="cell small-pb1">
+              <label class="has-float-label">
+                <select type="text" placeholder="How can we help you?" required>
+                  <option>Sub-Inquiry Type 01</option>
+                  <option>Sub-Inquiry Type 02</option>
+                  <option>Sub-Inquiry Type 03</option>
+                  <option>Sub-Inquiry Type 04</option>
+                </select><span>Sub-Inquiry Type</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+          </div>
+          <div class="grid-x grid-padding-x">
+            <div class="cell text-white">
+              <label class="has-float-label">
+                <textarea rows="3" cols="15" placeholder="Your message…" required></textarea><span>Message</span><span class="form-error">Field error</span>
+              </label>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="grid-x grid-padding-x">
+      <div class="cell">
+        <h3>Float Label Form, Light Background</h3>
+      </div>
+    </div>
+    <div class="grid-container">
+      <form class="small-py3" data-abide novalidate>
+        <div class="grid-x grid-padding-x">
+          <div class="cell text-center">
+            <h3>CONTINUE THE CONVERSATION</h3>
+            <p>Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office: <a href="javascript:void(0)">cognizant_community@info-event.jp</a></p>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x cell">
+          <div class="alert callout small" data-abide-error style="display: none;">
+            <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x small-up-1 medium-up-2">
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="text" placeholder="John Smith" required><span>Full Name</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="email" placeholder="johnsmith@example.com" required><span>Email</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="text" placeholder="Abc Company"><span>Organziation</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="text" placeholder="Abc Title"><span>Title</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="text" placeholder="Abc Department"><span>Department</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <input type="tel" placeholder="8888 8888" pattern="dashes_only" required><span>Contact Number</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <select type="text" placeholder="Where are you located?" required>
+                <option>Location 01</option>
+                <option>Location 02</option>
+                <option>Location 03</option>
+                <option>Location 04</option>
+              </select><span>Region</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <select type="text" placeholder="How can we help you?" required>
+                <option>Inquiry Type 01</option>
+                <option>Inquiry Type 02</option>
+                <option>Inquiry Type 03</option>
+                <option>Inquiry Type 04</option>
+              </select><span>Inquiry Type</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+          <div class="cell small-pb1">
+            <label class="has-float-label">
+              <select type="text" placeholder="How can we help you?">
+                <option>Sub-Inquiry Type 01</option>
+                <option>Sub-Inquiry Type 02</option>
+                <option>Sub-Inquiry Type 03</option>
+                <option>Sub-Inquiry Type 04</option>
+              </select><span>Sub-Inquiry Type</span>
+            </label>
+          </div>
+        </div>
+        <div class="grid-x grid-padding-x">
+          <div class="cell">
+            <label class="has-float-label">
+              <textarea rows="3" cols="15" placeholder="How can we help you?" required></textarea><span>How can we help you?</span><span class="form-error">Field error</span>
+            </label>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+    <hr>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <h3>2 column Float Label Form, Light Background</h3>
+        </div>
+      </div>
+    </div>
+    <div class="small-py3">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell text-center">
+            <h3>CONTACT COGNIZANT</h3>
+          </div>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="small-12 medium-6 cell">
+            <h5 class="text-blue">SEND A MESSAGE</h5>
+            <form data-abide novalidate>
+              <div class="alert callout small" data-abide-error style="display: none;">
+                <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+              </div>
+              <label class="has-float-label">
+                <input type="text" placeholder="John Smith" required><span>Name</span><span class="form-error">Field error</span>
+              </label>
+              <label class="has-float-label">
+                <input type="email" placeholder="johnsmith@example.com" required><span>Email</span><span class="form-error">Field error</span>
+              </label>
+              <label class="has-float-label">
+                <input type="text" placeholder="Abc Company"><span>Organziation</span>
+              </label>
+              <label class="has-float-label">
+                <input type="text" placeholder="Abc Title"><span>Title</span>
+              </label>
+              <label class="has-float-label">
+                <input type="text" placeholder="Abc Department"><span>Department</span>
+              </label>
+              <label class="has-float-label">
+                <input type="tel" placeholder="8888 8888" pattern="dashes_only" required><span>Contact Number</span><span class="form-error">Field error</span>
+              </label>
+              <label class="has-float-label">
+                <select type="text" placeholder="Where are you located?" required>
+                  <option>Select a country</option>
+                  <option>Location 02</option>
+                  <option>Location 03</option>
+                  <option>Location 04</option>
+                </select><span class="form-error">Field error</span>
+              </label>
+              <label class="has-float-label">
+                <textarea rows="3" cols="15" placeholder="How can we help you?" required></textarea><span>How can we help you?</span><span class="form-error">Field error</span>
+              </label>
+              <div class="text-center">
+                <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+          <div class="small-12 medium-6 cell">
+            <h5 class="text-blue">CONTACT COGNIZANT CAREERS</h5>
+            <p>If you are interested in an opportunity with Cognizant, please visit our <a href="#">Careers</a> page or visit the Cognizant Careers <a href="#">FAQs</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div><a id="scrollUp" href="#" title="Back to top"></a>
+    <script src="js/min/app-min.js?ckcachebust=91B45E854D768AC6E7C61E5CB26DA236"></script>
+  </body>
+</html>
