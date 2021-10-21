@@ -43,6 +43,14 @@
       "oAP" : "\/_BUILD\/.ftpconfig",
       "oF" : 0
     },
+    "\/.gitignore" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/.gitignore",
+      "oF" : 0
+    },
     "\/.history" : {
       "ft" : 65536,
       "oA" : 1,
@@ -1668,6 +1676,14 @@
       "oAP" : "\/_BUILD\/forms.html",
       "oF" : 0,
       "oS" : 0
+    },
+    "\/frontmatter.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/_BUILD\/frontmatter-min.json",
+      "oF" : 0,
+      "oO" : 1,
+      "oS" : 1
     },
     "\/gic-templates.pug" : {
       "cB" : 1,
@@ -17950,6 +17966,26 @@
       "hM" : 2,
       "oA" : 0,
       "oAP" : "\/_BUILD\/typography.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_footer.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/_BUILD\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_footer.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_navigation.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 1,
+      "oAP" : "\/_BUILD\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_navigation.html",
       "oF" : 0,
       "oS" : 0
     },
