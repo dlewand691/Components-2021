@@ -4904,13 +4904,13 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/cog-logo-2021.svg" : {
+    "\/images\/COG-Logo-2021.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/_BUILD\/images\/cog-logo-2021.svg",
+      "oAP" : "\/_BUILD\/images\/COG-Logo-2021.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },

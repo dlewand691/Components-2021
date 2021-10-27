@@ -1,12 +1,11 @@
 {
-  "name": "codekit-project",
-  "version": "1.0.0",
-  "description": "CodeKit created this starter package.json file. You should customize it appropriately. (If you intend to publish this project on npm, add an entry in the 'repository' field and remove the 'private' attribute, below.)",
+  "optionalDependencies": {},
   "scripts": {},
-  "author": "",
+  "name": "codekit-project",
+  "devDependencies": {},
   "license": "UNLICENSED",
   "repository": {},
-  "private": true,
+  "description": "CodeKit created this starter package.json file. You should customize it appropriately. (If you intend to publish this project on npm, add an entry in the 'repository' field and remove the 'private' attribute, below.)",
   "dependencies": {
     "aos": "^2.3.4",
     "flag-icon-css": "^3.5.0",
@@ -17,6 +16,9 @@
     "lazysizes": "^5.3.2",
     "markdown-it-sup": "^1.0.0",
     "motion-ui": "^2.0.3",
-    "swiper": "^7.0.9"
-  }
+    "swiper": "^7.1.0"
+  },
+  "private": true,
+  "author": "",
+  "version": "1.0.0"
 }

@@ -14389,7 +14389,6 @@ legend, blockquote,
 h5 {
   font-size: 22px;
   font-weight: normal;
-  font-weight: normal;
   font-feature-settings: "ss00";
   color: #2f78c4;
 }
@@ -14411,7 +14410,6 @@ h5 {
 .h6,
 h6 {
   font-size: 20px;
-  font-weight: bold;
   font-weight: bold;
   font-feature-settings: "ss01";
   color: #2f78c4;
@@ -15471,17 +15469,6 @@ a:link.large {
 a:link.large {
     font-size: 25px;
   }
-}
-
-a.small,
-a.tiny {
-  text-decoration: underline;
-  -webkit-text-decoration-color: inherit;
-          text-decoration-color: inherit;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.1rem;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
 }
 
 a.link-coverAll::before {
@@ -18471,47 +18458,47 @@ footer.theme-accent2-dark-gradient :is(h1, h2, h3, h4, h5, h6, p, ul, li, ol, em
 .bg-gray-medium :is(h1, h2, h3, p, ul, li, ol, em, strong):not(.menu) {
   color: inherit;
 }
-[class*=bg-accent3] a, [class*=bg-accent3] a:link,
-.bg-accent1-light a,
-.bg-accent1-light a:link,
-.bg-accent1-medium a,
-.bg-accent1-medium a:link,
-.bg-accent2-light a,
-.bg-accent2-light a:link,
-.bg-accent2-medium a,
-.bg-accent2-medium a:link,
-.bg-accent3-dark a,
-.bg-accent3-dark a:link,
-.bg-gray-light a,
-.bg-gray-light a:link,
-.bg-gray-medium a,
-.bg-gray-medium a:link {
+[class*=bg-accent3] > a, [class*=bg-accent3] > a:link,
+.bg-accent1-light > a,
+.bg-accent1-light > a:link,
+.bg-accent1-medium > a,
+.bg-accent1-medium > a:link,
+.bg-accent2-light > a,
+.bg-accent2-light > a:link,
+.bg-accent2-medium > a,
+.bg-accent2-medium > a:link,
+.bg-accent3-dark > a,
+.bg-accent3-dark > a:link,
+.bg-gray-light > a,
+.bg-gray-light > a:link,
+.bg-gray-medium > a,
+.bg-gray-medium > a:link {
   color: #000048 !important;
 }
-[class*=bg-accent3] a:hover, [class*=bg-accent3] a:link:hover,
-.bg-accent1-light a:hover,
-.bg-accent1-light a:link:hover,
-.bg-accent1-medium a:hover,
-.bg-accent1-medium a:link:hover,
-.bg-accent2-light a:hover,
-.bg-accent2-light a:link:hover,
-.bg-accent2-medium a:hover,
-.bg-accent2-medium a:link:hover,
-.bg-accent3-dark a:hover,
-.bg-accent3-dark a:link:hover,
-.bg-gray-light a:hover,
-.bg-gray-light a:link:hover,
-.bg-gray-medium a:hover,
-.bg-gray-medium a:link:hover {
+[class*=bg-accent3] > a:hover, [class*=bg-accent3] > a:link:hover,
+.bg-accent1-light > a:hover,
+.bg-accent1-light > a:link:hover,
+.bg-accent1-medium > a:hover,
+.bg-accent1-medium > a:link:hover,
+.bg-accent2-light > a:hover,
+.bg-accent2-light > a:link:hover,
+.bg-accent2-medium > a:hover,
+.bg-accent2-medium > a:link:hover,
+.bg-accent3-dark > a:hover,
+.bg-accent3-dark > a:link:hover,
+.bg-gray-light > a:hover,
+.bg-gray-light > a:link:hover,
+.bg-gray-medium > a:hover,
+.bg-gray-medium > a:link:hover {
   color: #26609d;
 }
 
 .bg-accent1-medium :is(h4, h5, h6) {
-  color: #000048;
+  color: #000048 !important;
 }
 
 .bg-accent3-dark :is(h4, h5, h6) {
-  color: #2f78c4;
+  color: #2f78c4 !important;
 }
 
 [class*=bg-accent3] .button {
@@ -25393,6 +25380,7 @@ footer a:link,
   font-weight: normal;
   color: #000048;
   transition: all 0.5s ease;
+  text-decoration: none;
 }
 footer a:hover,
 footer a:link:hover,
@@ -25406,7 +25394,7 @@ footer ul li,
 }
 footer .footer-primary,
 .footer .footer-primary {
-  background-color: #d0d0ce;
+  background-color: #e8e8e6;
 }
 
 footer.theme-primary {
@@ -25485,16 +25473,16 @@ footer.theme-accent2-dark-gradient .footer-site-map {
 
 .cog-logo {
   transition: all 0.5s ease;
-  width: 100px;
+  width: 150px;
 }
 @media (min-width: 320px) {
   .cog-logo {
-    width: calc(100px + 100 * (100vw - 320px) / 880);
+    width: calc(150px + 100 * (100vw - 320px) / 880);
   }
 }
 @media (min-width: 1200px) {
   .cog-logo {
-    width: 200px;
+    width: 250px;
   }
 }
 
@@ -25621,6 +25609,36 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   background: #2866a7 !important;
 }
 
+#navSubBar {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+/* ====================================================================================
+
+███    ██  █████  ██    ██
+████   ██ ██   ██ ██    ██
+██ ██  ██ ████████ ██    ██
+██  ██ ██ ██   ██  ██  ██
+██   ████ ██   ██   ████
+██████  ██      ██    ██ ███████     ██████   █████  ██████
+██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+██████  ██      ██    ██ █████       ██████  ███████ ██████
+██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+██████  ███████  ██████  ███████     ██████  ██   ██ ██   ██
+
+==================================================================================== */
+.navBarInPage a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.navBarInPage a.is-active {
+  background: #26efe9 !important;
+  color: #000048 !important;
+}
+.navBarInPage a.is-active:hover {
+  background: #06c7cc !important;
+}
+
 .title-bar {
   background: #ffffff;
 }
@@ -25647,18 +25665,34 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   color: #92bbe6;
 }
 
+.theme-primary {
+  /* ====================================================================================
+
+  ███    ██  █████  ██    ██
+  ████   ██ ██   ██ ██    ██
+  ██ ██  ██ ████████ ██    ██
+  ██  ██ ██ ██   ██  ██  ██
+  ██   ████ ██   ██   ████
+  ██████  ██      ██    ██ ███████     ██████   █████  ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ██      ██    ██ █████       ██████  ███████ ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ███████  ██████  ███████     ██████  ██   ██ ██   ██
+
+  ==================================================================================== */
+}
 .theme-primary .cog-logo {
   transition: all 0.5s ease;
-  width: 100px;
+  width: 150px;
 }
 @media (min-width: 320px) {
   .theme-primary .cog-logo {
-    width: calc(100px + 100 * (100vw - 320px) / 880);
+    width: calc(150px + 100 * (100vw - 320px) / 880);
   }
 }
 @media (min-width: 1200px) {
   .theme-primary .cog-logo {
-    width: 200px;
+    width: 250px;
   }
 }
 .theme-primary .secondary-nav .cog-logo {
@@ -25709,7 +25743,7 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   color: #26efe9;
 }
 .theme-primary .secondary-nav .language-menu {
-  background: #2f78c4;
+  background: #000048;
 }
 .theme-primary .secondary-nav .language-menu::before {
   display: block;
@@ -25719,7 +25753,7 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   border-width: 0.5rem;
   content: "";
   border-top-width: 0;
-  border-color: transparent transparent #2f78c4;
+  border-color: transparent transparent #000048;
   right: 4rem;
   left: auto;
   position: absolute;
@@ -25748,7 +25782,7 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   font-weight: normal;
   color: #ffffff;
   transition: all 0.5s ease;
-  background: #2f78c4;
+  background: #000048;
   color: #ffffff;
 }
 .theme-primary .primary-nav.top-bar .menu li.is-active a::after {
@@ -25768,7 +25802,7 @@ footer.theme-accent2-dark-gradient .footer-site-map {
 }
 .theme-primary .primary-nav.top-bar .submenu {
   min-width: 300px;
-  background: #2f78c4;
+  background: #000048;
   border: none;
 }
 .theme-primary .primary-nav.top-bar .is-dropdown-submenu {
@@ -25779,6 +25813,20 @@ footer.theme-accent2-dark-gradient .footer-site-map {
 }
 .theme-primary .primary-nav.top-bar .is-dropdown-submenu a:hover {
   background: #2866a7 !important;
+}
+.theme-primary #navSubBar {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+.theme-primary .navBarInPage a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.theme-primary .navBarInPage a.is-active {
+  background: #26efe9 !important;
+  color: #000048 !important;
+}
+.theme-primary .navBarInPage a.is-active:hover {
+  background: #06c7cc !important;
 }
 .theme-primary .title-bar {
   background: rgba(0, 0, 72, 0.85);
@@ -25802,18 +25850,34 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   color: #26efe9;
 }
 
+.theme-accent2-dark {
+  /* ====================================================================================
+
+  ███    ██  █████  ██    ██
+  ████   ██ ██   ██ ██    ██
+  ██ ██  ██ ████████ ██    ██
+  ██  ██ ██ ██   ██  ██  ██
+  ██   ████ ██   ██   ████
+  ██████  ██      ██    ██ ███████     ██████   █████  ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ██      ██    ██ █████       ██████  ███████ ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ███████  ██████  ███████     ██████  ██   ██ ██   ██
+
+  ==================================================================================== */
+}
 .theme-accent2-dark .cog-logo {
   transition: all 0.5s ease;
-  width: 100px;
+  width: 150px;
 }
 @media (min-width: 320px) {
   .theme-accent2-dark .cog-logo {
-    width: calc(100px + 100 * (100vw - 320px) / 880);
+    width: calc(150px + 100 * (100vw - 320px) / 880);
   }
 }
 @media (min-width: 1200px) {
   .theme-accent2-dark .cog-logo {
-    width: 200px;
+    width: 250px;
   }
 }
 .theme-accent2-dark .secondary-nav .cog-logo {
@@ -25935,6 +25999,20 @@ footer.theme-accent2-dark-gradient .footer-site-map {
 .theme-accent2-dark .primary-nav.top-bar .is-dropdown-submenu a:hover {
   background: #000024 !important;
 }
+.theme-accent2-dark #navSubBar {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+.theme-accent2-dark .navBarInPage a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.theme-accent2-dark .navBarInPage a.is-active {
+  background: #26efe9 !important;
+  color: #000048 !important;
+}
+.theme-accent2-dark .navBarInPage a.is-active:hover {
+  background: #06c7cc !important;
+}
 .theme-accent2-dark .title-bar {
   background: rgba(47, 120, 196, 0.85);
 }
@@ -25957,18 +26035,34 @@ footer.theme-accent2-dark-gradient .footer-site-map {
   color: #26efe9;
 }
 
+.theme-cfow {
+  /* ====================================================================================
+
+  ███    ██  █████  ██    ██
+  ████   ██ ██   ██ ██    ██
+  ██ ██  ██ ████████ ██    ██
+  ██  ██ ██ ██   ██  ██  ██
+  ██   ████ ██   ██   ████
+  ██████  ██      ██    ██ ███████     ██████   █████  ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ██      ██    ██ █████       ██████  ███████ ██████
+  ██   ██ ██      ██    ██ ██          ██   ██ ██   ██ ██   ██
+  ██████  ███████  ██████  ███████     ██████  ██   ██ ██   ██
+
+  ==================================================================================== */
+}
 .theme-cfow .cog-logo {
   transition: all 0.5s ease;
-  width: 100px;
+  width: 150px;
 }
 @media (min-width: 320px) {
   .theme-cfow .cog-logo {
-    width: calc(100px + 100 * (100vw - 320px) / 880);
+    width: calc(150px + 100 * (100vw - 320px) / 880);
   }
 }
 @media (min-width: 1200px) {
   .theme-cfow .cog-logo {
-    width: 200px;
+    width: 250px;
   }
 }
 .theme-cfow .secondary-nav .cog-logo {
@@ -26089,6 +26183,20 @@ footer.theme-accent2-dark-gradient .footer-site-map {
 }
 .theme-cfow .primary-nav.top-bar .is-dropdown-submenu a:hover {
   background: #292b2d !important;
+}
+.theme-cfow #navSubBar {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+.theme-cfow .navBarInPage a:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+.theme-cfow .navBarInPage a.is-active {
+  background: #26efe9 !important;
+  color: #000048 !important;
+}
+.theme-cfow .navBarInPage a.is-active:hover {
+  background: #06c7cc !important;
 }
 .theme-cfow .title-bar {
   background: rgba(83, 86, 90, 0.97);
@@ -30364,7 +30472,7 @@ button.swiper-pagination-bullet {
 }
 
 .accent2-arrows {
-  --swiper-navigation-color: #6aa2dc;
+  --swiper-navigation-color: #2f78c4;
   color: var(--swiper-navigation-color);
 }
 

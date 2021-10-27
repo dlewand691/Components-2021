@@ -5,7 +5,7 @@ block vars
 block content
 
   h1!= pageTitle
-  footer.theme-blue
+  footer.theme-default
     // =============================================================================================
     // ███████  ██████   ██████  ████████ ███████ ██████      ███████  ██████   ██████ ██  █████  ██
     // ██      ██    ██ ██    ██    ██    ██      ██   ██     ██      ██    ██ ██      ██ ██   ██ ██
@@ -59,6 +59,11 @@ block content
       .grid-container
         .grid-x.grid-padding-x.pt2(data-attribute="whiteFooterTag")
           .small-12.medium-9.cell(data-attr ibute="whiteFooterMenuOneTag")
+            //- ██ ███    ██ ██████  ██    ██ ███████ ████████ ██████  ██ ███████ ███████
+            //- ██ ████   ██ ██   ██ ██    ██ ██         ██    ██   ██ ██ ██      ██
+            //- ██ ██ ██  ██ ██   ██ ██    ██ ███████    ██    ██████  ██ █████   ███████
+            //- ██ ██  ██ ██ ██   ██ ██    ██      ██    ██    ██   ██ ██ ██           ██
+            //- ██ ██   ████ ██████   ██████  ███████    ██    ██   ██ ██ ███████ ███████
             .grid-x.grid-padding-x
               .cell
                 h6 INDUSTRIES
@@ -69,45 +74,52 @@ block content
                     p.mb0(title="")
                       strong
                   li
-                    a(href="/banking-financial-services", title="Banking & Financial Services", target="_blank") Banking &amp; Financial Services
+                    a(href="#", target="_blank") Automotive
                   li
-                    a(href="/telecommunications", title="Communications") Communications
+                    a(href="#", target="_blank") Banking
                   li
-                    a(href="/consumer-goods", title="Consumer Goods") Consumer Goods
+                    a(href="#", target="_blank") Capital Markets
                   li
-                    a(href="/education", title="Education") Education
+                    a(href="#") Communications, Media & Technology
                   li
-                    a(href="/energy-utility", title="Energy & Utilities") Energy &amp; Utilities
+                    a(href="#") Consumer Goods
+                  li
+                    a(href="#") Education
               .cell
                 ul.no-bullet.small
                   li
                     p.mb0(title="")
                       strong
                   li
-                    a(href="/healthcare", title="Healthcare") Healthcare
+                    a(href="#") Healthcare
                   li
-                    a(href="/information-services", title="Information Services") Information Services
+                    a(href="#") Information Services
                   li
-                    a(href="/insurance", title="Insurance") Insurance
+                    a(href="#") Insurance
                   li
-                    a(href="/life-sciences", title="Life Sciences") Life Sciences
+                    a(href="#") Life Sciences
                   li
-                    a(href="/manufacturing", title="Manufacturing") Manufacturing
+                    a(href="#") Manufacturing
               .cell
                 ul.no-bullet.small
                   li
                     p.mb0(title="")
                       strong
                   li
-                    a(href="/information-media-entertainment", title="Media & Entertainment") Media &amp; Entertainment
+                    a(href="#") Oil & Gas
                   li
-                    a(href="/retail", title="Retail") Retail
+                    a(href="#") Retail
                   li
-                    a(href="/technology", title="Technology") Technology
+                    a(href="#") Transportation &amp; Logistics
                   li
-                    a(href="/transportation-logistics", title="Transportation & Logistics") Transportation &amp; Logistics
+                    a(href="#") Travel &amp; Hospitality
                   li
-                    a(href="/travel-hospitality", title="Travel & Hospitality") Travel &amp; Hospitality
+                    a(href="#") Utilities
+            //- ███████ ███████ ██████  ██    ██ ██  ██████ ███████ ███████
+            //- ██      ██      ██   ██ ██    ██ ██ ██      ██      ██
+            //- ███████ █████   ██████  ██    ██ ██ ██      █████   ███████
+            //-     ██ ██      ██   ██  ██  ██  ██ ██      ██           ██
+            //- ███████ ███████ ██   ██   ████   ██  ██████ ███████ ███████
             .grid-x.grid-padding-xtext-center
               .cell
                 h6 SERVICES
@@ -115,53 +127,52 @@ block content
               .cell
                 ul.no-bullet.small
                   li
-                    a(href="/cognizant-digital-business", title="Cognizant Digital Business")
-                      strong Cognizant Digital Business
+                    a(href="#")
+                      strong Digital Business & Technology
                   li
-                    a(href="/cognizant-digital-business/applied-ai-analytics", title="AI & Analytics") AI &amp; Analytics
+                    a(href="#") Application Services & Modernization
                   li
-                    a(href="/cognizant-digital-business/digital-engineering-services", title="Digital Engineering") Digital Engineering
+                    a(href="#") Artificial Intelligence
                   li
-                    a(href="/cognizant-digital-business/digital-strategy", title="Digital Strategy") Digital Strategy
+                    a(href="#") Cloud Enablement
                   li
-                    a(href="/cognizant-digital-business/enterprise-iot-solutions", title="Intelligent Products & Solutions") Intelligent Products &amp; Solutions
+                    a(href="#") Cognizant Infrastructure Services
                   li
-                    a(href="/cognizant-digital-business/interactive-services", title="Interactive") Interactive
+                    a(href="#") Cognizant Security
+                  li
+                    a(href="#") Core Modernization
               .cell
                 ul.no-bullet.small
                   li
-                    a(href="/cognizant-digital-operations", title="Cognizant Digital Operations")
-                      strong Cognizant Digital Operations
+                    a(href="#")  
                   li
-                    a(href="/cognizant-digital-operations/enterprise-services", title="Enterprise Services") Enterprise Services
+                    a(href="#") Digital Experience
                   li
-                    a(href="/cognizant-digital-operations/industry-platform-solutions", title="Industry & Platform Solutions") Industry &amp; Platform Solutions
+                    a(href="#") Digital Strategy
                   li
-                    a(href="/cognizant-digital-operations/intelligent-process-automation", title="Intelligent Process Automation") Intelligent Process Automation
+                    a(href="#") Enterprise Application Services
+                  li
+                    a(href="#") Internet of Things
+                  li
+                    a(href="#") Quality Engineering & Assurance
+                  li
+                    a(href="#") Software Product Engineering
               .cell
                 ul.no-bullet.small
                   li
-                    a(href="/cognizant-digital-systems-technology", title="Cognizant Digital Systems & Technology")
-                      strong Cognizant Digital Systems &amp; Technology
+                    a(href="#")
+                      strong Digital Business Operations
                   li
-                    a(href="/cognizant-digital-systems-technology/application-development-services", title="Application Services") Application Services
+                    a(href="#") Business Process Services
                   li
-                    a(href="/cognizant-digital-systems-technology/cloud-enablement-services", title="Cloud Enablement") Cloud Enablement
+                    a(href="#") Enterprise Services
                   li
-                    a(href="/cognizant-digital-systems-technology/infrastructure-services", title="Cognizant Infrastructure Services") Cognizant Infrastructure Services
+                    a(href="#") Industry & Platform Solutions
                   li
-                    a(href="/cognizant-digital-systems-technology/cybersecurity-services", title="Cognizant Security") Cognizant Security
-                  li
-                    a(href="/cognizant-digital-systems-technology/core-application-modernization", title="Core Modernization") Core Modernization
-                  li
-                    a(href="/cognizant-digital-business/digital-engineering-services", title="Digital Engineering") Digital Engineering
-                  li
-                    a(href="/cognizant-digital-systems-technology/enterprise-application-services", title="Enterprise Application Services") Enterprise Application Services
-                  li
-                    a(href="/cognizant-digital-systems-technology/enterprise-quality-engineering-assurance", title="Quality Engineering & Assurance") Quality Engineering &amp; Assurance
+                    a(href="#") Intelligent Process Automation
             .grid-x.grid-padding-xtext-center
               .cell
-                a(href="/consulting", title="COGNIZANT CONSULTING")
+                a(href="#")
                   h6 COGNIZANT CONSULTING
             .grid-x.grid-padding-x.small-up-1.medium-up-3
             .grid-x.grid-padding-xtext-center
@@ -171,87 +182,101 @@ block content
               .cell
                 ul.no-bullet.small
                   li
-                    p.small.mb0(title="Our Media & Publications")
+                    p.small.mb0(title="")
                       strong Our Media &amp; Publications
                   li
-                    a(href="/latest-thinking", title="All Latest Thinking") All Latest Thinking
+                    a(href="#") All Latest Thinking
                   li
-                    a(href="/perspectives", title="Perspectives") Perspectives
+                    a(href="#") Browse Case Studies
                   li
-                    a(href="/cognizanti", title="Cognizanti Journal") Cognizanti Journal
+                    a(href="#", target="_blank") Cognizant Podcasts
                   li
-                    a(href="https://digitally.cognizant.com/", title=" Digitally Cognizant Blog", target="_blank")  Digitally Cognizant Blog
+                    a(href="#") Cognizanti Journal
                   li
-                    a(href="https://soundcloud.com/cognizant-worldwide/", title="Cognizant Podcasts", target="_blank") Cognizant Podcasts
+                    a(href="#", target="_blank")  Digitally Cognizant Blog
                   li
-                    a(href="/case-studies", title="Browse Case Studies") Browse Case Studies
+                    a(href="#") Infographics
+                  li
+                    a(href="#") Perspectives
               .cell
                 ul.no-bullet.small
                   li
-                    p.small.mb0(title="Key Themes")
+                    p.small.mb0(title="")
                       strong Key Themes
                   li
-                    a(href="/blockchain", title="Blockchain") Blockchain
+                    a(href="#") Code Halos
                   li
-                    a(href="/artificial-intelligence", title="Artificial Intelligence") Artificial Intelligence
+                    a(href="#") Digital Maturity Research
                   li
-                    a(href="/when-machines-do-everything", title="When Machines Do Everything") When Machines Do Everything
+                    a(href="#") When Machines Do Everything
                   li
-                    a(href="/world-economic-forum-highlights-2018", title="World Economic Forum 2018—Davos") World Economic Forum 2018&mdash;Davos
-                  li
-                    a(href="/code-halos", title="Code Halos") Code Halos
+                    a(href="#") World Economic Forum 2018&mdash;Davos
               .cell
                 ul.no-bullet.small
                   li
-                    a(href="/futureofwork", title="Center for the Future of Work")
+                    a(href="#")
                       strong Center for the Future of Work
                   li
-                    a(href="/future-of-work", title="Explore the Future of Work") Explore the Future of Work
+                    a(href="#", target="_blank") 21 Jobs of the Future
                   li
-                    a(href="/digital-workforce-of-the-future", title="Digital Workforce of the Future") Digital Workforce of the Future
+                    a(href="#") Digital Workforce of the Future
                   li
-                    a(href="/the-work-ahead", title="The Work Ahead") The Work Ahead
+                    a(href="#") Explore the Future of Work
                   li
-                    a(href="/business-value-of-trust", title="Business Value of Trust") Business Value of Trust
+                    a(href="#") Jobs of the Future Index
                   li
-                    a(href="http://www.futureofwork.com/whitepaper/21-jobs-of-the-future-a-guide-to-getting-and-staying-employed-over-the-next-10-years", title="21 Jobs of the Future", target="_blank") 21 Jobs of the Future
+                    a(href="#") Our Post-COVID Future
+                  li
+                    a(href="#") The Work Ahead
           .small-12.medium-3.cell(data-attribute="whiteFooterMenuTwoTag")
-            a(href="/about-cognizant", title="ABOUT COGNIZANT")
+            a(href="#")
               h6 ABOUT COGNIZANT
             ul.no-bullet.small
               li
-                a(href="/about-cognizant/board-of-directors", title="Board of Directors") Board of Directors
+                a(href="#") 2020 in Focus
               li
-                a(href="/events", title="Cognizant Events") Cognizant Events
+                a(href="#") Be.Cognizant
               li
-                a(href="/contactus", title="Contact Us") Contact Us
+                a(href="#") Board of Directors
               li
-                a(href="/about-cognizant/corporate-governance", title="Corporate Governance") Corporate Governance
+                a(href="#") Client Briefing Program
               li
-                a(href="/about-cognizant/corporate-integrity", title="Corporate Integrity") Corporate Integrity
+                a(href="#") Cognizant Events
               li
-                a(href="/about-cognizant/core-values", title="Culture & Values") Culture &amp; Values
+                a(href="#") Contact Us
               li
-                a(href="/about-cognizant/executive-leadership", title="Executive Leadership") Executive Leadership
+                a(href="#") Corporate Governance
               li
-                a(href="http://news.cognizant.com/", title="News & Press Releases") News &amp; Press Releases
+                a(href="#") Corporate Integrity
               li
-                a(href="/partners", title="Partnerships") Partnerships
+                a(href="#") Culture &amp; Values
               li
-                a(href="/about-cognizant/sustainability", title="Sustainability") Sustainability
+                a(href="#") Diversity & Inclusion
               li
-                a(href="/about-cognizant/talent-worldwide", title="Talent Worldwide") Talent Worldwide
+                a(href="#") ESG
               li
-                a(href="/about-cognizant/the-cognizant-growth-story", title="The Cognizant Growth Story") The Cognizant Growth Story
+                a(href="#") Leadership Team
               li
-                a(href="/women-empowered", title="Women Empowered") Women Empowered
+                a(href="#") News &amp; Press Releases
+              li
+                a(href="#") Partnerships
+              li
+                a(href="#") Public Policy
+              li
+                a(href="#") Sponsorships
+              li
+                a(href="#") Talent Worldwide
+              li
+                a(href="#") Women Empowered
+            a(href="#")
+              h6 GLOSSARY
             h6 INFORMATION FOR SUPPLIERS
             ul.no-bullet.small
               li
-                a(href="/Procure-to-pay", title="Procure-to-Pay") Procure-to-Pay
+                a(href="#") Procure-to-Pay
             .cell
               .hex-link
-                #teconsent(consent="0,1,2")
-                  script(src="//consent.truste.com/notice?domain=cognizant.com&c=teconsent&js=bb&noticeType=bb&cookieLink=https://www.cognizant.com/cookiepolicy", id="truste_0.8992182165621561")
+                //- #teconsent(consent="0,1,2")
+                  //- script(src="//consent.truste.com/notice?domain=cognizant.com&c=teconsent&js=bb&noticeType=bb&cookieLink=https://www.cognizant.com/cookiepolicy", id="truste_0.8992182165621561")
                   //- a#icon-id043853575194498373(tabindex="0", role="button", lang="en")
                     img(src="https://consent.trustarc.com/get?name=trustarc_cookiepreferences.png", alt="Cookie Preference", style="border: none; cursor: pointer;")
