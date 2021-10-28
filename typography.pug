@@ -16024,11 +16024,11 @@ block content
             button.button Group
 
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-1 Gradient button theme 1
+          button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-2 Gradient button theme 2
+          button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-3 Gradient button theme 3
+          button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
         p.m0
           button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
         p.m0
@@ -16107,11 +16107,11 @@ block content
             button.button Group
 
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-1 Gradient button theme 1
+          button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-2 Gradient button theme 2
+          button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
         p.m0
-          button.button-default.button.arrow.bg-grd-theme-3 Gradient button theme 3
+          button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
         p.m0
           button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
         p.m0
@@ -16179,192 +16179,37 @@ block content
   h1 Background Colors
   .grid-container.mb2
     .grid-x
-      .cell.p1.auto.bg-primary
+      .cell.p2.auto.bg-primary
         p.m0
-          strong Primary or Black
+          strong Primary
           br
-          | #000048
-          br
-          | $blue or $black
+          | $primary
           br
           small: em (Text defaults to complimenting color)
         a.small(href="#") (Links default to complimenting color)
+        br
         a.m0.button-tiny-arrow.tiny.button.arrow
       .cell.p1.auto.bd1.bg-white
         p.m0
           strong White
           br
-          | #FFFFFF
-          br
           | $white
           br
           small: em (Text defaults to complimenting color)
         a.small(href="#") (Links default to complimenting color)
+        br
         a.m0.button-tiny-arrow.tiny.button.arrow
     .grid-x.large-up-3
-      .cell.p1.bg-accent1-dark
-        p.m0
-          strong Accent 1, Dark
+      each bgColor in ["accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
+        .cell.p2(class="bg-" + bgColor)
+          p.m0
+            !="$" + bgColor
+            br
+            small: em (Text defaults to complimenting color)
+          a.small(href="#") (Links default to complimenting color)
           br
-          | #2E318E
-          br
-          | $accent1-dark
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent1-medium
-        p.m0
-          strong Accent 1, Medium
-          br
-          | #7373D8
-          br
-          | $accent1-medium
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent1-light
-        p.m0
-          strong Accent 1, Light
-          br
-          | #85A0F9
-          br
-          | $accent1-light
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent2-dark
-        p.m0
-          strong Accent 2, Dark
-          br
-          | #2F78C4
-          br
-          | $accent2-dark
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent2-medium
-        p.m0
-          strong Accent 2, Medium
-          br
-          | #6AA2DC
-          br
-          | $accent2-medium
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent2-light
-        p.m0
-          strong Accent 2, Light
-          br
-          | #92BBE6
-          br
-          | $accent2-light
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent3-dark
-        p.m0
-          strong Teal, Dark
-          br
-          | #06C7CC
-          br
-          | $accent2-dark
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent3-medium
-        p.m0
-          strong Teal, Medium
-          br
-          | #26EFE9
-          br
-          | $accent2-medium
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.bg-accent3-light
-        p.m0
-          strong Teal, Light
-          br
-          | #97F5F7
-          br
-          | $accent2-light
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
+          a.m0.button-tiny-arrow.tiny.button.arrow
     .grid-x
-      //- .cell.p1.auto.bg-primary
-        p.m0
-          strong Black
-          br
-          | #000000
-          br
-          | $black
-        p.m0: small: em (Default text color)
-      .cell.p1.auto.bg-gray-dark
-        p.m0
-          strong Gray, dark
-          br
-          | #53565A
-          br
-          | $gray-dark
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.auto.bg-gray-medium
-        p.m0
-          strong Gray, medium
-          br
-          | #97999B
-          br
-          | $gray-medium
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.auto.bg-gray-light
-        p.m0
-          strong Gray, light
-          br
-          | #D0D0CE
-          br
-          | $gray-light
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.auto.bg-gray-lighter
-        p.m0
-          strong Gray, lighter
-          br
-          | #E8E8E6
-          br
-          | $gray-lighter
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.auto.bg-gray-lightest
-        p.m0
-          strong Gray, lightest
-          br
-          | #F7F7F5
-          br
-          | $gray-lightest
-          br
-          small: em (Text defaults to complimenting color)
-        a.small(href="#") (Links default to complimenting color)
-        a.m0.button-tiny-arrow.tiny.button.arrow
       .cell.p2.bg-grd-rl-dark-accent2-medium
         h6.m0 Accent 2, medium to Primary Gradient
       .cell.p2.bg-grd-theme-1
@@ -16744,365 +16589,74 @@ block content
   h1 Background options, gradient
   .grid-container.mb2
     .grid-x.grid-margin-x.grid-margin-y.medium-up-4(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
-      .cell.p2.bg-grd-accent2-radial
-        p.m0
-          strong Primary Radial
-          br
-          | $bg-grd-accent2-radial
-      .cell.p2.bg-grd-accent2-radial-top
-        p.m0
-          strong Primary Radial, top
-          br
-          | $bg-grd-accent2-radial-top
-      .cell.p2.bg-grd-accent2-radial-bottom
-        p.m0
-          strong Primary Radial, bottom
-          br
-          | $bg-grd-accent2-radial-bottom
-      .cell.p2.bg-grd-dark-accent2-dark
-        p.m0
-          strong Primary Linear, dark to blue dark
-          br
-          | $bg-grd-dark-accent2-dark
-      .cell.p2.bg-grd-tb-dark-accent2-medium
-        p.m0
-          strong Primary Linear, top to bottom, dark blue to medium blue
-          br
-          | $bg-grd-tb-dark-accent2-medium
-      .cell.p2.bg-grd-bt-dark-accent2-medium
-        p.m0
-          strong Primary Linear, bottom to top, dark blue to medium blue
-          br
-          | $bg-grd-bt-dark-accent2-medium
-      .cell.p2.bg-grd-lr-dark-accent2-medium
-        p.m0
-          strong Primary Linear, left to right, dark blue to medium blue
-          br
-          | $bg-grd-lr-dark-accent2-medium
-      .cell.p2.bg-grd-rl-dark-accent2-medium
-        p.m0
-          strong Primary Linear, right to left, dark blue to medium blue
-          br
-          | $bg-grd-rl-dark-accent2-medium
-      .cell.p2.bg-grd-tb-dark-primary
-        p.m0
-          strong Primary Linear, top to bottom, dark blue to blue
-          br
-          | $bg-grd-tb-dark-primary
-      .cell.p2.bg-grd-lr-dark-primary
-        p.m0
-          strong Primary Linear, left to right, dark blue to blue
-          br
-          | $bg-grd-lr-dark-primary
+      each gradientBg in ["bg-grd-accent2-radial", "bg-grd-accent2-radial-top", "bg-grd-accent2-radial-bottom", "bg-grd-dark-accent2-dark", "bg-grd-tb-dark-accent2-medium", "bg-grd-bt-dark-accent2-medium", "bg-grd-lr-dark-accent2-medium", "bg-grd-rl-dark-accent2-medium", "bg-grd-tb-dark-primary", "bg-grd-lr-dark-primary"]
+        .cell.p3(class=gradientBg)
+          p.m0
+            != "$" + gradientBg
 
   hr
   #textcolor
   h1 Text color options
   .grid-container.mb2
     .grid-x.medium-up-3
-      .cell.p1.column-block
-        p.m0.text-black
-          strong Black
-          br
-          | $text-black
-      .cell.p1.column-block.bg-primary
-        p.m0.text-white
-          strong White
-          br
-          | $text-white
-      .cell.p1.column-block
-        p.m0.text-primary
-          strong Primary
-          br
-          | $text-primary
-      .cell.p1.column-block
-        p.m0.text-accent1-dark
-          strong accent1-dark
-          br
-          | $text-accent1-dark
-      .cell.p1.column-block
-        p.m0.text-accent1-medium
-          strong accent1-medium
-          br
-          | $text-accent1-medium
-      .cell.p1.column-block
-        p.m0.text-accent1-light
-          strong accent1-light
-          br
-          | $text-accent1-light
-      .cell.p1.column-block
-        p.m0.text-accent2-dark
-          strong accent2-dark
-          br
-          | $text-accent2-dark
-      .cell.p1.column-block
-        p.m0.text-accent2-medium
-          strong accent2-medium
-          br
-          | $text-accent2-medium
-      .cell.p1.column-block
-        p.m0.text-accent2-light
-          strong accent2-light
-          br
-          | $text-accent2-light
-      .cell.p1.column-block
-        p.m0.text-accent3-dark
-          strong accent3-dark
-          br
-          | $text-accent3-dark
-      .cell.p1.column-block
-        p.m0.text-accent3-medium
-          strong accent3-medium
-          br
-          | $text-accent3-medium
-      .cell.p1.column-block
-        p.m0.text-accent3-light
-          strong accent3-light
-          br
-          | $text-accent3-light
-      .cell.p1.column-block
-        p.m0.text-gray-dark
-          strong gray-dark
-          br
-          | $text-gray-dark
-      .cell.p1.column-block
-        p.m0.text-gray-medium
-          strong gray-medium
-          br
-          | $text-gray-medium
-      .cell.p1.column-block
-        p.m0.text-gray-light
-          strong gray-light
-          br
-          | $text-gray-light
+      each textColor in ["white", "primary", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
+        .cell.p1.column-block
+          p.m0(class="text-" + textColor)
+            != "$text-" + textColor
 
 
   hr
   #borders
   h1 Border color options
   h5 Widths 1px-4px
-  .grid-container.mb2
+  .grid-container.mb2.bg-gray-medium
     .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch
-      .cell.column-block.bg-primary.p-half
-        p.m0.p1.bd-white-4
-          strong White
-          br
-          | $bd-white
-      .cell.column-block.p-half
-        p.m0.p1.bd-primary-4
-          strong Primary
-          br
-          | $bd-primary
-    .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent1-dark-4
-          strong Accent 1, dark
-          br
-          | $bd-accent1-dark
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent1-medium-4
-          strong Accent 1, medium
-          br
-          | $bd-accent1-medium
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent1-light-4
-          strong Accent 1, light
-          br
-          | $bd-accent1-light
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent2-dark-4
-          strong Accent 2, dark
-          br
-          | $bd-accent2-dark
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent2-medium-4
-          strong Accent 2, medium
-          br
-          | $bd-accent2-medium
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent2-light-4
-          strong Accent 2, light
-          br
-          | $bd-accent2-light
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent3-dark-4
-          strong Accent 3, dark
-          br
-          | $bd-accent3-dark
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent3-medium-4
-          strong Accent 3, medium
-          br
-          | $bd-accent3-medium
-      .cell.column-block.p-half
-        p.m0.p1.bd-accent3-light-4
-          strong Accent 3, light
-          br
-          | $bd-accent3-light
-      .cell.column-block.p-half
-        p.m0.p1.bd-gray-dark-4
-          strong Gray, dark
-          br
-          | $bd-gray
-      .cell.column-block.p-half
-        p.m0.p1.bd-gray-medium-4
-          strong Gray, medium
-          br
-          | $bd-gray-medium
-      .cell.column-block.p-half
-        p.m0.p1.bd-gray-light-4
-          strong Gray, light
-          br
-          | $bd-gray-light
-      .cell.column-block.p-half
-        p.m0.p1.bd-gray-lighter-4
-          strong Gray, lighter
-          br
-          | $bd-gray-lighter
-      .cell.column-block.p-half
-        p.m0.p1.bd-gray-lightest-4
-          strong Gray, lightest
-          br
-          | $bd-gray-lightest
-      .cell.column-block.p-half
+      each borderVal in ["white", "primary", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "grd-theme-1", "grd-theme-2", "grd-theme-3"]
+        .cell.column-block.p1
+          p(class="m0 p1" class="bd-" + borderVal + "-4")
+            != '$bd-' + borderVal
 
-      .cell.column-block.p-half
-        p.m0.p1.bd-grd-theme-1
-          strong Gradient, theme 1
-          br
-          | $bd-grd-theme-1
-      .cell.column-block.p-half
-        p.m0.p1.bd-grd-theme-2
-          strong Gradient, theme 2
-          br
-          | $bd-grd-theme-2
-      .cell.column-block.p-half
-        p.m0.p1.bd-grd-theme-3
-          strong Gradient, theme 3
-          br
-          | $bd-grd-theme-3
+  hr
+  #borders-sides
+  h1 Border sides color options
+  h5 Widths 1px-4px
+  .grid-container.mb2.bg-gray-medium
+    .grid-x.grid-margin-x.medium-up-4.flex-container.align-stretch.p2
+      each borderVal in ["t-white", "r-white", "b-white", "l-white", "t-primary", "r-primary", "b-primary", "l-primary", "t-accent1-dark", "r-accent1-dark", "b-accent1-dark", "l-accent1-dark", "t-accent1-medium", "r-accent1-medium", "b-accent1-medium", "l-accent1-medium", "t-accent1-light", "r-accent1-light", "b-accent1-light", "l-accent1-light", "t-accent2-dark", "r-accent2-dark", "b-accent2-dark", "l-accent2-dark", "t-accent2-medium", "r-accent2-medium", "b-accent2-medium", "l-accent2-medium", "t-accent2-light", "r-accent2-light", "b-accent2-light", "l-accent2-light", "t-accent3-dark", "r-accent3-dark", "b-accent3-dark", "l-accent3-dark", "t-accent3-medium", "r-accent3-medium", "b-accent3-medium", "l-accent3-medium", "t-accent3-light", "r-accent3-light", "b-accent3-light", "l-accent3-light", "t-gray-dark", "r-gray-dark", "b-gray-dark", "l-gray-dark", "t-gray-medium", "r-gray-medium", "b-gray-medium", "l-gray-medium", "t-gray-light", "r-gray-light", "b-gray-light", "l-gray-light", "t-gray-lighter", "r-gray-lighter", "b-gray-lighter", "l-gray-lighter", "t-gray-lightest", "r-gray-lightest", "b-gray-lightest", "l-gray-lightest", "t-grd-theme-1", "r-grd-theme-1", "b-grd-theme-1", "l-grd-theme-1", "t-grd-theme-2", "r-grd-theme-2", "b-grd-theme-2", "l-grd-theme-2", "t-grd-theme-3", "r-grd-theme-3", "b-grd-theme-3", "l-grd-theme-3"]
+        .cell.column-block.p1
+          p(class="m0 p1" class="bd-" + borderVal + "-4")
+            != '$bd-' + borderVal
 
   hr
   #imageoverlaysolid
   h1 Image overlay SOLID color options
   .grid-container.mb2
     .grid-x.grid-margin-x.medium-up-5.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
-      .cell.column-block.bgOverlay-primary
-        p.m0.p2.bgOverlay-primary
-          strong Primary
-          br
-          | $bgOverlay-primary
-      .cell.column-block
-        p.m0.p2.bgOverlay-accent2-light
-          strong Accent 2, light
-          br
-          | $bgOverlay-accent2-light
-      .cell.column-block
-        p.m0.p2.bgOverlay-accent2-dark
-          strong Accent 2, dark
-          br
-          | $bgOverlay-accent2-dark
-      .cell.column-block
-        p.m0.p2.bgOverlay-white
-          strong White
-          br
-          | $bgOverlay-white
-      .cell.column-block
-        p.m0.p2.bgOverlay-black
-          strong Black
-          br
-          | $bgOverlay-black
+      each imageOverlaySolid in ["bgOverlay-primary", "bgOverlay-accent2-light", "bgOverlay-accent2-dark", "bgOverlay-white"]
+        .cell.column-block
+          p.m0.p3(class=imageOverlaySolid)
+            !="$" + imageOverlaySolid
 
   hr
   #imageoverlay
   h1 Image overlay GRADIENT color options
   .grid-container.mb2
     .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
-      .cell.column-block.gradient-overlay-primary
-        .relative.z1
-          p.m0.p2
-            strong Primary
-            br
-            | $gradient-overlay-primary
-      .cell.column-block.gradient-overlay-primary-full
-        .relative.z1
-          p.m0.p2
-            strong Primary, full
-            br
-            | $gradient-overlay-accent2-full
-      .cell.column-block.gradient-overlay-primary-angled
-        .relative.z1
-          p.m0.p2
-            strong Primary, angled
-            br
-            | $gradient-overlay-accent2-angled
-      .cell.column-block.gradient-overlay-accent2-dark
-        .relative.z1
-          p.m0.p2
-            strong Accent 2, dark
-            br
-            | $gradient-overlay-accent2-dark
-      .cell.column-block.gradient-overlay-accent2-dark-full
-        .relative.z1
-          p.m0.p2
-            strong Accent 2, dark full
-            br
-            | $gradient-overlay-accent2-dark-full
-      .cell.column-block.gradient-overlay-accent2-dark-angled
-        .relative.z1
-          p.m0.p2
-            strong Accent 2, dark angled
-            br
-            | $gradient-overlay-accent2-dark-angled
-      .cell.column-block.gradient-overlay-white
-        .relative.z1
-          p.m0.p2
-            strong White
-            br
-            | $gradient-overlay-white
-      .cell.column-block.gradient-overlay-white-full
-        .relative.z1
-          p.m0.p2
-            strong White, full
-            br
-            | $gradient-overlay-white-full
-      .cell.column-block.gradient-overlay-white-angled
-        .relative.z1
-          p.m0.p2
-            strong White, angled
-            br
-            | $gradient-overlay-white-angled
-      .cell.column-block.gradient-overlay-black
-        .relative.z1
-          p.m0.p2
-            strong Black
-            br
-            | $gradient-overlay-black
-      .cell.column-block.gradient-overlay-black-full
-        .relative.z1
-          p.m0.p2
-            strong Black, full
-            br
-            | $gradient-overlay-black-full
-      .cell.column-block.gradient-overlay-black-angled
-        .relative.z1
-          p.m0.p2
-            strong Black, angled
-            br
-            | $gradient-overlay-black-angled
+      each imageOverlayGradient in ["gradient-overlay-primary", "gradient-overlay-primary-full", "gradient-overlay-primary-angled", "gradient-overlay-accent2-dark", "gradient-overlay-accent2-dark-full", "gradient-overlay-accent2-dark-angled", "gradient-overlay-white", "gradient-overlay-white-full", "gradient-overlay-white-angled"]
+        .cell.column-block(class=imageOverlayGradient)
+          .relative.z1
+            p.m0.p3
+              != "$" + imageOverlayGradient
 
   hr
   #hrdividers
   h1="Horizontal (<hr>) dividers"
   .grid-container.mb2
-    .grid-x
-      .cell
-        hr.bd-grd-theme-1.mb0
-        code= ".bd-grd-theme-1"
-        hr.bd-grd-theme-2.mb0
-        code= ".bd-grd-theme-2"
-        hr.bd-grd-theme-3.mb0
-        code= ".bd-grd-theme-3"
+    .grid-x.p2.bg-gray-medium
+      each hrDivider in ["lightest", "lighter", "light", "darkest", "darker", "dark", "primary", "accent1-light", "accent1-medium", "accent1-dark", "accent2-light", "accent2-medium", "accent2-dark", "accent3-light", "accent3-medium", "accent3-dark", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "bd-grd-theme-1", "bd-grd-theme-2", "bd-grd-theme-3"]
+        .cell
+          hr.mb0(class=hrDivider)
+          code= "." + hrDivider
 
   script.
     $(document).ready(function(){

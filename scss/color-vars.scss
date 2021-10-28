@@ -175,10 +175,10 @@ $global-radius: 4px;
 .buttonV5,
 .linkV5 {
   $button-color: $white;
-  $button-background: $bg-grd-theme-1;
-  $button-background-hover: $bg-grd-theme-1;
-  $anchor-color: $bg-grd-theme-1;
-  $anchor-color-hover: $bg-grd-theme-1;
+  $button-background: $grd-theme-1;
+  $button-background-hover: $grd-theme-1;
+  $anchor-color: $grd-theme-1;
+  $anchor-color-hover: $grd-theme-1;
 
   .radius {
     border-radius: $global-radius;
@@ -203,7 +203,7 @@ $global-radius: 4px;
   }
   .hollow {
     color: $button-background;
-    border-image-source: $bg-grd-theme-1;
+    border-image-source: $grd-theme-1;
     border-image-slice: 1;
     // border-color: $button-background;
     &:hover {
@@ -216,10 +216,10 @@ $global-radius: 4px;
 .buttonV6,
 .linkV6 {
   $button-color: $white;
-  $button-background: $bg-grd-theme-2;
-  $button-background-hover: $bg-grd-theme-2;
-  $anchor-color: $bg-grd-theme-2;
-  $anchor-color-hover: $bg-grd-theme-2;
+  $button-background: $grd-theme-2;
+  $button-background-hover: $grd-theme-2;
+  $anchor-color: $grd-theme-2;
+  $anchor-color-hover: $grd-theme-2;
 
   .radius {
     border-radius: $global-radius;
@@ -244,7 +244,7 @@ $global-radius: 4px;
   }
   .hollow {
     color: $button-background;
-    border-image-source: $bg-grd-theme-2;
+    border-image-source: $grd-theme-2;
     border-image-slice: 1;
     // border-color: $button-background;
     &:hover {
@@ -257,10 +257,10 @@ $global-radius: 4px;
 .buttonV7,
 .linkV7 {
   $button-color: $blue;
-  $button-background: $bg-grd-theme-3;
-  $button-background-hover: $bg-grd-theme-3;
-  $anchor-color: $bg-grd-theme-3;
-  $anchor-color-hover: $bg-grd-theme-3;
+  $button-background: $grd-theme-3;
+  $button-background-hover: $grd-theme-3;
+  $anchor-color: $grd-theme-3;
+  $anchor-color-hover: $grd-theme-3;
 
   .radius {
     border-radius: $global-radius;
@@ -285,7 +285,7 @@ $global-radius: 4px;
   }
   .hollow {
     color: $button-background;
-    border-image-source: $bg-grd-theme-3;
+    border-image-source: $grd-theme-3;
     border-image-slice: 1;
     // border-color: $button-background;
     &:hover {
