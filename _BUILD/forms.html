@@ -4,8 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, follow">
     <title>Cognizant | Forms</title>
-    <link rel="stylesheet" href="css/app.css?ckcachebust=9EE303A62AC5235C953AC703F471C1D3">
+    <link rel="stylesheet" href="css/app.css?ckcachebust=A2D3F5E95C5AF107385E9A50F805F3A6">
+    <!--                                       FAVICONS                                       //-->
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg?ckcachebust=CFF27F9D99DC4ECF8DDDC7EE8B73243F">
+    <link rel="icon" type="image/png" href="favicons/favicon.png?ckcachebust=3BEEF2C5F3F90CD6B7A06DDC51307DAC">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=2022&ckcachebust=37F2A1F1A482C43DCBF1160C6EE84FB7">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=2022&ckcachebust=91DFB76C6478CD1E30272C084629279B">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=2022&ckcachebust=4DD83EDB9E4AB43E536AA0C2FAE73B05">
+    <link rel="manifest" href="favicons/site.webmanifest?v=2022&ckcachebust=728B2F65216187DDD78C82947D8D1097">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=2022&ckcachebust=6588F3CB3D54A623E82CB22DBB85110B" color="#000048">
+    <link rel="shortcut icon" href="favicons/favicon.ico?v=2022&ckcachebust=A2EB40292F459BB7588EAA5D0F13729C">
+    <meta name="msapplication-TileColor" content="#000048">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml?v=2022">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <h1>Forms</h1>
@@ -19,13 +32,13 @@
             <div class="grid-x grid-padding-x align-center expanded">
               <div class="small-12 cell">
                 <label>Number Required
-                  <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number"><span class="form-error">Yo, you had better fill this out, it's required.</span>
+                  <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number" tabindex="" autocomplete="on" name="name"><span class="form-error">Yo, you had better fill this out, it's required.</span>
                 </label>
                 <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
               </div>
               <div class="small-12 cell">
                 <label>Nothing Required!
-                  <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore="">
+                  <input type="text" placeholder="Use me, or don't" aria-describedby="exampleHelpTex" data-abide-ignore="" tabindex="" autocomplete="on" name="name">
                 </label>
                 <p class="help-text" id="exampleHelpTex">This input is ignored by Abide using &grave;data-abide-ignore&grave;</p>
               </div>
@@ -37,7 +50,7 @@
               </div>
               <div class="small-12 cell">
                 <label>Re-enter Password
-                  <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" data-equalto="password"><span class="form-error">Hey, passwords are supposed to match!</span>
+                  <input type="password" placeholder="yeti4preZ" aria-describedby="exampleHelpText2" required pattern="alpha_numeric" tabindex="" data-equalto="password"><span class="form-error">Hey passwords are supposed to match!</span>
                 </label>
                 <p class="help-text" id="exampleHelpText2">This field is using the &grave;data-equalto=&quot;password&quot;&grave; attribute, causing it to match the password field above.</p>
               </div>
@@ -45,12 +58,13 @@
             <div class="grid-x grid-padding-x align-center expanded">
               <div class="medium-4 cell">
                 <label>URL Pattern
-                  <input type="text" placeholder="http://foundation.zurb.com" pattern="url">
+                  <input type="text" placeholder="http://foundation.zurb.com" pattern="url" tabindex="" autocomplete="on" name="name">
                 </label>
               </div>
-              <div class="medium-4 cell">
-                <label>Standard Dropdown
+              <div class="medium-3 cell">
+                <label>Default Dropdown
                   <select id="select" data-placeholder="Select" required>
+                    <option disabled>Select</option>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
                     <option value="mercedes">Mercedes</option>
@@ -58,8 +72,8 @@
                   </select>
                 </label>
               </div>
-              <div class="medium-4 cell">
-                <label>Select2 Dropdown
+              <div class="medium-3 cell">
+                <label disabled>Disabled Dropdown
                   <select class="select2" id="select" data-placeholder="Select" required>
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -71,19 +85,19 @@
             </div>
             <div class="grid-x grid-padding-x align-center expanded medium-up-3">
               <div class="cell cell-block">
-                <h6 class="small-m0">Radios that are required</h6>
+                <h6 class="m0">Radios that are required</h6>
                 <label for="validationRadio01">
-                  <input class="radio" id="validationRadio01" type="radio" name="pokemon" value="Red">Red
+                  <input class="radio" id="validationRadio01" type="radio" name="pokemon" value="Red">Radio default
                 </label>
                 <label for="validationRadio02">
-                  <input class="radio" id="validationRadio02" type="radio" name="pokemon" value="Blue" required>Blue
+                  <input class="radio" id="validationRadio02" type="radio" name="pokemon" value="Blue" required>Radio selected
                 </label>
-                <label for="validationRadio03">
-                  <input class="radio" id="validationRadio03" type="radio" name="pokemon" value="Yellow">Yellow
+                <label for="validationRadio03" disabled>
+                  <input class="radio" id="validationRadio03" type="radio" name="pokemon" value="Yellow">Radio disabled
                 </label>
               </div>
               <div class="cell cell-block">
-                <h6 class="small-m0">Radios that are not required</h6>
+                <h6 class="m0">Radios that are not required</h6>
                 <label for="validationRadio04">
                   <input class="radio" id="validationRadio04" type="radio" name="pockets" value="Red">Red
                 </label>
@@ -95,163 +109,78 @@
                 </label>
               </div>
               <div class="cell cell-block">
-                <h6 class="small-m0">Checkboxes that are not required</h6>
+                <h6 class="m0">Checkboxes that are not required</h6>
                 <label for="validationRadio07">
-                  <input class="checkbox" id="validationRadio07" type="checkbox">Checkbox 1
+                  <input class="checkbox" id="validationRadio07" type="checkbox">Checkbox default
                 </label>
                 <label for="validationRadio08">
-                  <input class="checkbox" id="validationRadio08" type="checkbox">Checkbox 2
+                  <input class="checkbox" id="validationRadio08" type="checkbox">Checkbox selected
                 </label>
-                <label for="validationRadio09">
-                  <input class="checkbox" id="validationRadio09" type="checkbox">Checkbox 3
+                <label for="validationRadio09" disabled>
+                  <input class="checkbox" id="validationRadio09" type="checkbox">Checkbox disabled
                 </label>
               </div>
               <div class="cell cell-block">
                 <h6>Switch, default</h6>
                 <div class="switch tiny">
-                  <input class="switch-input" id="exampleSwitch01" type="checkbox" name="exampleSwitch01">
+                  <input class="switch-input" id="exampleSwitch01" type="checkbox" name="exampleSwitch01" tabindex="">
                   <label class="switch-paddle" for="exampleSwitch01"><span class="show-for-sr">Switch</span></label>
                 </div>
                 <div class="switch small">
-                  <input class="switch-input" id="exampleSwitch02" type="checkbox" name="exampleSwitch02">
+                  <input class="switch-input" id="exampleSwitch02" type="checkbox" name="exampleSwitch02" tabindex="">
                   <label class="switch-paddle" for="exampleSwitch02"><span class="show-for-sr">Switch</span></label>
                 </div>
                 <div class="switch">
-                  <input class="switch-input" id="exampleSwitch03" type="checkbox" name="exampleSwitch03">
+                  <input class="switch-input" id="exampleSwitch03" type="checkbox" name="exampleSwitch03" tabindex="">
                   <label class="switch-paddle" for="exampleSwitch03"><span class="show-for-sr">Switch</span></label>
                 </div>
                 <div class="switch large">
-                  <input class="switch-input" id="exampleSwitch04" type="checkbox" name="exampleSwitch04">
+                  <input class="switch-input" id="exampleSwitch04" type="checkbox" name="exampleSwitch04" tabindex="">
                   <label class="switch-paddle" for="exampleSwitch04"><span class="show-for-sr">Switch</span></label>
                 </div>
               </div>
               <div class="cell cell-block">
-                <h6>Switch, round</h6>
+                <h6>Switch round</h6>
                 <div class="flex-container align-middle">
-                  <div class="switch rounded tiny small-mr-half">
-                    <input class="switch-input" id="exampleSwitch05" type="checkbox" name="exampleSwitch05">
+                  <div class="switch rounded tiny mr-half">
+                    <input class="switch-input" id="exampleSwitch05" type="checkbox" name="exampleSwitch05" tabindex="">
                     <label class="switch-paddle" for="exampleSwitch05"><span class="show-for-sr">Switch</span></label>
                   </div>
                   <p>Switch</p>
                 </div>
                 <div class="flex-container align-middle">
-                  <div class="switch rounded small small-mr-half">
-                    <input class="switch-input" id="exampleSwitch06" type="checkbox" name="exampleSwitch06">
+                  <div class="switch rounded small mr-half">
+                    <input class="switch-input" id="exampleSwitch06" type="checkbox" name="exampleSwitch06" tabindex="">
                     <label class="switch-paddle" for="exampleSwitch06"><span class="show-for-sr">Switch</span></label>
                   </div>
                   <p>Switch</p>
                 </div>
                 <div class="flex-container align-middle">
-                  <div class="switch rounded small-mr-half">
-                    <input class="switch-input" id="exampleSwitch07" type="checkbox" name="exampleSwitch07">
+                  <div class="switch rounded mr-half">
+                    <input class="switch-input" id="exampleSwitch07" type="checkbox" name="exampleSwitch07" tabindex="">
                     <label class="switch-paddle" for="exampleSwitch07"><span class="show-for-sr">Switch</span></label>
                   </div>
                   <p>Switch</p>
                 </div>
                 <div class="flex-container align-middle">
-                  <div class="switch rounded large small-mr-half">
-                    <input class="switch-input" id="exampleSwitch08" type="checkbox" name="exampleSwitch08">
+                  <div class="switch rounded large mr-half">
+                    <input class="switch-input" id="exampleSwitch08" type="checkbox" name="exampleSwitch08" tabindex="">
                     <label class="switch-paddle" for="exampleSwitch08"><span class="show-for-sr">Switch</span></label>
                   </div>
                   <p>Switch</p>
                 </div>
               </div>
             </div>
-            <div class="grid-x grid-padding-x align-center expanded small-pt4">
-              <button class="button large small-px4" type="submit" value="Submit">Submit</button>
-            </div>
-            <div class="grid-x grid-padding-x align-center expanded">
-              <button class="button small" type="reset" value="Reset">Reset</button>
+            <div class="grid-x grid-padding-x align-center-middle pt4">
+              <div class="cell shrink">
+                <button class="m0 button hollow" type="reset" value="Reset">Reset</button>
+              </div>
+              <div class="cell shrink">
+                <button class="m0 button px4" type="submit" value="Submit">Submit</button>
+              </div>
             </div>
           </form>
         </div>
-      </div>
-    </div>
-    <hr>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="cell">
-          <h3>Float Label Form, Dark Background</h3>
-        </div>
-      </div>
-    </div>
-    <div class="small-py3" data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;">
-      <div class="grid-container">
-        <form class="white" data-abide novalidate>
-          <div class="grid-x grid-padding-x">
-            <div class="cell text-white text-center">
-              <h3 class="text-white">CONTINUE THE CONVERSATION</h3>
-              <p>Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office: <a class="text-white" href="javascript:void(0)">cognizant_community@info-event.jp</a></p>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x cell">
-            <div class="alert callout small" data-abide-error style="display: none;">
-              <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x small-up-1 medium-up-2">
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <input type="text" placeholder="John Smith" required><span>Full Name</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <input type="email" placeholder="email@example.com" required><span>Email</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <input type="text" placeholder="Your Company"><span>Organziation</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <input type="tel" placeholder="1-800-123-4567" pattern="number" required><span>Contact Number</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <select type="text" placeholder="Where are you located?" required>
-                  <option>Location 01</option>
-                  <option>Location 02</option>
-                  <option>Location 03</option>
-                  <option>Location 04</option>
-                </select><span>Region</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <select type="text" placeholder="How can we help you?" required>
-                  <option>Inquiry Type 01</option>
-                  <option>Inquiry Type 02</option>
-                  <option>Inquiry Type 03</option>
-                  <option>Inquiry Type 04</option>
-                </select><span>Inquiry Type</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-            <div class="cell small-pb1">
-              <label class="has-float-label">
-                <select type="text" placeholder="How can we help you?" required>
-                  <option>Sub-Inquiry Type 01</option>
-                  <option>Sub-Inquiry Type 02</option>
-                  <option>Sub-Inquiry Type 03</option>
-                  <option>Sub-Inquiry Type 04</option>
-                </select><span>Sub-Inquiry Type</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-          </div>
-          <div class="grid-x grid-padding-x">
-            <div class="cell text-white">
-              <label class="has-float-label">
-                <textarea rows="3" cols="15" placeholder="Your message…" required></textarea><span>Message</span><span class="form-error">Field error</span>
-              </label>
-            </div>
-          </div>
-          <div class="text-center">
-            <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
-          </div>
-        </form>
       </div>
     </div>
     <hr>
@@ -261,91 +190,154 @@
       </div>
     </div>
     <div class="grid-container">
-      <form class="small-py3" data-abide novalidate>
-        <div class="grid-x grid-padding-x">
-          <div class="cell text-center">
-            <h3>CONTINUE THE CONVERSATION</h3>
-            <p>Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office: <a href="javascript:void(0)">cognizant_community@info-event.jp</a></p>
-          </div>
+          <form class="py3" data-abide novalidate autocomplete="on">
+            <div class="grid-x grid-padding-x">
+              <div class="cell text-center">
+                <h3>Get answers to your questions</h3>
+                <p>Our clients turn to us to help them reimagine ways of working with technology.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x cell">
+              <div class="alert callout small" data-abide-error style="display: none;">
+                <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+              <div class="cell">
+                <label class="has-float-label">
+                  <input type="text" placeholder="John Smith" required tabindex="" autocomplete="on" name="name"><span>Name*</span><span class="form-error">Field error</span>
+                </label>
+              </div>
+              <div class="cell">
+                <label class="has-float-label">
+                  <input type="email" placeholder="johnsmith@example.com" required tabindex="" autocomplete="on" name="email"><span>Email*</span><span class="form-error">Field error</span>
+                </label>
+              </div>
+              <div class="cell">
+                <label class="has-float-label">
+                  <input type="text" placeholder="Abc Company" required tabindex="" autocomplete="on" name="organization"><span>Organization*</span><span class="form-error">Field error</span>
+                </label>
+              </div>
+              <div class="cell">
+                <label class="has-float-label">
+                  <input type="tel" placeholder="8888 8888" required tabindex="" autocomplete="on" name="phone-local"><span>Contact number*</span><span class="form-error">Field error</span>
+                </label>
+              </div>
+              <div class="cell">
+                <label class="has-float-label">
+                  <select tabindex="" autocomplete="on" name="country">
+                    <option value="" disabled selected>Region*</option>
+                    <option value="United States">United States</option>
+                    <option value="India">India</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Italy">Italy</option>
+                  </select><span class="form-error">Field error</span>
+                </label>
+              </div>
+              <div class="cell">
+                <label class="has-float-label">
+                  <select tabindex="">
+                    <option value="" disabled selected>Inquiry type*</option>
+                    <option>Inquiry Type 01</option>
+                    <option>Inquiry Type 02</option>
+                    <option>Inquiry Type 03</option>
+                    <option>Inquiry Type 04</option>
+                  </select><span class="form-error">Field error</span>
+                </label>
+              </div>
+            </div>
+            <div class="grid-x grid-padding-x">
+              <div class="cell">
+                <label class="has-float-label">
+                  <textarea rows="3" cols="15" placeholder="How can we help you?" required tabindex=""></textarea><span>Message</span><span class="form-error">Field error</span>
+                </label>
+              </div>
+            </div>
+            <div class="text-center">
+              <button class="button arrow mb2" type="submit" value="Submit">Submit</button>
+              <P>This site is protected by reCAPTCHA and the Google<a href="#"> Privacy Policy</a> and<a href="#"> Terms of Service</a> apply.</P>
+            </div>
+          </form>
+    </div>
+    <hr>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <h3>Float Label Form, Dark Background</h3>
         </div>
-        <div class="grid-x grid-padding-x cell">
-          <div class="alert callout small" data-abide-error style="display: none;">
-            <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
-          </div>
-        </div>
-        <div class="grid-x grid-padding-x small-up-1 medium-up-2">
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="text" placeholder="John Smith" required><span>Full Name</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="email" placeholder="johnsmith@example.com" required><span>Email</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="text" placeholder="Abc Company"><span>Organziation</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="text" placeholder="Abc Title"><span>Title</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="text" placeholder="Abc Department"><span>Department</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <input type="tel" placeholder="8888 8888" pattern="dashes_only" required><span>Contact Number</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <select type="text" placeholder="Where are you located?" required>
-                <option>Location 01</option>
-                <option>Location 02</option>
-                <option>Location 03</option>
-                <option>Location 04</option>
-              </select><span>Region</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <select type="text" placeholder="How can we help you?" required>
-                <option>Inquiry Type 01</option>
-                <option>Inquiry Type 02</option>
-                <option>Inquiry Type 03</option>
-                <option>Inquiry Type 04</option>
-              </select><span>Inquiry Type</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-          <div class="cell small-pb1">
-            <label class="has-float-label">
-              <select type="text" placeholder="How can we help you?">
-                <option>Sub-Inquiry Type 01</option>
-                <option>Sub-Inquiry Type 02</option>
-                <option>Sub-Inquiry Type 03</option>
-                <option>Sub-Inquiry Type 04</option>
-              </select><span>Sub-Inquiry Type</span>
-            </label>
-          </div>
-        </div>
-        <div class="grid-x grid-padding-x">
-          <div class="cell">
-            <label class="has-float-label">
-              <textarea rows="3" cols="15" placeholder="How can we help you?" required></textarea><span>How can we help you?</span><span class="form-error">Field error</span>
-            </label>
-          </div>
-        </div>
-        <div class="text-center">
-          <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
-        </div>
-      </form>
+      </div>
+    </div>
+    <div class="py3 bg-primary" data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;">
+      <div class="grid-container">
+            <form class="py3 white text-white" data-abide novalidate autocomplete="on">
+              <div class="grid-x grid-padding-x">
+                <div class="cell text-center">
+                  <h3>Get answers to your questions</h3>
+                  <p>Our clients turn to us to help them reimagine ways of working with technology.</p>
+                </div>
+              </div>
+              <div class="grid-x grid-padding-x cell">
+                <div class="alert callout small" data-abide-error style="display: none;">
+                  <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
+                </div>
+              </div>
+              <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+                <div class="cell">
+                  <label class="has-float-label">
+                    <input type="text" placeholder="John Smith" required tabindex="" autocomplete="on" name="name"><span>Name*</span><span class="form-error">Field error</span>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label class="has-float-label">
+                    <input type="email" placeholder="johnsmith@example.com" required tabindex="" autocomplete="on" name="email"><span>Email*</span><span class="form-error">Field error</span>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label class="has-float-label">
+                    <input type="text" placeholder="Abc Company" required tabindex="" autocomplete="on" name="organization"><span>Organization*</span><span class="form-error">Field error</span>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label class="has-float-label">
+                    <input type="tel" placeholder="8888 8888" required tabindex="" autocomplete="on" name="phone-local"><span>Contact number*</span><span class="form-error">Field error</span>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label class="has-float-label">
+                    <select tabindex="" autocomplete="on" name="country">
+                      <option value="" disabled selected>Region*</option>
+                      <option value="United States">United States</option>
+                      <option value="India">India</option>
+                      <option value="Egypt">Egypt</option>
+                      <option value="Italy">Italy</option>
+                    </select><span class="form-error">Field error</span>
+                  </label>
+                </div>
+                <div class="cell">
+                  <label class="has-float-label">
+                    <select tabindex="">
+                      <option value="" disabled selected>Inquiry type*</option>
+                      <option>Inquiry Type 01</option>
+                      <option>Inquiry Type 02</option>
+                      <option>Inquiry Type 03</option>
+                      <option>Inquiry Type 04</option>
+                    </select><span class="form-error">Field error</span>
+                  </label>
+                </div>
+              </div>
+              <div class="grid-x grid-padding-x">
+                <div class="cell">
+                  <label class="has-float-label">
+                    <textarea rows="3" cols="15" placeholder="How can we help you?" required tabindex=""></textarea><span>Message</span><span class="form-error">Field error</span>
+                  </label>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="button arrow mb2" type="submit" value="Submit">Submit</button>
+                <P>This site is protected by reCAPTCHA and the Google<a href="#"> Privacy Policy</a> and<a href="#"> Terms of Service</a> apply.</P>
+              </div>
+            </form>
+      </div>
     </div>
     <hr>
     <div class="grid-container">
@@ -355,39 +347,39 @@
         </div>
       </div>
     </div>
-    <div class="small-py3">
+    <div class="py3">
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="cell text-center">
-            <h3>CONTACT COGNIZANT</h3>
+            <h3>Contact Cognizant</h3>
           </div>
         </div>
       </div>
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="small-12 medium-6 cell">
-            <h5 class="text-blue">SEND A MESSAGE</h5>
+            <h5 class="text-blue">Send a message</h5>
             <form data-abide novalidate>
               <div class="alert callout small" data-abide-error style="display: none;">
                 <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
               </div>
               <label class="has-float-label">
-                <input type="text" placeholder="John Smith" required><span>Name</span><span class="form-error">Field error</span>
+                <input type="text" placeholder="John Smith" required tabindex="" autocomplete="on" name="name"><span>Name</span><span class="form-error">Field error</span>
               </label>
               <label class="has-float-label">
-                <input type="email" placeholder="johnsmith@example.com" required><span>Email</span><span class="form-error">Field error</span>
+                <input type="email" placeholder="johnsmith@example.com" required tabindex="" autocomplete="on" name="name"><span>Email</span><span class="form-error">Field error</span>
               </label>
               <label class="has-float-label">
-                <input type="text" placeholder="Abc Company"><span>Organziation</span>
+                <input type="text" placeholder="Abc Company" tabindex="" autocomplete="on" name="name"><span>Organziation</span>
               </label>
               <label class="has-float-label">
-                <input type="text" placeholder="Abc Title"><span>Title</span>
+                <input type="text" placeholder="Abc Title" tabindex="" autocomplete="on" name="name"><span>Title</span>
               </label>
               <label class="has-float-label">
-                <input type="text" placeholder="Abc Department"><span>Department</span>
+                <input type="text" placeholder="Abc Department" tabindex="" autocomplete="on" name="name"><span>Department</span>
               </label>
               <label class="has-float-label">
-                <input type="tel" placeholder="8888 8888" pattern="dashes_only" required><span>Contact Number</span><span class="form-error">Field error</span>
+                <input type="tel" placeholder="8888 8888" pattern="dashes_only" required tabindex="" autocomplete="on" name="name"><span>Contact Number</span><span class="form-error">Field error</span>
               </label>
               <label class="has-float-label">
                 <select type="text" placeholder="Where are you located?" required>
@@ -401,17 +393,17 @@
                 <textarea rows="3" cols="15" placeholder="How can we help you?" required></textarea><span>How can we help you?</span><span class="form-error">Field error</span>
               </label>
               <div class="text-center">
-                <button class="button arrow" type="submit" value="Submit">SUBMIT</button>
+                <button class="button arrow" type="submit" value="Submit">Submit</button>
               </div>
             </form>
           </div>
           <div class="small-12 medium-6 cell">
-            <h5 class="text-blue">CONTACT COGNIZANT CAREERS</h5>
-            <p>If you are interested in an opportunity with Cognizant, please visit our <a href="#">Careers</a> page or visit the Cognizant Careers <a href="#">FAQs</a>.</p>
+            <h5 class="text-blue">Contact Cognizant careers</h5>
+            <p>If you are interested in an opportunity with Cognizant please visit our <a href="#">Careers</a> page or visit the Cognizant Careers <a href="#">FAQs</a>.</p>
           </div>
         </div>
       </div>
     </div><a id="scrollUp" href="#" title="Back to top"></a>
-    <script src="js/min/app-min.js?ckcachebust=91B45E854D768AC6E7C61E5CB26DA236"></script>
+    <script src="js/min/app-min.js?ckcachebust=F22EB0DB83DBC06485B13F4D9E8DEDE6"></script>
   </body>
 </html>

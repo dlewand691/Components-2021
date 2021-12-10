@@ -6,7 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow">
     <title>Cognizant | Kitchen Sink</title>
-    <link rel="stylesheet" href="css/app.css?ckcachebust=2A989A1B7A3EA92DBCDE84B179CF93AD">
+    <link rel="stylesheet" href="css/app.css?ckcachebust=A8B91DDFCB1D6F099A9A2DD56E5571CE">
+    <!--                                       FAVICONS                                       //-->
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg?ckcachebust=CFF27F9D99DC4ECF8DDDC7EE8B73243F">
+    <link rel="icon" type="image/png" href="favicons/favicon.png?ckcachebust=3BEEF2C5F3F90CD6B7A06DDC51307DAC">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=2022&ckcachebust=37F2A1F1A482C43DCBF1160C6EE84FB7">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=2022&ckcachebust=91DFB76C6478CD1E30272C084629279B">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=2022&ckcachebust=4DD83EDB9E4AB43E536AA0C2FAE73B05">
+    <link rel="manifest" href="favicons/site.webmanifest?v=2022&ckcachebust=728B2F65216187DDD78C82947D8D1097">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=2022&ckcachebust=6588F3CB3D54A623E82CB22DBB85110B" color="#000048">
+    <link rel="shortcut icon" href="favicons/favicon.ico?v=2022&ckcachebust=A2EB40292F459BB7588EAA5D0F13729C">
+    <meta name="msapplication-TileColor" content="#000048">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml?v=2022">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
     <div class="m0" data-sticky-container>
@@ -22,6 +34,7 @@
               <li><a href="#accordions">Accordions</a></li>
               <li><a href="#badge">Badge</a></li>
               <li><a href="#breadcrumb">Breadcrumb</a></li>
+              <li><a href="#cards">Cards</a></li>
               <li><a href="#callout">Callout</a></li>
               <li><a href="#close">Close Button</a></li>
               <li><a href="#drilldown">Drilldown menu</a></li>
@@ -56,6 +69,180 @@
     <!-- ██    ██ ██   ██ ██ ██   ██-->
     <!--  ██████  ██   ██ ██ ██████-->
     <!-- ======================================================================-->
+    <div id="grid"></div>
+    <h1>Grid</h1>
+    <h3>No margin or padding</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x">
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+      </div>
+    </div>
+    <hr>
+    <h3>Padding-x</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x grid-padding-x">
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+      </div>
+    </div>
+    <hr>
+    <h3>Margin-x</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x grid-margin-x grid-padding-x">
+        <div class="small-1 cell">
+          <p>1</p>
+        </div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+        <div class="small-1 cell"></div>
+      </div>
+    </div>
+    <hr>
+    <h3>Nested Grid, no margin or padding</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x">
+        <div class="small-6 cell align-middle text-center">6 columns
+          <div class="grid-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns
+          <div class="grid-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns</div>
+      </div>
+    </div>
+    <hr>
+    <h3>Nested Grid, padding-x</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 cell align-middle text-center">6 columns
+          <div class="grid-x grid-padding-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns
+          <div class="grid-x grid-padding-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns</div>
+      </div>
+    </div>
+    <hr>
+    <h3>Nested Grid, margin-x</h3>
+    <div class="grid-container gridDemo">
+      <div class="grid-x grid-margin-x">
+        <div class="small-6 cell align-middle text-center">6 columns
+          <div class="grid-x grid-margin-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns
+          <div class="grid-x grid-margin-x">
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+            <div class="small-1 cell"></div>
+          </div>
+        </div>
+        <div class="small-3 cell align-middle text-center">3 columns</div>
+      </div>
+    </div>
     <!-- ======================================================================-->
     <!-- ███████ ██████   █████   ██████ ██ ███    ██  ██████  ███████-->
     <!-- ██      ██   ██ ██   ██ ██      ██ ████   ██ ██       ██-->
@@ -63,6 +250,210 @@
     <!--      ██ ██      ██   ██ ██      ██ ██  ██ ██ ██    ██      ██-->
     <!-- ███████ ██      ██   ██  ██████ ██ ██   ████  ██████  ███████-->
     <!-- ======================================================================-->
+    <div id="spacings"></div>
+    <hr>
+    <h1>Spacings</h1>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell">
+          <p>Default size: 20px = 1rem</p>
+          <p>Available margin and padding range: 0rem-10rem</p>
+        </div>
+        <div class="cell auto">
+          <p class="text-bold">Available breakpoints:</p>
+          <ul class="collapse">
+            <li>none</li>
+            <li>small</li>
+            <li>small-xl</li>
+            <li>medium</li>
+            <li>medium-xl</li>
+            <li>medium-xx</li>
+            <li>large</li>
+            <li>xlarge</li>
+            <li>xxlarge</li>
+          </ul>
+        </div>
+        <div class="cell auto">
+          <p class="text-bold">Available sides:</p>
+          <ul class="collapse">
+            <li>All</li>
+            <li>Top (t)</li>
+            <li>Right (r)</li>
+            <li>Bottom (b)</li>
+            <li>Left (l)</li>
+            <li>X (x) (Left and Right)</li>
+            <li>Y (y) (Top and Bottom)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-x">
+          <div class="cell">
+            <h2>Margins</h2>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m0">Margin 0
+              <p class="m0">.m0</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m-qtr">Margin 0.25
+              <p class="m0">.m-qtr</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m-half">Margin 0.5
+              <p class="m0">.m-half</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m1"> Margin 1
+              <p class="m0">.m1</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m2">Margin 2
+              <p class="m0">.m2</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m3">Margin 3
+              <p class="m0">.m3</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m4">Margin 4
+              <p class="m0">.m4</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m5">Margin 5
+              <p class="m0">.m5</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m6">Margin 6
+              <p class="m0">.m6</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m7">Margin 7
+              <p class="m0">.m7</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m8">Margin 8
+              <p class="m0">.m8</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m9">Margin 9
+              <p class="m0">.m9</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half m10">Margin 10
+              <p class="m0">.m10</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half mx5">Margin X 5
+              <p class="m0">.mx5 (0-10 available)</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="bg-gray-lighter p-half my5">Margin Y 5
+              <p class="m0">.my5 (0-10 available)</p>
+            </h5>
+          </div>
+        </div>
+        <hr>
+        <div class="grid-x">
+          <div class="cell">
+            <h2>Paddings</h2>
+          </div>
+        </div>
+        <div class="grid-x grid-margin-x grid-margin-y">
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p0">Padding 0
+              <p class="m0">.p0</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p-qtr">Padding 0.25
+              <p class="m0">.p-qtr</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p-half">Padding 0.5
+              <p class="m0">.p-half</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p1"> Padding 1
+              <p class="m0">.p1</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p2">Padding 2
+              <p class="m0">.p2</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p3">Padding 3
+              <p class="m0">.p3</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p4">Padding 4
+              <p class="m0">.p4</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p5">Padding 5
+              <p class="m0">.p5</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p6">Padding 6
+              <p class="m0">.p6</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p7">Padding 7
+              <p class="m0">.p7</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p8">Padding 8
+              <p class="m0">.p8</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p9">Padding 9
+              <p class="m0">.p9</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter p10">Padding 10
+              <p class="m0">.p10</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter px5">Padding X 5
+              <p class="m0">.px5 (0-10 available)</p>
+            </h5>
+          </div>
+          <div class="cell bd1">
+            <h5 class="m0 bg-gray-lighter py5">Padding Y 5
+              <p class="m0">.py5 (0-10 available)</p>
+            </h5>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- -----  End of SPACINGS  ------------>
     <!-- ======================================================================-->
     <!-- ████████ ██    ██ ██████  ███████-->
@@ -310,6 +701,41 @@
         </div>
       </div>
     </div>
+    <div id="cards"></div>
+    <h1>Cards</h1>
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x medium-up-3">
+        <div class="cell">
+          <div class="card h100 relative">
+            <div><img class="lazyload" data-src="https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/spotlight-market-guide-for-process-gartner.jpg"></div>
+            <div class="card-section">
+              <div class="label text-bold mb-half">Gartner® report</div>
+              <h5>Market guide for process mining</h5>
+              <p>According to Gartner*, "Recent trends<a href="#"> link in body copy</a> in automation and knowledge of the underlying processes and interactions are key to digital transformation. For data and analytics leaders, process mining delivers insights that enable faster, smarter decisions and stronger performance on an organization’s most critical priorities."</p>
+            </div>
+            <div class="card-divider"><a class="link-coverAll" href="#" title="Learn more" target="_blank" rel="noopener noreferrer">Learn more</a></div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card flex-container h100 relative">
+            <div class="relative py4 medium-py5">
+              <picture class="absolute pos-top object-fit-cover">
+                <source media="(max-width: 599px)" data-srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg" type="image/webp" srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg">
+                <source media="(min-width: 600px) and (max-width: 1023px)" data-srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg" type="image/webp" srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg">
+                <source data-srcset="images/case-study-insurance-desktop.webp" type="image/webp" srcset="images/case-study-insurance-desktop.webp">
+                <source data-srcset="images/case-study-insurance-desktop.jpg" type="image/jpg" srcset="images/case-study-insurance-desktop.jpg"><img class="wh100 lazyload object-fit-cover" width="780" height="185" data-src="images/case-study-insurance-desktop.jpg" alt="From Data to ROI ebook" title="From Data to ROI ebook" src="images/case-study-insurance-desktop.jpg">
+              </picture>
+            </div>
+            <div class="card-section">
+              <div class="flex-container align-middle mb1"><img class="mr-half lazyload" data-src="images/icon-insurance.svg" width="24" height="24" alt="#" title="#"><small>From data to ROI eBook</small></div>
+              <h5>How to generate ROI from AI-powered data</h5>
+              <p>Learn where to invest, how much to spend and what returns you can expect. This report explores what 1,200 businesses are doing to make better, faster decisions with AI-powered data to accelerate their business outcomes.</p>
+            </div>
+            <div class="card-divider"><a class="button arrow link-coverAll" title="#" target="_blank" href="#">Read the ebook</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- ======================================================================-->
     <!--  ██████  █████  ██      ██       ██████  ██    ██ ████████-->
     <!-- ██      ██   ██ ██      ██      ██    ██ ██    ██    ██-->
@@ -381,7 +807,7 @@
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-middle">
           <div class="small-11 medium-5 cell text-center medium-text-left">
-            <p class="text-bold text-caps small m0">Vivamus Hendrerit Arcu Sed Erat</p>
+            <p class="text-bold small m0">Vivamus Hendrerit Arcu Sed Erat</p>
             <h4 class="m0">Quisque Eget Odio Ac Lectus</h4>
           </div>
           <div class="small-11 medium-5 cell">
@@ -396,7 +822,7 @@
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="small-11 medium-5 cell text-center medium-text-left">
-            <p class="text-bold text-caps small m0">healthcare</p>
+            <p class="text-bold small m0">healthcare</p>
             <h4 class="m0">Designing patient-centric health services and technologies</h4>
           </div>
           <div class="small-11 medium-5 cell">
@@ -408,13 +834,13 @@
     <hr>
     <h3>Callout-2-Column-v2-with-header-buttons</h3>
     <div class="py1 bg-primary" style="min-height: 400px">
-      <div class="py1 text-center text-caps">
+      <div class="py1 text-center">
         <h3>industry spotlight</h3>
       </div>
       <div class="grid-container">
         <div class="grid-x grid-padding-x">
           <div class="small-11 medium-5 cell text-center medium-text-left">
-            <p class="text-bold text-caps small m0">healthcare</p>
+            <p class="text-bold small m0">healthcare</p>
             <h4 class="m0">Designing patient-centric health services and technologies</h4>
           </div>
           <div class="small-11 medium-5 cell">
@@ -429,7 +855,7 @@
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-middle">
           <div class="small-11 medium-4 cell text-center medium-text-left">
-            <h4 class="text-caps m0">Quisque Eget Odio Ac Lectus</h4>
+            <h4 class="m0">Quisque Eget Odio Ac Lectus</h4>
           </div>
           <div class="small-11 medium-6 cell">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!</p><a class="button small arrow" href="#">Read more</a>
@@ -444,7 +870,7 @@
         <div class="grid-x grid-padding-x align-middle">
           <div class="small-11 medium-4 cell text-center"><img class="mb1 medium-mb0" src="https://unsplash.it/300/350?image=901"></div>
           <div class="small-11 medium-6 cell">
-            <h4 class="text-caps">Nulla At Nulla Justo, Eget</h4>
+            <h4>Nulla At Nulla Justo, Eget</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!</p><a class="button small arrow mb0" href="#">Read more</a>
           </div>
         </div>
@@ -455,7 +881,7 @@
     <div class="align-middle py4 bg-primary">
       <div class="grid-container">
         <div class="grid-x grid-padding-x align-middle">
-          <div class="cell large-auto text-caps">
+          <div class="cell large-auto">
             <h3>Financial Services</h3>
             <h4>h4 subheading</h4>
             <p class="medium-m0">Investment Banking, Asset Management, Lending, Retail Banking</p>
@@ -482,7 +908,7 @@
               <li class="m0"><span class="strong">30% Reduction</span>in call volume due to self-services</li>
             </ul>
           </div>
-          <div class="cell large-auto text-caps">
+          <div class="cell large-auto">
             <h3>Insurance Services</h3>
             <h4>h4 subheading</h4>
             <p class="medium-m0">Life & Annuities, Property & Casualty, Retirement</p>
@@ -1526,10 +1952,10 @@
     </div>
     <div class="bg-primary py4">
       <div class="grid-container">
-        <h3 class="text-center">WHAT WE DO</h3>
+        <h3 class="text-center">What we do</h3>
         <div class="grid-x grid-padding-x align-center">
           <div class="cell medium-5">
-            <h5>BUILD A DIGITAL-READY IT BACKBONE</h5>
+            <h5>Build a digital ready it backbone</h5>
           </div>
           <div class="cell medium-7">
             <p>Going digital? You’ll need a simple, modern and secure infrastructure backbone. Work with our experts to transform your enterprise and future-proof your infrastructure to reduce costs, increase agility and protect your assets.</p>
@@ -1538,11 +1964,11 @@
         <div class="grid-x medium-px-half">
           <div class="small-12 medium-4 cell">
             <ul class="vertical tabs hover-tabs bd0 flex-container-medium flex-dir-column" id="hover-tabs" data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true">
-              <li class="tabs-title is-active hover-grow"><a href="#panel1v1" aria-selected="true">TRANSFORM YOUR IT STRATEGY</a></li>
-              <li class="tabs-title hover-grow"><a href="#panel2v1">MODERNIZE YOUR CORE</a></li>
-              <li class="tabs-title hover-grow"><a href="#panel3v1">EVOLVE YOUR APPROACH TO CLOUD</a></li>
-              <li class="tabs-title hover-grow"><a href="#panel4v1">SECURE YOUR ENTERPRISE</a></li>
-              <li class="tabs-title hover-grow"><a href="#panel5v1">ENGINEER YOUR DIGITAL FUTURE</a></li>
+              <li class="tabs-title is-active hover-grow"><a href="#panel1v1" aria-selected="true">Transform your it strategy</a></li>
+              <li class="tabs-title hover-grow"><a href="#panel2v1">Modernize your core</a></li>
+              <li class="tabs-title hover-grow"><a href="#panel3v1">Evolve your approach to cloud</a></li>
+              <li class="tabs-title hover-grow"><a href="#panel4v1">Secure your enterprise</a></li>
+              <li class="tabs-title hover-grow"><a href="#panel5v1">Engineer your digital future</a></li>
             </ul>
           </div>
           <div class="small-12 medium-8 cell">
@@ -1687,7 +2113,7 @@
               <div class="tabs-panel is-active p0" id="panel1v3" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD//images/tabs/DST-enterpriseCapabilities-bg01.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="p1 medium-p2">
                   <div class="align-self-middle">
-                    <h6 class="tiny text-caps">Application Services</h6>
+                    <h6 class="tiny">Application Services</h6>
                     <h3>Build applications that deliver the digital experiences customers want.</h3><a class="button arrow bg-green" href="#">More</a>
                   </div>
                 </div>
@@ -1695,7 +2121,7 @@
               <div class="tabs-panel p0" id="panel2v3" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD//images/tabs/DST-enterpriseCapabilities-bg02.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="p1 medium-p2">
                   <div class="align-self-middle">
-                    <h6 class="tiny text-caps">Infrastructure Services</h6>
+                    <h6 class="tiny">Infrastructure Services</h6>
                     <h3>Transform your IT backbone to create an always-on business.</h3><a class="button arrow bg-green" href="#">More</a>
                   </div>
                 </div>
@@ -1703,7 +2129,7 @@
               <div class="tabs-panel p0" id="panel3v3" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD//images/tabs/DST-enterpriseCapabilities-bg03.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="p1 medium-p2">
                   <div class="align-self-middle">
-                    <h6 class="tiny text-caps">Enterprise Application Services</h6>
+                    <h6 class="tiny">Enterprise Application Services</h6>
                     <h3>Streamline your back office and improve operational agility and employee connections.</h3><a class="button arrow bg-green" href="#">More</a>
                   </div>
                 </div>
@@ -1711,7 +2137,7 @@
               <div class="tabs-panel p0" id="panel4v3" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD//images/tabs/DST-enterpriseCapabilities-bg04.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="p1 medium-p2">
                   <div class="align-self-middle">
-                    <h6 class="tiny text-caps">Quality Engineering & Assurance Services</h6>
+                    <h6 class="tiny">Quality Engineering & Assurance Services</h6>
                     <h3>Employ an end-to-end approach where high quality meets high speed</h3><a class="button arrow bg-green" href="#">More</a>
                   </div>
                 </div>
@@ -1719,7 +2145,7 @@
               <div class="tabs-panel p0" id="panel5v3" style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url(https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD//images/tabs/DST-enterpriseCapabilities-bg05.jpg) no-repeat; background-size: cover; background-position: center;">
                 <div class="p1 medium-p2">
                   <div class="align-self-middle">
-                    <h6 class="tiny text-caps">Security and Compliance Services</h6>
+                    <h6 class="tiny">Security and Compliance Services</h6>
                     <h3>Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure</h3><a class="button arrow bg-green" href="#">More</a>
                   </div>
                 </div>

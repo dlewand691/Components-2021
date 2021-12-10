@@ -18,47 +18,48 @@ block content
             .small-12.cell
               label
                 | Number Required
-                input(type="text", placeholder="1234", aria-describedby="exampleHelpText", required, pattern="number")
+                input(type="text" placeholder="1234", aria-describedby="exampleHelpText" required pattern="number" tabindex=""  autocomplete="on" name="name")
                 span.form-error
                   | Yo, you had better fill this out, it's required.
               p#exampleHelpText.help-text Here's how you use this input field!
             .small-12.cell
               label
                 | Nothing Required!
-                input(type="text", placeholder="Use me, or don't", aria-describedby="exampleHelpTex", data-abide-ignore="")
+                input(type="text" placeholder="Use me, or don't", aria-describedby="exampleHelpTex", data-abide-ignore="" tabindex=""  autocomplete="on" name="name")
               p#exampleHelpTex.help-text This input is ignored by Abide using &grave;data-abide-ignore&grave;
             .small-12.cell
               label
                 | Password Required
-                input#password(type="password", placeholder="yeti4preZ", aria-describedby="exampleHelpText", required)
+                input#password(type="password" placeholder="yeti4preZ", aria-describedby="exampleHelpText" required)
                 span.form-error
                   | I'm required!
               p#exampleHelpText.help-text Enter a password please.
             .small-12.cell
               label
                 | Re-enter Password
-                input(type="password", placeholder="yeti4preZ", aria-describedby="exampleHelpText2", required, pattern="alpha_numeric", data-equalto="password")
+                input(type="password" placeholder="yeti4preZ", aria-describedby="exampleHelpText2" required pattern="alpha_numeric" tabindex="" data-equalto="password")
                 span.form-error
-                  | Hey, passwords are supposed to match!
+                  | Hey passwords are supposed to match!
               p#exampleHelpText2.help-text
                 | This field is using the &grave;data-equalto=&quot;password&quot;&grave; attribute, causing it to match the password field above.
           .grid-x.grid-padding-x.align-center.expanded
             .medium-4.cell
               label
                 | URL Pattern
-                input(type="text", placeholder="http://foundation.zurb.com", pattern="url")
-            .medium-4.cell
+                input(type="text" placeholder="http://foundation.zurb.com" pattern="url" tabindex="" autocomplete="on" name="name")
+            .medium-3.cell
               label
-                | Standard Dropdown
-                select#select(data-placeholder="Select", required)
+                | Default Dropdown
+                select#select(data-placeholder="Select" required)
+                  option(disabled) Select
                   option(value="volvo") Volvo
                   option(value="saab") Saab
                   option(value="mercedes") Mercedes
                   option(value="audi") Audi
-            .medium-4.cell
-              label
-                | Select2 Dropdown
-                select#select.select2(data-placeholder="Select", required)
+            .medium-3.cell
+              label(disabled)
+                | Disabled Dropdown
+                select#select.select2(data-placeholder="Select" required)
                   option(value="volvo") Volvo
                   option(value="saab") Saab
                   option(value="mercedes") Mercedes
@@ -67,288 +68,193 @@ block content
             .cell.cell-block
               h6.m0 Radios that are required
               label(for="validationRadio01")
-                input#validationRadio01.radio(type="radio", name="pokemon", value="Red")
-                | Red
+                input#validationRadio01.radio(type="radio" name="pokemon" value="Red")
+                | Radio default
               label(for="validationRadio02")
-                input#validationRadio02.radio(type="radio", name="pokemon", value="Blue", required)
-                | Blue
-              label(for="validationRadio03")
-                input#validationRadio03.radio(type="radio", name="pokemon", value="Yellow")
-                | Yellow
+                input#validationRadio02.radio(type="radio" name="pokemon" value="Blue" required)
+                | Radio selected
+              label(for="validationRadio03" disabled)
+                input#validationRadio03.radio(type="radio" name="pokemon" value="Yellow")
+                | Radio disabled
             .cell.cell-block
               h6.m0 Radios that are not required
               label(for="validationRadio04")
-                input#validationRadio04.radio(type="radio", name="pockets", value="Red")
+                input#validationRadio04.radio(type="radio" name="pockets" value="Red")
                 | Red
               label(for="validationRadio05")
-                input#validationRadio05.radio(type="radio", name="pockets", value="Blue")
+                input#validationRadio05.radio(type="radio" name="pockets" value="Blue")
                 | Blue
               label(for="validationRadio06")
-                input#validationRadio06.radio(type="radio", name="pockets", value="Yellow")
+                input#validationRadio06.radio(type="radio" name="pockets" value="Yellow")
                 | Yellow
             .cell.cell-block
               h6.m0 Checkboxes that are not required
               label(for="validationRadio07")
                 input#validationRadio07.checkbox(type="checkbox")
-                | Checkbox 1
+                | Checkbox default
               label(for="validationRadio08")
                 input#validationRadio08.checkbox(type="checkbox")
-                | Checkbox 2
-              label(for="validationRadio09")
+                | Checkbox selected
+              label(for="validationRadio09" disabled)
                 input#validationRadio09.checkbox(type="checkbox")
-                | Checkbox 3
+                | Checkbox disabled
             .cell.cell-block
               h6 Switch, default
               .switch.tiny
-                input#exampleSwitch01.switch-input(type="checkbox", name="exampleSwitch01")
+                input#exampleSwitch01.switch-input(type="checkbox" name="exampleSwitch01" tabindex="")
                 label.switch-paddle(for="exampleSwitch01")
                   span.show-for-sr Switch
               .switch.small
-                input#exampleSwitch02.switch-input(type="checkbox", name="exampleSwitch02")
+                input#exampleSwitch02.switch-input(type="checkbox" name="exampleSwitch02" tabindex="")
                 label.switch-paddle(for="exampleSwitch02")
                   span.show-for-sr Switch
               .switch
-                input#exampleSwitch03.switch-input(type="checkbox", name="exampleSwitch03")
+                input#exampleSwitch03.switch-input(type="checkbox" name="exampleSwitch03" tabindex="")
                 label.switch-paddle(for="exampleSwitch03")
                   span.show-for-sr Switch
               .switch.large
-                input#exampleSwitch04.switch-input(type="checkbox", name="exampleSwitch04")
+                input#exampleSwitch04.switch-input(type="checkbox" name="exampleSwitch04" tabindex="")
                 label.switch-paddle(for="exampleSwitch04")
                   span.show-for-sr Switch
             .cell.cell-block
-              h6 Switch, round
+              h6 Switch round
               .flex-container.align-middle
                 .switch.rounded.tiny.mr-half
-                  input#exampleSwitch05.switch-input(type="checkbox", name="exampleSwitch05")
+                  input#exampleSwitch05.switch-input(type="checkbox" name="exampleSwitch05" tabindex="")
                   label.switch-paddle(for="exampleSwitch05")
                     span.show-for-sr Switch
                 p Switch
               .flex-container.align-middle
                 .switch.rounded.small.mr-half
-                  input#exampleSwitch06.switch-input(type="checkbox", name="exampleSwitch06")
+                  input#exampleSwitch06.switch-input(type="checkbox" name="exampleSwitch06" tabindex="")
                   label.switch-paddle(for="exampleSwitch06")
                     span.show-for-sr Switch
                 p Switch
               .flex-container.align-middle
                 .switch.rounded.mr-half
-                  input#exampleSwitch07.switch-input(type="checkbox", name="exampleSwitch07")
+                  input#exampleSwitch07.switch-input(type="checkbox" name="exampleSwitch07" tabindex="")
                   label.switch-paddle(for="exampleSwitch07")
                     span.show-for-sr Switch
                 p Switch
               .flex-container.align-middle
                 .switch.rounded.large.mr-half
-                  input#exampleSwitch08.switch-input(type="checkbox", name="exampleSwitch08")
+                  input#exampleSwitch08.switch-input(type="checkbox" name="exampleSwitch08" tabindex="")
                   label.switch-paddle(for="exampleSwitch08")
                     span.show-for-sr Switch
                 p Switch
 
-          .grid-x.grid-padding-x.align-center.expanded.pt4
-            button.button.large.px4(type="submit", value="Submit") Submit
-          .grid-x.grid-padding-x.align-center.expanded
-            button.button.small(type="reset", value="Reset") Reset
+          .grid-x.grid-padding-x.align-center-middle.pt4
+            .cell.shrink
+              button.m0.button.hollow(type="reset" value="Reset") Reset
+            .cell.shrink
+              button.m0.button.px4(type="submit" value="Submit") Submit
 
+
+  //- =============================================================================================
+  //-
+  //-  ██████  ██████  ███    ██ ████████  █████   ██████ ████████     ███████  ██████  ██████  ███    ███
+  //- ██      ██    ██ ████   ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ████  ████
+  //- ██      ██    ██ ██ ██  ██    ██    ███████ ██         ██        █████   ██    ██ ██████  ██ ████ ██
+  //- ██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ██  ██  ██
+  //-  ██████  ██████  ██   ████    ██    ██   ██  ██████    ██        ██       ██████  ██   ██ ██      ██
+  //-
+  //- =============================================================================================
+  mixin defaultForm
+    form(data-abide novalidate autocomplete="on").py3&attributes(attributes)
+      .grid-x.grid-padding-x
+        .cell.text-center
+          h3 Get answers to your questions
+          p Our clients turn to us to help them reimagine ways of working with technology.
+      .grid-x.grid-padding-x.cell
+        .alert.callout.small(data-abide-error, style="display: none;")
+          p
+            i.report-problem-triangle
+            |  There are some errors in your form.
+      .grid-x.grid-padding-x.small-up-1.medium-up-3
+        .cell
+          label.has-float-label
+            input(type="text" placeholder="John Smith" required tabindex="" autocomplete="on" name="name")
+            span Name*
+            span.form-error
+              | Field error
+
+        .cell
+          label.has-float-label
+            input(type="email" placeholder="johnsmith@example.com" required tabindex=""  autocomplete="on" name="email")
+            span Email*
+            span.form-error
+              | Field error
+
+        .cell
+          label.has-float-label
+            input(type="text" placeholder="Abc Company" required tabindex=""  autocomplete="on" name="organization")
+            span Organization*
+            span.form-error
+              | Field error
+
+        .cell
+          label.has-float-label
+            input(type="tel" placeholder="8888 8888" required tabindex=""  autocomplete="on" name="phone-local")
+            span Contact number*
+            span.form-error
+              | Field error
+
+        .cell
+          label.has-float-label
+            select(tabindex=""  autocomplete="on" name="country")
+              option(value="" disabled selected) Region*
+              //- option(value="" disabled selected) Select a region
+              option(value="United States") United States
+              option(value="India") India
+              option(value="Egypt") Egypt
+              option(value="Italy") Italy
+            //- span Region
+            span.form-error
+              | Field error
+
+        .cell
+          label.has-float-label
+            select(tabindex="")
+              option(value="" disabled selected) Inquiry type*
+              option Inquiry Type 01
+              option Inquiry Type 02
+              option Inquiry Type 03
+              option Inquiry Type 04
+            //- span Inquiry Type
+            span.form-error
+              | Field error
+
+      .grid-x.grid-padding-x
+        .cell
+          label.has-float-label
+            textarea(rows="3", cols="15" placeholder="How can we help you?" required tabindex="")
+            span Message
+            span.form-error
+              | Field error
+      .text-center
+        button.button.arrow.mb2(type="submit" value="Submit") Submit
+        P This site is protected by reCAPTCHA and the Google
+          a(href="#")  Privacy Policy
+          |  and
+          a(href="#")  Terms of Service
+          |  apply.
+
+  hr
+  .grid-x.grid-padding-x
+    .cell
+      h3 Float Label Form, Light Background
+  .grid-container
+    +defaultForm
 
   hr
   .grid-container
     .grid-x.grid-padding-x
       .cell
         h3 Float Label Form, Dark Background
-
-  //- =============================================================================================
-  //-
-  //-  ██████  ██████  ███    ██ ████████  █████   ██████ ████████     ███████  ██████  ██████  ███    ███
-  //- ██      ██    ██ ████   ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ████  ████
-  //- ██      ██    ██ ██ ██  ██    ██    ███████ ██         ██        █████   ██    ██ ██████  ██ ████ ██
-  //- ██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ██  ██  ██
-  //-  ██████  ██████  ██   ████    ██    ██   ██  ██████    ██        ██       ██████  ██   ██ ██      ██
-  //-
-  //- =============================================================================================
-  .py3(data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;")
+  .py3.bg-primary(data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;")
     .grid-container
-      form(data-abide novalidate).white
-        .grid-x.grid-padding-x
-          .cell.text-white.text-center
-            h3.text-white CONTINUE THE CONVERSATION
-            p Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office:
-              a.text-white(href="javascript:void(0)") cognizant_community@info-event.jp
-        .grid-x.grid-padding-x.cell
-          .alert.callout.small(data-abide-error, style="display: none;")
-            p
-              i.report-problem-triangle
-              |  There are some errors in your form.
-        .grid-x.grid-padding-x.small-up-1.medium-up-2
-          .cell.pb1
-            label.has-float-label
-              input(type="text" placeholder="John Smith" required)
-              span Full Name
-              span.form-error
-                | Field error
+      +defaultForm(class="white text-white")
 
-          .cell.pb1
-            label.has-float-label
-              input(type="email" placeholder="email@example.com" required)
-              span Email
-              span.form-error
-                | Field error
-
-          .cell.pb1
-            label.has-float-label
-              input(type="text" placeholder="Your Company")
-              span Organziation
-
-          .cell.pb1
-            label.has-float-label
-              input(type="tel" placeholder="1-800-123-4567" pattern="number" required)
-              span Contact Number
-              span.form-error
-                | Field error
-
-          .cell.pb1
-            label.has-float-label
-              select(type="text" placeholder="Where are you located?" required)
-                option Location 01
-                option Location 02
-                option Location 03
-                option Location 04
-              span Region
-              span.form-error
-                | Field error
-
-          .cell.pb1
-            label.has-float-label
-              select(type="text" placeholder="How can we help you?" required)
-                option Inquiry Type 01
-                option Inquiry Type 02
-                option Inquiry Type 03
-                option Inquiry Type 04
-              span Inquiry Type
-              span.form-error
-                | Field error
-
-          .cell.pb1
-            label.has-float-label
-              select(type="text" placeholder="How can we help you?" required)
-                option Sub-Inquiry Type 01
-                option Sub-Inquiry Type 02
-                option Sub-Inquiry Type 03
-                option Sub-Inquiry Type 04
-              span Sub-Inquiry Type
-              span.form-error
-                | Field error
-
-        .grid-x.grid-padding-x
-          .cell.text-white
-            label.has-float-label
-              textarea(rows="3", cols="15" placeholder="Your message…" required)
-              span Message
-              span.form-error
-                | Field error
-        .text-center
-          button.button.arrow(type="submit" value="Submit") SUBMIT
-
-  hr
-  .grid-x.grid-padding-x
-    .cell
-      h3 Float Label Form, Light Background
-
-  //- =============================================================================================
-  //-
-  //-  ██████  ██████  ███    ██ ████████  █████   ██████ ████████     ███████  ██████  ██████  ███    ███
-  //- ██      ██    ██ ████   ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ████  ████
-  //- ██      ██    ██ ██ ██  ██    ██    ███████ ██         ██        █████   ██    ██ ██████  ██ ████ ██
-  //- ██      ██    ██ ██  ██ ██    ██    ██   ██ ██         ██        ██      ██    ██ ██   ██ ██  ██  ██
-  //-  ██████  ██████  ██   ████    ██    ██   ██  ██████    ██        ██       ██████  ██   ██ ██      ██
-  //-
-  //- =============================================================================================
-  .grid-container
-    form(data-abide novalidate).py3
-      .grid-x.grid-padding-x
-        .cell.text-center
-          h3 CONTINUE THE CONVERSATION
-          p Cognizant Community Event Office Cognizant Community Event OfficeCognizant Community Event Office:
-            a(href="javascript:void(0)") cognizant_community@info-event.jp
-      .grid-x.grid-padding-x.cell
-        .alert.callout.small(data-abide-error, style="display: none;")
-          p
-            i.report-problem-triangle
-            |  There are some errors in your form.
-      .grid-x.grid-padding-x.small-up-1.medium-up-2
-        .cell.pb1
-          label.has-float-label
-            input(type="text" placeholder="John Smith" required)
-            span Full Name
-            span.form-error
-              | Field error
-
-        .cell.pb1
-          label.has-float-label
-            input(type="email" placeholder="johnsmith@example.com" required)
-            span Email
-            span.form-error
-              | Field error
-
-        .cell.pb1
-          label.has-float-label
-            input(type="text" placeholder="Abc Company")
-            span Organziation
-
-        .cell.pb1
-          label.has-float-label
-            input(type="text" placeholder="Abc Title")
-            span Title
-
-        .cell.pb1
-          label.has-float-label
-            input(type="text" placeholder="Abc Department")
-            span Department
-
-        .cell.pb1
-          label.has-float-label
-            input(type="tel" placeholder="8888 8888" pattern="dashes_only" required)
-            span Contact Number
-            span.form-error
-              | Field error
-
-        .cell.pb1
-          label.has-float-label
-            select(type="text" placeholder="Where are you located?" required)
-              option Location 01
-              option Location 02
-              option Location 03
-              option Location 04
-            span Region
-            span.form-error
-              | Field error
-
-        .cell.pb1
-          label.has-float-label
-            select(type="text" placeholder="How can we help you?" required)
-              option Inquiry Type 01
-              option Inquiry Type 02
-              option Inquiry Type 03
-              option Inquiry Type 04
-            span Inquiry Type
-            span.form-error
-              | Field error
-
-        .cell.pb1
-          label.has-float-label
-            select(type="text" placeholder="How can we help you?")
-              option Sub-Inquiry Type 01
-              option Sub-Inquiry Type 02
-              option Sub-Inquiry Type 03
-              option Sub-Inquiry Type 04
-            span Sub-Inquiry Type
-
-      .grid-x.grid-padding-x
-        .cell
-          label.has-float-label
-            textarea(rows="3", cols="15" placeholder="How can we help you?" required)
-            span How can we help you?
-            span.form-error
-              | Field error
-      .text-center
-        button.button.arrow(type="submit" value="Submit") SUBMIT
 
   hr
   .grid-container
@@ -369,42 +275,42 @@ block content
     .grid-container
       .grid-x.grid-padding-x
         .cell.text-center
-          h3 CONTACT COGNIZANT
+          h3 Contact Cognizant
     .grid-container
       .grid-x.grid-padding-x
         .small-12.medium-6.cell
-          h5.text-blue SEND A MESSAGE
+          h5.text-blue Send a message
           form(data-abide novalidate)
             .alert.callout.small(data-abide-error, style="display: none;")
               p
                 i.report-problem-triangle
                 |  There are some errors in your form.
             label.has-float-label
-              input(type="text" placeholder="John Smith" required)
+              input(type="text" placeholder="John Smith" required tabindex=""  autocomplete="on" name="name")
               span Name
               span.form-error
                 | Field error
 
             label.has-float-label
-              input(type="email" placeholder="johnsmith@example.com" required)
+              input(type="email" placeholder="johnsmith@example.com" required tabindex=""  autocomplete="on" name="name")
               span Email
               span.form-error
                 | Field error
 
             label.has-float-label
-              input(type="text" placeholder="Abc Company")
+              input(type="text" placeholder="Abc Company" tabindex=""  autocomplete="on" name="name")
               span Organziation
 
             label.has-float-label
-              input(type="text" placeholder="Abc Title")
+              input(type="text" placeholder="Abc Title" tabindex=""  autocomplete="on" name="name")
               span Title
 
             label.has-float-label
-              input(type="text" placeholder="Abc Department")
+              input(type="text" placeholder="Abc Department" tabindex=""  autocomplete="on" name="name")
               span Department
 
             label.has-float-label
-              input(type="tel" placeholder="8888 8888" pattern="dashes_only" required)
+              input(type="tel" placeholder="8888 8888" pattern="dashes_only" required tabindex=""  autocomplete="on" name="name")
               span Contact Number
               span.form-error
                 | Field error
@@ -424,9 +330,9 @@ block content
               span.form-error
                 | Field error
             .text-center
-              button.button.arrow(type="submit" value="Submit") SUBMIT
+              button.button.arrow(type="submit" value="Submit") Submit
         .small-12.medium-6.cell
-          h5.text-blue CONTACT COGNIZANT CAREERS
-          p If you are interested in an opportunity with Cognizant, please visit our #[a(href="#") Careers] page or visit the Cognizant Careers #[a(href="#") FAQs].
+          h5.text-blue Contact Cognizant careers
+          p If you are interested in an opportunity with Cognizant please visit our #[a(href="#") Careers] page or visit the Cognizant Careers #[a(href="#") FAQs].
 
 

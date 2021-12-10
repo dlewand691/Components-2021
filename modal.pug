@@ -6,9 +6,9 @@ block vars
 block content
   h1!= pageTitle
 
-  #exampleModal1.reveal(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
+  #exampleModal1.reveal.bg-primary.small(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
     :markdown-it
-      All content here
+      # Modal overlay
     button.close-button(data-close="", aria-label="Close modal", type="button")
       span(aria-hidden="true") &times;
 

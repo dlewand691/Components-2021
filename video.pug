@@ -5,12 +5,38 @@ block vars
 block content
   //- iframe(width="560" height="349" src="https://www.youtube-nocookie.com/embed/9h1swNWgP8Q?theme=dark&color=white" frameborder="0" allowfullscreen)
   h1!= pageTitle
+
+  .video.bg-primary.mb3
+    .banner-image-container.bg-size-cover.bg-pos-center-center(style='background-image: url("images/bg-video-guidelines.jpg");' data-events='resize')
+        .grid-container.flex-container
+          .grid-x.align-middle.flex-container.py4.medium-py8.w100
+            .large-5.small-12.medium-7.cell.text-center.medium-text-left
+              h4 Why application modernization matters
+            .small-12.medium-1.medium-text-left.cell.text-center
+              h2.h1.m0
+                a(href="#")
+                  i.play-button(title='Play')
+
+  .video.bg-primary
+    .banner-image-container.bg-size-cover(data-interchange='[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-iot-can-keep-food-and-medicine-shipments-safe-mob.jpg, small],[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-iot-can-keep-food-and-medicine-shipments-safe-tab.jpg, medium],[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-iot-can-keep-food-and-medicine-shipments-safe-desktop.jpg, large]' style='background-image: url("https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-iot-can-keep-food-and-medicine-shipments-safe-desktop.jpg");' data-events='resize')
+        .grid-container.flex-container
+          .grid-x.align-middle.flex-container.py4.medium-py8
+            .large-5.small-12.medium-7.cell.text-center.medium-text-left
+              h3 How IoT can keep food and medicine shipments safe
+            .small-12.medium-1.medium-text-left.cell.text-center
+              h2.h1.m0
+                a(href="#")
+                  i.play-button(title='Play')
+        //- iframe(width='100%' height='600' src='https://www.youtube.com/embed/7abNYIMzUgo?enablejsapi=1&showinfo=0&modestbranding=1&wmode=transparent&controls=1&autohide=1&rel=0' frameborder='0' autoplay allowfullscreen aria-label='video content')
+        //- button.close-button(data-close title='Close' aria-label='Close modal' type='button')
+          span(title='Close' aria-hidden='true') ×
+
   h3 Video1-A (Play in modal)
   .grid-x.grid-padding-x.expanded.align-middle.text-center.py5(style="background: url('https://source.unsplash.com/R3pUGn5YiTg') no-repeat; background-size: cover; background-position: center;")
     .cell
       a.text-white(href="#")
         h6.text-white cognizant digital works™
-        h2.text-white.text-caps approach
+        h2.text-white approach
         h1.m0
           a.text-white(data-open="video-modal")
             i.play-button
@@ -25,7 +51,7 @@ block content
     .cell
       a.text-white(href="#")
         h6.text-white cognizant digital works™
-        h2.text-white.text-caps approach
+        h2.text-white approach
         h1.m0
           a.text-white(data-open="video-modal-plyr")
             i.play-button
@@ -40,7 +66,7 @@ block content
     .cell.py5.show#video-modal-in-place-1(data-toggler=".hide")
       a.text-white(href="#")
         h6.text-white cognizant digital works™
-        h2.text-white.text-caps approach
+        h2.text-white approach
         h1.m0
           a.text-white(data-toggle="video-modal-in-place-1 video-modal-in-place-2 video-modal-in-place-row")
             i.play-button
@@ -56,7 +82,7 @@ block content
       a.text-white(href="#")
         h1 cognizant
         br
-        h4.text-normal.text-caps global innovation ecosystem
+        h4.text-normal global innovation ecosystem
         h1.m0
           i.play-button
 
@@ -92,13 +118,13 @@ block content
         h4 New technologies make healthcare more personal
         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores corporis excepturi libero at, possimus, alias animi nesciunt obcaecati commodi nobis doloribus molestias et ipsam expedita labore eius porro, aperiam officiis!
         a.button(href="#")
-          i.play-button.text-bold.mr-half 
+          i.play-button.text-bold.mr-half
           | Play video
 
   #video5
   hr
   h3 Video5
-  .swiper-container
+  .swiper
     .swiper-wrapper
       .swiper-slide
         .py6(style="background: url(https://source.unsplash.com/R3pUGn5YiTg) no-repeat; background-size: cover; background-position: center center;")

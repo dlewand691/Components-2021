@@ -29,6 +29,8 @@ block content
             li
               a(href="#breadcrumb") Breadcrumb
             li
+              a(href="#cards") Cards
+            li
               a(href="#callout") Callout
             li
               a(href="#close") Close Button
@@ -81,10 +83,10 @@ block content
   // ██    ██ ██   ██ ██ ██   ██
   //  ██████  ██   ██ ██ ██████
   // ======================================================================
-  //- #grid
-  //- h1 Grid
-  //- h3 No margin or padding
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  #grid
+  h1 Grid
+  h3 No margin or padding
+  .grid-container.gridDemo
     .grid-x
       .small-1.cell
       .small-1.cell
@@ -99,9 +101,9 @@ block content
       .small-1.cell
       .small-1.cell
 
-  //- hr
-  //- h3 Padding-x
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  hr
+  h3 Padding-x
+  .grid-container.gridDemo
     .grid-x.grid-padding-x
       .small-1.cell
       .small-1.cell
@@ -116,9 +118,9 @@ block content
       .small-1.cell
       .small-1.cell
 
-  //- hr
-  //- h3 Margin-x
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  hr
+  h3 Margin-x
+  .grid-container.gridDemo
     .grid-x.grid-margin-x.grid-padding-x
       .small-1.cell
         p 1
@@ -134,9 +136,9 @@ block content
       .small-1.cell
       .small-1.cell
 
-  //- hr
-  //- h3 Nested Grid, no margin or padding
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  hr
+  h3 Nested Grid, no margin or padding
+  .grid-container.gridDemo
     .grid-x
       .small-6.cell.align-middle.text-center 6 columns
         .grid-x
@@ -168,9 +170,9 @@ block content
           .small-1.cell
       .small-3.cell.align-middle.text-center 3 columns
 
-  //- hr
-  //- h3 Nested Grid, padding-x
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  hr
+  h3 Nested Grid, padding-x
+  .grid-container.gridDemo
     .grid-x.grid-padding-x
       .small-6.cell.align-middle.text-center 6 columns
         .grid-x.grid-padding-x
@@ -202,9 +204,9 @@ block content
           .small-1.cell
       .small-3.cell.align-middle.text-center 3 columns
 
-  //- hr
-  //- h3 Nested Grid, margin-x
-  //- .grid-container.gridDemo(style="outline: 1px solid red")
+  hr
+  h3 Nested Grid, margin-x
+  .grid-container.gridDemo
     .grid-x.grid-margin-x
       .small-6.cell.align-middle.text-center 6 columns
         .grid-x.grid-margin-x
@@ -243,10 +245,10 @@ block content
   //      ██ ██      ██   ██ ██      ██ ██  ██ ██ ██    ██      ██
   // ███████ ██      ██   ██  ██████ ██ ██   ████  ██████  ███████
   // ======================================================================
-  //- #spacings
-  //- hr
-  //- h1 Spacings
-  //- .grid-container
+  #spacings
+  hr
+  h1 Spacings
+  .grid-container
     .grid-x.grid-padding-x
       .cell
         p Default size: 20px = 1rem
@@ -633,6 +635,51 @@ block content
             |
             | Cloning
 
+  //-
+  //-  ██████ █████ ██████ ██████ ███████
+  //- ██     ██   ████   ████   ████
+  //- ██     █████████████ ██   █████████
+  //- ██     ██   ████   ████   ██     ██
+  //-  ████████   ████   ████████ ███████
+  //-
+
+  #cards
+  h1 Cards
+  .grid-container
+    .grid-x.grid-padding-x.medium-up-3
+      .cell
+        .card.h100.relative
+            div
+              img.lazyload(data-src='https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/spotlight-market-guide-for-process-gartner.jpg')
+            .card-section
+              .label.text-bold.mb-half Gartner® report
+              h5 Market guide for process mining
+              p According to Gartner*, "Recent trends
+                a(href="#")  link in body copy
+                |  in automation and knowledge of the underlying processes and interactions are key to digital transformation. For data and analytics leaders, process mining delivers insights that enable faster, smarter decisions and stronger performance on an organization’s most critical priorities."
+            .card-divider
+              a.link-coverAll(href='#' title='Learn more' target='_blank' rel='noopener noreferrer')
+                | Learn more
+
+      .cell
+        .card.flex-container.h100.relative
+            .relative.py4.medium-py5
+              picture.absolute.pos-top.object-fit-cover
+                source(media="(max-width: 599px)", data-srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg", type="image/webp", srcset="images/case-study-insurance-mobile.webp, images/case-study-insurance-mobile.jpg")
+                source(media="(min-width: 600px) and (max-width: 1023px)", data-srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg", type="image/webp", srcset="images/case-study-insurance-desktop.webp, images/case-study-insurance-desktop.jpg")
+                source(data-srcset="images/case-study-insurance-desktop.webp", type="image/webp", srcset="images/case-study-insurance-desktop.webp")
+                source(data-srcset="images/case-study-insurance-desktop.jpg", type="image/jpg", srcset="images/case-study-insurance-desktop.jpg")
+                img.wh100.lazyload.object-fit-cover(width="780", height="185", data-src="images/case-study-insurance-desktop.jpg", alt="From Data to ROI ebook", title="From Data to ROI ebook", src="images/case-study-insurance-desktop.jpg")
+            .card-section
+              .flex-container.align-middle.mb1
+                img.mr-half.lazyload(data-src="images/icon-insurance.svg" width="24" height="24" alt="#" title="#")
+                small From data to ROI eBook
+              h5 How to generate ROI from AI-powered data
+              p
+                | Learn where to invest, how much to spend and what returns you can expect. This report explores what 1,200 businesses are doing to make better, faster decisions with AI-powered data to accelerate their business outcomes.
+            .card-divider
+              a.button.arrow.link-coverAll(title="#", target="_blank", href="#") Read the ebook
+
   // ======================================================================
   //  ██████  █████  ██      ██       ██████  ██    ██ ████████
   // ██      ██   ██ ██      ██      ██    ██ ██    ██    ██
@@ -695,7 +742,7 @@ block content
     .grid-container
       .grid-x.grid-padding-x.align-middle
         .small-11.medium-5.cell.text-center.medium-text-left
-          p.text-bold.text-caps.small.m0 Vivamus Hendrerit Arcu Sed Erat
+          p.text-bold.small.m0 Vivamus Hendrerit Arcu Sed Erat
           h4.m0 Quisque Eget Odio Ac Lectus
         .small-11.medium-5.cell
           p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
@@ -706,7 +753,7 @@ block content
     .grid-container
       .grid-x.grid-padding-x
         .small-11.medium-5.cell.text-center.medium-text-left
-          p.text-bold.text-caps.small.m0 healthcare
+          p.text-bold.small.m0 healthcare
           h4.m0 Designing patient-centric health services and technologies
         .small-11.medium-5.cell
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
@@ -716,12 +763,12 @@ block content
   hr
   h3 Callout-2-Column-v2-with-header-buttons
   .py1.bg-primary(style="min-height: 400px")
-    .py1.text-center.text-caps
+    .py1.text-center
       h3 industry spotlight
     .grid-container
       .grid-x.grid-padding-x
         .small-11.medium-5.cell.text-center.medium-text-left
-          p.text-bold.text-caps.small.m0 healthcare
+          p.text-bold.small.m0 healthcare
           h4.m0 Designing patient-centric health services and technologies
         .small-11.medium-5.cell
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
@@ -734,7 +781,7 @@ block content
     .grid-container
       .grid-x.grid-padding-x.align-middle
         .small-11.medium-4.cell.text-center.medium-text-left
-          h4.text-caps.m0 Quisque Eget Odio Ac Lectus
+          h4.m0 Quisque Eget Odio Ac Lectus
         .small-11.medium-6.cell
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
           a.button.small.arrow(href="#") Read more
@@ -747,7 +794,7 @@ block content
         .small-11.medium-4.cell.text-center
           img.mb1.medium-mb0(src="https://unsplash.it/300/350?image=901")
         .small-11.medium-6.cell
-          h4.text-caps Nulla At Nulla Justo, Eget
+          h4 Nulla At Nulla Justo, Eget
           p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit eos sapiente provident, saepe hic quas sint obcaecati, qui dolores quasi perferendis odio consequuntur, repellat exercitationem tempore fuga mollitia rerum labore!
           a.button.small.arrow.mb0(href="#") Read more
 
@@ -756,7 +803,7 @@ block content
   .align-middle.py4.bg-primary
     .grid-container
       .grid-x.grid-padding-x.align-middle
-        .cell.large-auto.text-caps
+        .cell.large-auto
           h3 Financial Services
           h4 h4 subheading
           p.medium-m0 Investment Banking, Asset Management, Lending, Retail Banking
@@ -798,7 +845,7 @@ block content
               span.strong 30% Reduction
               | in call volume due to self-services
 
-        .cell.large-auto.text-caps
+        .cell.large-auto
           h3 Insurance Services
           h4 h4 subheading
           p.medium-m0 Life & Annuities, Property & Casualty, Retirement
@@ -1841,25 +1888,25 @@ block content
 
   .bg-primary.py4
     .grid-container
-      h3.text-center WHAT WE DO
+      h3.text-center What we do
       .grid-x.grid-padding-x.align-center
         .cell.medium-5
-          h5 BUILD A DIGITAL-READY IT BACKBONE
+          h5 Build a digital ready it backbone
         .cell.medium-7
           p Going digital? You’ll need a simple, modern and secure infrastructure backbone. Work with our experts to transform your enterprise and future-proof your infrastructure to reduce costs, increase agility and protect your assets.
       .grid-x.medium-px-half
         .small-12.medium-4.cell
           ul#hover-tabs.vertical.tabs.hover-tabs.bd0.flex-container-medium.flex-dir-column(data-responsive-accordion-tabs="tabs small-accordion medium-tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true")
             li.tabs-title.is-active.hover-grow
-              a(href="#panel1v1", aria-selected="true") TRANSFORM YOUR IT STRATEGY
+              a(href="#panel1v1", aria-selected="true") Transform your it strategy
             li.tabs-title.hover-grow
-              a(href="#panel2v1") MODERNIZE YOUR CORE
+              a(href="#panel2v1") Modernize your core
             li.tabs-title.hover-grow
-              a(href="#panel3v1") EVOLVE YOUR APPROACH TO CLOUD
+              a(href="#panel3v1") Evolve your approach to cloud
             li.tabs-title.hover-grow
-              a(href="#panel4v1") SECURE YOUR ENTERPRISE
+              a(href="#panel4v1") Secure your enterprise
             li.tabs-title.hover-grow
-              a(href="#panel5v1") ENGINEER YOUR DIGITAL FUTURE
+              a(href="#panel5v1") Engineer your digital future
         .small-12.medium-8.cell
           .tabs-content.vertical.bd0.bg-primary(data-tabs-content="hover-tabs")
             #panel1v1.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg01.jpg) no-repeat; background-size: cover; background-position: center;")
@@ -1965,31 +2012,31 @@ block content
             #panel1v3.tabs-panel.is-active.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg01.jpg) no-repeat; background-size: cover; background-position: center;")
               .p1.medium-p2
                 .align-self-middle
-                  h6.tiny.text-caps Application Services
+                  h6.tiny Application Services
                   h3 Build applications that deliver the digital experiences customers want.
                   a.button.arrow.bg-green(href="#") More
             #panel2v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg02.jpg) no-repeat; background-size: cover; background-position: center;")
               .p1.medium-p2
                 .align-self-middle
-                  h6.tiny.text-caps Infrastructure Services
+                  h6.tiny Infrastructure Services
                   h3 Transform your IT backbone to create an always-on business.
                   a.button.arrow.bg-green(href="#") More
             #panel3v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg03.jpg) no-repeat; background-size: cover; background-position: center;")
               .p1.medium-p2
                 .align-self-middle
-                  h6.tiny.text-caps Enterprise Application Services
+                  h6.tiny Enterprise Application Services
                   h3 Streamline your back office and improve operational agility and employee connections.
                   a.button.arrow.bg-green(href="#") More
             #panel4v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg04.jpg) no-repeat; background-size: cover; background-position: center;")
               .p1.medium-p2
                 .align-self-middle
-                  h6.tiny.text-caps Quality Engineering & Assurance Services
+                  h6.tiny Quality Engineering & Assurance Services
                   h3 Employ an end-to-end approach where high quality meets high speed
                   a.button.arrow.bg-green(href="#") More
             #panel5v3.tabs-panel.p0(style="background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.6)), url("+siteURL+"/images/tabs/DST-enterpriseCapabilities-bg05.jpg) no-repeat; background-size: cover; background-position: center;")
               .p1.medium-p2
                 .align-self-middle
-                  h6.tiny.text-caps Security and Compliance Services
+                  h6.tiny Security and Compliance Services
                   h3 Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure Safeguard your users, data, applications and infrastructure
                   a.button.arrow.bg-green(href="#") More
 

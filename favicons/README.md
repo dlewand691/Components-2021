@@ -6,19 +6,18 @@ This package was generated with [RealFaviconGenerator](https://realfavicongenera
 
 To install this package:
 
-Extract this package in the root of your web site. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com/favicon.ico</code>.
+Extract this package in <code>&lt;web site&gt;/favicons/</code>. If your site is <code>http://www.example.com</code>, you should be able to access a file named <code>http://www.example.com/favicons/favicon.ico</code>.
 
 Insert the following code in the `head` section of your pages:
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="194x194" href="/favicon-194x194.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0033a0">
-    <meta name="msapplication-TileColor" content="#0033a0">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#0033a0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=2022">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=2022">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=2022">
+    <link rel="manifest" href="/favicons/site.webmanifest?v=2022">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=2022" color="#000048">
+    <link rel="shortcut icon" href="/favicons/favicon.ico?v=2022">
+    <meta name="msapplication-TileColor" content="#000048">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=2022">
+    <meta name="theme-color" content="#ffffff">
 
 *Optional* - Check your favicon with the [favicon checker](https://realfavicongenerator.net/favicon_checker)

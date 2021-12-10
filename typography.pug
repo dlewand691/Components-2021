@@ -19,8 +19,25 @@ block content
         p.specs.standard
         p.specs.small
         p.specs.tiny
+    .grid-x.grid-padding-x
+      .cell
+        h1 H1 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+        h2 H2 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+        h3 H3 heading lorem ipsum dolor sit amet, consectetur adipisicing elit.™®©
+        h4 H4 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+        h5 H5 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+        h6 H6 heading lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam™®©
+        p Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.™®©
+        p.small Small lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.™®©
+        p.tiny Tiny lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti. ™®©
     .grid-x.grid-padding-x.medium-up-3
       .cell
+        p Trademark
+          sup &trade;
+        p Register
+          sup &reg;
+        p Copyright
+          sup &copy;
         p
           mark="<mark>"
         p
@@ -16010,6 +16027,14 @@ block content
       .cell.auto.p1
         //- h4 Color option 1
         p
+          button.button-tiny-arrow.tiny.button
+          br
+          button.button-small-arrow.small.button
+          br
+          button.button-default-arrow.button
+          br
+          button.button-large-arrow.large.button
+          br
           button.button-tiny-arrow.tiny.button.arrow
           br
           button.button-small-arrow.small.button.arrow
@@ -16023,18 +16048,18 @@ block content
             button.button Button
             button.button Group
 
-        p.m0
-          button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
-        p.m0
-          button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
-        p.m0
-          button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
 
         p
           button.button-tiny-arrow.tiny.button.arrow.hollow
@@ -16046,7 +16071,7 @@ block content
           button.button-large-arrow.large.button.arrow.hollow
 
         p
-          button.button.arrow Arrow
+          button.button.arrow HArrow
           br
           button.button.arrow.arrow-solid Arrow, solid
           br
@@ -16067,6 +16092,8 @@ block content
           button.button.rounded Rounded
 
         p
+          = 'Within <p> tag, underline used'
+          br
           a.tiny(href="#") Tiny link
           br
           a.small(href="#") Small link
@@ -16074,6 +16101,16 @@ block content
           a(href="#") Standard link
           br
           a.large(href="#") Large link
+        p.m0
+          ='Inline <a> tag, no underline'
+        a.tiny(href="#") Tiny link
+        br
+        a.small(href="#") Small link
+        br
+        a(href="#") Standard link
+        br
+        a.large(href="#") Large link
+        p
           hr.my1
           a.tiny.arrow(href="#") Tiny link with arrow
           br
@@ -16090,6 +16127,7 @@ block content
           a.arrow.arrow-tail(href="#") Standard link with tail arrow
           br
           a.large.arrow.arrow-tail(href="#") Large link with tail arrow
+
       .cell.auto.p1.bg-primary
         //- h4 Color option 1
         p
@@ -16106,18 +16144,18 @@ block content
             button.button Button
             button.button Group
 
-        p.m0
-          button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
-        p.m0
-          button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
-        p.m0
-          button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
-        p.m0
-          button.button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-1 Gradient button theme 1
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-2 Gradient button theme 2
+        //- p.m0
+        //-   button.button-default.button.arrow.grd-theme-3 Gradient button theme 3
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-1 Hover gradient button theme 1
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-2 Hover gradient button theme 2
+        //- p.m0
+        //-   button.button-default.button.arrow.hover-grd-theme-3 Hover gradient button theme 3
 
         p
           button.button-tiny-arrow.tiny.button.arrow.hollow
@@ -16150,6 +16188,8 @@ block content
           button.button.rounded Rounded
 
         p
+          = 'Within <p> tag, underline used'
+          br
           a.tiny(href="#") Tiny link
           br
           a.small(href="#") Small link
@@ -16157,6 +16197,16 @@ block content
           a(href="#") Standard link
           br
           a.large(href="#") Large link
+        p.m0
+          ='Inline <a> tag, no underline'
+        a.tiny(href="#") Tiny link
+        br
+        a.small(href="#") Small link
+        br
+        a(href="#") Standard link
+        br
+        a.large(href="#") Large link
+        p
           hr.my1
           a.tiny.arrow(href="#") Tiny link with arrow
           br
@@ -16200,7 +16250,7 @@ block content
         br
         a.m0.button-tiny-arrow.tiny.button.arrow
     .grid-x.large-up-3
-      each bgColor in ["accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
+      each bgColor in ["accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
         .cell.p2(class="bg-" + bgColor)
           p.m0
             !="$" + bgColor
@@ -16218,368 +16268,85 @@ block content
         h6.m0 Gradient theme 2
       .cell.p2.bg-grd-theme-3
         h6.m0 Gradient theme 3
+  .py10.bg-grd-mesh-1.text-white.h80vh
+    .grid-container.flex-container.align-middle.w100
+      .grid-x
+        .cell
+            h6.m0 Gradient mesh 1
+  .py10.bg-grd-mesh-2.text-white.h80vh
+    .grid-container.flex-container.align-middle.w100
+      .grid-x
+        .cell
+            h6.m0 Gradient mesh 2
+  .py10.bg-grd-mesh-3.text-white.h80vh
+    .grid-container.flex-container.align-middle.w100
+      .grid-x
+        .cell
+            h6.m0 Gradient mesh 3
 
   hr
   #backgroundtypetest
+  mixin backgroundTypeTest
+    h1.inline.m0 h1
+    h2.inline.m0 h2
+    h3.inline.m0 h3
+    h4.inline.m0 h4
+    h5.inline.m0 h5
+    h6.inline.m0 h6
+    p.m0 Paragraph
+    //- p.m0
+    //-   small small
+    //- p.m0
+    //-   em emphasis
+    //- p.m0
+    //-   strong strong
+    //- p.m0
+    //-   mark mark
+    //- a link
+    a.block.mb1(href="#") Link
+    //- ul
+    //-   li ul list item
+    //- ol
+    //-   li ol list item
+
   h1 Background Colors type test
   .grid-container.mb2
-    .grid-x
-      .cell.p1.auto.bg-primary
-        h1.m0
-          a(href="#") h1
-        a(href="#")
-          h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-white
-        h1.m0
-          a(href="#") h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent1-dark
-        h1.m0
-          a(href="#") h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent1-medium
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent1-light
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent2-dark
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent2-medium
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent2-light
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent3-dark
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent3-medium
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-accent3-light
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-gray-dark
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-gray-medium
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-gray-light
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-gray-lighter
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
-      .cell.p1.auto.bg-gray-lightest
-        h1.m0 h1
-        h2.m0 h2
-        h3.m0 h3
-        h4.m0 h4
-        h5.m0 h5
-        h6.m0 h6
-        p.m0 Paragraph
-        p.m0
-          small Small
-        p.m0
-          em Italic
-        p.m0
-          strong strong
-        p.m0
-          mark mark
-        a link
-        a(href="#") href
-        ul
-          li ul list item
-        ol
-          li ol list item
+    .grid-x.medium-up-3
+      .cell.px1.bg-primary
+        +backgroundTypeTest
+      .cell.px1.bg-white
+        +backgroundTypeTest
+      .cell
+      .cell.px1.bg-accent1-dark
+        +backgroundTypeTest
+      .cell.px1.bg-accent1-medium
+        +backgroundTypeTest
+      .cell.px1.bg-accent1-light
+        +backgroundTypeTest
+      .cell.px1.bg-accent2-dark
+        +backgroundTypeTest
+      .cell.px1.bg-accent2-medium
+        +backgroundTypeTest
+      .cell.px1.bg-accent2-light
+        +backgroundTypeTest
+      .cell.px1.bg-gray-dark
+        +backgroundTypeTest
+      .cell.px1.bg-gray-medium
+        +backgroundTypeTest
+      .cell.px1.bg-gray-light
+        +backgroundTypeTest
+      .cell.px1.bg-gray-lighter
+        +backgroundTypeTest
+      .cell.px1.bg-gray-lightest
+        +backgroundTypeTest
+      .cell.px1.bg-size-cover(style="background-image:url(images/background.jpg);")
+        +backgroundTypeTest
+      .cell.px1.bg-size-cover(data-interchange="[images/background.jpg, small],[images/background.jpg, medium],[images/background.jpg, large]")
+        +backgroundTypeTest
+      .cell.px1.bg-size-cover.relative.flex-container.align-middle
+        .relative.z1
+          +backgroundTypeTest
+        img.absolute.object-fit-cover.top.show-for-large(src="images/background.jpg", alt="")
 
   // ======================================================================
   // Background options, gradient
@@ -16599,10 +16366,11 @@ block content
   h1 Text color options
   .grid-container.mb2
     .grid-x.medium-up-3
-      each textColor in ["white", "primary", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
+      each textColor in ["white", "primary", " ", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
         .cell.p1.column-block
-          p.m0(class="text-" + textColor)
+          p.m0(class="text-" + textColor style="background: url(https://via.placeholder.com/40x40")
             != "$text-" + textColor
+            a(href="#") Link
 
 
   hr
@@ -16611,10 +16379,21 @@ block content
   h5 Widths 1px-4px
   .grid-container.mb2.bg-gray-medium
     .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch
-      each borderVal in ["white", "primary", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "accent3-dark", "accent3-medium", "accent3-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "grd-theme-1", "grd-theme-2", "grd-theme-3"]
+      each borderVal in ["white", "primary", " ", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "grd-theme-1", "grd-theme-2", "grd-theme-3"]
         .cell.column-block.p1
           p(class="m0 p1" class="bd-" + borderVal + "-4")
             != '$bd-' + borderVal
+
+  hr
+  #borders
+  h1 Border radius and rounded
+  //- h5 Sizes 1-10
+  .grid-container.mb2
+    .grid-x.grid-margin-x.medium-up-4.flex-container.align-stretch
+      each borderRadius in ["radius", "rounded"]
+        .cell.mb1.bg-gray-medium.p2(class=borderRadius)
+          p.m0
+            !=  '.' + borderRadius
 
   hr
   #borders-sides
@@ -16622,7 +16401,7 @@ block content
   h5 Widths 1px-4px
   .grid-container.mb2.bg-gray-medium
     .grid-x.grid-margin-x.medium-up-4.flex-container.align-stretch.p2
-      each borderVal in ["t-white", "r-white", "b-white", "l-white", "t-primary", "r-primary", "b-primary", "l-primary", "t-accent1-dark", "r-accent1-dark", "b-accent1-dark", "l-accent1-dark", "t-accent1-medium", "r-accent1-medium", "b-accent1-medium", "l-accent1-medium", "t-accent1-light", "r-accent1-light", "b-accent1-light", "l-accent1-light", "t-accent2-dark", "r-accent2-dark", "b-accent2-dark", "l-accent2-dark", "t-accent2-medium", "r-accent2-medium", "b-accent2-medium", "l-accent2-medium", "t-accent2-light", "r-accent2-light", "b-accent2-light", "l-accent2-light", "t-accent3-dark", "r-accent3-dark", "b-accent3-dark", "l-accent3-dark", "t-accent3-medium", "r-accent3-medium", "b-accent3-medium", "l-accent3-medium", "t-accent3-light", "r-accent3-light", "b-accent3-light", "l-accent3-light", "t-gray-dark", "r-gray-dark", "b-gray-dark", "l-gray-dark", "t-gray-medium", "r-gray-medium", "b-gray-medium", "l-gray-medium", "t-gray-light", "r-gray-light", "b-gray-light", "l-gray-light", "t-gray-lighter", "r-gray-lighter", "b-gray-lighter", "l-gray-lighter", "t-gray-lightest", "r-gray-lightest", "b-gray-lightest", "l-gray-lightest", "t-grd-theme-1", "r-grd-theme-1", "b-grd-theme-1", "l-grd-theme-1", "t-grd-theme-2", "r-grd-theme-2", "b-grd-theme-2", "l-grd-theme-2", "t-grd-theme-3", "r-grd-theme-3", "b-grd-theme-3", "l-grd-theme-3"]
+      each borderVal in ["t-white", "r-white", "b-white", "l-white", "t-primary", "r-primary", "b-primary", "l-primary", "t-accent1-dark", "r-accent1-dark", "b-accent1-dark", "l-accent1-dark", "t-accent1-medium", "r-accent1-medium", "b-accent1-medium", "l-accent1-medium", "t-accent1-light", "r-accent1-light", "b-accent1-light", "l-accent1-light", "t-accent2-dark", "r-accent2-dark", "b-accent2-dark", "l-accent2-dark", "t-accent2-medium", "r-accent2-medium", "b-accent2-medium", "l-accent2-medium", "t-accent2-light", "r-accent2-light", "b-accent2-light", "l-accent2-light", "t-gray-dark", "r-gray-dark", "b-gray-dark", "l-gray-dark", "t-gray-medium", "r-gray-medium", "b-gray-medium", "l-gray-medium", "t-gray-light", "r-gray-light", "b-gray-light", "l-gray-light", "t-gray-lighter", "r-gray-lighter", "b-gray-lighter", "l-gray-lighter", "t-gray-lightest", "r-gray-lightest", "b-gray-lightest", "l-gray-lightest", "t-grd-theme-1", "r-grd-theme-1", "b-grd-theme-1", "l-grd-theme-1", "t-grd-theme-2", "r-grd-theme-2", "b-grd-theme-2", "l-grd-theme-2", "t-grd-theme-3", "r-grd-theme-3", "b-grd-theme-3", "l-grd-theme-3"]
         .cell.column-block.p1
           p(class="m0 p1" class="bd-" + borderVal + "-4")
             != '$bd-' + borderVal
@@ -16653,7 +16432,7 @@ block content
   h1="Horizontal (<hr>) dividers"
   .grid-container.mb2
     .grid-x.p2.bg-gray-medium
-      each hrDivider in ["lightest", "lighter", "light", "darkest", "darker", "dark", "primary", "accent1-light", "accent1-medium", "accent1-dark", "accent2-light", "accent2-medium", "accent2-dark", "accent3-light", "accent3-medium", "accent3-dark", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "bd-grd-theme-1", "bd-grd-theme-2", "bd-grd-theme-3"]
+      each hrDivider in ["lightest", "lighter", "light", "darkest", "darker", "dark", "primary", "accent1-light", "accent1-medium", "accent1-dark", "accent2-light", "accent2-medium", "accent2-dark", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest", "bd-grd-theme-1", "bd-grd-theme-2", "bd-grd-theme-3"]
         .cell
           hr.mb0(class=hrDivider)
           code= "." + hrDivider

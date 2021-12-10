@@ -1,1 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="68.019" height="57.367" transform="matrix(14.70177 0 0 14.70177 0 78.302)"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.019" height="57.367" viewBox="0 0 68.019 57.367"><defs><linearGradient id="a" x2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#4c5ca3"/><stop offset="1" stop-color="#68bfc9"/></linearGradient><linearGradient id="b" y1="1" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#24467a"/><stop offset="1" stop-color="#479699"/></linearGradient><linearGradient id="c" y1=".423" x2="1" y2=".432" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#292d77"/><stop offset="1" stop-color="#4c97aa"/></linearGradient><linearGradient id="d" x2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#4b63a8"/><stop offset="1" stop-color="#a6d6de"/></linearGradient></defs><path d="M29.014 28.684H0l19.932 28.683 20.662-12.342Z" fill-rule="evenodd" fill="url(#a)"/><path d="M68.019 28.684 19.932 57.367h28.54Z" fill-rule="evenodd" fill="url(#b)"/><path d="M0 28.684h29.014l11.613-16.339L19.932 0Z" fill-rule="evenodd" fill="url(#c)"/><path d="M68.019 28.684 19.932 0h28.54Z" fill-rule="evenodd" fill="url(#d)"/></svg></svg></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="86" height="86"><svg version="1.1" id="SvgjsSvg1004" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 86 86" style="enable-background:new 0 0 86 86;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_00000090275017658175494470000012388018050291834510_);}
+	.st2{fill:url(#SVGID_00000027577758139843293520000016905385134036355506_);}
+	.st3{fill:url(#SVGID_00000153675203643180778100000011173124601668317596_);}
+</style>
+<g>
+	<g>
+		<g>
+			<g>
+				
+					<linearGradient id="SvgjsLinearGradient1003" gradientUnits="userSpaceOnUse" x1="-1090.1235" y1="107.3574" x2="-1086.3163" y2="107.3574" gradientTransform="matrix(13.369 0 0 9.4464 14574.1621 -953.1407)">
+					<stop offset="0" style="stop-color:#3D54D0"></stop>
+					<stop offset="1" style="stop-color:#35CCD1"></stop>
+				</linearGradient>
+				<polygon class="st0" points="36.7,43 0.3,43 25.3,79 51.2,63.5 				"></polygon>
+				
+					<linearGradient id="SvgjsLinearGradient1002" gradientUnits="userSpaceOnUse" x1="-1099.2205" y1="107.3574" x2="-1095.4065" y2="107.3574" gradientTransform="matrix(15.8364 0 0 9.4464 17432.9961 -953.1407)">
+					<stop offset="0" style="stop-color:#13457D"></stop>
+					<stop offset="1" style="stop-color:#26989A"></stop>
+				</linearGradient>
+				<polygon style="fill:url(#SVGID_00000124149857028438971440000006579678741475486905_);" points="85.7,43 25.3,79 61.1,79 				
+					"></polygon>
+				
+					<linearGradient id="SvgjsLinearGradient1001" gradientUnits="userSpaceOnUse" x1="-1090.1765" y1="104.5457" x2="-1086.3647" y2="104.5457" gradientTransform="matrix(13.3798 0 0 9.4464 14586.6436 -962.5801)">
+					<stop offset="0" style="stop-color:#090088"></stop>
+					<stop offset="1" style="stop-color:#2F98AB"></stop>
+				</linearGradient>
+				<polygon style="fill:url(#SVGID_00000105415597068863461410000009463093524310967958_);" points="0.3,43 36.7,43 51.3,22.5 
+					25.3,7 				"></polygon>
+				
+					<linearGradient id="SvgjsLinearGradient1000" gradientUnits="userSpaceOnUse" x1="-1099.2205" y1="104.5457" x2="-1095.4065" y2="104.5457" gradientTransform="matrix(15.8364 0 0 9.4464 17432.9961 -962.5801)">
+					<stop offset="0" style="stop-color:#3B62CC"></stop>
+					<stop offset="1" style="stop-color:#95E1E5"></stop>
+				</linearGradient>
+				<polygon style="fill:url(#SVGID_00000007407811909829436290000016150683422972893110_);" points="85.7,43 25.3,7 61.1,7 				"></polygon>
+			</g>
+		</g>
+	</g>
+</g>
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(0.8333333333333334) brightness(1.7); } }
+</style></svg>

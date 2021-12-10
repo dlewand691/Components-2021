@@ -6,6 +6,30 @@ block content
 
   h1!= pageTitle
 
+  .grid-container.mb3
+    .grid-x.grid-padding-x.medium-up-2
+      .cell
+        .card.h100
+          .card-image.relative.py4.medium-py7
+              img.absolute.pos-top.object-fit-cover(src='https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/spotlight-market-guide-for-process-gartner.jpg')
+          .card-section.pb0
+            .label.text-bold.mb-half GARTNER® REPORT
+            h5 Market guide for process mining
+            p According to Gartner*, "Recent trends in automation and knowledge of the underlying processes and interactions are key to digital transformation. For data and analytics leaders, process mining delivers insights that enable faster, smarter decisions and stronger performance on an organization’s most critical priorities."
+          .card-divider
+            a.workahead-overlap.arrow(href='#' title='Learn more' target='_blank' rel='noopener noreferrer' new-data-attribute='Market guide for process mining')
+              | Learn more
+              //- i.arrow-right
+      .cell
+        .card
+          .card-image.relative.py4.medium-py7
+              img.absolute.pos-top.object-fit-cover.object-position-bottom-left(alt data-interchange='[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/automation-center-of-excellence-reduces-costs-and-improves-productivity-codex4629.jpg, small],[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/automation-center-of-excellence-reduces-costs-and-improves-productivity-codex4629.jpg, medium],[https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/automation-center-of-excellence-reduces-costs-and-improves-productivity-codex4629.jpg, large]' src='https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/automation-center-of-excellence-reduces-costs-and-improves-productivity-codex4629.jpg')
+          .card-section.large-px2.large-pt2.large-pb0
+            p.small.text-blue-dark UTILITIES
+            h5 Automation center of excellence trims costs and fuels productivity
+          .card-divider.large-px2.large-pb2
+            a.arrow(href='#' target='_self' title='Read more' tabindex='0' rel='noopener noreferrer' new-data-attribute='Automation center of excellence trims costs and fuels productivity') Read more
+
   .grid-container
     .grid-x.grid-padding-x
       .cell.large-8.medium-7(data-aos="fade-right", data-attribute="ebook")
@@ -88,7 +112,7 @@ block content
   mixin latestThinkingTile
     .card
       .mbn3.mt1.z1
-        .label.text-caps
+        .label
           i.file-acrobat.mr-half
           | Whitepapers
       .lt-header-image.gradient-overlay-white
@@ -97,20 +121,20 @@ block content
         h5 The Work Ahead
       .card-section
         p(contenteditable=true) Gain insights to master today’s, and tomorrow’s, digital economy.
-        a.small.button.arrow.m0 LEARN MORE
+        a.small.button.arrow.m0 Learn more
       .card-divider.bg-transparent.pt0
         //- hr.mt0.mb1.opacity-50
         .grid-x.align-middle.w100
           .small-6.large-7.cell
             h6.m0
               a.mr1(href="#")
-                i.email.fw600.text-gray-medium.hover-green
+                i.email.fw600.text-gray-medium
               a.mr1(href="#")
-                i.logo-twitter-bird.fw600.text-gray-medium.hover-green
+                i.logo-twitter-bird.fw600.text-gray-medium
               a.mr1(href="#")
-                i.logo-facebook.fw600.text-gray-medium.hover-green
+                i.logo-facebook.fw600.text-gray-medium
               a(href="#")
-                i.logo-linkedin.fw600.text-gray-medium.hover-green
+                i.logo-linkedin.fw600.text-gray-medium
           .cell.auto.text-right
             h5.anim-icon
               a.text-normal(href="#")
@@ -124,7 +148,7 @@ block content
   mixin latestThinkingTile-primary
     .card.bg-primary
       .mbn3.mt1.z1
-        .label.text-caps
+        .label
           i.file-acrobat.mr-half
           | Whitepapers
       .lt-header-image.gradient-overlay-primary
@@ -133,20 +157,20 @@ block content
         h5 The Work Ahead
       .card-section
         p(contenteditable=true) Gain insights to master today’s, and tomorrow’s, digital economy.
-        a.small.button.arrow.m0 LEARN MORE
+        a.small.button.arrow.m0 Learn more
       .card-divider.bg-transparent.pt0
         //- hr.mt0.mb1.opacity-50.white
         .grid-x.align-middle.w100
           .cell.small-6.large-7
             h6.m0
               a.mr1(href="#")
-                i.email.fw600.hover-green
+                i.email.fw600
               a.mr1(href="#")
-                i.logo-twitter-bird.fw600.hover-green
+                i.logo-twitter-bird.fw600
               a.mr1(href="#")
-                i.logo-facebook.fw600.hover-green
+                i.logo-facebook.fw600
               a(href="#")
-                i.logo-linkedin.fw600.hover-green
+                i.logo-linkedin.fw600
           .cell.auto.text-right
             h5.anim-icon
               a.text-normal(href="#")
@@ -163,12 +187,12 @@ block content
         img.object-fit-cover(src="https://via.placeholder.com/300x300")
       .small-12.medium-9.cell.medium-order-2.small-order-1
         .p1
-          .label.text-caps.mb-half
+          .label.mb-half
             i.file-acrobat.mr-half
             | Whitepapers
           h5 The Work Ahead
           p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
-          a.small.button.arrow.m0 LEARN MORE
+          a.small.button.arrow.m0 Learn more
 
   mixin boxModule-horizontal-imageRight
     .grid-x.bd1.mb1
@@ -176,26 +200,26 @@ block content
         img.object-fit-cover(src="https://via.placeholder.com/300x300")
       .small-12.medium-9.cell.medium-order-1.small-order-2
         .p1
-          .label.text-caps.mb-half
+          .label.mb-half
             i.file-acrobat.mr-half
             | Whitepapers
           h5 The Work Ahead
           p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
-          a.small.button.arrow.m0 LEARN MORE
+          a.small.button.arrow.m0 Learn more
 
   mixin boxModule-vertical
     .cell.cell-block
       .card
         img.object-fit-cover(src="https://via.placeholder.com/600x300" style="height: 100px;")
         .card-section
-          .label.text-caps.mb-half
+          .label.mb-half
             i.file-acrobat.mr-half
             | Whitepapers
           h5(contenteditable=true) The Work Ahead
         .card-section
           p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
         .card-divider
-          a.small.button.arrow.m0 LEARN MORE
+          a.small.button.arrow.m0 Learn more
 
   h3 Box-Module-A, B, C & D
 
@@ -291,7 +315,7 @@ block content
   .grid-container
     .grid-x.grid-padding-x.small-up-1.medium-up-2
       .cell.auto.column-block.flex-container
-        .card
+        .card.relative
           img.object-fit-cover(src="https://www.cognizant.com/content/dam/Field_Marketing/future-of-industries-energy-and-utilities/Energie_article1.jpg")
           .card-section
             .label.text-bold.mb-half ARTICLE
@@ -302,7 +326,7 @@ block content
               | READ THE ARTICLE
               i.arrow-right
       .cell.auto.column-block.flex-container
-        .card
+        .card.relative
           .video.white-controls.inside-controls
             .video-wrapper.relative.flex-container.align-center-middle
               img.object-fit-cover(src="https://www.cognizant.com/content/dam/Field_Marketing/future-of-industries-energy-and-utilities/Energie_article1.jpg")

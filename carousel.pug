@@ -17,7 +17,7 @@ block content
                                 .swiper-slide-title.z1.small(data-aos="fade-up" data-aos-delay="0") Intelligent Process Automation
                                     h1.h2(data-aos="fade-up" data-aos-delay="0") Anticipate change and act instantly
                                 p(data-aos="fade-up" data-aos-delay="100") Supercharge your operations with intelligent process automation for speed, productivity and innovation.
-                                a.small.button.arrow.m0.link-coverAll(data-aos="fade-in" data-aos-delay="300" href=slide.linkURL) LEARN MORE
+                                a.small.button.arrow.m0.link-coverAll(data-aos="fade-in" data-aos-delay="300" href=slide.linkURL) Learn more
                 .img-background.blur
                     picture
                         source(type="image/webp" media="(max-width: 640px)" srcset="images/HomePageSlides/"+slide.bgImg+"-mobile.webp")
@@ -30,14 +30,20 @@ block content
 
     .bg-primary
         .grid-container
-            .swiper.arrows-outside.accent2-arrows.square-pagination
+            .swiper.arrows-outside.accent3-arrows.square-pagination
                 .swiper-wrapper.py3
                     .swiper-slide
-                        h1 Slide 1
+                        .grid-x
+                            .cell.medium-offset-1
+                                h1 Carousel slide
                     .swiper-slide
-                        h1 Slide 2
+                        .grid-x
+                            .cell.medium-offset-1
+                                h1 Carousel slide
                     .swiper-slide
-                        h1 Slide 3
+                        .grid-x
+                            .cell.medium-offset-1
+                                h1 Carousel slide
 
                 .swiper-pagination
                 .swiper-button-next
@@ -149,15 +155,15 @@ block content
                         img(src="http://via.placeholder.com/1200x500?text=09 Large")
 
 
-    hr
-    h3#video-carousel Video Carousel
-    .swiper.inside-dots.inside-arrows.white-dots.white-arrows.square-pagination
+    //- hr
+    //- h3#video-carousel Video Carousel
+    //- .swiper.inside-dots.inside-arrows.white-dots.white-arrows.square-pagination
         .swiper-wrapper.bg-accent3-medium
             .swiper-slide.py2.medium-py3(style="background: url(images/background.jpg) no-repeat; background-size: cover; background-position: center center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping insurance companiesr
-                        h3.text-caps.m0 focus on prevention
+                        h6 Helping insurance companiesr
+                        h3.m0 focus on prevention
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -165,8 +171,8 @@ block content
             .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=902) no-repeat; background-size: cover; background-position: center center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping leading banks
-                        h3.text-caps.m0 MAKE BETTER LENDING DECISIONS
+                        h6 Helping leading banks
+                        h3.m0 MAKE BETTER LENDING DECISIONS
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -174,8 +180,8 @@ block content
             .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=903) no-repeat; background-size: cover; background-position: center center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping media companies
-                        h3.text-caps.m0 CREATE MORE IMMERSIVE EXPERIENCES
+                        h6 Helping media companies
+                        h3.m0 CREATE MORE IMMERSIVE EXPERIENCES
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -183,8 +189,8 @@ block content
             .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=904) no-repeat; background-size: cover; background-position: center center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping life sciences companies
-                        h3.text-caps.m0.text-white PERSONALIZE HEALTH LIVING SUBSCRIPTIONS
+                        h6 Helping life sciences companies
+                        h3.m0.text-white PERSONALIZE HEALTH LIVING SUBSCRIPTIONS
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -192,8 +198,8 @@ block content
             .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=905) no-repeat; background-size: cover; background-position: center center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping leading manufacturers
-                        h3.text-caps.m0 MAKE THINGS THAT AUTOMATICALLY THINK AND DO
+                        h6 Helping leading manufacturers
+                        h3.m0 MAKE THINGS THAT AUTOMATICALLY THINK AND DO
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -201,8 +207,8 @@ block content
             .swiper-slide.py2.medium-py3(style="background: url(https://unsplash.it/800/800?image=906) no-repeat; background-size: cover; background-position: top center;")
                 .grid-x.grid-padding-x.align-middle.py2.medium-py3
                     .small-12.medium-4.medium-offset-1.cell.text-center.medium-text-left
-                        h6.text-caps Helping doctors, insurers and patients
-                        h3.text-caps.m0 UNITE ON A COLLABORATIVE CARE PLATFORM
+                        h6 Helping doctors, insurers and patients
+                        h3.m0 UNITE ON A COLLABORATIVE CARE PLATFORM
                     .cell.shrink
                         a(href="#")
                             h1.m0
@@ -214,7 +220,7 @@ block content
 
 
 
-    mixin animated-text-carousel(BGImage, ID, expandValue, script, buttonText, buttonLink)
+    //- mixin animated-text-carousel(BGImage, ID, expandValue, script, buttonText, buttonLink)
         .swiper-slide.text-center(style="width:1600px; height:500px; background: url("+BGImage+") no-repeat; background-size: cover; background-position: center center;")
             .flex-container.align-bottom.align-center.relative.lazyload.overflow-hidden(id=ID data-expand=expandValue data-script=script style="width:1600px; height:500px;")
 
@@ -329,6 +335,6 @@ block content
     .mb5
 
 
-    <script type="module">
-    import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
-    </script>;
+    //- <script type="module">
+    //- import Swiper from 'https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js'
+    //- </script>;
