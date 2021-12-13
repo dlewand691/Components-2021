@@ -176,30 +176,40 @@ function getParams(obj = {}) {
     const params = {
         on: {},
     };
+    const events = {};
     const passedParams = {};
     extend(params, Swiper.defaults);
     extend(params, Swiper.extendedDefaults);
     params._emitClasses = true;
+    params.init = false;
     const rest = {};
+    const allowedParams = paramsList.map((key) => key.replace(/_/, ''));
     Object.keys(obj).forEach((key) => {
         const _key = key.replace(/^_/, '');
-        if (typeof obj[_key] === 'undefined')
-            return;
         if (allowedParams.indexOf(_key) >= 0) {
-            if (isObject(obj[_key])) {
+            if (isObject(obj[key])) {
                 params[_key] = {};
                 passedParams[_key] = {};
-                extend(params[_key], obj[_key]);
-                extend(passedParams[_key], obj[_key]);
+                extend(params[_key], obj[key]);
+                extend(passedParams[_key], obj[key]);
             }
             else {
-                params[_key] = obj[_key];
-                passedParams[_key] = obj[_key];
+                params[_key] = obj[key];
+                passedParams[_key] = obj[key];
             }
         }
+        // else if (key.search(/on[A-Z]/) === 0 && typeof obj[key] === 'function') {
+        //   events[`${_key[2].toLowerCase()}${key.substr(3)}`] = obj[key];
+        // }
         else {
-            rest[_key] = obj[_key];
+            rest[_key] = obj[key];
         }
+    });
+    ['navigation', 'pagination', 'scrollbar'].forEach((key) => {
+        if (params[key] === true)
+            params[key] = {};
+        if (params[key] === false)
+            delete params[key];
     });
     return { params, passedParams, rest };
 }
@@ -580,10 +590,7 @@ class SwiperComponent {
             : 'swiper-zoom-container';
     }
     _setElement(el, ref, update, key = 'el') {
-        if (!el || !ref) {
-            return;
-        }
-        if (ref && el.nativeElement) {
+        if (ref && el && el.nativeElement) {
             if (ref[key] === el.nativeElement) {
                 return;
             }
@@ -835,15 +842,6 @@ class SwiperComponent {
         }
         const _key = key.replace(/^_/, '');
         const isCurrentParamObj = isObject(this.swiperRef.params[_key]);
-        if (Object.keys(this.swiperRef.modules).indexOf(_key) >= 0) {
-            const defaultParams = this.swiperRef.modules[_key].params[_key];
-            if (isCurrentParamObj) {
-                extend(this.swiperRef.params[_key], defaultParams);
-            }
-            else {
-                this.swiperRef.params[_key] = defaultParams;
-            }
-        }
         if (_key === 'enabled') {
             if (value === true) {
                 this.swiperRef.enable();
