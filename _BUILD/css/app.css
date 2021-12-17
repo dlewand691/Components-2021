@@ -19146,32 +19146,27 @@ a.link-coverAll::before {
   height: 300px;
 }
 
-.bg-grd-theme-1 {
+[class*=bg-grd-] {
+  border: none;
+}
+[class*=bg-grd-] :is(h1, h2, h3, h4, h5, h6, p, ul, li, ol, em, strong) {
+  color: inherit;
+}
+
+.bg-grd-theme-1, .bg-grd-mesh-theme-1 {
   background: linear-gradient(45deg, #2d2d8f 10%, #006fba 50%, #21fceb 94%);
-  border: none;
   color: #ffffff !important;
 }
-.bg-grd-theme-1 :is(h1, h2, h3, h4, h5, h6, p, ul, li, ol, em, strong) {
-  color: inherit;
-}
 
-.bg-grd-theme-2 {
+.bg-grd-theme-2, .bg-grd-mesh-theme-2 {
   background: linear-gradient(45deg, #010065 15%, #d43635 65%, #f3c9ce 100%);
-  border: none;
   color: #ffffff !important;
 }
-.bg-grd-theme-2 :is(h1, h2, h3, h4, h5, h6, p, ul, li, ol, em, strong) {
-  color: inherit;
-}
 
-.bg-grd-theme-3 {
+.bg-grd-theme-3, .bg-grd-mesh-theme-3 {
   background: linear-gradient(45deg, #5e93ef 10%, #c7ed88 65%, #eee2a0 85%, #efe34a 100%);
-  border: none;
   color: #000048;
   color: #000048 !important;
-}
-.bg-grd-theme-3 :is(h1, h2, h3, h4, h5, h6, p, ul, li, ol, em, strong) {
-  color: inherit;
 }
 
 .bg-grd-mesh-theme-1 {
