@@ -473,1913 +473,1913 @@ code {
 }
 
 .text-primary,
-.text-primary *:not(a, i, span, button, [style^=background]) {
+.text-primary :not(a, span, button, [style^=background]) {
   color: #000048;
 }
 .text-primary a:not(.button),
 .text-primary a:link:not(.button),
-.text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #26efe9;
 }
 .text-primary a:not(.button):hover,
 .text-primary a:link:not(.button):hover,
-.text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #c9fbfa;
 }
 
 .text-accent1-light,
-.text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.text-accent1-light :not(a, span, button, [style^=background]) {
   color: #85a0f9;
 }
 .text-accent1-light a:not(.button),
 .text-accent1-light a:link:not(.button),
-.text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-accent1-light a:not(.button):hover,
 .text-accent1-light a:link:not(.button):hover,
-.text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-accent1-medium,
-.text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.text-accent1-medium :not(a, span, button, [style^=background]) {
   color: #7373d8;
 }
 .text-accent1-medium a:not(.button),
 .text-accent1-medium a:link:not(.button),
-.text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-accent1-medium a:not(.button):hover,
 .text-accent1-medium a:link:not(.button):hover,
-.text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-accent1-dark,
-.text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.text-accent1-dark :not(a, span, button, [style^=background]) {
   color: #2e308e;
 }
 .text-accent1-dark a:not(.button),
 .text-accent1-dark a:link:not(.button),
-.text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #26efe9;
 }
 .text-accent1-dark a:not(.button):hover,
 .text-accent1-dark a:link:not(.button):hover,
-.text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #c9fbfa;
 }
 
 .text-accent2-light,
-.text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.text-accent2-light :not(a, span, button, [style^=background]) {
   color: #92bbe6;
 }
 .text-accent2-light a:not(.button),
 .text-accent2-light a:link:not(.button),
-.text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-accent2-light a:not(.button):hover,
 .text-accent2-light a:link:not(.button):hover,
-.text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-accent2-medium,
-.text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.text-accent2-medium :not(a, span, button, [style^=background]) {
   color: #6aa2dc;
 }
 .text-accent2-medium a:not(.button),
 .text-accent2-medium a:link:not(.button),
-.text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-accent2-medium a:not(.button):hover,
 .text-accent2-medium a:link:not(.button):hover,
-.text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-accent2-dark,
-.text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.text-accent2-dark :not(a, span, button, [style^=background]) {
   color: #2f78c4;
 }
 .text-accent2-dark a:not(.button),
 .text-accent2-dark a:link:not(.button),
-.text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #26efe9;
 }
 .text-accent2-dark a:not(.button):hover,
 .text-accent2-dark a:link:not(.button):hover,
-.text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #c9fbfa;
 }
 
 .text-white,
-.text-white *:not(a, i, span, button, [style^=background]) {
+.text-white :not(a, span, button, [style^=background]) {
   color: #ffffff;
 }
 .text-white a:not(.button),
 .text-white a:link:not(.button),
-.text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-white :not(a, span, button, [style^=background]) a:not(.button),
+.text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #2f78c4;
 }
 .text-white a:not(.button):hover,
 .text-white a:link:not(.button):hover,
-.text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #000048;
 }
 
 .text-black,
-.text-black *:not(a, i, span, button, [style^=background]) {
+.text-black :not(a, span, button, [style^=background]) {
   color: #000048;
 }
 .text-black a:not(.button),
 .text-black a:link:not(.button),
-.text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-black :not(a, span, button, [style^=background]) a:not(.button),
+.text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #26efe9;
 }
 .text-black a:not(.button):hover,
 .text-black a:link:not(.button):hover,
-.text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #c9fbfa;
 }
 
 .text-gray-light,
-.text-gray-light *:not(a, i, span, button, [style^=background]) {
+.text-gray-light :not(a, span, button, [style^=background]) {
   color: #d0d0ce;
 }
 .text-gray-light a:not(.button),
 .text-gray-light a:link:not(.button),
-.text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-gray-light a:not(.button):hover,
 .text-gray-light a:link:not(.button):hover,
-.text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-gray-lighter,
-.text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.text-gray-lighter :not(a, span, button, [style^=background]) {
   color: #e8e8e6;
 }
 .text-gray-lighter a:not(.button),
 .text-gray-lighter a:link:not(.button),
-.text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #2f78c4;
 }
 .text-gray-lighter a:not(.button):hover,
 .text-gray-lighter a:link:not(.button):hover,
-.text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #000048;
 }
 
 .text-gray-lightest,
-.text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.text-gray-lightest :not(a, span, button, [style^=background]) {
   color: #f5f5f2;
 }
 .text-gray-lightest a:not(.button),
 .text-gray-lightest a:link:not(.button),
-.text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #2f78c4;
 }
 .text-gray-lightest a:not(.button):hover,
 .text-gray-lightest a:link:not(.button):hover,
-.text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #000048;
 }
 
 .text-gray-medium,
-.text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.text-gray-medium :not(a, span, button, [style^=background]) {
   color: #97999b;
 }
 .text-gray-medium a:not(.button),
 .text-gray-medium a:link:not(.button),
-.text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #000048;
 }
 .text-gray-medium a:not(.button):hover,
 .text-gray-medium a:link:not(.button):hover,
-.text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: rgba(0, 0, 72, 0.5);
 }
 
 .text-gray-dark,
-.text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.text-gray-dark :not(a, span, button, [style^=background]) {
   color: #53565a;
 }
 .text-gray-dark a:not(.button),
 .text-gray-dark a:link:not(.button),
-.text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
   color: #26efe9;
 }
 .text-gray-dark a:not(.button):hover,
 .text-gray-dark a:link:not(.button):hover,
-.text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
   color: #c9fbfa;
 }
 
 @media screen and (min-width: 25.625em) {
   .small-xl-text-primary,
-.small-xl-text-primary *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .small-xl-text-primary a:not(.button),
 .small-xl-text-primary a:link:not(.button),
-.small-xl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .small-xl-text-primary a:not(.button):hover,
 .small-xl-text-primary a:link:not(.button):hover,
-.small-xl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .small-xl-text-accent1-light,
-.small-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .small-xl-text-accent1-light a:not(.button),
 .small-xl-text-accent1-light a:link:not(.button),
-.small-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-accent1-light a:not(.button):hover,
 .small-xl-text-accent1-light a:link:not(.button):hover,
-.small-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-accent1-medium,
-.small-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .small-xl-text-accent1-medium a:not(.button),
 .small-xl-text-accent1-medium a:link:not(.button),
-.small-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-accent1-medium a:not(.button):hover,
 .small-xl-text-accent1-medium a:link:not(.button):hover,
-.small-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-accent1-dark,
-.small-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .small-xl-text-accent1-dark a:not(.button),
 .small-xl-text-accent1-dark a:link:not(.button),
-.small-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .small-xl-text-accent1-dark a:not(.button):hover,
 .small-xl-text-accent1-dark a:link:not(.button):hover,
-.small-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .small-xl-text-accent2-light,
-.small-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .small-xl-text-accent2-light a:not(.button),
 .small-xl-text-accent2-light a:link:not(.button),
-.small-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-accent2-light a:not(.button):hover,
 .small-xl-text-accent2-light a:link:not(.button):hover,
-.small-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-accent2-medium,
-.small-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .small-xl-text-accent2-medium a:not(.button),
 .small-xl-text-accent2-medium a:link:not(.button),
-.small-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-accent2-medium a:not(.button):hover,
 .small-xl-text-accent2-medium a:link:not(.button):hover,
-.small-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-accent2-dark,
-.small-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .small-xl-text-accent2-dark a:not(.button),
 .small-xl-text-accent2-dark a:link:not(.button),
-.small-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .small-xl-text-accent2-dark a:not(.button):hover,
 .small-xl-text-accent2-dark a:link:not(.button):hover,
-.small-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .small-xl-text-white,
-.small-xl-text-white *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .small-xl-text-white a:not(.button),
 .small-xl-text-white a:link:not(.button),
-.small-xl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .small-xl-text-white a:not(.button):hover,
 .small-xl-text-white a:link:not(.button):hover,
-.small-xl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .small-xl-text-black,
-.small-xl-text-black *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .small-xl-text-black a:not(.button),
 .small-xl-text-black a:link:not(.button),
-.small-xl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .small-xl-text-black a:not(.button):hover,
 .small-xl-text-black a:link:not(.button):hover,
-.small-xl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .small-xl-text-gray-light,
-.small-xl-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .small-xl-text-gray-light a:not(.button),
 .small-xl-text-gray-light a:link:not(.button),
-.small-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-gray-light a:not(.button):hover,
 .small-xl-text-gray-light a:link:not(.button):hover,
-.small-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-gray-lighter,
-.small-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .small-xl-text-gray-lighter a:not(.button),
 .small-xl-text-gray-lighter a:link:not(.button),
-.small-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .small-xl-text-gray-lighter a:not(.button):hover,
 .small-xl-text-gray-lighter a:link:not(.button):hover,
-.small-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .small-xl-text-gray-lightest,
-.small-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .small-xl-text-gray-lightest a:not(.button),
 .small-xl-text-gray-lightest a:link:not(.button),
-.small-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .small-xl-text-gray-lightest a:not(.button):hover,
 .small-xl-text-gray-lightest a:link:not(.button):hover,
-.small-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .small-xl-text-gray-medium,
-.small-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .small-xl-text-gray-medium a:not(.button),
 .small-xl-text-gray-medium a:link:not(.button),
-.small-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .small-xl-text-gray-medium a:not(.button):hover,
 .small-xl-text-gray-medium a:link:not(.button):hover,
-.small-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .small-xl-text-gray-dark,
-.small-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.small-xl-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .small-xl-text-gray-dark a:not(.button),
 .small-xl-text-gray-dark a:link:not(.button),
-.small-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.small-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.small-xl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.small-xl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .small-xl-text-gray-dark a:not(.button):hover,
 .small-xl-text-gray-dark a:link:not(.button):hover,
-.small-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.small-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.small-xl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.small-xl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media print, screen and (min-width: 37.5em) {
   .medium-text-primary,
-.medium-text-primary *:not(a, i, span, button, [style^=background]) {
+.medium-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-text-primary a:not(.button),
 .medium-text-primary a:link:not(.button),
-.medium-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-text-primary a:not(.button):hover,
 .medium-text-primary a:link:not(.button):hover,
-.medium-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-text-accent1-light,
-.medium-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .medium-text-accent1-light a:not(.button),
 .medium-text-accent1-light a:link:not(.button),
-.medium-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-accent1-light a:not(.button):hover,
 .medium-text-accent1-light a:link:not(.button):hover,
-.medium-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-accent1-medium,
-.medium-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .medium-text-accent1-medium a:not(.button),
 .medium-text-accent1-medium a:link:not(.button),
-.medium-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-accent1-medium a:not(.button):hover,
 .medium-text-accent1-medium a:link:not(.button):hover,
-.medium-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-accent1-dark,
-.medium-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .medium-text-accent1-dark a:not(.button),
 .medium-text-accent1-dark a:link:not(.button),
-.medium-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-text-accent1-dark a:not(.button):hover,
 .medium-text-accent1-dark a:link:not(.button):hover,
-.medium-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-text-accent2-light,
-.medium-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .medium-text-accent2-light a:not(.button),
 .medium-text-accent2-light a:link:not(.button),
-.medium-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-accent2-light a:not(.button):hover,
 .medium-text-accent2-light a:link:not(.button):hover,
-.medium-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-accent2-medium,
-.medium-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .medium-text-accent2-medium a:not(.button),
 .medium-text-accent2-medium a:link:not(.button),
-.medium-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-accent2-medium a:not(.button):hover,
 .medium-text-accent2-medium a:link:not(.button):hover,
-.medium-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-accent2-dark,
-.medium-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.medium-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .medium-text-accent2-dark a:not(.button),
 .medium-text-accent2-dark a:link:not(.button),
-.medium-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-text-accent2-dark a:not(.button):hover,
 .medium-text-accent2-dark a:link:not(.button):hover,
-.medium-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-text-white,
-.medium-text-white *:not(a, i, span, button, [style^=background]) {
+.medium-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .medium-text-white a:not(.button),
 .medium-text-white a:link:not(.button),
-.medium-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-text-white a:not(.button):hover,
 .medium-text-white a:link:not(.button):hover,
-.medium-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-text-black,
-.medium-text-black *:not(a, i, span, button, [style^=background]) {
+.medium-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-text-black a:not(.button),
 .medium-text-black a:link:not(.button),
-.medium-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-text-black a:not(.button):hover,
 .medium-text-black a:link:not(.button):hover,
-.medium-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-text-gray-light,
-.medium-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.medium-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .medium-text-gray-light a:not(.button),
 .medium-text-gray-light a:link:not(.button),
-.medium-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-gray-light a:not(.button):hover,
 .medium-text-gray-light a:link:not(.button):hover,
-.medium-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-gray-lighter,
-.medium-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.medium-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .medium-text-gray-lighter a:not(.button),
 .medium-text-gray-lighter a:link:not(.button),
-.medium-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-text-gray-lighter a:not(.button):hover,
 .medium-text-gray-lighter a:link:not(.button):hover,
-.medium-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-text-gray-lightest,
-.medium-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.medium-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .medium-text-gray-lightest a:not(.button),
 .medium-text-gray-lightest a:link:not(.button),
-.medium-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-text-gray-lightest a:not(.button):hover,
 .medium-text-gray-lightest a:link:not(.button):hover,
-.medium-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-text-gray-medium,
-.medium-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.medium-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .medium-text-gray-medium a:not(.button),
 .medium-text-gray-medium a:link:not(.button),
-.medium-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-text-gray-medium a:not(.button):hover,
 .medium-text-gray-medium a:link:not(.button):hover,
-.medium-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-text-gray-dark,
-.medium-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.medium-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .medium-text-gray-dark a:not(.button),
 .medium-text-gray-dark a:link:not(.button),
-.medium-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-text-gray-dark a:not(.button):hover,
 .medium-text-gray-dark a:link:not(.button):hover,
-.medium-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media screen and (min-width: 48em) {
   .medium-xl-text-primary,
-.medium-xl-text-primary *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-xl-text-primary a:not(.button),
 .medium-xl-text-primary a:link:not(.button),
-.medium-xl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xl-text-primary a:not(.button):hover,
 .medium-xl-text-primary a:link:not(.button):hover,
-.medium-xl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xl-text-accent1-light,
-.medium-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .medium-xl-text-accent1-light a:not(.button),
 .medium-xl-text-accent1-light a:link:not(.button),
-.medium-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-accent1-light a:not(.button):hover,
 .medium-xl-text-accent1-light a:link:not(.button):hover,
-.medium-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-accent1-medium,
-.medium-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .medium-xl-text-accent1-medium a:not(.button),
 .medium-xl-text-accent1-medium a:link:not(.button),
-.medium-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-accent1-medium a:not(.button):hover,
 .medium-xl-text-accent1-medium a:link:not(.button):hover,
-.medium-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-accent1-dark,
-.medium-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .medium-xl-text-accent1-dark a:not(.button),
 .medium-xl-text-accent1-dark a:link:not(.button),
-.medium-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xl-text-accent1-dark a:not(.button):hover,
 .medium-xl-text-accent1-dark a:link:not(.button):hover,
-.medium-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xl-text-accent2-light,
-.medium-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .medium-xl-text-accent2-light a:not(.button),
 .medium-xl-text-accent2-light a:link:not(.button),
-.medium-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-accent2-light a:not(.button):hover,
 .medium-xl-text-accent2-light a:link:not(.button):hover,
-.medium-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-accent2-medium,
-.medium-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .medium-xl-text-accent2-medium a:not(.button),
 .medium-xl-text-accent2-medium a:link:not(.button),
-.medium-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-accent2-medium a:not(.button):hover,
 .medium-xl-text-accent2-medium a:link:not(.button):hover,
-.medium-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-accent2-dark,
-.medium-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .medium-xl-text-accent2-dark a:not(.button),
 .medium-xl-text-accent2-dark a:link:not(.button),
-.medium-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xl-text-accent2-dark a:not(.button):hover,
 .medium-xl-text-accent2-dark a:link:not(.button):hover,
-.medium-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xl-text-white,
-.medium-xl-text-white *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .medium-xl-text-white a:not(.button),
 .medium-xl-text-white a:link:not(.button),
-.medium-xl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xl-text-white a:not(.button):hover,
 .medium-xl-text-white a:link:not(.button):hover,
-.medium-xl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xl-text-black,
-.medium-xl-text-black *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-xl-text-black a:not(.button),
 .medium-xl-text-black a:link:not(.button),
-.medium-xl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xl-text-black a:not(.button):hover,
 .medium-xl-text-black a:link:not(.button):hover,
-.medium-xl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xl-text-gray-light,
-.medium-xl-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .medium-xl-text-gray-light a:not(.button),
 .medium-xl-text-gray-light a:link:not(.button),
-.medium-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-gray-light a:not(.button):hover,
 .medium-xl-text-gray-light a:link:not(.button):hover,
-.medium-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-gray-lighter,
-.medium-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .medium-xl-text-gray-lighter a:not(.button),
 .medium-xl-text-gray-lighter a:link:not(.button),
-.medium-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xl-text-gray-lighter a:not(.button):hover,
 .medium-xl-text-gray-lighter a:link:not(.button):hover,
-.medium-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xl-text-gray-lightest,
-.medium-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .medium-xl-text-gray-lightest a:not(.button),
 .medium-xl-text-gray-lightest a:link:not(.button),
-.medium-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xl-text-gray-lightest a:not(.button):hover,
 .medium-xl-text-gray-lightest a:link:not(.button):hover,
-.medium-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xl-text-gray-medium,
-.medium-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .medium-xl-text-gray-medium a:not(.button),
 .medium-xl-text-gray-medium a:link:not(.button),
-.medium-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xl-text-gray-medium a:not(.button):hover,
 .medium-xl-text-gray-medium a:link:not(.button):hover,
-.medium-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xl-text-gray-dark,
-.medium-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xl-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .medium-xl-text-gray-dark a:not(.button),
 .medium-xl-text-gray-dark a:link:not(.button),
-.medium-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xl-text-gray-dark a:not(.button):hover,
 .medium-xl-text-gray-dark a:link:not(.button):hover,
-.medium-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media screen and (min-width: 50.625em) {
   .medium-xxl-text-primary,
-.medium-xxl-text-primary *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-xxl-text-primary a:not(.button),
 .medium-xxl-text-primary a:link:not(.button),
-.medium-xxl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xxl-text-primary a:not(.button):hover,
 .medium-xxl-text-primary a:link:not(.button):hover,
-.medium-xxl-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xxl-text-accent1-light,
-.medium-xxl-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .medium-xxl-text-accent1-light a:not(.button),
 .medium-xxl-text-accent1-light a:link:not(.button),
-.medium-xxl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-accent1-light a:not(.button):hover,
 .medium-xxl-text-accent1-light a:link:not(.button):hover,
-.medium-xxl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-accent1-medium,
-.medium-xxl-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .medium-xxl-text-accent1-medium a:not(.button),
 .medium-xxl-text-accent1-medium a:link:not(.button),
-.medium-xxl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-accent1-medium a:not(.button):hover,
 .medium-xxl-text-accent1-medium a:link:not(.button):hover,
-.medium-xxl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-accent1-dark,
-.medium-xxl-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .medium-xxl-text-accent1-dark a:not(.button),
 .medium-xxl-text-accent1-dark a:link:not(.button),
-.medium-xxl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xxl-text-accent1-dark a:not(.button):hover,
 .medium-xxl-text-accent1-dark a:link:not(.button):hover,
-.medium-xxl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xxl-text-accent2-light,
-.medium-xxl-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .medium-xxl-text-accent2-light a:not(.button),
 .medium-xxl-text-accent2-light a:link:not(.button),
-.medium-xxl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-accent2-light a:not(.button):hover,
 .medium-xxl-text-accent2-light a:link:not(.button):hover,
-.medium-xxl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-accent2-medium,
-.medium-xxl-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .medium-xxl-text-accent2-medium a:not(.button),
 .medium-xxl-text-accent2-medium a:link:not(.button),
-.medium-xxl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-accent2-medium a:not(.button):hover,
 .medium-xxl-text-accent2-medium a:link:not(.button):hover,
-.medium-xxl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-accent2-dark,
-.medium-xxl-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .medium-xxl-text-accent2-dark a:not(.button),
 .medium-xxl-text-accent2-dark a:link:not(.button),
-.medium-xxl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xxl-text-accent2-dark a:not(.button):hover,
 .medium-xxl-text-accent2-dark a:link:not(.button):hover,
-.medium-xxl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xxl-text-white,
-.medium-xxl-text-white *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .medium-xxl-text-white a:not(.button),
 .medium-xxl-text-white a:link:not(.button),
-.medium-xxl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xxl-text-white a:not(.button):hover,
 .medium-xxl-text-white a:link:not(.button):hover,
-.medium-xxl-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xxl-text-black,
-.medium-xxl-text-black *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .medium-xxl-text-black a:not(.button),
 .medium-xxl-text-black a:link:not(.button),
-.medium-xxl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xxl-text-black a:not(.button):hover,
 .medium-xxl-text-black a:link:not(.button):hover,
-.medium-xxl-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .medium-xxl-text-gray-light,
-.medium-xxl-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .medium-xxl-text-gray-light a:not(.button),
 .medium-xxl-text-gray-light a:link:not(.button),
-.medium-xxl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-gray-light a:not(.button):hover,
 .medium-xxl-text-gray-light a:link:not(.button):hover,
-.medium-xxl-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-gray-lighter,
-.medium-xxl-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .medium-xxl-text-gray-lighter a:not(.button),
 .medium-xxl-text-gray-lighter a:link:not(.button),
-.medium-xxl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xxl-text-gray-lighter a:not(.button):hover,
 .medium-xxl-text-gray-lighter a:link:not(.button):hover,
-.medium-xxl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xxl-text-gray-lightest,
-.medium-xxl-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .medium-xxl-text-gray-lightest a:not(.button),
 .medium-xxl-text-gray-lightest a:link:not(.button),
-.medium-xxl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .medium-xxl-text-gray-lightest a:not(.button):hover,
 .medium-xxl-text-gray-lightest a:link:not(.button):hover,
-.medium-xxl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .medium-xxl-text-gray-medium,
-.medium-xxl-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .medium-xxl-text-gray-medium a:not(.button),
 .medium-xxl-text-gray-medium a:link:not(.button),
-.medium-xxl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .medium-xxl-text-gray-medium a:not(.button):hover,
 .medium-xxl-text-gray-medium a:link:not(.button):hover,
-.medium-xxl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .medium-xxl-text-gray-dark,
-.medium-xxl-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.medium-xxl-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .medium-xxl-text-gray-dark a:not(.button),
 .medium-xxl-text-gray-dark a:link:not(.button),
-.medium-xxl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.medium-xxl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.medium-xxl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.medium-xxl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .medium-xxl-text-gray-dark a:not(.button):hover,
 .medium-xxl-text-gray-dark a:link:not(.button):hover,
-.medium-xxl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.medium-xxl-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.medium-xxl-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.medium-xxl-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media print, screen and (min-width: 64em) {
   .large-text-primary,
-.large-text-primary *:not(a, i, span, button, [style^=background]) {
+.large-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .large-text-primary a:not(.button),
 .large-text-primary a:link:not(.button),
-.large-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .large-text-primary a:not(.button):hover,
 .large-text-primary a:link:not(.button):hover,
-.large-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .large-text-accent1-light,
-.large-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.large-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .large-text-accent1-light a:not(.button),
 .large-text-accent1-light a:link:not(.button),
-.large-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-accent1-light a:not(.button):hover,
 .large-text-accent1-light a:link:not(.button):hover,
-.large-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-accent1-medium,
-.large-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.large-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .large-text-accent1-medium a:not(.button),
 .large-text-accent1-medium a:link:not(.button),
-.large-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-accent1-medium a:not(.button):hover,
 .large-text-accent1-medium a:link:not(.button):hover,
-.large-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-accent1-dark,
-.large-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.large-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .large-text-accent1-dark a:not(.button),
 .large-text-accent1-dark a:link:not(.button),
-.large-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .large-text-accent1-dark a:not(.button):hover,
 .large-text-accent1-dark a:link:not(.button):hover,
-.large-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .large-text-accent2-light,
-.large-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.large-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .large-text-accent2-light a:not(.button),
 .large-text-accent2-light a:link:not(.button),
-.large-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-accent2-light a:not(.button):hover,
 .large-text-accent2-light a:link:not(.button):hover,
-.large-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-accent2-medium,
-.large-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.large-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .large-text-accent2-medium a:not(.button),
 .large-text-accent2-medium a:link:not(.button),
-.large-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-accent2-medium a:not(.button):hover,
 .large-text-accent2-medium a:link:not(.button):hover,
-.large-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-accent2-dark,
-.large-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.large-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .large-text-accent2-dark a:not(.button),
 .large-text-accent2-dark a:link:not(.button),
-.large-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .large-text-accent2-dark a:not(.button):hover,
 .large-text-accent2-dark a:link:not(.button):hover,
-.large-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .large-text-white,
-.large-text-white *:not(a, i, span, button, [style^=background]) {
+.large-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .large-text-white a:not(.button),
 .large-text-white a:link:not(.button),
-.large-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .large-text-white a:not(.button):hover,
 .large-text-white a:link:not(.button):hover,
-.large-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .large-text-black,
-.large-text-black *:not(a, i, span, button, [style^=background]) {
+.large-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .large-text-black a:not(.button),
 .large-text-black a:link:not(.button),
-.large-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .large-text-black a:not(.button):hover,
 .large-text-black a:link:not(.button):hover,
-.large-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .large-text-gray-light,
-.large-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.large-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .large-text-gray-light a:not(.button),
 .large-text-gray-light a:link:not(.button),
-.large-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-gray-light a:not(.button):hover,
 .large-text-gray-light a:link:not(.button):hover,
-.large-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-gray-lighter,
-.large-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.large-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .large-text-gray-lighter a:not(.button),
 .large-text-gray-lighter a:link:not(.button),
-.large-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .large-text-gray-lighter a:not(.button):hover,
 .large-text-gray-lighter a:link:not(.button):hover,
-.large-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .large-text-gray-lightest,
-.large-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.large-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .large-text-gray-lightest a:not(.button),
 .large-text-gray-lightest a:link:not(.button),
-.large-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .large-text-gray-lightest a:not(.button):hover,
 .large-text-gray-lightest a:link:not(.button):hover,
-.large-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .large-text-gray-medium,
-.large-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.large-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .large-text-gray-medium a:not(.button),
 .large-text-gray-medium a:link:not(.button),
-.large-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .large-text-gray-medium a:not(.button):hover,
 .large-text-gray-medium a:link:not(.button):hover,
-.large-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .large-text-gray-dark,
-.large-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.large-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .large-text-gray-dark a:not(.button),
 .large-text-gray-dark a:link:not(.button),
-.large-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.large-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.large-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.large-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .large-text-gray-dark a:not(.button):hover,
 .large-text-gray-dark a:link:not(.button):hover,
-.large-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.large-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.large-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.large-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media screen and (min-width: 75em) {
   .xlarge-text-primary,
-.xlarge-text-primary *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .xlarge-text-primary a:not(.button),
 .xlarge-text-primary a:link:not(.button),
-.xlarge-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xlarge-text-primary a:not(.button):hover,
 .xlarge-text-primary a:link:not(.button):hover,
-.xlarge-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xlarge-text-accent1-light,
-.xlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .xlarge-text-accent1-light a:not(.button),
 .xlarge-text-accent1-light a:link:not(.button),
-.xlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-accent1-light a:not(.button):hover,
 .xlarge-text-accent1-light a:link:not(.button):hover,
-.xlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-accent1-medium,
-.xlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .xlarge-text-accent1-medium a:not(.button),
 .xlarge-text-accent1-medium a:link:not(.button),
-.xlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-accent1-medium a:not(.button):hover,
 .xlarge-text-accent1-medium a:link:not(.button):hover,
-.xlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-accent1-dark,
-.xlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .xlarge-text-accent1-dark a:not(.button),
 .xlarge-text-accent1-dark a:link:not(.button),
-.xlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xlarge-text-accent1-dark a:not(.button):hover,
 .xlarge-text-accent1-dark a:link:not(.button):hover,
-.xlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xlarge-text-accent2-light,
-.xlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .xlarge-text-accent2-light a:not(.button),
 .xlarge-text-accent2-light a:link:not(.button),
-.xlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-accent2-light a:not(.button):hover,
 .xlarge-text-accent2-light a:link:not(.button):hover,
-.xlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-accent2-medium,
-.xlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .xlarge-text-accent2-medium a:not(.button),
 .xlarge-text-accent2-medium a:link:not(.button),
-.xlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-accent2-medium a:not(.button):hover,
 .xlarge-text-accent2-medium a:link:not(.button):hover,
-.xlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-accent2-dark,
-.xlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .xlarge-text-accent2-dark a:not(.button),
 .xlarge-text-accent2-dark a:link:not(.button),
-.xlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xlarge-text-accent2-dark a:not(.button):hover,
 .xlarge-text-accent2-dark a:link:not(.button):hover,
-.xlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xlarge-text-white,
-.xlarge-text-white *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .xlarge-text-white a:not(.button),
 .xlarge-text-white a:link:not(.button),
-.xlarge-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xlarge-text-white a:not(.button):hover,
 .xlarge-text-white a:link:not(.button):hover,
-.xlarge-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xlarge-text-black,
-.xlarge-text-black *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .xlarge-text-black a:not(.button),
 .xlarge-text-black a:link:not(.button),
-.xlarge-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xlarge-text-black a:not(.button):hover,
 .xlarge-text-black a:link:not(.button):hover,
-.xlarge-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xlarge-text-gray-light,
-.xlarge-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .xlarge-text-gray-light a:not(.button),
 .xlarge-text-gray-light a:link:not(.button),
-.xlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-gray-light a:not(.button):hover,
 .xlarge-text-gray-light a:link:not(.button):hover,
-.xlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-gray-lighter,
-.xlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .xlarge-text-gray-lighter a:not(.button),
 .xlarge-text-gray-lighter a:link:not(.button),
-.xlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xlarge-text-gray-lighter a:not(.button):hover,
 .xlarge-text-gray-lighter a:link:not(.button):hover,
-.xlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xlarge-text-gray-lightest,
-.xlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .xlarge-text-gray-lightest a:not(.button),
 .xlarge-text-gray-lightest a:link:not(.button),
-.xlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xlarge-text-gray-lightest a:not(.button):hover,
 .xlarge-text-gray-lightest a:link:not(.button):hover,
-.xlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xlarge-text-gray-medium,
-.xlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .xlarge-text-gray-medium a:not(.button),
 .xlarge-text-gray-medium a:link:not(.button),
-.xlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xlarge-text-gray-medium a:not(.button):hover,
 .xlarge-text-gray-medium a:link:not(.button):hover,
-.xlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xlarge-text-gray-dark,
-.xlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.xlarge-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .xlarge-text-gray-dark a:not(.button),
 .xlarge-text-gray-dark a:link:not(.button),
-.xlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xlarge-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xlarge-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xlarge-text-gray-dark a:not(.button):hover,
 .xlarge-text-gray-dark a:link:not(.button):hover,
-.xlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xlarge-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xlarge-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }
 @media screen and (min-width: 100em) {
   .xxlarge-text-primary,
-.xxlarge-text-primary *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-primary :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .xxlarge-text-primary a:not(.button),
 .xxlarge-text-primary a:link:not(.button),
-.xxlarge-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-primary :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-primary :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xxlarge-text-primary a:not(.button):hover,
 .xxlarge-text-primary a:link:not(.button):hover,
-.xxlarge-text-primary *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-primary *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-primary :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-primary :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xxlarge-text-accent1-light,
-.xxlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent1-light :not(a, span, button, [style^=background]) {
     color: #85a0f9;
   }
   .xxlarge-text-accent1-light a:not(.button),
 .xxlarge-text-accent1-light a:link:not(.button),
-.xxlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-accent1-light a:not(.button):hover,
 .xxlarge-text-accent1-light a:link:not(.button):hover,
-.xxlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent1-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent1-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent1-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-accent1-medium,
-.xxlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent1-medium :not(a, span, button, [style^=background]) {
     color: #7373d8;
   }
   .xxlarge-text-accent1-medium a:not(.button),
 .xxlarge-text-accent1-medium a:link:not(.button),
-.xxlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-accent1-medium a:not(.button):hover,
 .xxlarge-text-accent1-medium a:link:not(.button):hover,
-.xxlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent1-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent1-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-accent1-dark,
-.xxlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent1-dark :not(a, span, button, [style^=background]) {
     color: #2e308e;
   }
   .xxlarge-text-accent1-dark a:not(.button),
 .xxlarge-text-accent1-dark a:link:not(.button),
-.xxlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xxlarge-text-accent1-dark a:not(.button):hover,
 .xxlarge-text-accent1-dark a:link:not(.button):hover,
-.xxlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent1-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent1-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xxlarge-text-accent2-light,
-.xxlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent2-light :not(a, span, button, [style^=background]) {
     color: #92bbe6;
   }
   .xxlarge-text-accent2-light a:not(.button),
 .xxlarge-text-accent2-light a:link:not(.button),
-.xxlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-accent2-light a:not(.button):hover,
 .xxlarge-text-accent2-light a:link:not(.button):hover,
-.xxlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent2-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent2-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent2-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-accent2-medium,
-.xxlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent2-medium :not(a, span, button, [style^=background]) {
     color: #6aa2dc;
   }
   .xxlarge-text-accent2-medium a:not(.button),
 .xxlarge-text-accent2-medium a:link:not(.button),
-.xxlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-accent2-medium a:not(.button):hover,
 .xxlarge-text-accent2-medium a:link:not(.button):hover,
-.xxlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent2-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent2-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-accent2-dark,
-.xxlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-accent2-dark :not(a, span, button, [style^=background]) {
     color: #2f78c4;
   }
   .xxlarge-text-accent2-dark a:not(.button),
 .xxlarge-text-accent2-dark a:link:not(.button),
-.xxlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xxlarge-text-accent2-dark a:not(.button):hover,
 .xxlarge-text-accent2-dark a:link:not(.button):hover,
-.xxlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-accent2-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-accent2-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xxlarge-text-white,
-.xxlarge-text-white *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-white :not(a, span, button, [style^=background]) {
     color: #ffffff;
   }
   .xxlarge-text-white a:not(.button),
 .xxlarge-text-white a:link:not(.button),
-.xxlarge-text-white *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-white :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-white :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xxlarge-text-white a:not(.button):hover,
 .xxlarge-text-white a:link:not(.button):hover,
-.xxlarge-text-white *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-white *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-white :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-white :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xxlarge-text-black,
-.xxlarge-text-black *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-black :not(a, span, button, [style^=background]) {
     color: #000048;
   }
   .xxlarge-text-black a:not(.button),
 .xxlarge-text-black a:link:not(.button),
-.xxlarge-text-black *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-black :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-black :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xxlarge-text-black a:not(.button):hover,
 .xxlarge-text-black a:link:not(.button):hover,
-.xxlarge-text-black *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-black *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-black :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-black :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 
   .xxlarge-text-gray-light,
-.xxlarge-text-gray-light *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-gray-light :not(a, span, button, [style^=background]) {
     color: #d0d0ce;
   }
   .xxlarge-text-gray-light a:not(.button),
 .xxlarge-text-gray-light a:link:not(.button),
-.xxlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-gray-light :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-gray-light a:not(.button):hover,
 .xxlarge-text-gray-light a:link:not(.button):hover,
-.xxlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-gray-light *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-gray-light :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-gray-light :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-gray-lighter,
-.xxlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-gray-lighter :not(a, span, button, [style^=background]) {
     color: #e8e8e6;
   }
   .xxlarge-text-gray-lighter a:not(.button),
 .xxlarge-text-gray-lighter a:link:not(.button),
-.xxlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xxlarge-text-gray-lighter a:not(.button):hover,
 .xxlarge-text-gray-lighter a:link:not(.button):hover,
-.xxlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-gray-lighter *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-gray-lighter :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xxlarge-text-gray-lightest,
-.xxlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-gray-lightest :not(a, span, button, [style^=background]) {
     color: #f5f5f2;
   }
   .xxlarge-text-gray-lightest a:not(.button),
 .xxlarge-text-gray-lightest a:link:not(.button),
-.xxlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #2f78c4;
   }
   .xxlarge-text-gray-lightest a:not(.button):hover,
 .xxlarge-text-gray-lightest a:link:not(.button):hover,
-.xxlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-gray-lightest *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-gray-lightest :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #000048;
   }
 
   .xxlarge-text-gray-medium,
-.xxlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-gray-medium :not(a, span, button, [style^=background]) {
     color: #97999b;
   }
   .xxlarge-text-gray-medium a:not(.button),
 .xxlarge-text-gray-medium a:link:not(.button),
-.xxlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #000048;
   }
   .xxlarge-text-gray-medium a:not(.button):hover,
 .xxlarge-text-gray-medium a:link:not(.button):hover,
-.xxlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-gray-medium *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-gray-medium :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-gray-medium :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: rgba(0, 0, 72, 0.5);
   }
 
   .xxlarge-text-gray-dark,
-.xxlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) {
+.xxlarge-text-gray-dark :not(a, span, button, [style^=background]) {
     color: #53565a;
   }
   .xxlarge-text-gray-dark a:not(.button),
 .xxlarge-text-gray-dark a:link:not(.button),
-.xxlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button),
-.xxlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button) {
+.xxlarge-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button),
+.xxlarge-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button) {
     color: #26efe9;
   }
   .xxlarge-text-gray-dark a:not(.button):hover,
 .xxlarge-text-gray-dark a:link:not(.button):hover,
-.xxlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:not(.button):hover,
-.xxlarge-text-gray-dark *:not(a, i, span, button, [style^=background]) a:link:not(.button):hover {
+.xxlarge-text-gray-dark :not(a, span, button, [style^=background]) a:not(.button):hover,
+.xxlarge-text-gray-dark :not(a, span, button, [style^=background]) a:link:not(.button):hover {
     color: #c9fbfa;
   }
 }

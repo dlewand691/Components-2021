@@ -29,6 +29,12 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/_ARCHIVE" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/_BUILD\/_ARCHIVE",
+      "oF" : 0
+    },
     "\/_BUILD" : {
       "ft" : 65536,
       "oA" : 1,
@@ -17445,46 +17451,6 @@
       "oF" : 0,
       "oS" : 0
     },
-    "\/nav-sub-bar.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/nav-sub-bar.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/navigation-megamenu-buildingblock.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/navigation-megamenu-buildingblock.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/navigation-megamenu.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/navigation-megamenu.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/navigation.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/navigation.html",
-      "oF" : 0,
-      "oS" : 0
-    },
     "\/navigation2021.pug" : {
       "cB" : 1,
       "cOD" : 0,
@@ -19744,7 +19710,7 @@
       "ENVIRONMENT:::$NODE_ENV"
     ],
     "rollupTreeshakingEnabled" : 1,
-    "skippedFoldersString" : "\/storage\/framework\/sessions,Source,node_modules,_logs,logs,log,.idea,.history,demo-files,_cache,cache,__MIXINS,__UNUSED,_template",
+    "skippedFoldersString" : "demo-files,_template,\/storage\/framework\/sessions,__mixins,_cache,.idea,_logs,logs,\/_archive,node_modules,__unused,cache,source,log,.history",
     "sourceFolderName" : "source",
     "susyVersion" : 3,
     "tsAllowSyntheticDefaultImports" : 0,

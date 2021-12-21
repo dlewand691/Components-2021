@@ -5,10 +5,108 @@ block vars
 block content
   - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/";
   script(src='js/min/app-min.js')
+  mixin backgroundTypeTest
+    div
+      h1.inline.m0 h1
+      h2.inline.m0 h2
+      h3.inline.m0 h3
+      h4.inline.m0 h4
+      h5.inline.m0 h5
+      h6.inline.m0 h6
+      p.m0 Paragraph
+      //- p.m0
+      //-   small small
+      //- p.m0
+      //-   em emphasis
+      //- p.m0
+      //-   strong strong
+      //- p.m0
+      //-   mark mark
+      //- a link
+      a.block.mb1(href="#") Link
+      //- ul
+      //-   li ul list item
+      //- ol
+      //-   li ol list item
 
-  .p5.text-gray-medium
-    p Text
-      a link
+  .p1.bg-primary
+    | bg-primary
+    +backgroundTypeTest
+    .h5
+      i.arrow-right
+    .p1.bg-white
+      | bg-white
+      +backgroundTypeTest
+      .h5
+        i.arrow-right
+    .p1.bg-gray-dark
+      | bg-gray-dark
+      +backgroundTypeTest
+      .text-accent1-medium
+        | text-accent1-medium
+        +backgroundTypeTest
+        .h5
+          i.arrow-right
+        .p1.bg-accent1-dark
+          | bg-accent1-dark
+          +backgroundTypeTest
+          .h5
+            i.arrow-right
+        .p1.bg-white.text-accent1-light
+          | bg-white.text-accent1-light
+          +backgroundTypeTest
+          .h5
+            i.arrow-right
+          .p1.bg-primary
+            | bg-primary
+            +backgroundTypeTest
+            .h5
+              i.arrow-right
+            .p1.bg-white
+              | bg-white
+              +backgroundTypeTest
+              .h5
+                i.arrow-right
+            .p1.bg-gray-light
+              | bg-gray-medium
+              +backgroundTypeTest
+              .h5
+                i.arrow-right
+            .p1.bg-gray-medium
+              | bg-gray-medium
+              +backgroundTypeTest
+              .h5
+                i.arrow-right
+            .p1.bg-gray-dark
+              | bg-gray-dark
+              +backgroundTypeTest
+              .h5
+                i.arrow-right
+  .p1
+    +backgroundTypeTest
+    .h5
+      i.arrow-right
+    .bg-primary
+      | bg-primary
+      p.m0.text-accent1-light .text-accent1-light
+      h1.m0.text-accent1-light h1.text-accent1-light
+      h4.m0.text-accent1-light h4.text-accent1-light
+      +backgroundTypeTest
+      .h5
+        i.arrow-right
+  .p1.bg-accent1-medium.text-white
+    | .bg-accent1-medium.text-white
+    +backgroundTypeTest
+    .h5
+      i.arrow-right
+  .p1.bg-accent1-medium
+    | .bg-accent1-medium
+    h4.text-white h4.text-white
+    +backgroundTypeTest
+    .h5
+      i.arrow-right
+
+
   #typography
   h1 Typography
   .grid-container
@@ -69,7 +167,7 @@ block content
           cite John Wu
 
 
-  .grid-container
+  //- .grid-container
     .grid-x
       .cell
         ul.accordion.accordion-arrow(data-accordion data-multi-expand="false" data-allow-all-closed="true")
@@ -16240,7 +16338,7 @@ block content
         a.small(href="#") (Links default to complimenting color)
         br
         a.m0.button-tiny-arrow.tiny.button.arrow
-      .cell.p1.auto.bd1.bg-white
+      .cell.p2.auto.bd1.bg-white
         p.m0
           strong White
           br
@@ -16287,29 +16385,6 @@ block content
 
   hr
   #backgroundtypetest
-  mixin backgroundTypeTest
-    h1.inline.m0 h1
-    h2.inline.m0 h2
-    h3.inline.m0 h3
-    h4.inline.m0 h4
-    h5.inline.m0 h5
-    h6.inline.m0 h6
-    p.m0 Paragraph
-    //- p.m0
-    //-   small small
-    //- p.m0
-    //-   em emphasis
-    //- p.m0
-    //-   strong strong
-    //- p.m0
-    //-   mark mark
-    //- a link
-    a.block.mb1(href="#") Link
-    //- ul
-    //-   li ul list item
-    //- ol
-    //-   li ol list item
-
   h1 Background Colors type test
   .grid-container.mb2
     .grid-x.medium-up-3

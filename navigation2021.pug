@@ -6,15 +6,21 @@ block vars
 
 block content
 
-  +bannerCovid19(class="theme-primary")
-  +subnav(class="theme-primary")
-  +primaryNav(class="theme-primary")
-  +sectionNav(class="theme-primary")
+  //- +bannerCovid19(class="theme-default")
+  +subnav(class="theme-default")
+  +primaryNav(class="theme-default relative z2" style="transform: translate3d(0, 0, 0);")
+  +sectionNav(class="theme-default")
 
   img.object-fit-cover(src="https://via.placeholder.com/1600x500?text=Header+banner")
-  +navBarInPage(class="theme-primary")
+  +navBarInPage(class="theme-default")
 
-  .h100vh
+  .h30vh#link1(data-magellan-target="link1")
+  .h30vh#link2(data-magellan-target="link2")
+  .h30vh#link3(data-magellan-target="link3")
+  .h30vh#link4(data-magellan-target="link4")
+  .h30vh#link5(data-magellan-target="link5")
+  .h30vh#link6(data-magellan-target="link6")
+  .h30vh#link7(data-magellan-target="link7")
 
-  +footer(class="theme-primary")
+  +footer(class="theme-default")
   //- include footer2021.pug
