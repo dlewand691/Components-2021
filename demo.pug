@@ -1,0 +1,409 @@
+extend __LAYOUT-TEMPLATE.pug
+block content
+  //- while component deliver includes below mixin
+  //- include ../../pug/mixins/mixins
+  mixin grid-carousel(...elements)
+    each preItems in elements
+      - if(preItems.length > 3){
+        //carousel starts here if more than 3 column
+        //Accessiblity tab focus start
+        a.tab-focus.show-on-focus(href="#" onkeydown="swiperKeypressDetect(event,swiperGrid,'top')") Grid carousel starts here
+        .swiper-button-next.grid-next.xlarge-mrn2.xlarge-pl1.z2
+        .swiper-button-prev.grid-prev.xlarge-mln2.xlarge-pr1.z2
+        .swiper.swiper-grid.navigation-enabled.bullet-pagination-enabled.pt-half.mt1.rect-pagination(data-equalizer='featurepara' data-equalize-on-stack="true")
+          .swiper-wrapper(data-equalizer='featuretitle' data-equalize-on-stack="true")
+            //carousel ends here
+            each item in preItems
+              - item.type ="carousel"
+                .swiper-slide
+                  +innerContent(item)
+          //carousel starts here
+          .pagination.mt2.text-center.rect
+        a.tab-focus.show-on-focus(href="#" onkeydown="swiperKeypressDetect(event,swiperGrid,'bottom')") Grid carousel ends here
+        //Accessiblity tab focus end
+      //carousel ends here
+
+      - }
+      - else{
+          //Non carousel starts here less than 3 column
+          div(data-equalizer='featuretitle')
+            .grid-x.grid-margin-x.grid-margin-y.large-up-3.medium-up-2.small-up-1.align-center.mt1(data-equalizer='featurepara')
+              //Non carousel ends here
+              each item in preItems
+                - item.type ="carousel"
+                  .cell.relative
+                    +innerContent(item)
+      - }
+
+
+  mixin innerContent(...elements)
+    each item in elements
+      .bd-gray-light-1(class=`bg-${item.bgColor}`)
+        //img.h-250x.pos-top.pos-left.object-fit-cover.object-position-center-top(class= item.type == 'carousel' ? 'swiper-lazy' : 'lazyload' data-src=item.imgLink alt=item.title width="379" height="245" title=item.subTitle)
+        img.h-250x.pos-top.pos-left.object-fit-cover.object-position-center-top(class='lazyload' data-src=item.imgLink alt=item.title width="379" height="245" title=item.subTitle)
+        .p2
+
+          h6.small.text-normal #{item.subTitle}
+          h5(data-equalizer-watch='featuretitle') #{item.title}
+          div(data-equalizer-watch='featurepara')
+            p.small #{item.paragraph}
+          - if(item.target == 'popup'){
+            a.button.hollow.arrow.small.mt1.mb0(href=item.link title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' target=item.target) #{item.linkText}
+            //- a.button.arrow.small.mt1.mb0(href=item.link title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' target=item.target) #{item.linkText}
+            //- a.arrow.small.mt1.mb0(data-open=item.link aria-haspopup='true' tabindex='0' data-attribute=item.title title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' ) #{item.linkText}
+          - }
+          - else{
+              a.button.hollow.arrow.small.mt1.mb0(href=item.link title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' target=item.target) #{item.linkText}
+              //- a.button.arrow.small.mt1.mb0(href=item.link title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' target=item.target) #{item.linkText}
+              //- a.arrow.small.mt1.mb0(href=item.link title=item.linkText new-data-attribute=item.title rel='noopener noreferrer' target=item.target) #{item.linkText}
+          - }
+
+
+  //Tile Grid top image horizantal components Starts Here As per live variation without card(cognizant.com/ai)
+  .bg-primary.py3(bg-data-attribute='Engineering excellence')
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell
+          h3 Background with Primary Class
+          p
+            | All inner section in light color
+
+
+        .cell.relative
+          //with Swiper Carousel grid more than 3 coloumn starts here
+          +grid-carousel([
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'white'
+              },
+              {
+                subTitle: 'ACCOLADES',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-peak-matrix-life-science.jpg',
+                title: 'Cognizant named PEAK Matrix® Leader',
+                paragraph: 'Our excellence in modernizing business operations enables us to deliver efficiencies across the life sciences enterprise to deliver efficiencies across the life sciences.',
+                link: 'https://www.cognizant.com/us/en/industries/life-sciences-technology-solutions',
+                linkText: 'LEARN MORE',
+                target: '_self',
+                bgColor: 'gray-dark'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lighter'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lightest'
+              },
+
+          ])
+          //with Swiper Carousel grid more than 3 coloumn ends here
+
+          //without Swiper - Grid Column less than 3 coloumn starts here
+
+          //without Swiper - Grid Column less than 3 coloumn ends here
+  //Tile Grid top image horizantal components Ends Here
+
+  //Tile Grid top image horizantal components Starts Here
+  .bg-gray-lighter.py3(bg-data-attribute='Engineering excellence')
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell
+          h3 Background with gray-lighter Classes
+
+          p
+            | We deliver leadership excellence by hiring and partnering with the best in the business.
+
+
+        .cell.relative
+          //with Swiper Carousel grid more than 3 coloumn starts here
+          +grid-carousel([
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'primary'
+              },
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'accent1-dark'
+              },
+              {
+                subTitle: 'ACCOLADES',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-peak-matrix-life-science.jpg',
+                title: 'Cognizant named PEAK Matrix® Leader',
+                paragraph: 'Our excellence in modernizing business operations enables us to deliver efficiencies across the life sciences enterprise to deliver efficiencies across the life sciences.',
+                link: 'https://www.cognizant.com/us/en/industries/life-sciences-technology-solutions',
+                linkText: 'LEARN MORE',
+                target: '_self',
+                bgColor: 'accent1-medium'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent1-light'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-dark'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-medium'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-light'
+              },
+          ])
+          //with Swiper Carousel grid more than 3 coloumn ends here
+
+          //without Swiper - Grid Column starts here
+
+          //without Swiper - Grid Column starts here
+  //Tile Grid top image horizantal components Ends Here
+
+  //Tile Grid top image horizantal components Starts Here
+  .bg-accent2-dark.py3(bg-data-attribute='Engineering excellence')
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell
+          h3 Background with accent-dark Class
+          p
+            | All inner section in light color
+
+
+        .cell.relative
+          //with Swiper Carousel grid more than 3 coloumn starts here
+          +grid-carousel([
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'white'
+              },
+              {
+                subTitle: 'ACCOLADES',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-peak-matrix-life-science.jpg',
+                title: 'Cognizant named PEAK Matrix® Leader',
+                paragraph: 'Our excellence in modernizing business operations enables us to deliver efficiencies across the life sciences enterprise to deliver efficiencies across the life sciences.',
+                link: 'https://www.cognizant.com/us/en/industries/life-sciences-technology-solutions',
+                linkText: 'LEARN MORE',
+                target: '_self',
+                bgColor: 'gray-dark'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lighter'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lightest'
+              },
+
+          ])
+          //with Swiper Carousel grid more than 3 coloumn ends here
+
+          //without Swiper - Grid Column starts here
+
+          //without Swiper - Grid Column starts here
+  //Tile Grid top image horizantal components Ends Here
+
+  //Tile Grid top image horizantal components Starts Here
+  .bg-white.py3(bg-data-attribute='Engineering excellence')
+    .grid-container
+      .grid-x.grid-margin-x
+        .cell
+          h3 Background with white Class
+
+          p
+            | We deliver leadership excellence by hiring and partnering with the best in the business.
+
+
+        .cell.relative.bg-primary
+          //with Swiper Carousel grid more than 3 coloumn starts here
+          +grid-carousel([
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'primary'
+              },
+              {
+                subTitle: 'CAREERS',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-recruitment.jpg',
+                title: 'Engineer',
+                paragraph: 'Expand your potential for shaping the future.',
+                link: 'video-modal-industry',
+                linkText: 'LEARN MORE',
+                target: 'popup',
+                bgColor: 'accent1-dark'
+              },
+              {
+                subTitle: 'ACCOLADES',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-engineering-exc-peak-matrix-life-science.jpg',
+                title: 'Cognizant named PEAK Matrix® Leader',
+                paragraph: 'Our excellence in modernizing business operations enables us to deliver efficiencies across the life sciences enterprise to deliver efficiencies across the life sciences.',
+                link: 'https://www.cognizant.com/us/en/industries/life-sciences-technology-solutions',
+                linkText: 'LEARN MORE',
+                target: '_self',
+                bgColor: 'accent1-medium'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent1-light'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-dark'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-medium'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'accent2-light'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-dark'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lighter'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'gray-lightest'
+              },
+              {
+                subTitle: 'EMPLOYEE EXPERIENCE',
+                imgLink: 'https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/cx-ex-engineer-excellence.jpg',
+                title:'Great CX starts with great EX',
+                paragraph: 'Customer experience leaders drive results by focusing on employee experience first, enabling an inclusive, data-driven career model.',
+                link: 'https://www.cognizant.com/us/en/services/digital-experience',
+                linkText: 'LEARN MORE',
+                target: '_blank',
+                bgColor: 'white'
+              },
+          ])
+          //with Swiper Carousel grid more than 3 coloumn ends here
+
+          //without Swiper - Grid Column starts here
+
+          //without Swiper - Grid Column starts here
+  //Tile Grid top image horizantal components Ends Here
+

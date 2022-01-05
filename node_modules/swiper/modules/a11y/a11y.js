@@ -111,7 +111,7 @@ export default function A11y({
   }
 
   function updateNavigation() {
-    if (swiper.params.loop || !swiper.navigation) return;
+    if (swiper.params.loop || swiper.params.rewind || !swiper.navigation) return;
     const {
       $nextEl,
       $prevEl

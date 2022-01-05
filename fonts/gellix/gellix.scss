@@ -1,115 +1,115 @@
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/gellix/Gellix-Light.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-Light.woff") format("woff"),
-    url("../fonts/gellix/Gellix-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix";
+	src: url("../fonts/gellix/Gellix-Light.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-Light.woff") format("woff"),
+		url("../fonts/gellix/Gellix-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }
 
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/gellix/Gellix-LightItalic.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-LightItalic.woff") format("woff"),
-    url("../fonts/gellix/Gellix-LightItalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix";
+	src: url("../fonts/gellix/Gellix-LightItalic.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-LightItalic.woff") format("woff"),
+		url("../fonts/gellix/Gellix-LightItalic.ttf") format("truetype");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }
 
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/gellix/Gellix-Regular.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-Regular.woff") format("woff"),
-    url("../fonts/gellix/Gellix-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix";
+	src: url("../fonts/gellix/Gellix-Regular.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-Regular.woff") format("woff"),
+		url("../fonts/gellix/Gellix-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }
 
 @font-face {
-  font-family: "Gellix Regular";
-  src: url("../fonts/gellix/Gellix-RegularItalic.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-RegularItalic.woff") format("woff"),
-    url("../fonts/gellix/Gellix-RegularItalic.ttf") format("truetype");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix Regular";
+	src: url("../fonts/gellix/Gellix-RegularItalic.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-RegularItalic.woff") format("woff"),
+		url("../fonts/gellix/Gellix-RegularItalic.ttf") format("truetype");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }
 
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/gellix/Gellix-SemiBold.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-SemiBold.woff") format("woff"),
-    url("../fonts/gellix/Gellix-SemiBold.ttf") format("truetype");
-  // font-weight: 600;
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix";
+	src: url("../fonts/gellix/Gellix-SemiBold.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-SemiBold.woff") format("woff"),
+		url("../fonts/gellix/Gellix-SemiBold.ttf") format("truetype");
+	// font-weight: 600;
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }
 
 @font-face {
-  font-family: "Gellix";
-  src: url("../fonts/gellix/Gellix-SemiBoldItalic.woff2") format("woff2"),
-    url("../fonts/gellix/Gellix-SemiBoldItalic.woff") format("woff"),
-    url("../fonts/gellix/Gellix-SemiBoldItalic.ttf") format("truetype");
-  // font-weight: 600;
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-  unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
-    U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
-    U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
-    U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
-    U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
-    U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
-    U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
-    U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
-    U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
+	font-family: "Gellix";
+	src: url("../fonts/gellix/Gellix-SemiBoldItalic.woff2") format("woff2"),
+		url("../fonts/gellix/Gellix-SemiBoldItalic.woff") format("woff"),
+		url("../fonts/gellix/Gellix-SemiBoldItalic.ttf") format("truetype");
+	// font-weight: 600;
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+	// unicode-range: U+9, U+A, U+20-7E, U+A0, U+A9, U+AB, U+AD, U+AE, U+B0, U+B4,
+	//   U+B7, U+BA, U+BB, U+BF-C1, U+C4-C6, U+C9, U+CA, U+CD, U+D1, U+D3, U+D6-DA,
+	//   U+DC, U+DF-E2, U+E4-EB, U+ED-EF, U+F1-F4, U+F6, U+F8-FA, U+FC, U+11B, U+144,
+	//   U+153, U+308, U+60C, U+61B, U+61F, U+621-63A, U+640-64D, U+64F-651, U+200B,
+	//   U+2011, U+2013, U+2014, U+2018, U+2019, U+201C, U+201D, U+2022, U+2026,
+	//   U+20AC, U+2122, U+2190, U+2192, U+25A0, U+25B7, U+2630, U+4E2D, U+6587,
+	//   U+65E5, U+672C, U+8A9E, U+E901, U+E903-E909, U+E912, U+E918, U+E920, U+E921,
+	//   U+E923, U+E926, U+E92D, U+E92E, U+E935, U+E93E-E940, U+E949, U+E94B, U+E94E,
+	//   U+E950, U+E953, U+E980, U+E984, U+E989-E98C, U+E98F, U+1F30F;
 }

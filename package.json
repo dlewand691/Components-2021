@@ -11,7 +11,7 @@
     "lazysizes": "^5.3.2",
     "markdown-it-sup": "^1.0.0",
     "motion-ui": "^2.0.3",
-    "swiper": "^7.3.3"
+    "swiper": "^7.4.1"
   },
   "scripts": {},
   "optionalDependencies": {},

@@ -1,0 +1,24 @@
+.custom-class  {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.custom-class {
+h1, h2, h3, h4, h5, h6 {
+  display: inline-block;
+}
+}
+
+.break-text *:not(a) {
+  display: block!important;
+}
+.break-text .innerbox *:not(a) {
+  display: inline-block!important;
+}
+.break-text .innerbox .block  {
+  display: block!important;
+}
+.innerbox {
+  width: 500px;
+  padding: 30px;
+  margin: 50px;
+}

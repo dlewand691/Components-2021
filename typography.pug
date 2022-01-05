@@ -52,8 +52,10 @@ block content
           +backgroundTypeTest
           .h5
             i.arrow-right
-        .p1.bg-white.text-accent1-light
+        .p1.bg-white
           | bg-white.text-accent1-light
+          h2.text-accent1-light h2.text-accent1-light
+          h4.text-accent1-light h4.text-accent1-light
           +backgroundTypeTest
           .h5
             i.arrow-right
@@ -99,12 +101,35 @@ block content
     +backgroundTypeTest
     .h5
       i.arrow-right
-  .p1.bg-accent1-medium
-    | .bg-accent1-medium
-    h4.text-white h4.text-white
-    +backgroundTypeTest
-    .h5
-      i.arrow-right
+    .p1.bg-accent1-medium
+      | .bg-accent1-medium
+      h4.text-white h4.text-white
+      +backgroundTypeTest
+      .h5
+        i.arrow-right
+
+    div
+      div
+        div
+          div
+              .p1.bg-accent1-light
+                | .bg-accent1-light
+                +backgroundTypeTest
+                .h5
+                  i.arrow-right
+                .p1.bg-white
+                  | .bg-white
+                  +backgroundTypeTest
+                  .h5
+                    i.arrow-right
+                .p1.bg-primary
+                  | .bg-primary
+                  h2.text-accent1-medium h4.text-accent1-medium
+                  h5.text-accent1-dark h4.text-accent1-dark
+                  +backgroundTypeTest
+                  .h5
+                    i.arrow-right
+
 
 
   #typography
@@ -167,7 +192,7 @@ block content
           cite John Wu
 
 
-  //- .grid-container
+  .grid-container
     .grid-x
       .cell
         ul.accordion.accordion-arrow(data-accordion data-multi-expand="false" data-allow-all-closed="true")
@@ -16367,17 +16392,17 @@ block content
         h6.m0 Gradient theme 2
       .cell.p2.bg-grd-theme-3
         h6.m0 Gradient theme 3
-  .py10.bg-grd-mesh-theme-1.text-white.h80vh
+  .py10.bg-grd-mesh-theme-1.h80vh
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell
             h6.m0 Gradient mesh 1
-  .py10.bg-grd-mesh-theme-2.text-white.h80vh
+  .py10.bg-grd-mesh-theme-2.h80vh
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell
             h6.m0 Gradient mesh 2
-  .py10.bg-grd-mesh-theme-3.text-white.h80vh
+  .py10.bg-grd-mesh-theme-3.h80vh
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell

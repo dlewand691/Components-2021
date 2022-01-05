@@ -162,7 +162,7 @@ block content
   mixin defaultForm
     form(data-abide novalidate autocomplete="on").py3&attributes(attributes)
       .grid-x.grid-padding-x
-        .cell.text-center
+        .cell
           h3 Get answers to your questions
           p Our clients turn to us to help them reimagine ways of working with technology.
       .grid-x.grid-padding-x.cell
@@ -231,7 +231,7 @@ block content
             span Message
             span.form-error
               | Field error
-      .text-center
+      div
         button.button.arrow.mb2(type="submit" value="Submit") Submit
         P This site is protected by reCAPTCHA and the Google
           a(href="#")  Privacy Policy

@@ -7,7 +7,7 @@
       "uuidString" : "F28E7FF4-7725-4F79-AC81-538A27EE619D"
     }
   ],
-  "creatorBuild" : "34264",
+  "creatorBuild" : "34335",
   "files" : {
     "\/__LAYOUT-TEMPLATE.pug" : {
       "cB" : 1,
@@ -61,6 +61,14 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/_BUILD\/.history",
+      "oF" : 0
+    },
+    "\/.prettierrc" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/.prettierrc",
       "oF" : 0
     },
     "\/2019-q1-homepagecarousel.pug" : {
@@ -271,6 +279,98 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/demo.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 3,
+      "mi" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/min\/demo-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/demo.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/demo.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/demo.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 2,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 3,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/css\/demo.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 2,
+      "sct" : 0
+    },
+    "\/demo1.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/demo1.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/demo2.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 3,
+      "mi" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/min\/demo2-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 1
+    },
+    "\/demo2.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/demo2.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/demo2.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 2,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 3,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/css\/demo2.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 2,
+      "sct" : 0
+    },
+    "\/demo3.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/demo3.html",
+      "oF" : 0,
+      "oS" : 0
+    },
     "\/deployment-config.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -304,6 +404,14 @@
       "oAP" : "\/_BUILD\/digital-hub-map.html",
       "oF" : 0,
       "oS" : 0
+    },
+    "\/dist\/typography.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/dist\/typography.html",
+      "oF" : 0
     },
     "\/drilldown-menu.pug" : {
       "cB" : 1,
@@ -1089,173 +1197,6 @@
       "ma" : 3,
       "oA" : 0,
       "oAP" : "\/_BUILD\/fonts\/css\/stylesheet.css",
-      "oF" : 0,
-      "oS" : 0,
-      "pg" : 2,
-      "sct" : 0
-    },
-    "\/fonts\/gellix copy\/demo.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/demo.html",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Light.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Light.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Light.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Light.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Light.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Light.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-LightItalic.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-LightItalic.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-LightItalic.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-LightItalic.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-LightItalic.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-LightItalic.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Regular.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Regular.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Regular.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Regular.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-Regular.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-Regular.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-RegularItalic.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-RegularItalic.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-RegularItalic.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-RegularItalic.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-RegularItalic.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-RegularItalic.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBold.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBold.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBold.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBold.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBold.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBold.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBoldItalic.ttf" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBoldItalic.ttf",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBoldItalic.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBoldItalic.woff",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/Gellix-SemiBoldItalic.woff2" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 2,
-      "oAP" : "\/_BUILD\/fonts\/gellix copy\/Gellix-SemiBoldItalic.woff2",
-      "oF" : 0
-    },
-    "\/fonts\/gellix copy\/gellix.scss" : {
-      "aP" : 1,
-      "bl" : 0,
-      "co" : 2,
-      "dP" : 10,
-      "ec" : 1,
-      "ft" : 4,
-      "ma" : 3,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/fonts\/css\/gellix.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 2,
@@ -17609,7 +17550,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 3,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/_BUILD\/css\/app.css",
       "oF" : 0,
@@ -17624,7 +17565,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 3,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/_BUILD\/css\/color-vars.css",
       "oF" : 0,
@@ -17639,9 +17580,24 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 3,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/_BUILD\/css\/gic.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 2,
+      "sct" : 0
+    },
+    "\/scss\/gorko.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 2,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 3,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/css\/gorko.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 2,
@@ -17654,7 +17610,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 3,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/_BUILD\/css\/homepage-carousel.css",
       "oF" : 0,
@@ -17669,7 +17625,7 @@
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
-      "ma" : 3,
+      "ma" : 1,
       "oA" : 0,
       "oAP" : "\/_BUILD\/css\/rte.css",
       "oF" : 0,
@@ -17774,26 +17730,6 @@
       "hM" : 2,
       "oA" : 0,
       "oAP" : "\/_BUILD\/typography.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_footer.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 1,
-      "oAP" : "\/_BUILD\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_footer.html",
-      "oF" : 0,
-      "oS" : 0
-    },
-    "\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_navigation.pug" : {
-      "cB" : 1,
-      "cOD" : 0,
-      "ft" : 512,
-      "hM" : 2,
-      "oA" : 1,
-      "oAP" : "\/_BUILD\/Users\/m_554319\/Dropbox\/My Mac (AMBUS100715)\/Desktop\/_COGNIZANT DEVELOPMENT\/_COG-Framework-2021\/pug\/_navigation.html",
       "oF" : 0,
       "oS" : 0
     },
@@ -18127,144 +18063,6 @@
     "buildFolderActive" : 1,
     "buildFolderName" : "_BUILD",
     "cleanBuild" : 1,
-    "coffeeLintFlags2" : {
-      "arrow_spacing" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camel_case_classes" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "colon_assignment_spacing" : {
-        "active" : 0,
-        "flagValue" : 1
-      },
-      "cyclomatic_complexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "duplicate_key" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "ensure_comprehensions" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "indentation" : {
-        "active" : 1,
-        "flagValue" : 2
-      },
-      "line_endings" : {
-        "active" : 0,
-        "flagValue" : 0
-      },
-      "max_line_length" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "missing_fat_arrows" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newlines_after_classes" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "no_backticks" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_debugger" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_empty_functions" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_empty_param_list" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_implicit_braces" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_implicit_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_interpolation_in_single_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_nested_string_interpolation" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_private_function_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_stand_alone_at" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_tabs" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_throwing_strings" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_semicolons" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_trailing_whitespace" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "no_unnecessary_double_quotes" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "no_unnecessary_fat_arrows" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "non_empty_constructor_needs_parens" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prefer_english_operator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "space_operators" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "spacing_after_comma" : {
-        "active" : 1,
-        "flagValue" : -1
-      }
-    },
     "cssoForceMediaMerge" : 0,
     "cssoRestructure" : 1,
     "environmentVariableEntries" : [
@@ -19098,6 +18896,9 @@
       "prefer-numeric-literals" : {
         "active" : 0
       },
+      "prefer-object-has-own" : {
+        "active" : 0
+      },
       "prefer-object-spread" : {
         "active" : 0
       },
@@ -19130,7 +18931,8 @@
         "optionString" : "'always'"
       },
       "require-atomic-updates" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowProperties': false}"
       },
       "require-await" : {
         "active" : 0
@@ -19266,7 +19068,6 @@
       "minifierStyle" : 0,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
       "transpilerStyle" : 1
     },
     "languageDefaultsCSS" : {
