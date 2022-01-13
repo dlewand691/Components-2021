@@ -29,7 +29,7 @@ block content
       //- ol
       //-   li ol list item
 
-  .p1.bg-primary
+  //- .p1.bg-primary
     | bg-primary
     +backgroundTypeTest
     .h5
@@ -84,7 +84,7 @@ block content
               +backgroundTypeTest
               .h5
                 i.arrow-right
-  .p1
+  //- .p1
     +backgroundTypeTest
     .h5
       i.arrow-right
@@ -96,7 +96,7 @@ block content
       +backgroundTypeTest
       .h5
         i.arrow-right
-  .p1.bg-accent1-medium.text-white
+  //- .p1.bg-accent1-medium.text-white
     | .bg-accent1-medium.text-white
     +backgroundTypeTest
     .h5
@@ -16197,10 +16197,6 @@ block content
         p
           button.button.arrow HArrow
           br
-          button.button.arrow.arrow-solid Arrow, solid
-          br
-          button.button.arrow.arrow-tail Arrow, tail
-          br
           button.button.arrow.arrow-down Arrow, down
           br
           button.button.download Download
@@ -16210,10 +16206,6 @@ block content
           button.button.video Video
           br
           button.button.launch Launch
-          br
-          button.button.radius Radius
-          br
-          button.button.rounded Rounded
 
         p
           = 'Within <p> tag, underline used'
@@ -16243,14 +16235,6 @@ block content
           a.arrow(href="#") Standard link with arrow
           br
           a.large.arrow(href="#") Large link with arrow
-          hr.my1
-          a.tiny.arrow.arrow-tail(href="#") Tiny link with tail arrow
-          br
-          a.small.arrow.arrow-tail(href="#") Small link with tail arrow
-          br
-          a.arrow.arrow-tail(href="#") Standard link with tail arrow
-          br
-          a.large.arrow.arrow-tail(href="#") Large link with tail arrow
 
       .cell.auto.p1.bg-primary
         //- h4 Color option 1
@@ -16293,10 +16277,6 @@ block content
         p
           button.button.arrow Arrow
           br
-          button.button.arrow.arrow-solid Arrow, solid
-          br
-          button.button.arrow.arrow-tail Arrow, tail
-          br
           button.button.arrow.arrow-down Arrow, down
           br
           button.button.download Download
@@ -16306,10 +16286,6 @@ block content
           button.button.video Video
           br
           button.button.launch Launch
-          br
-          button.button.radius Radius
-          br
-          button.button.rounded Rounded
 
         p
           = 'Within <p> tag, underline used'
@@ -16339,14 +16315,6 @@ block content
           a.arrow(href="#") Standard link with arrow
           br
           a.large.arrow(href="#") Large link with arrow
-          hr.my1
-          a.tiny.arrow.arrow-tail(href="#") Tiny link with tail arrow
-          br
-          a.small.arrow.arrow-tail(href="#") Small link with tail arrow
-          br
-          a.arrow.arrow-tail(href="#") Standard link with tail arrow
-          br
-          a.large.arrow.arrow-tail(href="#") Large link with tail arrow
 
   hr
   #colors
@@ -16396,17 +16364,23 @@ block content
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell
-            h6.m0 Gradient mesh 1
+            h6.m0 CSS gradient mesh 1
   .py10.bg-grd-mesh-theme-2.h80vh
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell
-            h6.m0 Gradient mesh 2
+            h6.m0 CSS gradient mesh 2
   .py10.bg-grd-mesh-theme-3.h80vh
     .grid-container.flex-container.align-middle.w100
       .grid-x
         .cell
-            h6.m0 Gradient mesh 3
+            h6.m0 CSS gradient mesh 3
+  .py10.h80vh.bg-size-covr.bg-primary(style="background-image: url(images/mesh-test-4.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;")
+    .grid-container.flex-container.align-middle.w100.relative
+      .grid-x
+        .cell
+            h6.m0 SVG gradient mesh 1
+    //- img.object-fit-contain.absolute(src="images/mesh-test-4.svg")
 
   hr
   #backgroundtypetest
@@ -16440,11 +16414,11 @@ block content
         +backgroundTypeTest
       .cell.px1.bg-gray-lightest
         +backgroundTypeTest
-      .cell.px1.bg-size-cover(style="background-image:url(images/background.jpg);")
+      .cell.px1.bg-size-cover.bg-color-dark(style="background-image:url(images/background.jpg);")
         +backgroundTypeTest
-      .cell.px1.bg-size-cover(data-interchange="[images/background.jpg, small],[images/background.jpg, medium],[images/background.jpg, large]")
+      .cell.px1.bg-size-cover.bg-color-dark(data-interchange="[images/background.jpg, small],[images/background.jpg, medium],[images/background.jpg, large]")
         +backgroundTypeTest
-      .cell.px1.bg-size-cover.relative.flex-container.align-middle
+      .cell.px1.bg-size-cover.bg-color-dark.relative.flex-container.align-middle
         .relative.z1
           +backgroundTypeTest
         img.absolute.object-fit-cover.top.show-for-large(src="images/background.jpg", alt="")
@@ -16512,7 +16486,7 @@ block content
   h1 Image overlay SOLID color options
   .grid-container.mb2
     .grid-x.grid-margin-x.medium-up-5.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
-      each imageOverlaySolid in ["bgOverlay-primary", "bgOverlay-accent2-light", "bgOverlay-accent2-dark", "bgOverlay-white"]
+      each imageOverlaySolid in ["bgOverlay-primary", "bgOverlay-white"]
         .cell.column-block
           p.m0.p3(class=imageOverlaySolid)
             !="$" + imageOverlaySolid
@@ -16522,7 +16496,7 @@ block content
   h1 Image overlay GRADIENT color options
   .grid-container.mb2
     .grid-x.grid-margin-x.medium-up-3.flex-container.align-stretch(style="background: url("+siteURL+"/images/transparent-pattern.gif)")
-      each imageOverlayGradient in ["gradient-overlay-primary", "gradient-overlay-primary-full", "gradient-overlay-primary-angled", "gradient-overlay-accent2-dark", "gradient-overlay-accent2-dark-full", "gradient-overlay-accent2-dark-angled", "gradient-overlay-white", "gradient-overlay-white-full", "gradient-overlay-white-angled"]
+      each imageOverlayGradient in ["gradient-overlay-primary", "gradient-overlay-primary-full", "gradient-overlay-primary-angled", "gradient-overlay-white", "gradient-overlay-white-full", "gradient-overlay-white-angled"]
         .cell.column-block(class=imageOverlayGradient)
           .relative.z1
             p.m0.p3

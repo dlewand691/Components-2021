@@ -24,6 +24,7 @@ block content
                   h5.anim-icon
                     i.arrow-solid-right.fw600
                     .anim-text View
+
   a.button.tiny.m2(href="index.html") BACK
   .grid-container
     .grid-x.grid-padding-x
@@ -100,39 +101,39 @@ block content
 
       .cell
         h3 Case-Study-Heading-Labels
-        h6.text-black Communications
+        h6 Communications
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-communications.svg" width="40")
-        h6.text-black Consumer Goods
+        h6 Consumer Goods
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-consumerGoods.svg" width="40")
-        h6.text-black Education
+        h6 Education
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-education.svg" width="40")
-        h6.text-black Energy Utilities
+        h6 Energy Utilities
           img.opacity-30.ml-half(src="images/Case-Study-Icons/utilities.svg" width="40")
-        h6.text-black Financial Services
+        h6 Financial Services
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-financialServices.svg" width="40")
-        h6.text-black Healthcare
+        h6 Healthcare
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-healthcare.svg" width="40")
-        h6.text-black Hospitality
+        h6 Hospitality
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-hospitality.svg" width="40")
-        h6.text-black Insurance
+        h6 Insurance
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-insurance.svg" width="40")
-        h6.text-black Life Sciences
+        h6 Life Sciences
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg" width="40")
-        h6.text-black Manufacturing Logistics
+        h6 Manufacturing Logistics
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-manufacturingLogistics.svg" width="40")
-        h6.text-black Products Resources
+        h6 Products Resources
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-productsResources.svg" width="40")
-        h6.text-black Retail
+        h6 Retail
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-retail.svg" width="40")
-        h6.text-black Technology
+        h6 Technology
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-technology.svg" width="40")
-        h6.text-black Travel
+        h6 Travel
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-travel.svg" width="40")
-        h6.text-black Transportation & Logistics
+        h6 Transportation & Logistics
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-transportation.svg" width="40")
-        h6.text-black Media & Entertainment
+        h6 Media & Entertainment
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-mediaPublishing.svg" width="40")
-        h6.text-black Information Services
+        h6 Information Services
           img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-informationServices.svg" width="40")
 
 
@@ -185,7 +186,7 @@ block content
         +caseStudy
         +caseStudy
         +caseStudy
-      .text-center.my3
+      .my3
         a.button.large.arrow.m0(href="caseStudy-subPage.html") View all case studies
     //- -----  End of CASE STUDY TILE - DARK BACKGROUND  ---------------------------------------------
 
@@ -204,137 +205,136 @@ block content
   //- ██       ██████  ███████ ███████     ██      ██   ██  ██████  ███████
 
   //- =============================================================================================
+  mixin caseStudy-header
+    //- ==============================  CASE STUDY HEADER  ==============================
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.pt2
+          p
+            strong Life Sciences
+            img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg" width="40")
+          h2 Focus on Patients, Not Just Prescriptions, to Improve Outcomes
+  mixin caseStudy-full
+      //- ==============================  CASE STUDY DETAIL  ==============================
+      .grid-container.pt2
+        .grid-x.grid-padding-x.medium-unstack
+          //- ==========  LEFT COLUMN  ==========
+          .cell.auto
+            ul.menu.horizontal.h5.medium-mln1
+              li
+                a(href="#")
+                  i.email
+              li
+                a(href="#")
+                  i.logo-twitter-bird
+              li
+                a(href="#")
+                  i.logo-facebook
+              li
+                a(href="#")
+                  i.logo-linkedin
+            a
+              | Download full case study
+              span.text-normal.small  (PDF, 3mb)
+              i.ml-half.fw600.download
 
-  //- ==============================  CASE STUDY HEADER  ==============================
-  .grid-container
-    .grid-x.grid-padding-x.text-center
-      .cell.pt2
-        h6.text-black Life Sciences
-          img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg" width="40")
-        h2 Focus on Patients, Not Just Prescriptions, to Improve Outcomes
+            hr.mt1
 
+            h5 The challenge:
 
-  //- ==============================  CASE STUDY DETAIL  ==============================
-  .grid-container.pt2
-    .grid-x.grid-padding-x.medium-unstack
-      //- ==========  LEFT COLUMN  ==========
-      .cell.auto
-        .button-group.m0.align-spaced
-          a.button.white(href="#")
-            h5.m0
-              i.email
-          a.button.white(href="#")
-            h5.m0
-              i.logo-twitter-bird
-          a.button.white(href="#")
-            h5.m0
-              i.logo-facebook
-          a.button.white(href="#")
-            h5.m0
-              i.logo-linkedin
-          a.tiny.button.align-self-middle
-            | Download full case study
-            span.text-normal (PDF, 3mb)
-            i.ml-half.fw600.download
+            p The shift to patient experience and treatment outcomes in the healthcare industry means that pharmaceuticals companies must put a new focus on the person behind the diagnosis. With complex insurance rules, and an upcoming patent expiration on its  agship drug, a large global biopharmaceuticals company needed a strategy to engage patients more deeply – and keep them loyal.
 
-        hr.mt1
+            p This pharma company valued our deep expertise in specialty drugs marketing and our past successful engagements, and asked us to partner on a strategy and approach for this important initiative.
 
-        h5 The challenge:
+            hr
 
-        p The shift to patient experience and treatment outcomes in the healthcare industry means that pharmaceuticals companies must put a new focus on the person behind the diagnosis. With complex insurance rules, and an upcoming patent expiration on its  agship drug, a large global biopharmaceuticals company needed a strategy to engage patients more deeply – and keep them loyal.
+            h5.bold Our approach:
 
-        p This pharma company valued our deep expertise in specialty drugs marketing and our past successful engagements, and asked us to partner on a strategy and approach for this important initiative.
+            p We helped the pharma company craft a service strategy that focused on simplifying and streamlining treatment for the patient, and then delivered the underlying infrastructure.
 
-        hr
+            p By coordinating care, we helped the company create a patient experience providing services focused on the human involved in the treatment by connecting the various involved parties from insurance to nurses to pharmacies to valuable information about patient care.
 
-        h5.bold Our approach:
+            p A mobile app further empowers the patient to better manage treatment.
 
-        p We helped the pharma company craft a service strategy that focused on simplifying and streamlining treatment for the patient, and then delivered the underlying infrastructure.
-
-        p By coordinating care, we helped the company create a patient experience providing services focused on the human involved in the treatment by connecting the various involved parties from insurance to nurses to pharmacies to valuable information about patient care.
-
-        p A mobile app further empowers the patient to better manage treatment.
-
-      //- ==========  RIGHT COLUMN  ==========
-      .cell.auto
-        img.w100.h100.object-fit-cover.object-position-right-top(src="images/Case-Study-Images-assets/caseStudy-focus-on-patients.jpg")
-
-
-  //- ==============================  CASE STUDY RESULTS  ==============================
-  .grid-container.bg-gray-lighter.medium-p1.large-p2
-    .grid-x.grid-padding-x.medium-unstack
-
-      //- ==========  LEFT COLUMN  ==========
-      .cell.auto.mb3.medium-mb0
-        h4 Support Past the Prescription Means Better Quality of Life
-
-        p We helped the company create a program that would provides enrolled patients with an improved quality of life, fewer hospitalizations and lower overall healthcare costs. The company benefits from continued loyalty and adherence to treatment plans.
+          //- ==========  RIGHT COLUMN  ==========
+          .cell.auto
+            img.w100.h100.object-fit-cover.object-position-right-top(src="images/Case-Study-Images-assets/caseStudy-focus-on-patients.jpg")
 
 
-      //- ==========  RIGHT COLUMN  ==========
-      .cell.auto
-        h3.m0 $3,000
-        p savings per year per patient on cost of care.
+      //- ==============================  CASE STUDY RESULTS  ==============================
+      .grid-container.bg-gray-lightest.medium-p1.large-p2
+        .grid-x.grid-padding-x.medium-unstack
 
-        h3.m0 +26%
-        p Number of days an average patient is covered by the company’s drug.
+          //- ==========  LEFT COLUMN  ==========
+          .cell.auto.mb3.medium-mb0
+            h4 Support Past the Prescription Means Better Quality of Life
 
-        h3.m0 26%
-        p Of health professionals using the program to prescribe more drugs.
-
-    .grid-x.grid-padding-x.text-center.my2
-      .cell
-        //- hr.green
-        h6 Want to learn more? Explore this case study Further
-        a.button.large.m0(href="#")
-          | Download full case study
-          i.download.fw600.ml-half
+            p We helped the company create a program that would provides enrolled patients with an improved quality of life, fewer hospitalizations and lower overall healthcare costs. The company benefits from continued loyalty and adherence to treatment plans.
 
 
-  .grid-container
-    .grid-x.grid-padding-x.medium-unstack.py1.align-middle
-      .cell.auto.medium-bd-r1.py1.medium-py0
-        a.flex-container.align-middle(href="#")
-          .bg-green.text-center.px-half.py2.mr1
-            h5.m0
-              i.arrow-left.fw600
-          div
-            p.text-normal.small.m0.text-gray-dark View industry
-            | [Link back to referring industry goes here]
-      .medium-3.cell.text-center.py1.medium-py0
-        a.flex-container.align-middle.flex-dir-column(href="#")
-          p.text-normal.small.m0.text-gray-dark View
-          | Link to referring service goes here
-      .cell.auto.medium-text-right.medium-bd-l1.py1.medium-py0
-        a.flex-container.align-middle(href="#")
-          div
-            p.text-normal.small.m0.text-gray-dark Next
-            | [Link to next case study article goes here]
-          .bg-green.text-center.px-half.py2.ml1
-            h5.m0
-              i.arrow-right.fw600
+          //- ==========  RIGHT COLUMN  ==========
+          .cell.auto
+            h3.m0 $3,000
+            p savings per year per patient on cost of care.
 
-  .grid-container
-    .grid-x.grid-padding-x
-      .cell
-        hr
-        p.text-bold.mb-half.small.text-center Spread the word
-        .button-group.flex-container.align-center.align-middle
-          .button.white(href="#")
-            h3.m0
-              i.email
-          .button.white(href="#")
-            h3.m0
-              i.logo-twitter-bird
-          .button.white(href="#")
-            h3.m0
-              i.logo-facebook
-          .button.white(href="#")
-            h3.m0
-              i.logo-linkedin
+            h3.m0 +26%
+            p Number of days an average patient is covered by the company’s drug.
+
+            h3.m0 26%
+            p Of health professionals using the program to prescribe more drugs.
+
+        .grid-x.grid-padding-x.my2
+          .cell
+            p Want to learn more? Explore this case study further
+            a.h5.m0(href="#")
+              | Download full case study
+              i.download.fw600.ml-half
 
 
+      .grid-container
+        .grid-x.grid-padding-x.medium-unstack.py1.align-middle
+          .cell.auto.medium-bd-r1.py1.medium-py0
+            a.flex-container.align-middle(href="#")
+              .bg-green.px-half.py2.mr1
+                h5.m0
+                  i.arrow-left.fw600
+              div
+                p.text-normal.small.m0.text-gray-dark View industry
+                | [Link back to referring industry goes here]
+          .medium-3.cell.py1.medium-py0
+            a.flex-container.align-middle.flex-dir-column(href="#")
+              p.text-normal.small.m0.text-gray-dark View
+              | Link to referring service goes here
+          .cell.auto.medium-text-right.medium-bd-l1.py1.medium-py0
+            a.flex-container.align-middle(href="#")
+              div
+                p.text-normal.small.m0.text-gray-dark Next
+                | [Link to next case study article goes here]
+              .bg-green.px-half.py2.ml1
+                h5.m0
+                  i.arrow-right.fw600
 
+      .grid-container
+        .grid-x.grid-padding-x
+          .cell.text-center
+            hr
+            strong.small SPREAD THE WORD
+            ul.menu.horizontal.h3.medium-mln1.align-center
+              li
+                a(href="#")
+                  i.email
+              li
+                a(href="#")
+                  i.logo-twitter-bird
+              li
+                a(href="#")
+                  i.logo-facebook
+              li
+                a(href="#")
+                  i.logo-linkedin
+
+  +caseStudy-header
+  +caseStudy-full
 
   hr
   h3 Single Case-Study-Detail (Shown on parent landing page instead of tiles)
@@ -354,20 +354,14 @@ block content
   //- =============================================================================================
 
   //- ==============================  CASE STUDY HEADER  ==============================
-  .grid-container
-    .grid-x.grid-padding-x
-      .cell.bg-white.pt2
-        .text-center
-          h6.text-black Life Sciences
-            img.opacity-30.ml-half(src="images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg" width="40")
-          h2 Focus on patients, not just prescriptions, to improve outcomes
+  +caseStudy-header
 
   .grid-container
     .grid-x.grid-padding-x
       .cell
         //- ==============================  CASE STUDY DETAIL  ==============================
         ul.accordion(data-accordion data-multi-expand="false" data-allow-all-closed="true")
-          li.accordion-item.text-center(data-accordion-item)
+          li.accordion-item(data-accordion-item)
             a.accordion-title.bg-white.p0(href='#' data-toggle="arrow-toggle")
               .flex-container.align-center#expandControl(data-sticky-container)
                 .sticky.text-primary-medium.bg-white.py1.w100.sidelines.mt0(data-sticky data-top-anchor="expandControl" data-btm-anchor="expandContent:bottom" data-check-every="1") Expand
@@ -375,120 +369,7 @@ block content
               //- | Expand
               //- i.arrow-down.ml-half.fw600#arrow-toggle(data-toggler=".arrow-up")
             .accordion-content.bd0.text-left.px0#expandContent(data-tab-content)
-              .grid-x.grid-padding-x.medium-unstack
-                //- ==========  LEFT COLUMN  ==========
-                .cell.auto
-                  .button-group.m0.align-spaced
-                    a.button.white(href="#")
-                      h5.m0
-                        i.email
-                    a.button.white(href="#")
-                      h5.m0
-                        i.logo-twitter-bird
-                    a.button.white(href="#")
-                      h5.m0
-                        i.logo-facebook
-                    a.button.white(href="#")
-                      h5.m0
-                        i.logo-linkedin
-                    a.tiny.button.align-self-middle
-                      | Download full case study
-                      span.text-normal (PDF, 3mb)
-                      i.ml-half.fw600.download
-
-                  hr.mt1
-
-                  h5 The challenge:
-
-                  p The shift to patient experience and treatment outcomes in the healthcare industry means that pharmaceuticals companies must put a new focus on the person behind the diagnosis. With complex insurance rules, and an upcoming patent expiration on its  agship drug, a large global biopharmaceuticals company needed a strategy to engage patients more deeply – and keep them loyal.
-
-                  p This pharma company valued our deep expertise in specialty drugs marketing and our past successful engagements, and asked us to partner on a strategy and approach for this important initiative.
-
-                  hr
-
-                  h5 Our approach:
-
-                  p We helped the pharma company craft a service strategy that focused on simplifying and streamlining treatment for the patient, and then delivered the underlying infrastructure.
-
-                  p By coordinating care, we helped the company create a patient experience providing services focused on the human involved in the treatment by connecting the various involved parties from insurance to nurses to pharmacies to valuable information about patient care.
-
-                  p A mobile app further empowers the patient to better manage treatment.
-
-                //- ==========  RIGHT COLUMN  ==========
-                .cell.auto
-                  img.w100.h100.object-fit-cover.object-position-right-top(src="images/Case-Study-Images-assets/caseStudy-focus-on-patients.jpg")
-
-
-              //- ==============================  CASE STUDY RESULTS  ==============================
-              .bg-gray-light.medium-p1.large-p2
-                .grid-x.grid-padding-x.medium-unstack
-
-                  //- ==========  LEFT COLUMN  ==========
-                  .cell.auto.mb3.medium-mb0
-                    h4 Support past the prescription means better quality of life
-
-                    p We helped the company create a program that would provides enrolled patients with an improved quality of life, fewer hospitalizations and lower overall healthcare costs. The company benefits from continued loyalty and adherence to treatment plans.
-
-
-                  //- ==========  RIGHT COLUMN  ==========
-                  .cell.auto
-                    h3.m0 $3,000
-                    p savings per year per patient on cost of care.
-
-                    h3.m0 +26%
-                    p Number of days an average patient is covered by the company’s drug.
-
-                    h3.m0 26%
-                    p Of health professionals using the program to prescribe more drugs.
-
-                .grid-x.grid-padding-x.text-center.my2
-                  .cell
-                    //- hr.green
-                    h6 Want to learn more? Explore this case study Further
-                    a.button.large.m0(href="#")
-                      | Download full case study
-                      i.download.fw600.ml-half
-
-
-              .grid-x.grid-padding-x.medium-unstack.py1.align-middle
-                .cell.auto.medium-bd-r1.py1.medium-py0
-                  a.flex-container.align-middle(href="#")
-                    .bg-green.text-center.px-half.py2.mr1
-                      h5.m0
-                        i.arrow-left.fw600
-                    div
-                      p.text-normal.small.m0.text-gray-dark View industry
-                      | [Link back to referring industry goes here]
-                .cell.medium-3.text-center.py1.medium-py0
-                  a.flex-container.align-middle.flex-dir-column(href="#")
-                    p.text-normal.small.m0.text-gray-dark View
-                    | Link to referring service goes here
-                .cell.auto.medium-text-right.medium-bd-l1.py1.medium-py0
-                  a.flex-container.align-middle(href="#")
-                    div
-                      p.text-normal.small.m0.text-gray-dark Next
-                      | [Link to next case study article goes here]
-                    .bg-green.text-center.px-half.py2.ml1
-                      h5.m0
-                        i.arrow-right.fw600
-
-              .grid-x.grid-padding-x
-                .cell
-                  hr
-                  p.text-bold.mb-half.small.text-center Spread the word
-                  .button-group.flex-container.align-center.align-middle
-                    .button.white(href="#")
-                      h3.m0
-                        i.email
-                    .button.white(href="#")
-                      h3.m0
-                        i.logo-twitter-bird
-                    .button.white(href="#")
-                      h3.m0
-                        i.logo-facebook
-                    .button.white(href="#")
-                      h3.m0
-                        i.logo-linkedin
+              +caseStudy-full
 
 
         :markdown-it

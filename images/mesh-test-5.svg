@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mesh-test-5</title>
+    <defs>
+        <filter color-interpolation-filters="sRGB" x="-25.5%" y="-23.4%" width="151.1%" height="146.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter color-interpolation-filters="sRGB" x="-26.3%" y="-27.2%" width="152.6%" height="154.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter color-interpolation-filters="sRGB" x="-42.5%" y="-38.1%" width="185.0%" height="176.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="9" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter color-interpolation-filters="sRGB" x="-36.5%" y="-34.9%" width="173.1%" height="169.9%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="8" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="54.0233004%" cy="47.0838882%" fx="54.0233004%" fy="47.0838882%" r="85.0318672%" gradientTransform="translate(0.540233,0.470839),scale(1.000000,0.892475),rotate(103.445263),scale(1.000000,1.491320),translate(-0.540233,-0.470839)" id="radialGradient-5">
+            <stop stop-color="#EDEDEE" offset="0%"></stop>
+            <stop stop-color="#DEDFE0" stop-opacity="0.52" offset="39.8155079%"></stop>
+            <stop stop-color="#D6D7D8" stop-opacity="0.3" offset="100%"></stop>
+        </radialGradient>
+        <filter color-interpolation-filters="sRGB" x="-35.2%" y="-31.4%" width="170.5%" height="162.9%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="7" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="mesh-test-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Mask" fill="#F0D7D6" x="0" y="0" width="80" height="80"></rect>
+        <ellipse id="Oval-🌈ease;lrgb;15" fill="#F1F4E5" filter="url(#filter-1)" cx="23.3135089" cy="1.36363636" rx="46.9668649" ry="51.1818182"></ellipse>
+        <path d="M-3.57782779,85.8181818 C-17.0950367,71.2727273 -17.4565716,-2.36363636 1.14685094,24.9090909 C19.7502734,52.1818182 28.7566923,-17.0909091 50.5645639,38.6893388 C72.3724356,94.4695868 69.6213439,67.9576129 55.2156865,80 C40.8100292,92.0423871 9.93938111,100.363636 -3.57782779,85.8181818 Z" id="Path-4" fill="#2C3097" filter="url(#filter-2)"></path>
+        <path d="M81.0893039,82.3100909 C98.0419669,76.9793223 89.855565,59.3771128 89.855565,33.0909091 C89.855565,19.8773632 80.8171899,38.2441805 70.2803738,34 C64.3956247,31.6296504 49.9580502,16.3188521 44.1016757,16.3188521 C42.1606106,16.3188521 38.0691017,18.3304833 34.6855916,22.3088209 C30.6085267,27.1026415 27.559461,34.7520782 30.5395453,45.1785303 C32.8512721,53.266593 39.1699919,64.6634086 29.6148546,78.0822399 C20.0597173,91.5010712 64.136641,87.6408595 81.0893039,82.3100909 Z" id="Path-5" fill="#00FDF1" filter="url(#filter-3)"></path>
+        <path d="M80.0679694,-3.27272727 C93.2789945,10.8873942 87.3797809,44.5132798 80.0679694,53.3677586 C72.756158,62.2222374 63.7820595,49.9862721 55.7349193,45.2727273 C47.6877791,40.5591824 48.6918192,32.7267064 43.5004248,20.1818182 C38.3090305,7.63692996 11.1842179,6.12236392 27.2238691,-3.27272727 C43.2635203,-12.6678185 66.8569443,-17.4328487 80.0679694,-3.27272727 Z" id="Path-2" fill="#0074C9" filter="url(#filter-4)"></path>
+        <path d="M8.83602379,8 C13.1860663,-4.54545455 -0.54375531,-14.1818182 36.9753611,-14.1818182 C74.4944775,-14.1818182 68.6382986,41.5433418 59.2693288,50.7272727 C49.900359,59.9112036 45.4035684,32.1818182 25.2846219,37.6363636 C5.16567545,43.0909091 4.48598131,20.5454545 8.83602379,8 Z" id="Path-3" fill="url(#radialGradient-5)" filter="url(#filter-6)"></path>
+    </g>
+</svg>

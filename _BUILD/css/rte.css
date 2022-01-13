@@ -57,10 +57,6 @@ body {
   font-feature-settings: "ss01";
 }
 
-:is(h4, .h4, h5, .h5, h6, .h6) {
-  color: var(--heading-color);
-}
-
 .h1,
 h1 {
   font-size: 36px;
@@ -149,6 +145,7 @@ h4 {
   font-size: 25px;
   font-weight: 300;
   font-feature-settings: "ss00";
+  color: var(--heading-color);
 }
 @media (min-width: 320px) {
   .h4,
@@ -163,23 +160,21 @@ h4 {
   }
 }
 
-blockquote,
 .h5,
 h5 {
   font-size: 22px;
   font-weight: normal;
   font-feature-settings: "ss00";
+  color: var(--heading-color);
 }
 @media (min-width: 320px) {
-  blockquote,
-.h5,
+  .h5,
 h5 {
     font-size: calc(22px + 5 * (100vw - 320px) / 880);
   }
 }
 @media (min-width: 1200px) {
-  blockquote,
-.h5,
+  .h5,
 h5 {
     font-size: 27px;
   }
@@ -190,6 +185,7 @@ h6 {
   font-size: 20px;
   font-weight: bold;
   font-feature-settings: "ss01";
+  color: var(--heading-color);
 }
 @media (min-width: 320px) {
   .h6,
@@ -207,7 +203,6 @@ h6 {
 .p,
 p {
   font-size: 16px;
-  font-weight: normal;
 }
 @media (min-width: 320px) {
   .p,
@@ -479,86 +474,72 @@ code {
   letter-spacing: 4px;
 }
 
-.text-primary,
-.text-primary.card {
+.text-primary {
   color: #000048 !important;
   --heading-color: #000048;
 }
 
-.text-accent1-light,
-.text-accent1-light.card {
+.text-accent1-light {
   color: #85a0f9 !important;
   --heading-color: #85a0f9;
 }
 
-.text-accent1-medium,
-.text-accent1-medium.card {
+.text-accent1-medium {
   color: #7373d8 !important;
   --heading-color: #7373d8;
 }
 
-.text-accent1-dark,
-.text-accent1-dark.card {
+.text-accent1-dark {
   color: #2e308e !important;
   --heading-color: #2e308e;
 }
 
-.text-accent2-light,
-.text-accent2-light.card {
+.text-accent2-light {
   color: #92bbe6 !important;
   --heading-color: #92bbe6;
 }
 
-.text-accent2-medium,
-.text-accent2-medium.card {
+.text-accent2-medium {
   color: #6aa2dc !important;
   --heading-color: #6aa2dc;
 }
 
-.text-accent2-dark,
-.text-accent2-dark.card {
+.text-accent2-dark {
   color: #2f78c4 !important;
   --heading-color: #2f78c4;
 }
 
-.text-white,
-.text-white.card {
+.text-white {
   color: #ffffff !important;
   --heading-color: #ffffff;
 }
 
-.text-black,
-.text-black.card {
+.text-black {
   color: #000048 !important;
   --heading-color: #000048;
 }
 
-.text-gray-light,
-.text-gray-light.card {
+.text-gray-light {
   color: #d0d0ce !important;
   --heading-color: #d0d0ce;
 }
 
-.text-gray-lighter,
-.text-gray-lighter.card {
+.text-gray-lighter {
   color: #e8e8e6 !important;
   --heading-color: #e8e8e6;
 }
 
-.text-gray-lightest,
-.text-gray-lightest.card {
+.text-gray-lightest {
   color: #f5f5f2 !important;
   --heading-color: #f5f5f2;
 }
 
-.text-gray-medium,
-.text-gray-medium.card {
+.text-gray-medium {
   color: #97999b !important;
   --heading-color: #97999b;
 }
 
-.text-gray-dark,
-.text-gray-dark.card {
+.text-gray-dark {
   color: #53565a !important;
   --heading-color: #53565a;
 }
@@ -1099,6 +1080,20 @@ blockquote {
   border-left: 0;
   font-weight: bold;
   font-style: italic;
+  font-size: 22px;
+  font-weight: normal;
+  font-feature-settings: "ss00";
+  color: var(--heading-color);
+}
+@media (min-width: 320px) {
+  blockquote {
+    font-size: calc(22px + 5 * (100vw - 320px) / 880);
+  }
+}
+@media (min-width: 1200px) {
+  blockquote {
+    font-size: 27px;
+  }
 }
 blockquote cite {
   margin-top: 1.875rem;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mesh-test-6</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="80" height="80" rx="40"></rect>
+        <filter x="-37.5%" y="-37.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-65.2%" y="-42.3%" width="230.4%" height="184.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="12" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-38.5%" y="-48.4%" width="176.9%" height="196.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="12" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="mesh-test-6" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Rectangle"></g>
+        <rect id="Rectangle" fill="#0C8F8F" fill-rule="nonzero" filter="url(#filter-3)" mask="url(#mask-2)" x="0" y="0" width="80" height="80"></rect>
+        <polygon id="Path" fill="#405059" fill-rule="nonzero" filter="url(#filter-4)" mask="url(#mask-2)" transform="translate(58.097202, 47.269888) rotate(16.000000) translate(-58.097202, -47.269888) " points="37.5940022 76.4898881 59.1484022 89.8698881 85.6972022 89.8698881 85.6972022 4.66988809 39.1708022 4.66988809 30.4972022 21.3270881 53.3656022 53.8230881"></polygon>
+        <polygon id="Path" fill="#FFAD08" fill-rule="nonzero" style="mix-blend-mode: overlay;" filter="url(#filter-5)" mask="url(#mask-2)" transform="translate(19.212738, 15.013627) rotate(156.000000) translate(-19.212738, -15.013627) " points="-0.928061832 -22.1863727 -27.5872618 5.11362727 -10.6576618 50.8684273 66.0127382 52.2136273 62.3155382 -18.9175727 35.4619382 -14.1115727 51.0283382 10.1116273 23.0083382 42.9856273 -0.929261832 -22.1863727"></polygon>
+    </g>
+</svg>

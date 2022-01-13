@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow">
     <title>Cognizant | Grid</title>
-    <link rel="stylesheet" href="css/app.css?ckcachebust=C163D21D9F842269CD0B0DEC0D5C595C">
+    <link rel="stylesheet" href="css/app.css?ckcachebust=713ADE4EDF1512B990ADEDC0AFDFD3FC">
     <!--                                       FAVICONS                                       //-->
     <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg?ckcachebust=CFF27F9D99DC4ECF8DDDC7EE8B73243F">
     <link rel="icon" type="image/png" href="favicons/favicon.png?ckcachebust=3BEEF2C5F3F90CD6B7A06DDC51307DAC">
@@ -23,185 +23,143 @@
   <body>
     <h1>Grid</h1>
     <style>
-      .gridDemo {
-      
+      .striped .cell:nth-child(odd) {
+          background-color: #E8E8E6;
       }
       
     </style>
-    <h2>CSS Grid</h2>
-    <div class="grid-container">
-      <div class="row grid-padding-x large-12">
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-        <div class="small-1 column bg-gray-light align-middle py1 small-bd1">
-          <p class="m0">1</p>
-        </div>
-      </div>
-    </div>
-    <hr>
     <h2>Flex grid</h2>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x large-10">
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+    <div class="grid-container debug">
+      <div class="grid-x grid-padding-x striped">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
-        <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-1 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
       </div>
       <hr>
       <h3>Nested Grid</h3>
-      <div class="grid-x grid-padding-x">
-        <div class="small-6 cell bg-gray-light align-middle py1 small-bd1">
+      <div class="grid-x grid-padding-x debug">
+        <div class="small-6 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
-          <div class="grid-x grid-padding-x">
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+          <div class="grid-x grid-padding-x striped">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
           </div>
         </div>
-        <div class="small-3 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-3 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
-          <div class="grid-x grid-padding-x bg-gray-light align-middle py1">
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+          <div class="grid-x grid-padding-x align-middle py1 striped">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
-            <div class="small-1 cell bg-gray-light align-middle py1 small-bd1">
+            <div class="small-1 cell align-middle py1 small-bd1">
               <p class="m0">1</p>
             </div>
           </div>
         </div>
-        <div class="small-3 cell bg-gray-light align-middle py1 small-bd1">
+        <div class="small-3 cell align-middle py1 small-bd1">
           <p class="m0">1</p>
         </div>
       </div>
       <hr>
       <h2>Media queries</h2>
-      <div class="grid-x grid-padding-x">
+      <div class="grid-x grid-padding-x debug striped">
         <div class="cell media-query-test p1">
           <h5 class="text-white m0">Media query test:<span class="text-normal"></span></h5>
         </div>
