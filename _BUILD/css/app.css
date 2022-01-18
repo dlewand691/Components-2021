@@ -9409,7 +9409,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
 .tabs {
   margin: 0;
   border: 1px solid #d0d0ce;
-  background: #92bbe6;
+  background: #e5eff9;
   list-style-type: none;
 }
 .tabs::before, .tabs::after {
@@ -9453,18 +9453,18 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   padding: 1.25rem;
   font-size: 1rem;
   line-height: 1;
-  color: #000048;
+  color: #2f78c4;
 }
 [data-whatinput=mouse] .tabs-title > a {
   outline: 0;
 }
 .tabs-title > a:hover {
   background: #ffffff;
-  color: #00003e;
+  color: #2867a9;
 }
 .tabs-title > a:focus, .tabs-title > a[aria-selected=true] {
   background: #ffffff;
-  color: #2f78c4;
+  color: #000048;
 }
 
 .tabs-content {
@@ -15167,910 +15167,405 @@ footer.theme-accent2-dark-gradient {
 .bg-steps-0 {
   background: #000048;
 }
-.bg-steps-0 a,
-.bg-steps-0 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-1 {
   background: #000149;
-}
-.bg-steps-1 a,
-.bg-steps-1 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-2 {
   background: #01024a;
 }
-.bg-steps-2 a,
-.bg-steps-2 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-3 {
   background: #01044c;
-}
-.bg-steps-3 a,
-.bg-steps-3 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-4 {
   background: #02054d;
 }
-.bg-steps-4 a,
-.bg-steps-4 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-5 {
   background: #02064e;
-}
-.bg-steps-5 a,
-.bg-steps-5 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-6 {
   background: #03074f;
 }
-.bg-steps-6 a,
-.bg-steps-6 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-7 {
   background: #030851;
-}
-.bg-steps-7 a,
-.bg-steps-7 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-8 {
   background: #040a52;
 }
-.bg-steps-8 a,
-.bg-steps-8 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-9 {
   background: #040b53;
-}
-.bg-steps-9 a,
-.bg-steps-9 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-10 {
   background: #050c54;
 }
-.bg-steps-10 a,
-.bg-steps-10 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-11 {
   background: #050d56;
-}
-.bg-steps-11 a,
-.bg-steps-11 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-12 {
   background: #060e57;
 }
-.bg-steps-12 a,
-.bg-steps-12 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-13 {
   background: #061058;
-}
-.bg-steps-13 a,
-.bg-steps-13 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-14 {
   background: #071159;
 }
-.bg-steps-14 a,
-.bg-steps-14 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-15 {
   background: #07125b;
-}
-.bg-steps-15 a,
-.bg-steps-15 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-16 {
   background: #08135c;
 }
-.bg-steps-16 a,
-.bg-steps-16 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-17 {
   background: #08145d;
-}
-.bg-steps-17 a,
-.bg-steps-17 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-18 {
   background: #08165e;
 }
-.bg-steps-18 a,
-.bg-steps-18 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-19 {
   background: #091760;
-}
-.bg-steps-19 a,
-.bg-steps-19 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-20 {
   background: #091861;
 }
-.bg-steps-20 a,
-.bg-steps-20 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-21 {
   background: #0a1962;
-}
-.bg-steps-21 a,
-.bg-steps-21 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-22 {
   background: #0a1a63;
 }
-.bg-steps-22 a,
-.bg-steps-22 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-23 {
   background: #0b1c65;
-}
-.bg-steps-23 a,
-.bg-steps-23 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-24 {
   background: #0b1d66;
 }
-.bg-steps-24 a,
-.bg-steps-24 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-25 {
   background: #0c1e67;
-}
-.bg-steps-25 a,
-.bg-steps-25 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-26 {
   background: #0c1f68;
 }
-.bg-steps-26 a,
-.bg-steps-26 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-27 {
   background: #0d2069;
-}
-.bg-steps-27 a,
-.bg-steps-27 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-28 {
   background: #0d226b;
 }
-.bg-steps-28 a,
-.bg-steps-28 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-29 {
   background: #0e236c;
-}
-.bg-steps-29 a,
-.bg-steps-29 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-30 {
   background: #0e246d;
 }
-.bg-steps-30 a,
-.bg-steps-30 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-31 {
   background: #0f256e;
-}
-.bg-steps-31 a,
-.bg-steps-31 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-32 {
   background: #0f2670;
 }
-.bg-steps-32 a,
-.bg-steps-32 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-33 {
   background: #102871;
-}
-.bg-steps-33 a,
-.bg-steps-33 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-34 {
   background: #102972;
 }
-.bg-steps-34 a,
-.bg-steps-34 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-35 {
   background: #102a73;
-}
-.bg-steps-35 a,
-.bg-steps-35 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-36 {
   background: #112b75;
 }
-.bg-steps-36 a,
-.bg-steps-36 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-37 {
   background: #112c76;
-}
-.bg-steps-37 a,
-.bg-steps-37 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-38 {
   background: #122e77;
 }
-.bg-steps-38 a,
-.bg-steps-38 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-39 {
   background: #122f78;
-}
-.bg-steps-39 a,
-.bg-steps-39 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-40 {
   background: #13307a;
 }
-.bg-steps-40 a,
-.bg-steps-40 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-41 {
   background: #13317b;
-}
-.bg-steps-41 a,
-.bg-steps-41 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-42 {
   background: #14327c;
 }
-.bg-steps-42 a,
-.bg-steps-42 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-43 {
   background: #14347d;
-}
-.bg-steps-43 a,
-.bg-steps-43 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-44 {
   background: #15357f;
 }
-.bg-steps-44 a,
-.bg-steps-44 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-45 {
   background: #153680;
-}
-.bg-steps-45 a,
-.bg-steps-45 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-46 {
   background: #163781;
 }
-.bg-steps-46 a,
-.bg-steps-46 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-47 {
   background: #163882;
-}
-.bg-steps-47 a,
-.bg-steps-47 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-48 {
   background: #173a84;
 }
-.bg-steps-48 a,
-.bg-steps-48 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-49 {
   background: #173b85;
-}
-.bg-steps-49 a,
-.bg-steps-49 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-50 {
   background: #183c86;
 }
-.bg-steps-50 a,
-.bg-steps-50 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-51 {
   background: #183d87;
-}
-.bg-steps-51 a,
-.bg-steps-51 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-52 {
   background: #183e88;
 }
-.bg-steps-52 a,
-.bg-steps-52 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-53 {
   background: #19408a;
-}
-.bg-steps-53 a,
-.bg-steps-53 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-54 {
   background: #19418b;
 }
-.bg-steps-54 a,
-.bg-steps-54 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-55 {
   background: #1a428c;
-}
-.bg-steps-55 a,
-.bg-steps-55 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-56 {
   background: #1a438d;
 }
-.bg-steps-56 a,
-.bg-steps-56 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-57 {
   background: #1b448f;
-}
-.bg-steps-57 a,
-.bg-steps-57 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-58 {
   background: #1b4690;
 }
-.bg-steps-58 a,
-.bg-steps-58 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-59 {
   background: #1c4791;
-}
-.bg-steps-59 a,
-.bg-steps-59 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-60 {
   background: #1c4892;
 }
-.bg-steps-60 a,
-.bg-steps-60 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-61 {
   background: #1d4994;
-}
-.bg-steps-61 a,
-.bg-steps-61 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-62 {
   background: #1d4a95;
 }
-.bg-steps-62 a,
-.bg-steps-62 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-63 {
   background: #1e4c96;
-}
-.bg-steps-63 a,
-.bg-steps-63 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-64 {
   background: #1e4d97;
 }
-.bg-steps-64 a,
-.bg-steps-64 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-65 {
   background: #1f4e99;
-}
-.bg-steps-65 a,
-.bg-steps-65 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-66 {
   background: #1f4f9a;
 }
-.bg-steps-66 a,
-.bg-steps-66 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-67 {
   background: #1f509b;
-}
-.bg-steps-67 a,
-.bg-steps-67 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-68 {
   background: #20529c;
 }
-.bg-steps-68 a,
-.bg-steps-68 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-69 {
   background: #20539e;
-}
-.bg-steps-69 a,
-.bg-steps-69 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-70 {
   background: #21549f;
 }
-.bg-steps-70 a,
-.bg-steps-70 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-71 {
   background: #2155a0;
-}
-.bg-steps-71 a,
-.bg-steps-71 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-72 {
   background: #2256a1;
 }
-.bg-steps-72 a,
-.bg-steps-72 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-73 {
   background: #2258a3;
-}
-.bg-steps-73 a,
-.bg-steps-73 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-74 {
   background: #2359a4;
 }
-.bg-steps-74 a,
-.bg-steps-74 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-75 {
   background: #235aa5;
-}
-.bg-steps-75 a,
-.bg-steps-75 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-76 {
   background: #245ba6;
 }
-.bg-steps-76 a,
-.bg-steps-76 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-77 {
   background: #245ca7;
-}
-.bg-steps-77 a,
-.bg-steps-77 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-78 {
   background: #255ea9;
 }
-.bg-steps-78 a,
-.bg-steps-78 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-79 {
   background: #255faa;
-}
-.bg-steps-79 a,
-.bg-steps-79 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-80 {
   background: #2660ab;
 }
-.bg-steps-80 a,
-.bg-steps-80 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-81 {
   background: #2661ac;
-}
-.bg-steps-81 a,
-.bg-steps-81 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-82 {
   background: #2762ae;
 }
-.bg-steps-82 a,
-.bg-steps-82 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-83 {
   background: #2764af;
-}
-.bg-steps-83 a,
-.bg-steps-83 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-84 {
   background: #2765b0;
 }
-.bg-steps-84 a,
-.bg-steps-84 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-85 {
   background: #2866b1;
-}
-.bg-steps-85 a,
-.bg-steps-85 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-86 {
   background: #2867b3;
 }
-.bg-steps-86 a,
-.bg-steps-86 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-87 {
   background: #2968b4;
-}
-.bg-steps-87 a,
-.bg-steps-87 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-88 {
   background: #296ab5;
 }
-.bg-steps-88 a,
-.bg-steps-88 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-89 {
   background: #2a6bb6;
-}
-.bg-steps-89 a,
-.bg-steps-89 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-90 {
   background: #2a6cb8;
 }
-.bg-steps-90 a,
-.bg-steps-90 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-91 {
   background: #2b6db9;
-}
-.bg-steps-91 a,
-.bg-steps-91 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-92 {
   background: #2b6eba;
 }
-.bg-steps-92 a,
-.bg-steps-92 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-93 {
   background: #2c70bb;
-}
-.bg-steps-93 a,
-.bg-steps-93 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-94 {
   background: #2c71bd;
 }
-.bg-steps-94 a,
-.bg-steps-94 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-95 {
   background: #2d72be;
-}
-.bg-steps-95 a,
-.bg-steps-95 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-96 {
   background: #2d73bf;
 }
-.bg-steps-96 a,
-.bg-steps-96 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-97 {
   background: #2e74c0;
-}
-.bg-steps-97 a,
-.bg-steps-97 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 .bg-steps-98 {
   background: #2e76c2;
 }
-.bg-steps-98 a,
-.bg-steps-98 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-99 {
   background: #2f77c3;
 }
-.bg-steps-99 a,
-.bg-steps-99 a:link {
-  background: none;
-  box-shadow: none;
-}
 
 .bg-steps-100 {
   background: #2f78c4;
-}
-.bg-steps-100 a,
-.bg-steps-100 a:link {
-  background: none;
-  box-shadow: none;
 }
 
 /* Usage Examples
@@ -17254,20 +16749,16 @@ dl dt {
 ███████ ██ ██   ████ ██   ██ ███████
 
 =========================================================================================== */
-a,
 a:link {
   font-weight: bold;
   transition: all 0.3s ease;
 }
-a:not(.button),
 a:link:not(.button) {
   color: var(--link-color);
 }
-a:not(.button):hover,
 a:link:not(.button):hover {
   color: var(--link-hover-color);
 }
-
 p:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
 ul:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
 ol:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
@@ -27075,8 +26566,9 @@ form.white .is-invalid-input + span {
 
 .icomoon-liga,
 i {
-  display: inline-block;
-  font-weight: normal;
+  display: inline-block !important;
+  font-weight: normal !important;
+  font-family: "Cognizant-Icons" !important;
 }
 
 /* -----  End of ICON FONT  ---------- */
@@ -30414,99 +29906,77 @@ table tr:last-child td:last-child {
   border-bottom-right-radius: 0.5em;
 }
 
+[class*=bg-] .tabs-title {
+  color: #ffffff;
+}
+
 .tabs {
-  border-width: 1px 0 1px 1px;
-  border-style: solid;
-  border-color: #d0d0ce transparent #d0d0ce #d0d0ce;
-  background: #e5eff9;
-  border-radius: 0.5em 0 0 0.5em;
+  border: 1px solid #d0d0ce;
+  border-radius: 0.5em 0.5em 0 0;
 }
-
-[class*=bg-] .tabs-title a {
-  color: #000048;
-}
-
-.tabs-title {
-  position: relative;
+.tabs .tabs-title {
   margin-bottom: 0;
 }
-.tabs-title:first-of-type {
+.tabs .tabs-title:first-of-type {
   border-radius: 0.5em 0 0 0;
-  overflow: hidden;
 }
-.tabs-title a {
-  text-decoration: none;
-  transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
-  color: #000048;
-  background: #e5eff9;
+.tabs .tabs-title:last-of-type {
+  border-radius: 0;
 }
-.tabs-title a:focus {
+.tabs .tabs-title[class*=bg-steps-] a {
+  color: #ffffff;
+}
+.tabs .tabs-title[class*=bg-steps-] a:hover {
   color: #2f78c4;
-  background: #92bbe6;
 }
-.tabs-title a:hover {
+.tabs .tabs-title[class*=bg-steps-].is-active a {
   color: #000048;
-  background: #92bbe6;
 }
-.tabs-title.is-active a {
+.tabs .tabs-title[class*=bg-steps-].is-active a:hover {
+  color: #2f78c4;
+}
+.tabs .tabs-title a:link {
+  border-radius: inherit;
+  color: #2f78c4;
+}
+.tabs .tabs-title.is-active a {
   color: #000048;
-  background: #ffffff;
+  z-index: 2;
+  position: relative;
+  box-shadow: inset 0 4px 0 0 #2f78c4, 0 1px 0 0 #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  .tabs .tabs-title.is-active a {
+    box-shadow: inset 0 4px 0 0 #2f78c4, 0 1px 0 0 #2f78c4;
+  }
+}
+.tabs.vertical {
+  border-radius: 0.5em 0 0 0.5em;
+}
+.tabs.vertical .tabs-title:first-of-type {
+  border-radius: 0.5em 0 0 0;
+}
+.tabs.vertical .tabs-title:last-of-type {
+  border-radius: 0 0 0 0.5em;
+}
+.tabs.vertical .tabs-title.is-active a {
   box-shadow: inset 4px 0 0 0 #2f78c4;
-}
-.tabs-title[class*=bg-steps] a {
-  border-width: 0;
-}
-.tabs-title-rounded {
-  border-radius: 1000px;
 }
 
 .tabs-content {
-  background: #ffffff;
   border-radius: 0 0 0.5em 0.5em;
+  overflow: hidden;
+}
+.tabs-content.is-active {
+  animation: tab-panel-fade-in 1s ease;
 }
 .tabs-content.vertical {
-  margin-left: -1px;
+  margin-left: -2px;
   border: 1px solid #d0d0ce;
   border-radius: 0 0.5em 0.5em;
 }
 .tabs-content.vertical .tabs-panel {
   min-height: 500px;
-}
-
-.tabs:not(.vertical) {
-  border: 1px solid #d0d0ce;
-  border-radius: 0.5em 0.5em 0 0;
-}
-.tabs:not(.vertical) .tabs-title:first-of-type {
-  border-radius: 0.5em 0 0 0;
-  overflow: hidden;
-}
-.tabs:not(.vertical) .tabs-title a {
-  transition: background-color 0.25s ease-out, color 0.25s ease-out, border-color 0.25s ease-out;
-  color: #000048;
-  border-width: 0;
-  background: #e5eff9;
-}
-.tabs:not(.vertical) .tabs-title a:focus {
-  color: #2f78c4;
-  background: #92bbe6;
-}
-.tabs:not(.vertical) .tabs-title a:hover {
-  color: #000048;
-  background: #92bbe6;
-}
-.tabs:not(.vertical) .tabs-title.is-active a {
-  color: #2f78c4;
-  background: #ffffff;
-  box-shadow: inset 0 4px 0 0 #2f78c4, 0 1px 0 0 #ffffff;
-}
-@media (prefers-color-scheme: dark) {
-  .tabs:not(.vertical) .tabs-title.is-active a {
-    box-shadow: inset 0 4px 0 0 #2f78c4, 0 1px 0 0 #2f78c4;
-  }
-}
-.tabs:not(.vertical) .tabs-title:first-of-type.is-active {
-  border-left: 0 solid;
 }
 
 @keyframes tab-panel-fade-in {
@@ -30521,13 +29991,6 @@ table tr:last-child td:last-child {
     max-height: 999px;
   }
 }
-.tabs-panel {
-  overflow: hidden;
-}
-.tabs-panel.is-active {
-  animation: tab-panel-fade-in 1s ease;
-}
-
 /* ====================================================================================
 ████████  ██████  ██████
    ██    ██    ██ ██   ██

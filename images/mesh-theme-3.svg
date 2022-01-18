@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mesh-theme-3</title>
+    <defs>
+        <filter color-interpolation-filters="sRGB" x="-20.5%" y="-19.9%" width="141.1%" height="139.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter color-interpolation-filters="sRGB" x="-19.8%" y="-24.8%" width="139.6%" height="149.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter color-interpolation-filters="sRGB" x="-19.2%" y="-28.0%" width="138.5%" height="156.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="mesh-theme-3" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#45BCC8" x="0" y="0" width="80" height="80"></rect>
+        <path d="M-6,69 C-2,59 4.83333333,54.8333333 14.5,56.5 C29,59 24.630309,47.3798261 33,38 C41.369691,28.6201739 36.7880699,29.3379641 44,13.5 C48.8079534,2.94135727 56.4746201,-3.7253094 67,-6.5 L-6,-6.5 L-6,69 Z" id="Path-8" fill="#0161F5" opacity="0.900000036" filter="url(#filter-1)"></path>
+        <path d="M97.5,39.5 C107.166667,40.1666667 101.666667,38.1666667 81,33.5 C50,26.5 51.5,58 36,59.5 C25.6666667,60.5 23.6666667,71.6666667 30,93 L99.5,93 L97.5,39.5 Z" id="Path-10" fill="#EFE258" filter="url(#filter-2)"></path>
+        <path d="M-14,95.5 L-13.937037,57.3965517 C-7.97497698,47.4664205 -0.329297968,42.3342366 9,42 C22.993947,41.4986451 37,42.5 39,55.5 C40.3333333,64.1666667 48.6666667,71.8333333 64,78.5 L55,94.5 L-14,95.5 Z" id="Path-9" fill="#FFFFFF" filter="url(#filter-3)"></path>
+        <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="80" height="80"></rect>
+    </g>
+</svg>

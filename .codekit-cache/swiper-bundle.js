@@ -1,5 +1,5 @@
 /**
- * Swiper 7.0.9
+ * Swiper 7.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -7,7 +7,7 @@
  *
  * Released under the MIT License
  *
- * Released on: October 18, 2021
+ * Released on: December 24, 2021
  */
 
 (function (global, factory) {
@@ -17,7 +17,7 @@
 }(this, (function () { 'use strict';
 
     /**
-     * SSR Window 4.0.0
+     * SSR Window 4.0.2
      * Better handling for window object in SSR environment
      * https://github.com/nolimits4web/ssr-window
      *
@@ -25,7 +25,7 @@
      *
      * Licensed under MIT
      *
-     * Released on: August 25, 2021
+     * Released on: December 13, 2021
      */
 
     /* eslint-disable no-param-reassign */
@@ -196,7 +196,7 @@
     }
 
     /**
-     * Dom7 4.0.0
+     * Dom7 4.0.2
      * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
      * https://framework7.io/docs/dom7.html
      *
@@ -204,7 +204,7 @@
      *
      * Licensed under MIT
      *
-     * Released on: August 25, 2021
+     * Released on: December 13, 2021
      */
     /* eslint-disable no-proto */
 
@@ -1968,7 +1968,7 @@
       } // Update Height
 
 
-      if (newHeight) swiper.$wrapperEl.css('height', `${newHeight}px`);
+      if (newHeight || newHeight === 0) swiper.$wrapperEl.css('height', `${newHeight}px`);
     }
 
     function updateSlidesOffset() {
@@ -2214,7 +2214,7 @@
     function updateClickedSlide(e) {
       const swiper = this;
       const params = swiper.params;
-      const slide = $(e.target).closest(`.${params.slideClass}`)[0];
+      const slide = $(e).closest(`.${params.slideClass}`)[0];
       let slideFound = false;
       let slideIndex;
 
@@ -2666,40 +2666,32 @@
         return true;
       }
 
+      swiper.setTransition(speed);
+      swiper.setTranslate(translate);
+      swiper.updateActiveIndex(slideIndex);
+      swiper.updateSlidesClasses();
+      swiper.emit('beforeTransitionStart', speed, internal);
+      swiper.transitionStart(runCallbacks, direction);
+
       if (speed === 0) {
-        swiper.setTransition(0);
-        swiper.setTranslate(translate);
-        swiper.updateActiveIndex(slideIndex);
-        swiper.updateSlidesClasses();
-        swiper.emit('beforeTransitionStart', speed, internal);
-        swiper.transitionStart(runCallbacks, direction);
         swiper.transitionEnd(runCallbacks, direction);
-      } else {
-        swiper.setTransition(speed);
-        swiper.setTranslate(translate);
-        swiper.updateActiveIndex(slideIndex);
-        swiper.updateSlidesClasses();
-        swiper.emit('beforeTransitionStart', speed, internal);
-        swiper.transitionStart(runCallbacks, direction);
+      } else if (!swiper.animating) {
+        swiper.animating = true;
 
-        if (!swiper.animating) {
-          swiper.animating = true;
-
-          if (!swiper.onSlideToWrapperTransitionEnd) {
-            swiper.onSlideToWrapperTransitionEnd = function transitionEnd(e) {
-              if (!swiper || swiper.destroyed) return;
-              if (e.target !== this) return;
-              swiper.$wrapperEl[0].removeEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd);
-              swiper.$wrapperEl[0].removeEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd);
-              swiper.onSlideToWrapperTransitionEnd = null;
-              delete swiper.onSlideToWrapperTransitionEnd;
-              swiper.transitionEnd(runCallbacks, direction);
-            };
-          }
-
-          swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd);
-          swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd);
+        if (!swiper.onSlideToWrapperTransitionEnd) {
+          swiper.onSlideToWrapperTransitionEnd = function transitionEnd(e) {
+            if (!swiper || swiper.destroyed) return;
+            if (e.target !== this) return;
+            swiper.$wrapperEl[0].removeEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd);
+            swiper.$wrapperEl[0].removeEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd);
+            swiper.onSlideToWrapperTransitionEnd = null;
+            delete swiper.onSlideToWrapperTransitionEnd;
+            swiper.transitionEnd(runCallbacks, direction);
+          };
         }
+
+        swiper.$wrapperEl[0].addEventListener('transitionend', swiper.onSlideToWrapperTransitionEnd);
+        swiper.$wrapperEl[0].addEventListener('webkitTransitionEnd', swiper.onSlideToWrapperTransitionEnd);
       }
 
       return true;
@@ -2738,6 +2730,10 @@
         swiper.loopFix(); // eslint-disable-next-line
 
         swiper._clientLeft = swiper.$wrapperEl[0].clientLeft;
+      }
+
+      if (params.rewind && swiper.isEnd) {
+        return swiper.slideTo(0, speed, runCallbacks, internal);
       }
 
       return swiper.slideTo(swiper.activeIndex + increment, speed, runCallbacks, internal);
@@ -2798,6 +2794,10 @@
           prevIndex = prevIndex - swiper.slidesPerViewDynamic('previous', true) + 1;
           prevIndex = Math.max(prevIndex, 0);
         }
+      }
+
+      if (params.rewind && swiper.isBeginning) {
+        return swiper.slideTo(swiper.slides.length - 1, speed, runCallbacks, internal);
       }
 
       return swiper.slideTo(prevIndex, speed, runCallbacks, internal);
@@ -2898,8 +2898,9 @@
         $wrapperEl
       } = swiper; // Remove duplicated slides
 
-      $wrapperEl.children(`.${params.slideClass}.${params.slideDuplicateClass}`).remove();
-      let slides = $wrapperEl.children(`.${params.slideClass}`);
+      const $selector = $wrapperEl.children().length > 0 ? $($wrapperEl.children()[0].parentNode) : $wrapperEl;
+      $selector.children(`.${params.slideClass}.${params.slideDuplicateClass}`).remove();
+      let slides = $selector.children(`.${params.slideClass}`);
 
       if (params.loopFillGroupWithBlank) {
         const blankSlidesNum = params.slidesPerGroup - slides.length % params.slidesPerGroup;
@@ -2907,10 +2908,10 @@
         if (blankSlidesNum !== params.slidesPerGroup) {
           for (let i = 0; i < blankSlidesNum; i += 1) {
             const blankNode = $(document.createElement('div')).addClass(`${params.slideClass} ${params.slideBlankClass}`);
-            $wrapperEl.append(blankNode);
+            $selector.append(blankNode);
           }
 
-          slides = $wrapperEl.children(`.${params.slideClass}`);
+          slides = $selector.children(`.${params.slideClass}`);
         }
       }
 
@@ -2939,11 +2940,11 @@
       });
 
       for (let i = 0; i < appendSlides.length; i += 1) {
-        $wrapperEl.append($(appendSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
+        $selector.append($(appendSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
       }
 
       for (let i = prependSlides.length - 1; i >= 0; i -= 1) {
-        $wrapperEl.prepend($(prependSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
+        $selector.prepend($(prependSlides[i].cloneNode(true)).addClass(params.slideDuplicateClass));
       }
     }
 
@@ -3402,7 +3403,8 @@
       const timeDiff = touchEndTime - data.touchStartTime; // Tap, doubleTap, Click
 
       if (swiper.allowClick) {
-        swiper.updateClickedSlide(e);
+        const pathTree = e.path || e.composedPath && e.composedPath();
+        swiper.updateClickedSlide(pathTree && pathTree[0] || e.target);
         swiper.emit('tap click', e);
 
         if (timeDiff < 300 && touchEndTime - data.lastClickTime < 300) {
@@ -4065,6 +4067,8 @@
       loopedSlides: null,
       loopFillGroupWithBlank: false,
       loopPreventsSlide: true,
+      // rewind
+      rewind: false,
       // Swiping/no swiping
       allowSlidePrev: true,
       allowSlideNext: true,
@@ -5641,19 +5645,19 @@
           $nextEl,
           $prevEl
         } = swiper.navigation;
-        toggleEl($prevEl, swiper.isBeginning);
-        toggleEl($nextEl, swiper.isEnd);
+        toggleEl($prevEl, swiper.isBeginning && !swiper.params.rewind);
+        toggleEl($nextEl, swiper.isEnd && !swiper.params.rewind);
       }
 
       function onPrevClick(e) {
         e.preventDefault();
-        if (swiper.isBeginning && !swiper.params.loop) return;
+        if (swiper.isBeginning && !swiper.params.loop && !swiper.params.rewind) return;
         swiper.slidePrev();
       }
 
       function onNextClick(e) {
         e.preventDefault();
-        if (swiper.isEnd && !swiper.params.loop) return;
+        if (swiper.isEnd && !swiper.params.loop && !swiper.params.rewind) return;
         swiper.slideNext();
       }
 
@@ -5868,7 +5872,7 @@
             $el.css(swiper.isHorizontal() ? 'width' : 'height', `${bulletSize * (params.dynamicMainBullets + 4)}px`);
 
             if (params.dynamicMainBullets > 1 && swiper.previousIndex !== undefined) {
-              dynamicBulletIndex += current - swiper.previousIndex;
+              dynamicBulletIndex += current - (swiper.previousIndex - swiper.loopedSlides || 0);
 
               if (dynamicBulletIndex > params.dynamicMainBullets - 1) {
                 dynamicBulletIndex = params.dynamicMainBullets - 1;
@@ -5877,7 +5881,7 @@
               }
             }
 
-            firstIndex = current - dynamicBulletIndex;
+            firstIndex = Math.max(current - dynamicBulletIndex, 0);
             lastIndex = firstIndex + (Math.min(bullets.length, params.dynamicMainBullets) - 1);
             midIndex = (lastIndex + firstIndex) / 2;
           }
@@ -5921,7 +5925,7 @@
               }
 
               if (swiper.params.loop) {
-                if (bulletIndex >= bullets.length - params.dynamicMainBullets) {
+                if (bulletIndex >= bullets.length) {
                   for (let i = params.dynamicMainBullets; i >= 0; i -= 1) {
                     bullets.eq(bullets.length - i).addClass(`${params.bulletActiveClass}-main`);
                   }
@@ -6756,7 +6760,7 @@
         if (!gesture.$slideEl || !gesture.$slideEl.length) {
           gesture.$slideEl = $(e.target).closest(`.${swiper.params.slideClass}`);
           if (gesture.$slideEl.length === 0) gesture.$slideEl = swiper.slides.eq(swiper.activeIndex);
-          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('img, svg, canvas, picture, .swiper-zoom-target');
+          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('picture, img, svg, canvas, .swiper-zoom-target').eq(0);
           gesture.$imageWrapEl = gesture.$imageEl.parent(`.${params.containerClass}`);
           gesture.maxRatio = gesture.$imageWrapEl.attr('data-swiper-zoom') || params.maxRatio;
 
@@ -6997,7 +7001,7 @@
             }
           }
 
-          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('img, svg, canvas, picture, .swiper-zoom-target');
+          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('picture, img, svg, canvas, .swiper-zoom-target').eq(0);
           gesture.$imageWrapEl = gesture.$imageEl.parent(`.${params.containerClass}`);
         }
 
@@ -7092,7 +7096,7 @@
             gesture.$slideEl = swiper.slides.eq(swiper.activeIndex);
           }
 
-          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('img, svg, canvas, picture, .swiper-zoom-target');
+          gesture.$imageEl = gesture.$slideEl.find(`.${params.containerClass}`).eq(0).find('picture, img, svg, canvas, .swiper-zoom-target').eq(0);
           gesture.$imageWrapEl = gesture.$imageEl.parent(`.${params.containerClass}`);
         }
 
@@ -7847,7 +7851,7 @@
       }
 
       function updateNavigation() {
-        if (swiper.params.loop || !swiper.navigation) return;
+        if (swiper.params.loop || swiper.params.rewind || !swiper.navigation) return;
         const {
           $nextEl,
           $prevEl
@@ -7875,23 +7879,34 @@
       }
 
       function hasPagination() {
-        return swiper.pagination && swiper.params.pagination.clickable && swiper.pagination.bullets && swiper.pagination.bullets.length;
+        return swiper.pagination && swiper.pagination.bullets && swiper.pagination.bullets.length;
+      }
+
+      function hasClickablePagination() {
+        return hasPagination() && swiper.params.pagination.clickable;
       }
 
       function updatePagination() {
         const params = swiper.params.a11y;
+        if (!hasPagination()) return;
+        swiper.pagination.bullets.each(bulletEl => {
+          const $bulletEl = $(bulletEl);
 
-        if (hasPagination()) {
-          swiper.pagination.bullets.each(bulletEl => {
-            const $bulletEl = $(bulletEl);
+          if (swiper.params.pagination.clickable) {
             makeElFocusable($bulletEl);
 
             if (!swiper.params.pagination.renderBullet) {
               addElRole($bulletEl, 'button');
               addElLabel($bulletEl, params.paginationBulletMessage.replace(/\{\{index\}\}/, $bulletEl.index() + 1));
             }
-          });
-        }
+          }
+
+          if ($bulletEl.is(`.${swiper.params.pagination.bulletActiveClass}`)) {
+            $bulletEl.attr('aria-current', 'true');
+          } else {
+            $bulletEl.removeAttr('aria-current');
+          }
+        });
       }
 
       const initNavEl = ($el, wrapperId, message) => {
@@ -7960,7 +7975,7 @@
         } // Pagination
 
 
-        if (hasPagination()) {
+        if (hasClickablePagination()) {
           swiper.pagination.$el.on('keydown', classesToSelector(swiper.params.pagination.bulletClass), onEnterOrSpaceKey);
         }
       }
@@ -7987,7 +8002,7 @@
         } // Pagination
 
 
-        if (hasPagination()) {
+        if (hasClickablePagination()) {
           swiper.pagination.$el.off('keydown', classesToSelector(swiper.params.pagination.bulletClass), onEnterOrSpaceKey);
         }
       }
@@ -9818,18 +9833,31 @@
 
       const setTranslate = () => {
         const {
-          slides
+          slides,
+          $wrapperEl,
+          slidesSizesGrid
         } = swiper;
         const params = swiper.params.creativeEffect;
         const {
           progressMultiplier: multiplier
         } = params;
+        const isCenteredSlides = swiper.params.centeredSlides;
+
+        if (isCenteredSlides) {
+          const margin = slidesSizesGrid[0] / 2 - swiper.params.slidesOffsetBefore || 0;
+          $wrapperEl.transform(`translateX(calc(50% - ${margin}px))`);
+        }
 
         for (let i = 0; i < slides.length; i += 1) {
           const $slideEl = slides.eq(i);
           const slideProgress = $slideEl[0].progress;
           const progress = Math.min(Math.max($slideEl[0].progress, -params.limitProgress), params.limitProgress);
-          const originalProgress = Math.min(Math.max($slideEl[0].originalProgress, -params.limitProgress), params.limitProgress);
+          let originalProgress = progress;
+
+          if (!isCenteredSlides) {
+            originalProgress = Math.min(Math.max($slideEl[0].originalProgress, -params.limitProgress), params.limitProgress);
+          }
+
           const offset = $slideEl[0].swiperSlideOffset;
           const t = [swiper.params.cssMode ? -offset - swiper.translate : -offset, 0, 0];
           const r = [0, 0, 0];

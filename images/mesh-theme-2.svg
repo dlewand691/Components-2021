@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mesh-theme-2</title>
+    <defs>
+        <filter color-interpolation-filters="sRGB" x="-20.8%" y="-19.7%" width="141.7%" height="139.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <linearGradient x1="7.03454108%" y1="8.78635734%" x2="20.2646032%" y2="41.9666825%" id="linearGradient-2">
+            <stop stop-color="#000000" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <filter color-interpolation-filters="sRGB" x="-15.1%" y="-37.6%" width="130.2%" height="175.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" gradientTransform="translate(0.500000,0.500000),rotate(90.000000),scale(1.000000,0.965409),translate(-0.500000,-0.500000)" id="radialGradient-4">
+            <stop stop-color="#FFF2EF" offset="0%"></stop>
+            <stop stop-color="#FFF2EF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <filter color-interpolation-filters="sRGB" x="-39.5%" y="-39.5%" width="178.9%" height="178.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="mesh-theme-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FA0313" x="0" y="0" width="80" height="80"></rect>
+        <path d="M-9.5,-6.5 L62.5,-6.5 C52.9118237,-6.04566947 47.5358237,-2.03607714 46.372,5.52877698 C44.6262644,16.8760582 58.6592847,18.0058291 56.5,32.5 C54.3407153,46.9941709 49.3972175,53.599757 38.308,59.6582734 C27.2187825,65.7167897 19.6499709,55.410533 9.5,57.5 C2.73335275,58.892978 -3.59998059,62.892978 -9.5,69.5 L-9.5,-6.5 Z" id="Path-6" fill="#15006B" filter="url(#filter-1)"></path>
+        <rect id="Rectangle" fill="url(#linearGradient-2)" x="0" y="0" width="76" height="69"></rect>
+        <path d="M80,91 C89.8226606,84.676717 92.655994,80.0100503 88.5,77 C82.1457086,72.3977949 81,57.5 73,61.5 C58.4488628,68.7755686 32.224171,45.2342624 18.5,52.5 C12.8333333,55.5 3.66666667,59.8888889 -9,65.6666667 L-9,91 L80,91 Z" id="Path-7" fill="#FFE2DB" filter="url(#filter-3)"></path>
+        <rect id="Rectangle" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="80" height="80"></rect>
+        <circle id="Oval" fill="url(#radialGradient-4)" filter="url(#filter-5)" cx="23" cy="81" r="19"></circle>
+    </g>
+</svg>

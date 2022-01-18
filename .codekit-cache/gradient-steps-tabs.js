@@ -10,13 +10,12 @@
 //     });
 // });
 
-$(".tabs.bg-steps-primary").each(function () {
+$(".tabs.bg-steps").each(function () {
   var length = $(this).children().length;
   $(this)
     .find(".tabs-title")
     .each(function (index) {
-      var colorClass =
-        "bg-steps-primary-" + Math.round((index / (length - 1)) * 100);
+      var colorClass = "bg-steps-" + Math.round((index / (length - 1)) * 100);
       $(this).addClass(colorClass);
     });
 });
