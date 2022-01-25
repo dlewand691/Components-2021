@@ -2,7 +2,7 @@
   "author": "",
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "container-query-polyfill": "^0.1.1",
+    "container-query-polyfill": "^0.1.2",
     "flag-icon-css": "^4.1.7",
     "foundation-sites": "^6.7.4",
     "gorko": "^0.9.1",

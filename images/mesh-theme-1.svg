@@ -8,14 +8,14 @@
             <stop stop-color="#1D1D81" offset="50.6943789%"></stop>
             <stop stop-color="#05005E" offset="100%"></stop>
         </linearGradient>
-        <filter color-interpolation-filters="sRGB" x="-18.8%" y="-19.4%" width="137.6%" height="138.8%" filterUnits="objectBoundingBox" id="filter-2">
+        <filter x="-18.8%" y="-19.4%" width="137.6%" height="138.8%" filterUnits="objectBoundingBox" id="filter-2">
             <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
         </filter>
         <linearGradient x1="87.007575%" y1="16.1752872%" x2="62.8275871%" y2="55.7287412%" id="linearGradient-3">
             <stop stop-color="#174B96" offset="0%"></stop>
             <stop stop-color="#0074C9" offset="100%"></stop>
         </linearGradient>
-        <filter color-interpolation-filters="sRGB" x="-22.8%" y="-21.8%" width="145.7%" height="143.7%" filterUnits="objectBoundingBox" id="filter-4">
+        <filter x="-22.8%" y="-21.8%" width="145.7%" height="143.7%" filterUnits="objectBoundingBox" id="filter-4">
             <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
         </filter>
         <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="54.4871563%" gradientTransform="translate(0.500000,0.500000),scale(1.000000,0.917647),rotate(90.000000),scale(1.000000,0.890670),translate(-0.500000,-0.500000)" id="radialGradient-5">
@@ -28,7 +28,7 @@
             <stop stop-color="#DEDFE0" stop-opacity="0.52" offset="39.8155079%"></stop>
             <stop stop-color="#D6D7D8" stop-opacity="0.3" offset="100%"></stop>
         </radialGradient>
-        <filter color-interpolation-filters="sRGB" x="-25.2%" y="-22.5%" width="150.3%" height="144.9%" filterUnits="objectBoundingBox" id="filter-7">
+        <filter x="-25.2%" y="-22.5%" width="150.3%" height="144.9%" filterUnits="objectBoundingBox" id="filter-7">
             <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
         </filter>
         <radialGradient cx="82.5151943%" cy="88.8284977%" fx="82.5151943%" fy="88.8284977%" r="126.26491%" gradientTransform="translate(0.825152,0.888285),scale(1.000000,0.896320),rotate(-130.806654),translate(-0.825152,-0.888285)" id="radialGradient-8">
@@ -37,7 +37,7 @@
             <stop stop-color="#00FFF8" stop-opacity="0.17" offset="82.7402737%"></stop>
             <stop stop-color="#00FFF9" stop-opacity="0.37" offset="100%"></stop>
         </radialGradient>
-        <filter color-interpolation-filters="sRGB" x="-23.6%" y="-21.2%" width="147.2%" height="142.3%" filterUnits="objectBoundingBox" id="filter-9">
+        <filter x="-23.6%" y="-21.2%" width="147.2%" height="142.3%" filterUnits="objectBoundingBox" id="filter-9">
             <feGaussianBlur stdDeviation="5" in="SourceGraphic"></feGaussianBlur>
         </filter>
     </defs>
