@@ -70,7 +70,7 @@ block content
           h3(contenteditable="true") Supercharge your digital operations with the power of analytics
           a.button.arrow(data-open="video-modal-ai") PLAY VIDEO
         .reveal#video-modal-ai.p3(data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down")
-          <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/905523703&color=%230033a0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+          //- <iframe width="100%" height="100%" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/905523703&color=%230033a0&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
           //- .responsive-embed.widescreen
             iframe(width="560", height="315", src="https://www.youtube-nocookie.com/embed/xgtdBJuaY-Y", frameborder="0", allow="autoplay; encrypted-media", allowfullscreen="")
           button.close-button(data-close aria-label="Close modal" type="button")
@@ -456,7 +456,7 @@ block content
   .grid-x.grid-padding-x
     .cell
       h3 Video1-C (Play in place)
-  .grid-x.grid-padding-x.expanded.collapse.align-middle.align-center.text-center#video-modal-in-place-row(data-toggler=".gradient-overlay-black-full" style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center; min-height:400px;")
+  .grid-x.grid-padding-x.expanded.collapse.align-middle.align-center.text-center#video-modal-in-place-row(data-toggler=".gradient-overlay-primary-full" style="background: url('images/background.jpg') no-repeat; background-size: cover; background-position: center; min-height:400px;")
     .cell.py5.show#video-modal-in-place-1(data-toggler=".hide")
       a(href="#")
         h6.m0 Cognizant Digital Works™
@@ -598,11 +598,17 @@ block content
     .swiper-button-next
   hr
   .bg-primary
-    .grid-x.grid-padding-x
-      .large-8.medium-6.small-12.cell
-        h1.m0.medium-my2.large-my4 Hi everybody
-        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quibusdam saepe, veniam libero. Similique optio autem officiis minus veniam accusantium consequuntur deserunt cupiditate modi assumenda. Libero a praesentium error vitae.
-        a.button.arrow.large yeehaw
+    .grid-container
+      .grid-x.grid-padding-x.align-middle.py3
+        .large-4.medium-6.small-12.cell.px3
+          img(src="images/COG-Logo-2022-white-text.svg")
+        .large-8.medium-6.small-12.cell
+          h5 Building businesses that outpace change.
+          p Intelligent software plugged into the internet of things, fueled by AI and running natively on the cloud. That’s how Cognizant is helping businesses get ahead—and stay ahead.
+          a.arrow Corporate fact sheet
+          p
+          a.arrow Corporate overview
+
 
 
   //- hr
@@ -621,7 +627,7 @@ block content
   //- .grid-x.grid-padding-x
     .cell
       h3 Video Background with layered text
-  //- .video-background.bg-black-opacity-50
+  //- .video-background.bg-primary-opacity-50
     video.object-fit-cover(playsinline autoplay loop muted poster="images/header-banners/video-background/Home-BG-video-banking.jpg")
       source(src="./images/video-backgrounds/cognizant_angled_1.mp4" type="video/mp4")
       source(src="images/header-banners/video-background/Home-BG-video-banking.mp4" type="video/webm")

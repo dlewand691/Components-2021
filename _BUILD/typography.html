@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow">
     <title>Cognizant | Typography</title>
-    <link rel="stylesheet" href="css/app.css?ckcachebust=6F4479AB82CF1FC758C77C95951E52CF">
+    <link rel="stylesheet" href="css/app.css?ckcachebust=1A449FB7AEA9DDD076E01C9375C25C12">
     <!--                                       FAVICONS                                       //-->
     <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg?ckcachebust=CFF27F9D99DC4ECF8DDDC7EE8B73243F">
     <link rel="icon" type="image/png" href="favicons/favicon.png?ckcachebust=3BEEF2C5F3F90CD6B7A06DDC51307DAC">
@@ -21,7 +21,35 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <script src="js/min/app-min.js?ckcachebust=F22EB0DB83DBC06485B13F4D9E8DEDE6"></script>
+    <script src="js/min/app-min.js?ckcachebust=2859579F6CEAB388F0FE415E9AAA71CE"></script>
+    <div class="grid-container">
+      <div class="grid-x">
+        <div class="cell">
+          <h1>Type something</h1>
+          <h2>Type something</h2>
+          <h3>Type something</h3>
+          <h4>Type something</h4>
+          <h5>Type something</h5>
+          <h6>Type something</h6>
+          <p>Type something</p>
+          <p class="text-bold">Type something</p>
+          <p class="small">Type something</p>
+          <p class="small text-bold">Type something</p>
+          <p class="tiny">Type something</p>
+          <p class="tiny text-bold">Type something</p>
+          <p><a class="text-bold">Text</a></p>
+          <p><a class="small">Text</a></p>
+          <p><a class="small text-bold">Text</a></p>
+          <p><a class="tiny">Text</a></p>
+          <p><a class="tiny text-bold">Text</a></p>
+          <p><a class="arrow text-bold">Text</a></p>
+          <p><a class="arrow small">Text</a></p>
+          <p><a class="arrow small text-bold">Text</a></p>
+          <p><a class="arrow tiny">Text</a></p>
+          <p><a class="arrow tiny text-bold">Text</a></p>
+        </div>
+      </div>
+    </div>
     <div id="typography"></div>
     <h1>Typography</h1>
     <div class="grid-container">
@@ -49,6 +77,8 @@
           <p>Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.®™®©</p>
           <p class="small">Small lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.®™®©</p>
           <p class="tiny">Tiny lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti. ®™®©</p>
+          <h1>Regular<small>small tag</small></h1>
+          <h1 class="tiny">tiny</h1>
         </div>
       </div>
       <div class="grid-x grid-padding-x medium-up-3">
@@ -14779,7 +14809,7 @@
         </div>
       </div>
     </div>
-    <div class="py10 h80vh bg-size-covr bg-primary" style="background-image: url(images/mesh-theme-1.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;">
+    <div class="py10 h80vh bg-size-cover bg-pos-center bg-primary" style="background-image: url(images/mesh-theme-1.svg); background-repeat: no-repeat;">
       <div class="grid-container flex-container align-middle w100 relative">
         <div class="grid-x">
           <div class="cell">
@@ -14788,7 +14818,7 @@
         </div>
       </div>
     </div>
-    <div class="py10 h80vh bg-size-covr bg-primary" style="background-image: url(images/mesh-theme-2.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;">
+    <div class="py10 h80vh bg-size-cover bg-pos-center bg-primary" style="background-image: url(images/mesh-theme-2.svg); background-repeat: no-repeat;">
       <div class="grid-container flex-container align-middle w100 relative">
         <div class="grid-x">
           <div class="cell">
@@ -14797,7 +14827,7 @@
         </div>
       </div>
     </div>
-    <div class="py10 h80vh bg-size-covr bg-primary" style="background-image: url(images/mesh-theme-3.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;">
+    <div class="py10 h80vh bg-size-cover bg-pos-center bg-primary" style="background-image: url(images/mesh-theme-3.svg); background-repeat: no-repeat;">
       <div class="grid-container flex-container align-middle w100 relative">
         <div class="grid-x">
           <div class="cell">
@@ -15046,61 +15076,61 @@
     <div id="textcolor"></div>
     <h1>Text color options</h1>
     <div class="grid-container mb2">
-      <div class="grid-x medium-up-3">
+      <div class="grid-x medium-up-3" style="background: url(https://via.placeholder.com/40x40">
         <div class="cell p1 column-block">
-          <p class="m0 text-white" style="background: url(https://via.placeholder.com/40x40">$text-white<a href="#">Link</a>
+          <p class="m0 text-white" style="background: url(ttps://via.placeholder.com/40x40">$text-white<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-primary" style="background: url(https://via.placeholder.com/40x40">$text-primary<a href="#">Link</a>
+          <p class="m0 text-primary" style="background: url(ttps://via.placeholder.com/40x40">$text-primary<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text- " style="background: url(https://via.placeholder.com/40x40">$text- <a href="#">Link</a>
+          <p class="m0 text- " style="background: url(ttps://via.placeholder.com/40x40">$text- <a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent1-dark" style="background: url(https://via.placeholder.com/40x40">$text-accent1-dark<a href="#">Link</a>
+          <p class="m0 text-accent1-dark" style="background: url(ttps://via.placeholder.com/40x40">$text-accent1-dark<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent1-medium" style="background: url(https://via.placeholder.com/40x40">$text-accent1-medium<a href="#">Link</a>
+          <p class="m0 text-accent1-medium" style="background: url(ttps://via.placeholder.com/40x40">$text-accent1-medium<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent1-light" style="background: url(https://via.placeholder.com/40x40">$text-accent1-light<a href="#">Link</a>
+          <p class="m0 text-accent1-light" style="background: url(ttps://via.placeholder.com/40x40">$text-accent1-light<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent2-dark" style="background: url(https://via.placeholder.com/40x40">$text-accent2-dark<a href="#">Link</a>
+          <p class="m0 text-accent2-dark" style="background: url(ttps://via.placeholder.com/40x40">$text-accent2-dark<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent2-medium" style="background: url(https://via.placeholder.com/40x40">$text-accent2-medium<a href="#">Link</a>
+          <p class="m0 text-accent2-medium" style="background: url(ttps://via.placeholder.com/40x40">$text-accent2-medium<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-accent2-light" style="background: url(https://via.placeholder.com/40x40">$text-accent2-light<a href="#">Link</a>
+          <p class="m0 text-accent2-light" style="background: url(ttps://via.placeholder.com/40x40">$text-accent2-light<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-gray-dark" style="background: url(https://via.placeholder.com/40x40">$text-gray-dark<a href="#">Link</a>
+          <p class="m0 text-gray-dark" style="background: url(ttps://via.placeholder.com/40x40">$text-gray-dark<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-gray-medium" style="background: url(https://via.placeholder.com/40x40">$text-gray-medium<a href="#">Link</a>
+          <p class="m0 text-gray-medium" style="background: url(ttps://via.placeholder.com/40x40">$text-gray-medium<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-gray-light" style="background: url(https://via.placeholder.com/40x40">$text-gray-light<a href="#">Link</a>
+          <p class="m0 text-gray-light" style="background: url(ttps://via.placeholder.com/40x40">$text-gray-light<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-gray-lighter" style="background: url(https://via.placeholder.com/40x40">$text-gray-lighter<a href="#">Link</a>
+          <p class="m0 text-gray-lighter" style="background: url(ttps://via.placeholder.com/40x40">$text-gray-lighter<a href="#">Link</a>
           </p>
         </div>
         <div class="cell p1 column-block">
-          <p class="m0 text-gray-lightest" style="background: url(https://via.placeholder.com/40x40">$text-gray-lightest<a href="#">Link</a>
+          <p class="m0 text-gray-lightest" style="background: url(ttps://via.placeholder.com/40x40">$text-gray-lightest<a href="#">Link</a>
           </p>
         </div>
       </div>
@@ -15637,6 +15667,6 @@
         });
       });
     </script><a id="scrollUp" href="#" title="Back to top"></a>
-    <script src="js/min/app-min.js?ckcachebust=F22EB0DB83DBC06485B13F4D9E8DEDE6"></script>
+    <script src="js/min/app-min.js?ckcachebust=2859579F6CEAB388F0FE415E9AAA71CE"></script>
   </body>
 </html>

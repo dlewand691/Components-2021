@@ -4693,13 +4693,33 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
-    "\/images\/COG-Logo-2021.svg" : {
+    "\/images\/COG-Logo-2022-white-text.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 0,
-      "oAP" : "\/_BUILD\/images\/COG-Logo-2021.svg",
+      "oAP" : "\/_BUILD\/images\/COG-Logo-2022-white-text.svg",
       "oF" : 0,
       "opt" : 1,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/COG-Logo-2022-white.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/COG-Logo-2022-white.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/COG-Logo-2022.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/COG-Logo-2022.svg",
+      "oF" : 0,
+      "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -13214,6 +13234,28 @@
       "q" : 100,
       "rq" : 90
     },
+    "\/images\/home-parallax-healthcare.webp" : {
+      "ft" : 8388608,
+      "iS" : 105268,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/home-parallax-healthcare.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 90
+    },
+    "\/images\/home-parallax-twa.webp" : {
+      "ft" : 8388608,
+      "iS" : 161458,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/home-parallax-twa.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 90
+    },
     "\/images\/homepage-davos2020-desktop.jpg" : {
       "ft" : 16384,
       "iS" : 319699,
@@ -17021,6 +17063,71 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/parallax-healthcare01.jpg" : {
+      "ft" : 16384,
+      "iS" : 841464,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/parallax-healthcare01.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/parallax-healthcare02.jpg" : {
+      "ft" : 16384,
+      "iS" : 846645,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/parallax-healthcare02.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/parallax-shape.jpg" : {
+      "ft" : 16384,
+      "iS" : 823873,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/parallax-shape.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/parallax-twa01.jpg" : {
+      "ft" : 16384,
+      "iS" : 1106708,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/parallax-twa01.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/parallax-twa02.jpg" : {
+      "ft" : 16384,
+      "iS" : 947230,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/parallax-twa02.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
     "\/images\/PDF-thumbnail.jpg" : {
       "ft" : 16384,
       "iS" : 12407,
@@ -17040,6 +17147,19 @@
       "jF" : 2,
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/perspectives-app-banner-mobile.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/shape-test.jpg" : {
+      "ft" : 16384,
+      "iS" : 567032,
+      "jF" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/shape-test.jpg",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -17573,6 +17693,16 @@
       "oO" : 1,
       "oS" : 1
     },
+    "\/parallax-preview.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/parallax-preview.html",
+      "oF" : 0,
+      "oS" : 0
+    },
     "\/pardot.pug" : {
       "cB" : 1,
       "cOD" : 0,
@@ -17656,9 +17786,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_BUILD\/css\/color-vars.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 2,
       "sct" : 0
@@ -17671,9 +17801,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_BUILD\/css\/gic.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 2,
       "sct" : 0
@@ -17686,9 +17816,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_BUILD\/css\/gorko.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 2,
       "sct" : 0
@@ -17701,9 +17831,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_BUILD\/css\/homepage-carousel.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 2,
       "sct" : 0
@@ -17716,9 +17846,9 @@
       "ec" : 1,
       "ft" : 4,
       "ma" : 1,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/_BUILD\/css\/rte.css",
-      "oF" : 0,
+      "oF" : 1,
       "oS" : 0,
       "pg" : 2,
       "sct" : 0

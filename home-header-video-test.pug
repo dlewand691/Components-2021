@@ -10,19 +10,19 @@ block extraStyles
   style.
     @media screen and (min-width: 0em) and (orientation:portrait) {
       iframe#youtube-video {
-        width: calc(100vw - 2rem); 
+        width: calc(100vw - 2rem);
         height: 25vh;
       }
     }
     @media screen and (min-width: 40em) and (orientation:portrait) {
       iframe#youtube-video {
-        width: calc(100vw - 2rem); 
+        width: calc(100vw - 2rem);
         height: 40vh;
       }
     }
     @media screen and (min-width: 64em) {
       iframe#youtube-video {
-        width: calc(75vh * 1.77); 
+        width: calc(75vh * 1.77);
         height: 82.5vh;
       }
     }
@@ -31,7 +31,7 @@ block content
   +subnav(class="theme-default")
   +primaryNav(class="theme-default")
 
-  .bg-black.align-middle.text-center.medium-text-left.video-background.bg-pos-center-center(data-interchange="[images/video-backgrounds/ie-bg.jpg, small],[../images/transparent.gif, medium],[../images/transparent.gif, large]")
+  .bg-primary.align-middle.text-center.medium-text-left.video-background.bg-pos-center-center(data-interchange="[images/video-backgrounds/ie-bg.jpg, small],[../images/transparent.gif, medium],[../images/transparent.gif, large]")
     video.hide-for-small-only(playsinline autoplay loop muted poster="images/video-backgrounds/ie-bg.jpg")
       source(src="images/video-backgrounds/ie-bg.mp4" type="video/mp4")
     .grid-container

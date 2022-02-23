@@ -243,6 +243,7 @@ h6 {
 .p,
 p {
   font-size: 16px;
+  max-width: 70ch;
 }
 @media (min-width: 320px) {
   .p,
@@ -340,11 +341,11 @@ p {
           12px +
             3 *
             (100vw - 320px) /
-            704
+            880
         );
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .small {
     font-size: 15px;
   }

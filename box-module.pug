@@ -5,7 +5,7 @@ block vars
 block content
 
   h1!= pageTitle
-  .bg-grd-theme-1.py3
+  .bg-grd-mesh-theme-1.py3
     .grid-container.mb3
       .grid-x.grid-padding-x.medium-up-2
         .cell
@@ -25,12 +25,12 @@ block content
             .card-image.relative.py4.medium-py7
                 img.absolute.pos-top.object-fit-cover.object-position-bottom-left(alt data-interchange='[images/background.jpg, small],[images/background.jpg, medium],[images/background.jpg, large]' src='images/background.jpg')
             .card-section.large-px2.large-pt2.large-pb0
-              p.small.text-blue-dark UTILITIES
+              p.small.text-gray-dark UTILITIES
               h5 Automation center of excellence trims costs and fuels productivity
             .card-divider.large-px2.large-pb2
               a.arrow(href='#' target='_self' title='Read more' tabindex='0' rel='noopener noreferrer' new-data-attribute='Automation center of excellence trims costs and fuels productivity') Read more
 
-  .grid-container
+  .grid-container.py3
     .grid-x.grid-padding-x
       .cell.large-8.medium-7(data-aos="fade-right", data-attribute="ebook")
         .card.bd0.flex-container.h100
@@ -41,9 +41,9 @@ block content
               source(data-srcset="images/background.jpg", type="image/webp", srcset="images/background.jpg")
               source(data-srcset="images/background.jpg", type="image/jpg", srcset="images/background.jpg")
               img.wh100.lazyload.object-fit-cover(width="780", height="185", data-src="images/background.jpg", alt="From Data to ROI ebook", title="From Data to ROI ebook", src="images/background.jpg")
-          .flex-container.align-middle.px1.pt1.pb-half
+          .flex-container.align-middle.px1.pt1
             //- img.mr-half.lazyloaded(style="height:24px", data-sizes="24px", data-src="images/icon-insurance.svg", width="24", height="24", alt="From Data to ROI ebook", title="From Data to ROI ebook", sizes="24px", src="images/icon-insurance.svg")
-            p.text-gray.small.mb0.text-bold FROM DATA TO ROI EBOOK
+            p.small.text-gray-dark.m0 FROM DATA TO ROI EBOOK
           .card-section
             h5 How to generate ROI from AI-powered data
             p
@@ -59,9 +59,9 @@ block content
               source(data-srcset="images/background.jpg", type="image/webp", srcset="images/background.jpg")
               source(data-srcset="images/background.jpg", type="image/jpg", srcset="images/background.jpg")
               img.wh100.lazyload.object-fit-cover(width="380", height="185", data-src="images/background.jpg", alt="Oil & Gas", title="Oil & Gas", src="images/background.jpg")
-          .flex-container.align-middle.px1.pt1.pb-half
+          .flex-container.align-middle.px1.pt1
             //- img.mr-half.lazyloaded(style="height:24px", data-sizes="24px", data-src="images/icon-gas.svg", width="24", height="24", alt="Oil & Gas", title="Oil & Gas", sizes="24px", src="images/icon-gas.svg")
-            p.text-gray.small.mb0.text-bold TGS CASE STUDY
+            p.small.text-gray-dark.m0 TGS CASE STUDY
           .card-section
             h5 TGS makes a seismic transformation to faster, better insights
             p
@@ -185,41 +185,41 @@ block content
     .grid-x.bd1.mb1
       .small-12.medium-3.cell.medium-order-1.small-order-2
         img.object-fit-cover(src="images/background.jpg")
-      .small-12.medium-9.cell.medium-order-2.small-order-1
-        .p1
-          .label.mb-half
-            i.file-acrobat.mr-half
-            | Whitepapers
-          h5 The Work Ahead
-          p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
-          a.arrow.m0 Learn more
+      .small-12.medium-9.cell.medium-order-2.small-order-1.bg-white.p1
+        .label.mb-half
+          i.file-acrobat.mr-half
+          | Whitepapers
+        h5 The Work Ahead
+        p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
+        a.arrow.m0 Learn more
 
   mixin boxModule-horizontal-imageRight
     .grid-x.bd1.mb1
       .small-12.medium-3.cell.medium-order-2.small-order-1
         img.object-fit-cover(src="images/background.jpg")
-      .small-12.medium-9.cell.medium-order-1.small-order-2
-        .p1
-          .label.mb-half
-            i.file-acrobat.mr-half
-            | Whitepapers
-          h5 The Work Ahead
-          p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
-          a.arrow.m0 Learn more
+      .small-12.medium-9.cell.medium-order-1.small-order-2.bg-white.p1
+        .label.mb-half
+          i.file-acrobat.mr-half
+          | Whitepapers
+        h5 The Work Ahead
+        p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
+        a.arrow.m0 Learn more
 
   mixin boxModule-vertical
-    .cell.cell-block
-      .card
-        img.object-fit-cover(src="images/background.jpg" style="height: 100px;")
-        .card-section
-          .label.mb-half
-            i.file-acrobat.mr-half
-            | Whitepapers
-          h5(contenteditable=true) The Work Ahead
-        .card-section
-          p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
-        .card-divider
-          a.arrow.m0 Learn more
+    .cell
+      .card.flex-dir-row
+        .w100
+          img.object-fit-cover(src="images/background.jpg")
+        .flex-dir-column
+          .card-section
+            .label.mb-half
+              i.file-acrobat.mr-half
+              | Whitepapers
+            h5(contenteditable=true) The Work Ahead
+          .card-section
+            p(contenteditable=true) Cognizant Hungary was awarded first prize as “Best Women’s Workplace 2016” among 58 companies participating in the category of employers with more than 250 employees in the country. The survey was conducted in the summer of 2017 with 72% of Hungary’s female associates responding to the survey, and the award was handed out in December. Congratulations to Team Hungary!
+          .card-divider
+            a.arrow.m0 Learn more
 
   .bg-grd-theme-1.py3
     h3 Box-Module-A, B, C & D

@@ -1,0 +1,48 @@
+block vars
+doctype html
+html.no-js(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="robots" content="noindex, follow")
+    title!= 'Cognizant | ' + pageTitle
+    link(rel='stylesheet', href='css/app.css')
+
+    //                                       FAVICONS                                       //
+    link(rel='icon' type='image/svg+xml' href='favicons/favicon.svg')
+    link(rel='icon' type='image/png' href='favicons/favicon.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='favicons/apple-touch-icon.png?v=2022')
+    link(rel='icon' type='image/png' sizes='32x32' href='favicons/favicon-32x32.png?v=2022')
+    link(rel='icon' type='image/png' sizes='16x16' href='favicons/favicon-16x16.png?v=2022')
+    link(rel='manifest' href='favicons/site.webmanifest?v=2022')
+    link(rel='mask-icon' href='favicons/safari-pinned-tab.svg?v=2022' color='#000048')
+    link(rel='shortcut icon' href='favicons/favicon.ico?v=2022')
+    meta(name='msapplication-TileColor' content='#000048')
+    meta(name='msapplication-config' content='favicons/browserconfig.xml?v=2022')
+    meta(name='theme-color' content='#ffffff')
+
+    block extraStyles
+
+  body
+
+    block content
+    .flex-container.align-center-middle.h80vh Scroll to view banners &#8593; &#8595;
+    .flex-container.align-bottom.my3(style="min-height: 500px; background: url(images/home-parallax-twa.webp) center center / cover; background-attachment:fixed")
+      .grid-container.w100
+        .grid-x.grid-padding-x
+          .cell.bg-primary-85.p1
+            p Forge a future that connects you to customers and employees in new ways.
+            a.arrow(href="#") Explore the Work Ahead
+    .flex-container.align-bottom.my3(style="min-height: 500px; background: url(images/home-parallax-healthcare.webp) center center / cover; background-attachment:fixed")
+      .grid-container.w100
+        .grid-x.grid-padding-x
+          .cell.bg-primary-85.p1
+            p Healthcare Payers at the Threshold of Digital Health
+            a.arrow(href="#") Read the report
+
+    .flex-container.align-center-middle.h80vh Scroll to view banners &#8593; &#8595;
+    a#scrollUp(href="#", title="Back to top")
+    script(src='js/min/app-min.js')
+
+    block extraScripts

@@ -129,9 +129,41 @@ block content
                   +backgroundTypeTest
                   .h5
                     i.arrow-right
-
-
-
+  .grid-container
+    .grid-x
+      .cell
+        h1 Type something
+        h2 Type something
+        h3 Type something
+        h4 Type something
+        h5 Type something
+        h6 Type something
+        p Type something
+        p.text-bold Type something
+        p.small Type something
+        p.small.text-bold Type something
+        p.tiny Type something
+        p.tiny.text-bold Type something
+        p
+          a.text-bold Text
+        p
+          a.small Text
+        p
+          a.small.text-bold Text
+        p
+          a.tiny Text
+        p
+          a.tiny.text-bold Text
+        p
+          a.arrow.text-bold Text
+        p
+          a.arrow.small Text
+        p
+          a.arrow.small.text-bold Text
+        p
+          a.arrow.tiny Text
+        p
+          a.arrow.tiny.text-bold Text
   #typography
   h1 Typography
   .grid-container
@@ -157,6 +189,9 @@ block content
         p Paragraph lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.®™®©
         p.small Small lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti.®™®©
         p.tiny Tiny lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae nam saepe magni amet sunt cum asperiores quos suscipit ullam consequatur aliquam iste aspernatur quas esse architecto, quibusdam dolorem incidunt, error in id! Illum aut, enim eum corrupti, explicabo laudantium. Incidunt officiis soluta excepturi aut illo magni, corporis eos cupiditate deleniti. ®™®©
+        h1 Regular
+          small small tag
+        h1.tiny tiny
     .grid-x.grid-padding-x.medium-up-3
       .cell
         p Trademark&trade;
@@ -16377,7 +16412,7 @@ block content
             h6.m0 CSS gradient mesh 3
 
 
-  .py10.h80vh.bg-size-covr.bg-primary(style="background-image: url(images/mesh-theme-1.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;")
+  .py10.h80vh.bg-size-cover.bg-pos-center.bg-primary(style="background-image: url(images/mesh-theme-1.svg); background-repeat: no-repeat;")
     .grid-container.flex-container.align-middle.w100.relative
       .grid-x
         .cell
@@ -16386,12 +16421,12 @@ block content
               |  to each 
               code filter
               |  )
-  .py10.h80vh.bg-size-covr.bg-primary(style="background-image: url(images/mesh-theme-2.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;")
+  .py10.h80vh.bg-size-cover.bg-pos-center.bg-primary(style="background-image: url(images/mesh-theme-2.svg); background-repeat: no-repeat;")
     .grid-container.flex-container.align-middle.w100.relative
       .grid-x
         .cell
             h6.m0 SVG gradient mesh 2
-  .py10.h80vh.bg-size-covr.bg-primary(style="background-image: url(images/mesh-theme-3.svg); background-size: 100% auto; background-repeat: no-repeat; background-position: 50%;")
+  .py10.h80vh.bg-size-cover.bg-pos-center.bg-primary(style="background-image: url(images/mesh-theme-3.svg); background-repeat: no-repeat;")
     .grid-container.flex-container.align-middle.w100.relative
       .grid-x
         .cell
@@ -16456,10 +16491,10 @@ block content
   #textcolor
   h1 Text color options
   .grid-container.mb2
-    .grid-x.medium-up-3
+    .grid-x.medium-up-3(style="background: url(https://via.placeholder.com/40x40")
       each textColor in ["white", "primary", " ", "accent1-dark", "accent1-medium", "accent1-light", "accent2-dark", "accent2-medium", "accent2-light", "gray-dark", "gray-medium", "gray-light", "gray-lighter", "gray-lightest"]
         .cell.p1.column-block
-          p.m0(class="text-" + textColor style="background: url(https://via.placeholder.com/40x40")
+          p.m0(class="text-" + textColor style="background: url(ttps://via.placeholder.com/40x40")
             != "$text-" + textColor
             a(href="#") Link
 
