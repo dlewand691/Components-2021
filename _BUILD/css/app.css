@@ -13887,6 +13887,11 @@ i, .icomoon-liga {
   min-width: initial;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 @media print, screen and (max-width: 50.62375em) {
   .theme-cfow .stickyNav {
     background: rgba(83, 86, 90, 0.97);
@@ -29718,63 +29723,43 @@ a.accordion-title:hover {
   text-decoration: none !important;
   font-weight: bold;
   margin-right: 1rem;
+  display: inline-flex;
+  align-items: center;
 }
 .button:last-of-type {
   margin-right: 0;
+}
+.button.arrow::after {
+  margin-left: 0.5em;
 }
 .button.back::after {
   content: "";
 }
 .button.back::before {
   margin-right: 0.5em;
-  margin-left: -0.2em;
   content: "\e905";
   font-family: "Cognizant-Icons";
-  font-weight: 600;
   font-size: initial;
-  width: unset;
-  height: unset;
 }
 .button.download::after {
-  position: unset;
-  right: unset;
-  width: unset;
-  height: unset;
-  margin-top: unset;
   margin-left: 0.5em;
   content: "\e920";
-  background: unset;
   font-family: "Cognizant-Icons";
-  font-weight: bold;
   font-size: initial;
 }
 .button.download::before {
   content: "";
 }
 .button.video::after {
-  position: unset;
-  right: unset;
-  width: unset;
-  height: unset;
-  margin-top: unset;
   margin-left: 0.5em;
   content: "\e94b";
-  background: unset;
   font-family: "Cognizant-Icons";
-  font-weight: bold;
   font-size: initial;
 }
 .button.launch::after {
-  position: unset;
-  right: unset;
-  width: unset;
-  height: unset;
-  margin-top: unset;
   margin-left: 0.5em;
   content: "\e935";
-  background: unset;
   font-family: "Cognizant-Icons";
-  font-weight: bold;
   font-size: 1.2em;
 }
 .button.launch::before {
@@ -29793,23 +29778,14 @@ a.accordion-title:hover {
   padding-right: 1.1em;
 }
 .arrow::after {
-  position: unset !important;
-  right: unset;
-  width: unset;
-  height: unset;
-  margin-top: unset;
-  margin-left: 0.5em;
+  margin-left: 0.25em;
   content: "\e907";
-  background: unset;
   font-family: "Cognizant-Icons";
-  font-weight: bold;
   color: inherit;
-  display: inline-block;
 }
 .arrow.arrow-solid::after {
   content: "\e908";
   font-family: "Cognizant-Icons";
-  position: unset;
 }
 .arrow.arrow-down::after {
   content: "\e903";
@@ -29840,7 +29816,6 @@ a.accordion-title:hover {
   right: 0.5em;
   content: "\e907";
   font-family: "Cognizant-Icons";
-  font-weight: bold;
   margin-left: 0.2em;
 }
 
@@ -30123,6 +30098,7 @@ table tr:last-child td:last-child {
 .tabs .tabs-title[class*=bg-steps-].is-active a:hover {
   color: #2f78c4;
 }
+.tabs .tabs-title a,
 .tabs .tabs-title a:link {
   border-radius: inherit;
   color: #2f78c4;
@@ -30154,6 +30130,8 @@ table tr:last-child td:last-child {
 .tabs-content {
   border-radius: 0 0 0.5em 0.5em;
   overflow: hidden;
+  --heading-color: #2f78c4;
+  --link-color: #2f78c4;
 }
 .tabs-content.is-active {
   animation: tab-panel-fade-in 1s ease;
@@ -31791,9 +31769,9 @@ button.swiper-pagination-bullet {
 .square-pagination [class*=swiper-pagination] [class*=swiper-pagination] {
   overflow: hidden;
   width: 2rem;
-  height: 5px;
-  margin: 0 5px;
-  border-radius: 0 !important;
+  height: 0.25rem;
+  margin: 0 0.25rem;
+  border-radius: 5000px !important;
 }
 
 /* ==============================  WHITE CONTROLS  ============================== */

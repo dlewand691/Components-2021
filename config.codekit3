@@ -63,6 +63,14 @@
       "oAP" : "\/_BUILD\/.history",
       "oF" : 0
     },
+    "\/.htaccess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/.htaccess",
+      "oF" : 0
+    },
     "\/.prettierrc" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1944,6 +1952,19 @@
       "opt" : 0,
       "ou" : "lpckwebp-default",
       "q" : 100,
+      "rq" : 90
+    },
+    "\/images\/bg-about-multiplicity.png" : {
+      "ft" : 32768,
+      "iS" : 573481,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/bg-about-multiplicity.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
       "rq" : 90
     },
     "\/images\/bg-video-guidelines.jpg" : {
@@ -13724,6 +13745,19 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/images\/hp-recruitment-top-banner.png" : {
+      "ft" : 32768,
+      "iS" : 226172,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/hp-recruitment-top-banner.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 1,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
+      "rq" : 90
+    },
     "\/images\/HPQ3-banner\/AI & Analytics\/_ASSETS\/ai-and-analytics.jpg" : {
       "ft" : 16384,
       "iS" : 115442,
@@ -15968,6 +16002,46 @@
       "q" : 100,
       "rq" : 90
     },
+    "\/images\/icon-about-banking.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/icon-about-banking.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icon-about-healthcare.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/icon-about-healthcare.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icon-about-internet.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/icon-about-internet.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/images\/icon-about-pharma.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/icon-about-pharma.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/images\/icon-bfi.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -17154,6 +17228,32 @@
       "q" : 100,
       "rq" : 90
     },
+    "\/images\/shape-corner-mesh1-left.png" : {
+      "ft" : 32768,
+      "iS" : 35833,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/shape-corner-mesh1-left.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
+      "rq" : 90
+    },
+    "\/images\/shape-corner-mesh1-right.png" : {
+      "ft" : 32768,
+      "iS" : 35922,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/images\/shape-corner-mesh1-right.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-default",
+      "q" : 90,
+      "rq" : 90
+    },
     "\/images\/shape-test.jpg" : {
       "ft" : 16384,
       "iS" : 567032,
@@ -17880,6 +17980,16 @@
       "hM" : 2,
       "oA" : 0,
       "oAP" : "\/_BUILD\/spacing.html",
+      "oF" : 0,
+      "oS" : 0
+    },
+    "\/stats.pug" : {
+      "cB" : 1,
+      "cOD" : 0,
+      "ft" : 512,
+      "hM" : 2,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/stats.html",
       "oF" : 0,
       "oS" : 0
     },

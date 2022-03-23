@@ -1,0 +1,49 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  .grid-container.mb1
+    .grid-x.grid-padding-x.small-up-1.medium-up-3
+      .cell.flex-container.mb-half.medium-mb1
+        .bg-accent2-light.p-half.large-p1.w100
+          p.h1.m0 318,400
+          p.m0 Employees worldwide
+      .cell.flex-container.mb-half.medium-mb1
+        .bg-accent2-light.p-half.large-p1.w100
+          p.h1.m0 $16.7B
+          p.m0 Total revenue
+      .cell.flex-container.mb-half.medium-mb1
+        .bg-accent2-light.p-half.large-p1.w100
+          p.h1.m0 #185
+          p.m0 2021 Fortune 500 ranking
+
+  .grid-container.mb3
+    .grid-x.grid-padding-x
+      .cell.shrink
+        a.arrow(href="#") View our corporate overview
+      .cell.shrink
+        a.arrow(href="#") View our corporate fact sheet
+
+  .grid-container
+    .grid-x.grid-padding-x
+      .cell
+        h4 Over the past 25 years, we’ve built relationships with market-leading companies in the world.
+
+    .grid-x.grid-padding-x.medium-up-2.large-up-4.mb2
+      .cell.text-center
+        img.mb1(src="images/icon-about-pharma.svg", alt="")
+        p.text-bold 30 of the top 30 global pharma companies
+      .cell.text-center
+        img.mb1(src="images/icon-about-banking.svg", alt="")
+        p.text-bold 10 of the top 10 European banks
+      .cell.text-center
+        img.mb1(src="images/icon-about-internet.svg", alt="")
+        p.text-bold 6 of the top 10 internet companies
+      .cell.text-center
+        img.mb1(src="images/icon-about-healthcare.svg", alt="")
+        p.text-bold 16 of the top 20 healthcare plans
+
