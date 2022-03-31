@@ -1,0 +1,5 @@
+{
+  "workspace.preview_server_allow_external" : false,
+  "workspace.preview_server_port" : 5757,
+  "workspace.preview_url" : "http:\/\/127.0.0.1:5757\/"
+}

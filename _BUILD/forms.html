@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, follow">
     <title>Cognizant | Forms</title>
-    <link rel="stylesheet" href="css/app.css?ckcachebust=0B4D46E5521507DF39CAA540EF802EA5">
+    <link rel="stylesheet" href="css/app.css?ckcachebust=16F754EF7731C9DFDA9D8DE013050158">
     <!--                                       FAVICONS                                       //-->
     <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg?ckcachebust=CFF27F9D99DC4ECF8DDDC7EE8B73243F">
     <link rel="icon" type="image/png" href="favicons/favicon.png?ckcachebust=3BEEF2C5F3F90CD6B7A06DDC51307DAC">
@@ -25,14 +25,14 @@
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="small-12 cell">
-          <form data-abide novalidate>
+          <form data-abide novalidate data-validate-on-blur="true">
             <div class="alert callout small" data-abide-error style="display: none;">
               <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
             </div>
             <div class="grid-x grid-padding-x align-center expanded">
               <div class="small-12 cell">
                 <label>Number Required
-                  <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number" tabindex="" autocomplete="on" name="name"><span class="form-error">Yo, you had better fill this out, it's required.</span>
+                  <input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number" tabindex="" autocomplete="on" name="name"><span class="form-error" data-form-error-on="required">Yo, you had better fill this out, it's required.</span>
                 </label>
                 <p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
               </div>
@@ -197,16 +197,18 @@
       </div>
     </div>
     <div class="grid-container">
-          <form class="py3" data-abide novalidate autocomplete="on">
+          <form class="py3" data-abide novalidate autocomplete="on" data-validate-on-blur="true">
             <div class="grid-x grid-padding-x">
               <div class="cell">
                 <h3>Get answers to your questions</h3>
                 <p>Our clients turn to us to help them reimagine ways of working with technology.</p>
               </div>
             </div>
-            <div class="grid-x grid-padding-x cell">
-              <div class="alert callout small" data-abide-error style="display: none;">
-                <p><i class="report-problem-triangle"></i> There are some errors in your form</p>
+            <div class="grid-x grid-padding-x" data-abide-error style="display: none;">
+              <div class="cell">
+                <div class="alert callout small">
+                  <p><i class="report-problem-triangle"></i> There are some errors in your form</p>
+                </div>
               </div>
             </div>
             <div class="grid-x grid-padding-x small-up-1 medium-up-2">
@@ -276,16 +278,18 @@
     </div>
     <div class="py3 bg-primary" data-interchange="[images/form_bg.jpg, small], [images/form_bg.jpg, medium], [images/form_bg.jpg, large]" style="background-size: cover; background-repeat: none; background-attachment: fixed;">
       <div class="grid-container">
-            <form class="py3 white text-white" data-abide novalidate autocomplete="on">
+            <form class="py3 white text-white" data-abide novalidate autocomplete="on" data-validate-on-blur="true">
               <div class="grid-x grid-padding-x">
                 <div class="cell">
                   <h3>Get answers to your questions</h3>
                   <p>Our clients turn to us to help them reimagine ways of working with technology.</p>
                 </div>
               </div>
-              <div class="grid-x grid-padding-x cell">
-                <div class="alert callout small" data-abide-error style="display: none;">
-                  <p><i class="report-problem-triangle"></i> There are some errors in your form</p>
+              <div class="grid-x grid-padding-x" data-abide-error style="display: none;">
+                <div class="cell">
+                  <div class="alert callout small">
+                    <p><i class="report-problem-triangle"></i> There are some errors in your form</p>
+                  </div>
                 </div>
               </div>
               <div class="grid-x grid-padding-x small-up-1 medium-up-2">
@@ -366,7 +370,7 @@
         <div class="grid-x grid-padding-x">
           <div class="small-12 medium-6 cell">
             <h5 class="text-blue">Send a message</h5>
-            <form data-abide novalidate>
+            <form data-abide novalidate data-live-validate="true">
               <div class="alert callout small" data-abide-error style="display: none;">
                 <p><i class="report-problem-triangle"></i> There are some errors in your form.</p>
               </div>

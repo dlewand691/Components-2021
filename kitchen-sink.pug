@@ -949,11 +949,11 @@ block content
     .grid-x.grid-padding-x
       .cell.auto
         ul.dropdown.menu(data-dropdown-menu)
-          li
-            a Item 1
+          li(role="menuitem")
+            a(role="none") Item 1 role
             ul.menu
-              li
-                a(href="#0") Item 1A Loooong
+              li(role="menuitem")
+                a(href="#0" role="none") Item 1A Loooong
               li
                 a(href="#0") Item 1 sub
                 ul.menu

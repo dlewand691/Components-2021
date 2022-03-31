@@ -9,7 +9,7 @@ block content
   .grid-container
     .grid-x.grid-padding-x
       .small-12.cell
-        form(data-abide novalidate)
+        form(data-abide novalidate data-validate-on-blur="true")
           .alert.callout.small(data-abide-error, style="display: none;")
             p
               i.report-problem-triangle
@@ -18,14 +18,14 @@ block content
             .small-12.cell
               label
                 | Number Required
-                input(type="text" placeholder="1234", aria-describedby="exampleHelpText" required pattern="number" tabindex=""  autocomplete="on" name="name")
-                span.form-error
+                input(type="text" placeholder="1234", aria-describedby="exampleHelpText" required pattern="number" tabindex="" autocomplete="on" name="name")
+                span.form-error(data-form-error-on="required")
                   | Yo, you had better fill this out, it's required.
               p#exampleHelpText.help-text Here's how you use this input field!
             .small-12.cell
               label
                 | Nothing Required!
-                input(type="text" placeholder="Use me, or don't", aria-describedby="exampleHelpTex", data-abide-ignore="" tabindex=""  autocomplete="on" name="name")
+                input(type="text" placeholder="Use me, or don't", aria-describedby="exampleHelpTex", data-abide-ignore="" tabindex="" autocomplete="on" name="name")
               p#exampleHelpTex.help-text This input is ignored by Abide using &grave;data-abide-ignore&grave;
             .small-12.cell
               label
@@ -165,16 +165,17 @@ block content
   //-
   //- =============================================================================================
   mixin defaultForm
-    form(data-abide novalidate autocomplete="on").py3&attributes(attributes)
+    form(data-abide novalidate autocomplete="on" data-validate-on-blur="true").py3&attributes(attributes)
       .grid-x.grid-padding-x
         .cell
           h3 Get answers to your questions
           p Our clients turn to us to help them reimagine ways of working with technology.
-      .grid-x.grid-padding-x.cell
-        .alert.callout.small(data-abide-error, style="display: none;")
-          p
-            i.report-problem-triangle
-            |  There are some errors in your form
+      .grid-x.grid-padding-x(data-abide-error, style="display: none;")
+        .cell
+          .alert.callout.small
+            p
+              i.report-problem-triangle
+              |  There are some errors in your form
       .grid-x.grid-padding-x.small-up-1.medium-up-2
         .cell
           label.has-float-label
@@ -185,28 +186,28 @@ block content
 
         .cell
           label.has-float-label
-            input(type="email" placeholder="johnsmith@example.com" required tabindex=""  autocomplete="on" name="email")
+            input(type="email" placeholder="johnsmith@example.com" required tabindex="" autocomplete="on" name="email")
             span Email*
             span.form-error
               | Field error
 
         .cell
           label.has-float-label
-            input(type="text" placeholder="Abc Company" required tabindex=""  autocomplete="on" name="organization")
+            input(type="text" placeholder="Abc Company" required tabindex="" autocomplete="on" name="organization")
             span Organization*
             span.form-error
               | Field error
 
         .cell
           label.has-float-label
-            input(type="tel" placeholder="8888 8888" required tabindex=""  autocomplete="on" name="phone-local")
+            input(type="tel" placeholder="8888 8888" required tabindex="" autocomplete="on" name="phone-local")
             span Contact number*
             span.form-error
               | Field error
 
         .cell
           label.has-float-label
-            select(tabindex=""  autocomplete="on" name="country")
+            select(tabindex="" autocomplete="on" name="country")
               option(value="" disabled selected) Region*
               //- option(value="" disabled selected) Select a region
               option(value="United States") United States
@@ -285,37 +286,37 @@ block content
       .grid-x.grid-padding-x
         .small-12.medium-6.cell
           h5.text-blue Send a message
-          form(data-abide novalidate)
+          form(data-abide novalidate data-live-validate="true")
             .alert.callout.small(data-abide-error, style="display: none;")
               p
                 i.report-problem-triangle
                 |  There are some errors in your form.
             label.has-float-label
-              input(type="text" placeholder="John Smith" required tabindex=""  autocomplete="on" name="name")
+              input(type="text" placeholder="John Smith" required tabindex="" autocomplete="on" name="name")
               span Name
               span.form-error
                 | Field error
 
             label.has-float-label
-              input(type="email" placeholder="johnsmith@example.com" required tabindex=""  autocomplete="on" name="name")
+              input(type="email" placeholder="johnsmith@example.com" required tabindex="" autocomplete="on" name="name")
               span Email
               span.form-error
                 | Field error
 
             label.has-float-label
-              input(type="text" placeholder="Abc Company" tabindex=""  autocomplete="on" name="name")
+              input(type="text" placeholder="Abc Company" tabindex="" autocomplete="on" name="name")
               span Organziation
 
             label.has-float-label
-              input(type="text" placeholder="Abc Title" tabindex=""  autocomplete="on" name="name")
+              input(type="text" placeholder="Abc Title" tabindex="" autocomplete="on" name="name")
               span Title
 
             label.has-float-label
-              input(type="text" placeholder="Abc Department" tabindex=""  autocomplete="on" name="name")
+              input(type="text" placeholder="Abc Department" tabindex="" autocomplete="on" name="name")
               span Department
 
             label.has-float-label
-              input(type="tel" placeholder="8888 8888" pattern="dashes_only" required tabindex=""  autocomplete="on" name="name")
+              input(type="tel" placeholder="8888 8888" pattern="dashes_only" required tabindex="" autocomplete="on" name="name")
               span Contact Number
               span.form-error
                 | Field error

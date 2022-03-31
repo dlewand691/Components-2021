@@ -30076,6 +30076,7 @@ table tr:last-child td:last-child {
 .tabs {
   border: 1px solid #d0d0ce;
   border-radius: 0.5em 0.5em 0 0;
+  text-align: left;
 }
 .tabs .tabs-title {
   margin-bottom: 0;
@@ -31405,7 +31406,7 @@ body[data-aos-easing=ease-in-out-quart] [data-aos], [data-aos][data-aos][data-ao
   --swiper-preloader-color: #fff;
 }
 
-.swiper-lazy-preloader-primary {
+.swiper-lazy-preloader-black {
   --swiper-preloader-color: #000;
 }
 
