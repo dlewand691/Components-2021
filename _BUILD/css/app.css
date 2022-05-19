@@ -9198,7 +9198,7 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   top: calc(100% + 0.433rem);
   z-index: 1200;
   max-width: 10rem;
-  padding: 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.5em;
   background-color: #000048;
   font-size: 80%;
@@ -16859,10 +16859,15 @@ a:link:not(.button):hover {
   color: var(--link-hover-color);
 }
 
-p:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
-ul:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
-ol:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a,
-dl:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs) a {
+p:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a, p:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a:focus,
+ul:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a,
+ul:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a:focus,
+ol:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a,
+ol:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a:focus,
+dl:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a,
+dl:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a:focus,
+li:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a,
+li:not(.accordion, .menu, .tabs, .pagination, .breadcrumbs, [class*=dropdown], .button) a:focus {
   text-decoration: underline;
   -webkit-text-decoration-color: inherit;
           text-decoration-color: inherit;
@@ -26598,6 +26603,9 @@ form .has-float-label select {
   background: #f5f5f2;
   box-shadow: none;
 }
+form .has-float-label select:focus {
+  outline: 2px solid #2f78c4;
+}
 form .has-float-label input:focus + span, form .has-float-label textarea:focus + span {
   color: #2f78c4;
 }
@@ -31657,6 +31665,7 @@ button.swiper-pagination-bullet {
 .swiper-button-next,
 .swiper-button-prev,
 .swiper-pagination-bullet {
+  border: none;
   transition: opacity 0.25s ease-out;
 }
 .swiper-button-next:hover,

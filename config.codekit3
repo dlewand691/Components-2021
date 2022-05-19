@@ -7,7 +7,7 @@
       "uuidString" : "F28E7FF4-7725-4F79-AC81-538A27EE619D"
     }
   ],
-  "creatorBuild" : "34335",
+  "creatorBuild" : "34365",
   "files" : {
     "\/__LAYOUT-TEMPLATE.pug" : {
       "cB" : 1,
@@ -61,14 +61,6 @@
       "ft" : 65536,
       "oA" : 1,
       "oAP" : "\/_BUILD\/.history",
-      "oF" : 0
-    },
-    "\/.htaccess" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/_BUILD\/.htaccess",
       "oF" : 0
     },
     "\/.nova\/Configuration.json" : {
@@ -1639,6 +1631,14 @@
       "oF" : 0,
       "oS" : 0
     },
+    "\/htaccess" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/_BUILD\/htaccess",
+      "oF" : 0
+    },
     "\/Icon\r" : {
       "cB" : 0,
       "ft" : 8192,
@@ -2544,7 +2544,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/Case-Study-Icons\/icon-caseStudy-mediaPublishing.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6345,7 +6345,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/ad.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6405,7 +6405,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/am.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6445,7 +6445,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/as.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6495,7 +6495,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/az.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6585,7 +6585,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/bj.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6605,7 +6605,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/bm.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6625,7 +6625,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/bo.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6645,7 +6645,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/br.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6655,7 +6655,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/bs.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6795,7 +6795,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/cl.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6845,7 +6845,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/cu.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -6905,7 +6905,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/de.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -7065,7 +7065,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/fj.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -7105,7 +7105,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/fr.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -8295,7 +8295,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/rs.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -8365,7 +8365,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/1x1\/se.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9255,7 +9255,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/bw.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9355,7 +9355,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/ck.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9435,7 +9435,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/cw.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9545,7 +9545,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/ee.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9585,7 +9585,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/es-ca.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9615,7 +9615,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/eu.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9625,7 +9625,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/fi.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9825,7 +9825,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/gn.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9905,7 +9905,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/gy.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9955,7 +9955,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/ht.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -9985,7 +9985,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/ie.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10035,7 +10035,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/iq.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10155,7 +10155,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/km.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10215,7 +10215,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/kz.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10225,7 +10225,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/la.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10385,7 +10385,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/mg.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10465,7 +10465,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/mq.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -10485,7 +10485,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/flags\/4x3\/ms.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -13796,7 +13796,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/AI & Analytics\/_ASSETS\/ai-and-analytics.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -13807,7 +13807,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/AI & Analytics\/_ASSETS\/Artificial Intellige.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -13837,7 +13837,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/AI & Analytics\/_ASSETS\/Makes Never-See-Befo.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -13847,7 +13847,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/AI & Analytics\/_ASSETS\/Overnight.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14162,7 +14162,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Cloud Enablement\/_ASSETS\/Accelerate Digital T.svg",
       "oF" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14172,7 +14172,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Cloud Enablement\/_ASSETS\/Application Moderniz.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14182,7 +14182,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Cloud Enablement\/_ASSETS\/Cloud Enablement.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14194,7 +14194,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Cloud Enablement\/_ASSETS\/cloud-enablement.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -14205,7 +14205,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Cloud Enablement\/_ASSETS\/Intelligent Automati.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14653,7 +14653,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Core Modernization\/_ASSETS\/& Infrastructure.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14663,7 +14663,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Core Modernization\/_ASSETS\/Applications.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14675,7 +14675,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Core Modernization\/_ASSETS\/core-modernization.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -14706,7 +14706,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Core Modernization\/_ASSETS\/Simplify, Modernize.svg",
       "oF" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -14993,7 +14993,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Digital Engineering\/_ASSETS\/logo-digital-engineering.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15003,7 +15003,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Digital Engineering\/_ASSETS\/Reinventing Engineer.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15207,7 +15207,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/Industry & Platform.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15219,7 +15219,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/industry-and-platform.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -15240,7 +15240,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/Powered by Data, Aut.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15250,7 +15250,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/Reinvent Business Op.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15260,7 +15260,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/Solutions.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15270,7 +15270,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Industry & Platform Solutions\/_ASSETS\/with.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15526,7 +15526,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Intelligent Process Automation\/_ASSETS\/intelligent-process-automation.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -15537,7 +15537,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Intelligent Process Automation\/_ASSETS\/Intelligent.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15547,7 +15547,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Intelligent Process Automation\/_ASSETS\/logo-intelligent-process-automation.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15557,7 +15557,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Intelligent Process Automation\/_ASSETS\/Process Automation.svg",
       "oF" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15761,7 +15761,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Interactive\/_ASSETS\/Experience.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15773,7 +15773,7 @@
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Interactive\/_ASSETS\/interactive.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -15784,7 +15784,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Interactive\/_ASSETS\/logo-interactive.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -15804,7 +15804,7 @@
       "oA" : 0,
       "oAP" : "\/_BUILD\/images\/HPQ3-banner\/Interactive\/_ASSETS\/Transformation.svg",
       "oF" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "plM" : 52780316221407,
       "prP" : 0
     },
@@ -16390,7 +16390,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Allen-Shaheen-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16403,7 +16403,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Allen-Shaheen.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16416,7 +16416,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Debashis-Chatterjee-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16468,7 +16468,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Francisco-DSouza-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16507,7 +16507,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Gajen-Kandiah.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16572,7 +16572,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Malcolm-Frank-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16676,7 +16676,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Ramakrishnan-Chandrasekaran-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16689,7 +16689,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Ramakrishnan-Chandrasekaran.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16754,7 +16754,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Sean-Middleton-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16767,7 +16767,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Sean-Middleton.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16780,7 +16780,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Srinivasan-Veeraraghavachary-bw.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -16793,7 +16793,7 @@
       "oAP" : "\/_BUILD\/images\/leadership-team\/Srinivasan-Veeraraghavachary.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -17448,7 +17448,7 @@
       "oAP" : "\/_BUILD\/images\/tabs\/DST-enterpriseCapabilities-bg01.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 0,
+      "opt" : 1,
       "ou" : "lpckwebp-default",
       "q" : 100,
       "rq" : 90
@@ -18673,10 +18673,6 @@
         "active" : 0,
         "optionString" : "'1tbs', {'allowSingleLine': true}"
       },
-      "callback-return" : {
-        "active" : 0,
-        "optionString" : "['callback', 'cb', 'next']"
-      },
       "camelcase" : {
         "active" : 0,
         "optionString" : "{'properties': 'always', 'ignoreDestructuring': false, 'ignoreImports': false}"
@@ -18768,6 +18764,10 @@
         "active" : 0,
         "optionString" : "'expression'"
       },
+      "function-call-argument-newline" : {
+        "active" : 0,
+        "optionString" : "'always'"
+      },
       "function-paren-newline" : {
         "active" : 0,
         "optionString" : "'multiline'"
@@ -18780,9 +18780,6 @@
         "active" : 0,
         "optionString" : "{'allowImplicit': false}"
       },
-      "global-require" : {
-        "active" : 0
-      },
       "grouped-accessor-pairs" : {
         "active" : 0,
         "optionString" : "'anyOrder'"
@@ -18790,11 +18787,7 @@
       "guard-for-in" : {
         "active" : 0
       },
-      "handle-callback-err" : {
-        "active" : 0,
-        "optionString" : "'err'"
-      },
-      "id-blacklist" : {
+      "id-denylist" : {
         "active" : 0,
         "optionString" : "'data', 'err', 'e', 'cb', 'callback'"
       },
@@ -18918,9 +18911,6 @@
         "active" : 0,
         "optionString" : "{'allow': ['~'], 'int32Hint': true}"
       },
-      "no-buffer-constructor" : {
-        "active" : 0
-      },
       "no-caller" : {
         "active" : 0
       },
@@ -18947,6 +18937,9 @@
       },
       "no-const-assign" : {
         "active" : 1
+      },
+      "no-constant-binary-expression" : {
+        "active" : 0
       },
       "no-constant-condition" : {
         "active" : 1,
@@ -18980,6 +18973,9 @@
         "active" : 1
       },
       "no-dupe-keys" : {
+        "active" : 1
+      },
+      "no-duplicate-case" : {
         "active" : 1
       },
       "no-duplicate-imports" : {
@@ -19023,7 +19019,7 @@
       "no-extra-boolean-cast" : {
         "active" : 1
       },
-      "no-extra-labels" : {
+      "no-extra-label" : {
         "active" : 0
       },
       "no-extra-parens" : {
@@ -19111,10 +19107,6 @@
         "active" : 0,
         "optionString" : "{'groups': [['+', '-', '*', '\/', '%', '**'], ['&', '|', '^', '~', '<<', '>>', '>>>'], ['==', '!=', '===', '!==', '>', '>=', '<', '<='], ['&&', '||'], ['in', 'instanceof']], 'allowSamePrecedence': true}"
       },
-      "no-mixed-requires" : {
-        "active" : 0,
-        "optionString" : "{'grouping': false, 'allowCall': false }"
-      },
       "no-mixed-spaces-and-tabs" : {
         "active" : 0,
         "optionString" : ""
@@ -19149,9 +19141,6 @@
       "no-new-object" : {
         "active" : 0
       },
-      "no-new-require" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -19174,18 +19163,9 @@
         "active" : 0,
         "optionString" : "{'props': false}"
       },
-      "no-path-concat" : {
-        "active" : 0
-      },
       "no-plusplus" : {
         "active" : 0,
         "optionString" : "{'allowForLoopAfterthoughts': false}"
-      },
-      "no-process-env" : {
-        "active" : 0
-      },
-      "no-process-exit" : {
-        "active" : 0
       },
       "no-promise-executor-return" : {
         "active" : 0
@@ -19213,10 +19193,6 @@
       },
       "no-restricted-imports" : {
         "active" : 0
-      },
-      "no-restricted-modules" : {
-        "active" : 0,
-        "optionString" : ""
       },
       "no-restricted-properties" : {
         "active" : 0,
@@ -19259,10 +19235,6 @@
       },
       "no-sparse-arrays" : {
         "active" : 1
-      },
-      "no-sync" : {
-        "active" : 0,
-        "optionString" : "{'allowAtRootLevel': false}"
       },
       "no-tabs" : {
         "active" : 0,
@@ -19495,10 +19467,6 @@
       "require-await" : {
         "active" : 0
       },
-      "require-jsdoc" : {
-        "active" : 0,
-        "optionString" : "{'require': {'FunctionDeclaration': true, 'MethodDefinition': false, 'ClassDeclaration': false, 'ArrowFunctionExpression': false}}"
-      },
       "require-unicode-regexp" : {
         "active" : 0
       },
@@ -19583,10 +19551,6 @@
       "use-isnan" : {
         "active" : 1,
         "optionString" : "{'enforceForSwitchCase': true, 'enforceForIndexOf': false}"
-      },
-      "valid-jsdoc" : {
-        "active" : 0,
-        "optionString" : "{'prefer': {'return': 'returns'}, 'requireReturn': true, 'requireReturnDescription': true, 'requireReturnType': true, 'requireParamDescription': true}"
       },
       "valid-typeof" : {
         "active" : 1,
@@ -20245,6 +20209,10 @@
         "active" : 0,
         "flagValue" : -1
       },
+      "keep_numbers" : {
+        "active" : 0,
+        "flagValue" : -1
+      },
       "keep_quoted_props" : {
         "active" : 0,
         "flagValue" : -1
@@ -20268,6 +20236,10 @@
       "passes" : {
         "active" : 1,
         "flagValue" : 1
+      },
+      "preserve_annotations" : {
+        "active" : 0,
+        "flagValue" : -1
       },
       "properties" : {
         "active" : 1,
@@ -20371,6 +20343,10 @@
       },
       "webkit" : {
         "active" : 0,
+        "flagValue" : -1
+      },
+      "wrap_func_args" : {
+        "active" : 1,
         "flagValue" : -1
       },
       "wrap_iife" : {
