@@ -7,6 +7,8 @@ block content
   script(src='js/min/app-min.js')
   mixin backgroundTypeTest
     div
+      h1.inline.m0.super-size super size
+      h1.inline.m0.extra-large extra large
       h1.inline.m0 h1
       h2.inline.m0 h2
       h3.inline.m0 h3
@@ -169,6 +171,8 @@ block content
   .grid-container
     .grid-x.grid-padding-x
       .cell
+        p.m0.specs.super-size
+        p.m0.specs.extra-large
         h1.m0.specs
         h2.specs
         h3.specs
@@ -16564,6 +16568,8 @@ block content
 
   script.
     $(document).ready(function(){
+      $('p.specs.super-size').text('Super size:' + $('p.specs.super-size').css('fontSize') + '\/' + $('p.specs.super-size').css('lineHeight'));
+      $('p.specs.extra-large').text('Extra large:' + $('p.specs.extra-large').css('fontSize') + '\/' + $('p.specs.extra-large').css('lineHeight'));
       $('h1.specs').text('H1:' + $('h1.specs').css('fontSize') + '\/' + $('h1.specs').css('lineHeight'));
       $('h2.specs').text('H2:' + $('h2.specs').css('fontSize') + '\/' + $('h2.specs').css('lineHeight'));
       $('h3.specs').text('H3:' + $('h3.specs').css('fontSize') + '\/' + $('h3.specs').css('lineHeight'));
@@ -16587,6 +16593,8 @@ block content
       $('.button-large-arrow-lessPadding').text('Large Button: ' + $('.button-large-arrow-lessPadding').css('fontSize'));
 
       $(window).resize(function(){
+        $('p.specs.super-size').text('Super size:' + $('p.specs.super-size').css('fontSize') + '\/' + $('p.specs.super-size').css('lineHeight'));
+        $('p.specs.extra-large').text('Extra large:' + $('p.specs.extra-large').css('fontSize') + '\/' + $('p.specs.extra-large').css('lineHeight'));
         $('h1.specs').text('H1:' + $('h1.specs').css('fontSize') + '\/' + $('h1').css('lineHeight'));
         $('h2.specs').text('H2:' + $('h2.specs').css('fontSize') + '\/' + $('h2').css('lineHeight'));
         $('h3.specs').text('H3:' + $('h3.specs').css('fontSize') + '\/' + $('h3').css('lineHeight'));

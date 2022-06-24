@@ -1,0 +1,38 @@
+extend __LAYOUT-TEMPLATE.pug
+block vars
+  - var pageTitle = "Aspect ratios"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+
+  .grid-container
+    .grid-x.grid-margin-x.medium-up-3.text-center
+      .cell.mb1
+        .bg-primary.ar-1-1.flex-container.align-center-middle
+          h3.m0 1x1
+      .cell.mb1
+        .bg-primary.ar-golden-ratio.flex-container.align-center-middle
+          h3.m0 1.618x1
+            p.m0 (golden ratio)
+      .cell.mb1
+        .bg-primary.ar-2-1.flex-container.align-center-middle
+          h3.m0 2x1
+      .cell.mb1
+        .bg-primary.ar-3-2.flex-container.align-center-middle
+          h3.m0 3x2
+      .cell.mb1
+        .bg-primary.ar-4-3.flex-container.align-center-middle
+          h3.m0 4x3
+      .cell.mb1
+        .bg-primary.ar-5-4.flex-container.align-center-middle
+          h3.m0 5x4
+      .cell.mb1
+        .bg-primary.ar-16-9.flex-container.align-center-middle
+          h3.m0 16x9
+      .cell.mb1
+        .bg-primary.ar-16-10.flex-container.align-center-middle
+          h3.m0 16x10
+      .cell.mb1
+        .bg-primary.ar-21-9.flex-container.align-center-middle
+          h3.m0 21x9

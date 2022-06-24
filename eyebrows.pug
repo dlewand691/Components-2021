@@ -1,0 +1,299 @@
+extend __LAYOUT-TEMPLATE.pug
+include _MIXINS.pug
+
+block vars
+  - var pageTitle = "Eyebrow review"
+  - var siteURL = "https://www.dannylewandowski.com/_cog-DEV/_PROTOTYPING/Components/_BUILD/"
+
+block content
+  h1!= pageTitle
+  :markdown-it
+    + 2 font size: small or regular
+    + 2 styles: label (padded box with background color) or text-only
+    + 2 weights: normal or bold
+
+  hr.max-w100
+  h3 Card, hover animation
+  p Found on home page and industry pages
+  .bg-gray-lighter.py3
+    .grid-container
+      .grid-x.grid-padding-x.align-stretch.small-up-1.medium-up-2(data-equalizer="headline" data-equalize-on-stack="true")
+        +industries-card-animatedHover({
+          image:"https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-realworld-outcomes-insurance-swiss-re.jpg",
+          eyebrow:"Insurance",
+          headline:"Swiss Re enables resiliency on Azure",
+          text:"by migrating SAP S/4HANA applications to a hyperscale public cloud.",
+          link:"#",
+          button:"See full story"
+          })
+        +industries-card-animatedHover({
+          image:"https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/hp-realworld-outcomes-communications-sail-gp.jpg",
+          eyebrow:"Communications",
+          headline:"SailGP's anticipation of audience needs",
+          text:"boosted the average monthly share of returning visitors by 3%.",
+          link:"#",
+          button:"Learn More"
+          })
+
+  hr.max-w100
+  h3 Card, Latest thinking
+  p Found on home page and industry pages
+  .bg-gray-lighter.py3
+    .grid-container
+      .grid-x.grid-padding-x.small-up-1.medium-up-3.align-center
+        +industries-latestThinking({
+          image:"https://www.cognizant.com/us/en/images/hp-engineering-exc-digital-interactive-experience.jpg",
+          eyebrow: "Recognition",
+          title:"An Everest Peak Matrix® Leader",
+          body:"Cognizant's Digital Interactive Experience recognized as having a strong vision for the future of experience and the expertise to bring it to life.",
+          link:"#",
+          button:"Learn More"
+          })
+
+  hr.max-w100
+  h3 Case study card
+  .grid-container
+    .grid-x.grid-padding-x.small-up-1.medium-up-2.large-up-3.align-center
+      +caseStudy({
+        image:"https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/case-studies/images/case-study-focus-on-patients-th.jpg",
+        icon: "images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg",
+        eyebrow: "Life sciences",
+        title:"Focus on patients, not just prescriptions, to improve outcomes",
+        link:"#",
+        })
+      +caseStudy({
+        image:"https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/case-studies/images/case-study-focus-on-patients-th.jpg",
+        icon: "images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg",
+        eyebrow: "Life sciences",
+        title:"Focus on patients, not just prescriptions, to improve outcomes",
+        link:"#",
+        })
+      +caseStudy({
+        image:"https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/case-studies/images/case-study-focus-on-patients-th.jpg",
+        icon: "images/Case-Study-Icons/icon-caseStudy-lifeSciences.svg",
+        eyebrow: "Life sciences",
+        title:"Focus on patients, not just prescriptions, to improve outcomes",
+        link:"#",
+        })
+
+  hr.max-w100
+  h3 Case study header
+  p Also found on in-page expand/collapse case studies
+  +caseStudy-header({
+    eyebrow: "Banking",
+    icon: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/case-studies/icons/icon-case-study-banking.svg",
+    title:"An Post Money builds new digital bank",
+    })
+
+  hr.max-w100
+  h3 Underlined subheader/section divider
+  p Found on industry pages
+  .bg-gray-lighter.py3
+    +industries-sectionHeader({
+      eyebrow: "Driven By Results",
+      title:"Industry experience matters.",
+      text: "We know your top-of-mind issues. And we know how to help.",
+      })
+
+  hr.max-w100
+  h3 Recently published insights
+  p Found on industry pages
+  .py5.bg-gray-lighter
+    +industries-sectionHeader({
+      eyebrow: "Business Intelligence",
+      title:"Recently published insights.",
+      })
+
+    .grid-container
+      .grid-x.grid-padding-x
+        +industries-card-vertical({
+          image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/case-studies/images/codex5925-for-tgs-the-right-data-at-the-right-time-case-study-th.jpg",
+          eyebrow: "Case Study",
+          title:"The right data at the right time",
+          text:"TGS, one of the world’s largest sub-surface data providers, speeds access to insights via an online information ecosystem. This system is powered by a cloud-based big data analytics solution, enabling its oil and gas customers to make more informed drilling decisions.",
+          link:"#",
+          button: "View PDF",
+          })
+
+        .cell.medium-auto.flex-container.flex-dir-column.align-justify
+          +industries-card-horizontal-imageLeft({
+            image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/decision-making-the-new-frontier-for-automation-codex5476-thumbnail.jpg",
+            eyebrow: "Whitepapers",
+            title: "Decision-making: The new frontier for automation",
+            text: "Decision process automation is a forward-looking, practical strategy to improve enterprise operations, enabling faster responses to rapidly changing conditions and identifying options for action based on a more complete exploration of potential outcomes.",
+            link: "#",
+            button: "View PDF"
+          })(class="mb1 bg-white")
+
+          +industries-card-horizontal-imageLeft({
+            image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/energy-and-utilities-under-pressure-codex5326_th.jpg",
+            eyebrow: "Whitepapers",
+            title: "Energy and utilities under pressure",
+            text: "Our recent study shows companies are already separating from the pack based on how they deploy advanced technologies and business models. In this e-book, we offer business and tech leaders in the fast evolving E&U industry our research-based insights on the best next steps to take.",
+            link: "#",
+            button: "View PDF"
+          })(class="bg-white")
+
+  hr.max-w100
+  h3 Header banner, 3 columns
+  p Industry, level 1 pages
+  +industries-header-3columns({
+    image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/oil-gas-digital-solutions-hero-banner-desktop.jpg",
+    eyebrow: "Upstream, Midstream, Downstream Services",
+    title: "Digital delivers more energy options",
+    subtitle1: "World-class clients",
+    subtext1: "include the industry’s largest upstream, midstream and downstream companies.",
+    subtitle2: "Substantial digital investments",
+    subtext2: "in our latest oil and gas solutions account for award-winning industry performance.",
+    subtitle3: "Saving millions",
+    subtext3: "Predictive analytics and real-time solutions are leading the way.",
+    })
+
+
+  #header-banner-2-columns
+  hr.max-w100
+  h3 Header banner, 2 columns
+  p Industry, level 2 pages
+  +industries-header-2columns({
+    image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/upstream-oil-gas-banner.jpg",
+    eyebrow: "The Next Frontier",
+    title: "Energize growth with digital platforms",
+    subtitle: "4,000 barrels per day",
+    subtext: "of additional production was achieved when a global oil major used our decision support system to help remote engineering teams work effectively as one.",
+    })
+
+  #header-banner-1-column
+  hr.max-w100
+  h3 Header banner, 1 columns
+  p Industry, level 3 pages
+  +industries-header-1column({
+    image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/background-banner-digital-workforce-mobility.jpg",
+    eyebrow: "Optimize Field Operations",
+    title: "Cognizant Digital Workforce Mobility™",
+    subtext: "Cognizant’s Digital Workforce Mobility reduces operating costs and simplifies construction work. It’s the perfect fit for O&G companies with workers on construction yard duty.",
+    })
+
+  hr.max-w100
+  h3 Header Banner, text right, with eyebrow
+  p Services page header option
+  +header-banner-textRight({
+    SM: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/video/static-images/cdo-hero-banner-video-loop-background-image-mob.jpg, small",
+    MD: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/video/static-images/cdo-hero-banner-video-loop-background-image-tab.jpg, medium",
+    LG: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/video/static-images/cdo-hero-banner-video-loop-background-image-desktop.jpg, large",
+    eyebrow: "Fast-Track Operational Excellence",
+    title: "Reimagine business processes that learn, anticipate and act",
+    text: "We help you adopt new operating models that delight customers and supercharge performance.",
+    button: "no",
+    })
+
+  hr.max-w100
+  h3 Header Banner, text left, with eyebrow
+  p Services page header option
+  +header-banner-textLeft({
+    SM: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/coremod-codex4674-mob.jpg, small",
+    MD: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/coremod-codex4674-tab.jpg, medium",
+    LG: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/coremod-codex4674-desktop.jpg, large",
+    eyebrow: "Whitepapers",
+    title: "17 ways to make your IT more product-centric",
+    button: "yes",
+    buttonText: "Read more",
+    buttonLink: "#",
+    })(class="bg-primary")
+
+  hr.max-w100
+  h3 Recent articles
+  p Found in services pages
+  .grid-container
+    .grid-x.grid-padding-x.small-up-3
+      +card-recent-article({
+        icon: "graph-bar",
+        eyebrow: "Perspectives",
+        title: "Five lessons to build competitive advantage in the digital age",
+        text: "Organizations need customer-focused processes designed through a human lens, powered by new digital tools and optimized by a hyper-connected and digitally acculturated workforce.",
+        link: "#",
+        animText: "View",
+        })
+
+      +card-recent-article({
+        icon: "graph-bar",
+        eyebrow: "Perspectives",
+        title: "Four digital workplace innovations and ways to unlock more value",
+        text: "As organizations adopt AI, IoT and automation, they should first assess internal limitations and set a responsible pace dictated by workplace strategy.",
+        link: "#",
+        animText: "View",
+        })
+
+      +card-recent-article({
+        icon: "graph-bar",
+        eyebrow: "Perspectives",
+        title: "How to become a player in the innovation economy",
+        text: "Success in today's economy depends on “disruptive innovation:” creating products and services adjacent to the company’s core business and shifting the market dynamics for the rest of the playing field.",
+        link: "#",
+        animText: "View",
+        })
+
+  hr.max-w100
+  h3 Latest Thinking tiles
+  p Found in services pages
+  .grid-container
+    .grid-x.grid-padding-x.medium-up-3
+      +latestThinkingTile({
+        image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/whitepapers/thumbnail-images/realising-digitals-full-potential-in-the-value-chain-codex6539_TL.jpg",
+        icon: "file-acrobat",
+        eyebrow: "Whitepapers",
+        title: "Realising digital’s full potential in the value... ",
+        text: "When we spoke with executives across Europe who lead...",
+        link: false,
+        socialMedia: false,
+        download: false,
+        })
+
+      +latestThinkingTile({
+        image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/whitepapers/thumbnail-images/disruption-data-and-analytics-modernization-in-the-covid-19-era-codex6298_TL.jpg",
+        icon: "file-acrobat",
+        eyebrow: "Whitepapers",
+        title: "Disruption: Data and analytics modernization...",
+        text: "COVID-19 has changed the world – and many companies are...",
+        link: false,
+        socialMedia: false,
+        download: false,
+        })
+
+      +latestThinkingTile({
+        image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/pages/whitepapers/thumbnail-images/to-become-a-data-driven-enterprise-data-democratization-is-essential-codex6235_TL.jpg",
+        icon: "file-acrobat",
+        eyebrow: "Whitepapers",
+        title: "To become a data-driven enterprise, data...",
+        text: "To optimise enterprise knowledge, organizations need a modern...",
+        link: false,
+        socialMedia: false,
+        download: false,
+        })
+
+  hr.max-w100
+  h3 Spotlights
+  p 2 variations, with "label" or text-only. Found in services pages.
+  .grid-container
+    .grid-x.grid-padding-x.medium-up-2
+      .cell
+        +card-spotlight({
+          image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-to-become-a-player-in-the-innovation-economy_App_Medium.png",
+          label: true,
+          eyebrow: "Whitepapers",
+          title: "Succeeding in the innovation economy",
+          text: "Established companies have relied on “sustainable innovation” rather than the “disruptive” approaches of start-up organizations. Disruption changes the game. Established companies can beat start-ups at their own game by developing a set of seven capabilities to make their entre into the exponential growth market.",
+          link: "#",
+          linkText: "Read more",
+          })
+      .cell
+        +card-spotlight({
+          image: "https://www.cognizant.com/content/dam/cognizant/en_us/dotcom/images/how-to-become-a-player-in-the-innovation-economy_App_Medium.png",
+          label: false,
+          eyebrow: "Whitepapers",
+          title: "Succeeding in the innovation economy",
+          text: "Established companies have relied on “sustainable innovation” rather than the “disruptive” approaches of start-up organizations. Disruption changes the game. Established companies can beat start-ups at their own game by developing a set of seven capabilities to make their entre into the exponential growth market.",
+          link: "#",
+          linkText: "Read more",
+          })
+
+  div(style="height: 200px;")

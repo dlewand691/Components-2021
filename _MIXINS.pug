@@ -1,0 +1,284 @@
+mixin industries-card-growingBorder(...growingBorder)
+  each item in growingBorder
+    .py3.bg-primary
+      .grid-container
+        .grid-x.grid-padding-x.align-center
+          .cell.small-11.large-12.hover-border-grow.mb2
+            .grid-x.grid-padding-x
+              .cell.medium-6.px0
+                .relative.wh100
+                  img.object-fit-cover.absolute(src=item.image)
+              .cell.medium-6.align-self-middle.p3
+                h5=item.title
+                p=item.text
+                a.button.arrow.m0(href=item.link)= item.button
+
+mixin industries-card-animatedHover(...animatedHover)
+  each item in animatedHover
+    .cell.flex-container.align-stretch
+      .flex-container.align-middle.w100.hover-hide-show(style="background: url("+item.image+") no-repeat center center / cover;")
+        .grid-x.align-self-bottom.collapse.w100.hide-on-hover.absolute.bg-primary-60
+          .cell.p1.align-middle(data-equalizer-watch="headline")
+            p.text-bold.small.bd-b-white-1.pb1= item.eyebrow
+            h5.m0= item.headline
+
+        .show-on-hover.h100.flex-container.align-middle.p2.bg-primary-60
+          .grid-x
+            .cell
+              p.text-bold.small.bd-b-white-1.pb1= item.eyebrow
+              h5= item.headline
+            .cell
+              p.truncate-100= item.body
+              a.arrow.m0(href=item.link)= item.button
+
+mixin industries-latestThinking(...latestThinking)
+  each item in latestThinking
+    .cell.cell-block.flex-container
+      .card
+        .card-image
+          img.object-fit-cover(src=item.image)
+        .card-section
+          p.text-bold.small= item.eyebrow
+          h5= item.title
+          p= item.body
+
+        .card-divider
+          a.arrow(href=item.link)= item.button
+
+mixin caseStudy(...caseStudy)
+  each item in caseStudy
+    .cell.auto.flex-container
+      .anim-icon.flex-container.flex-child-auto
+        .card.gradient-overlay-primary-full.bd-primary-4.box-shadow-hover.text-white(style="background: url("+item.image+") no-repeat; background-size: cover;")
+          .mbn3.mt1.z1
+            .label
+              img.mr-half(src=item.icon width="20" style="filter: invert(1);")
+              != item.eyebrow
+          .card-section.pt2.medium-pt5.mt5.z1
+            h5.m0= item.title
+          a.link-coverAll.card-divider.bg-transparent.pt0.text-right.z1(href=item.link)
+              .grid-x.w100
+                .cell
+                  hr.mt0.mb1.opacity-50
+                .cell.flex-container.align-right
+                  h5.anim-icon
+                    i.arrow-solid-right.text-bold
+                    .anim-text View
+
+mixin caseStudy-header(...caseStudyHeader)
+  each item in caseStudyHeader
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell.pt2
+          p
+            strong= item.eyebrow
+            img.opacity-30.ml-half(src=item.icon width="40")
+          h2= item.title
+
+mixin industries-sectionHeader(...industriesSectionHeader)
+  each item in industriesSectionHeader
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell
+          small.inline-block.bd-b-grd-theme-1-2.pb1.mb2= item.eyebrow
+          h3= item.title
+          p= item.text
+
+mixin industries-card-horizontal-imageLeft(...industriesCardHorizontalImageLeft)
+  each item in industriesCardHorizontalImageLeft
+    .grid-x.h100&attributes(attributes)
+      .medium-3.cell.medium-order-1.small-order-1
+        .relative.wh100(style="min-height: 100px;")
+          img.object-fit-cover.absolute(src=item.image)
+      .medium-9.cell.p1.medium-order-2.small-order-2.flex-container.flex-dir-column.align-justify
+        div
+          p.small= item.eyebrow
+          h5= item.title
+          p= item.text
+        a.arrow(href=item.link)= item.button
+
+mixin industries-card-horizontal-imageRight(...industriesCardHorizontalImageRight)
+  each item in industriesCardHorizontalImageRight
+    .grid-x.h100&attributes(attributes)
+      .medium-3.cell.medium-order-2.small-order-1
+        .relative.wh100(style="min-height: 100px;")
+          img.object-fit-cover.absolute(src=item.image)
+      .medium-9.cell.p1.medium-order-1.small-order-2
+        p.small= item.label
+        h5= item.title
+        p= item.text
+        a.arrow(href=link)= item.button
+
+mixin industries-card-vertical(...industriesCardVertical)
+  each item in industriesCardVertical
+    .cell.medium-auto.cell-block.flex-container
+      .card.medium-mb0.bd-0.bg-white
+        .relative(style="min-height: 300px;")
+          img.object-fit-cover.absolute(src=item.image)
+        .card-section
+          p.small= item.eyebrow
+          h5= item.title
+          p= item.text
+        .card-divider
+          a.arrow(href=item.link)= item.button
+
+mixin industries-header-3columns(...industriesHeader3Columns)
+  each item in industriesHeader3Columns
+    div(style="background: url("+item.image+") no-repeat; background-size: cover; background-position: center center")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle
+            .cell.small-12.medium-10.large-9.py2.large-py4
+              p= item.eyebrow
+              h1= item.title
+            .cell.bg-white-85
+              .grid-x.grid-padding-x.small-up-1.medium-up-3.p1
+                .cell(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                  .media-object.medium-m0
+                    .media-object-section.pr-half
+                      i.arrow-right-tail.text-blue
+                    .media-object-section.main-section
+                      h6.m0= item.subtitle1
+                      = item.subtext1
+                .cell(data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom")
+                  .media-object.medium-m0
+                    .media-object-section.pr-half
+                      i.arrow-right-tail.text-blue
+                    .media-object-section.main-section
+                      h6.m0= item.subtitle2
+                      = item.subtext2
+                .cell(data-aos="fade-right" data-aos-delay="400" data-aos-anchor-placement="top-bottom")
+                  .media-object.medium-m0
+                    .media-object-section.pr-half
+                      i.arrow-right-tail.text-blue
+                    .media-object-section.main-section
+                      h6.m0= item.subtitle3
+                      = item.subtext3
+
+mixin industries-header-2columns(...industriesHeader2Columns)
+  each item in industriesHeader2Columns
+    div(style="background: url("+item.image+") no-repeat; background-size: cover; background-position: center center")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle
+            .cell.small-12.medium-10.large-9.py2.large-py4
+              p= item.eyebrow
+              h1= item.title
+            .cell.bg-white-85
+              .grid-x.grid-padding-x.p1
+                .cell.medium-4(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+                  .media-object.medium-m0
+                    .media-object-section.pr-half
+                      i.arrow-right-tail.text-blue
+                    .media-object-section.main-section
+                      h6.m0= item.subtitle
+                .cell.medium-8(data-aos="fade-right" data-aos-delay="200" data-aos-anchor-placement="top-bottom")
+                  = item.subtext
+
+mixin industries-header-1column(...industriesHeader1Column)
+  each item in industriesHeader1Column
+    div(style="background: url("+item.image+") no-repeat; background-size: cover; background-position: center center")
+        .grid-container
+          .grid-x.grid-padding-x.align-middle
+            .cell.small-12.medium-10.large-9.py2.large-py4
+              p= item.eyebrow
+              h1= item.title
+            .cell.bg-white-85.p1(data-aos="fade-right" data-aos-anchor-placement="top-bottom")
+              = item.subtext
+
+mixin header-banner-textRight(...headerBannerTextRight)
+  each item in headerBannerTextRight
+    div(data-interchange="["+item.SM+"],["+item.MD+"],["+item.LG+"]")(style="background-size: cover; background-position: center center;")
+      .grid-container
+        .grid-x.grid-padding-x.align-middle.align-right(style="min-height: 500px")
+          .cell.medium-8.large-6
+            h6.label= item.eyebrow
+            h3= item.title
+            p.m0= item.text
+            unless item.button=="no"
+              a.button.arrow(href=item.buttonLink)= item.buttonText
+
+mixin header-banner-textLeft(...headerBannerTextLeft)
+  each item in headerBannerTextLeft
+    div(data-interchange="["+item.SM+"],["+item.MD+"],["+item.LG+"]")(style="background-size: cover; background-position: center center;" class!=attributes.class)
+      .grid-container
+        .grid-x.grid-padding-x.align-middle(style="min-height: 500px")
+          .cell.medium-10.large-6
+            h6.label= item.eyebrow
+            h3= item.title
+            p.m0= item.text
+            unless item.button=="no"
+              a.button.arrow(href=item.buttonLink)= item.buttonText
+
+mixin card-recent-article(...cardRecentArticle)
+  each item in cardRecentArticle
+    .cell.flex-container
+      .card.bd0
+        .block
+          .label.text-bold.m0
+              i.mr-half.ml0(class=item.icon)
+              = item.eyebrow
+        .card-section.px0
+          h5
+            a(href=item.link)= item.title
+          p= item.text
+        .card-divider.p0.bd-t-1.align-right
+              h5.anim-icon.p1
+                a.text-normal(href=item.link)
+                  i.arrow-right.text-bold
+                  .anim-text= item.animText
+
+
+mixin latestThinkingTile(...latestThinkingTile)
+  each item in latestThinkingTile
+    .cell
+      .card
+        .mbn3.mt1.z1
+          .label
+            i.mr-half(class=item.icon)
+            = item.eyebrow
+        .lt-header-image.gradient-overlay-white
+          img.object-fit-cover.object-position-top-left(src=item.image style="height: 100px;")
+        .card-section.py0
+          h6.m0= item.title
+        .card-section
+          p= item.text
+          unless item.link== false
+            a.arrow.m0(href=item.link)= item.linkText
+        .card-divider.bg-transparent.pt0
+          .grid-x.align-middle.w100
+            unless item.socialMedia== false
+              .small-6.large-7.cell
+                h6.m0
+                  a.mr1(href="#")
+                    i.email.text-bold.text-gray-medium
+                  a.mr1(href="#")
+                    i.logo-twitter-bird.text-bold.text-gray-medium
+                  a.mr1(href="#")
+                    i.logo-facebook.text-bold.text-gray-medium
+                  a(href="#")
+                    i.logo-linkedin.text-bold.text-gray-medium
+            .cell.auto.text-right
+              unless item.download== false
+                h5.anim-icon
+                  a.text-normal(href="#")
+                    i.download.text-bold
+                    .anim-text Download
+              unless item.view== false
+                h5.anim-icon
+                  a.text-normal(href="#")
+                    i.arrow-right.text-bold
+                    .anim-text View
+
+mixin card-spotlight(...cardSpotlight)
+  each item in cardSpotlight
+    .card.h100
+      .card-image.relative.py3
+          img.absolute.pos-top.object-fit-cover(src=item.image)
+      .card-section.pb0
+        if item.label == true
+          .label.text-bold.mb-half= item.eyebrow
+        else
+          p.small.text-bold.mb-half= item.eyebrow
+        h5= item.title
+        p= item.text
+      .card-divider
+        a.arrow(href=item.link)= item.linkText
